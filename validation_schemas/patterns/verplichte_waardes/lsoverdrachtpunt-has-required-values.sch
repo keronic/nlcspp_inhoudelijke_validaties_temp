@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="v11-elec-assets-have-measurement-details">
+<pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="v11-lsoverdrachtspunt-has-required-values">
     <rule context="//nlcs:LSoverdrachtspunt">
         <assert id="functie_present"
             test="keronic:element-exists-and-not-empty(nlcs:Functie)">
