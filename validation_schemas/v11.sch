@@ -43,64 +43,69 @@
 
     <!-- dummy rules -->
     <phase id="R.9">
-        <active pattern="v11-cables-meet-demands"/>
+        <active pattern="v11-dummy-pattern"/>
     </phase>
     <phase id="R.10">
-        <active pattern="v11-cables-meet-demands"/>
+        <active pattern="v11-dummy-pattern"/>
+        <active pattern="v11-dummy-pattern"/>
     </phase>
     <phase id="R.11">
-        <active pattern="v11-cables-meet-demands"/>
+        <active pattern="v11-dummy-pattern"/>
     </phase>
     <phase id="R.12">
-        <active pattern="v11-cables-meet-demands"/>
+        <active pattern="v11-dummy-pattern"/>
     </phase>
     <phase id="R.13">
-        <active pattern="v11-cables-meet-demands"/>
+        <active pattern="v11-dummy-pattern"/>
+        <active pattern="v11-dummy-pattern"/>
+        <active pattern="v11-dummy-pattern"/>
+        <active pattern="v11-dummy-pattern"/>
     </phase>
     <phase id="R.14">
-        <active pattern="v11-cables-meet-demands"/>
+        <active pattern="v11-dummy-pattern"/>
     </phase>
     <phase id="R.15">
-        <active pattern="v11-cables-meet-demands"/>
+        <active pattern="v11-dummy-pattern"/>
     </phase>
     <phase id="R.16">
-        <active pattern="v11-cables-meet-demands"/>
+        <active pattern="v11-dummy-pattern"/>
     </phase>
     <phase id="R.17">
-        <active pattern="v11-cables-meet-demands"/>
+        <active pattern="v11-dummy-pattern"/>
     </phase>
     <phase id="R.18">
-        <active pattern="v11-cables-meet-demands"/>
+        <active pattern="v11-dummy-pattern"/>
     </phase>
     <phase id="R.19">
-        <active pattern="v11-cables-meet-demands"/>
+        <active pattern="v11-dummy-pattern"/>
     </phase>
     <phase id="R.20">
-        <active pattern="v11-cables-meet-demands"/>
+        <active pattern="v11-dummy-pattern"/>
     </phase>
     <phase id="R.21">
-        <active pattern="v11-cables-meet-demands"/>
+        <active pattern="v11-dummy-pattern"/>
     </phase>
     <phase id="R.22">
-        <active pattern="v11-cables-meet-demands"/>
+        <active pattern="v11-dummy-pattern"/>
+        <active pattern="v11-dummy-pattern"/>
     </phase>
     <phase id="R.23">
-        <active pattern="v11-cables-meet-demands"/>
+        <active pattern="v11-dummy-pattern"/>
     </phase>
     <phase id="R.24">
-        <active pattern="v11-cables-meet-demands"/>
+        <active pattern="v11-dummy-pattern"/>
     </phase>
     <phase id="R.25">
-        <active pattern="v11-cables-meet-demands"/>
+        <active pattern="v11-dummy-pattern"/>
     </phase>
     <phase id="R.26">
-        <active pattern="v11-cables-meet-demands"/>
+        <active pattern="v11-dummy-pattern"/>
     </phase>
     <phase id="R.27">
-        <active pattern="v11-cables-meet-demands"/>
+        <active pattern="v11-dummy-pattern"/>
     </phase>
     <phase id="R.28">
-        <active pattern="v11-cables-meet-demands"/>
+        <active pattern="v11-dummy-pattern"/>
     </phase>
 
     <!-- function delcarations -->
