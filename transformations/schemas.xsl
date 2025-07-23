@@ -16,8 +16,7 @@
       <xsl:variable name="scope" select="."/>
       <xsl:variable name="rules" select="$scope/nvr:scopeValidatieRegels/nvr:scopeValidatieRegel"/>
       <xsl:variable name="filename" select="lower-case(translate(@naam, ' ', '_'))"/>
-      <xsl:variable name="file" select="concat('validation_schemas/', $filename, '.sch')"/>
-
+      <xsl:variable name="file" select="concat('validation_schemas/', $filename, '.sch')"/>      
       <xsl:result-document href="{$file}">
         <xsl:apply-templates select="$schema/*">
           <xsl:with-param name="rules" select="$rules"/>
@@ -39,11 +38,27 @@
   <!-- Only copy required <phase> elements -->
   <xsl:template match="sch:phase">
     <xsl:param name="rules"/>
-    <xsl:if test="some $rule in $rules satisfies @id = $rule/nvr:nummer">
+    <xsl:variable name="rule" select="$rules[nvr:nummer = current()/@id]"/>
+    <xsl:if test="$rule">
       <xsl:copy>
-        <xsl:apply-templates select="@* | node()"/>
+        <xsl:apply-templates select="@* | node()">
+          <xsl:with-param name="level" select="$rule/nvr:niveau"/>            
+        </xsl:apply-templates>
       </xsl:copy>
     </xsl:if>
-  </xsl:template>
+  </xsl:template>  
   
+  <xsl:template match="sch:active">
+    <xsl:param name="level"/>
+    <xsl:copy>
+      <xsl:attribute name="pattern">
+        <xsl:if test="$level = 'Fout'">
+          <xsl:value-of select="@pattern"/>
+        </xsl:if>
+        <xsl:if test="$level = 'Informerend'">
+          <xsl:value-of select="concat(@pattern, '-', lower-case($level))"/>
+        </xsl:if>
+      </xsl:attribute>
+    </xsl:copy>
+  </xsl:template>  
 </xsl:stylesheet>
