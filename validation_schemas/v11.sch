@@ -59,5 +59,4 @@
     <include href="patterns/verplichte_waardes/gisid_assetid_check.sch"/>
     <include href="patterns/verplichte_waardes/elec_assets_have_measurement_details.sch"/>
     <include href="patterns/verplichte_waardes/cables_have_subnettype.sch"/>
-    <include href="patterns/verplichte_waardes/cables_meet_demands.sch"/>
 </schema>
