@@ -11,23 +11,20 @@
     <ns prefix="keronic" uri = "http://example.com/my-functions"/>
     <ns prefix="gml" uri="http://www.opengis.net/gml/3.2"/>
     <ns prefix="nlcs" uri="NLCSnetbeheer"/>
-    
-    <include href="setup.sch"/>
-    <include href="all-rules.sch"/>
-    
+
     <!-- declaring the rules -->
     <phase id="R.1">
         <active pattern="v11-aprojectreferentie-has-other-objects"/>
     </phase>
-
+    
     <phase id="R.2">
         <active pattern="v11-statuses-allowed-for-tekening-type"/>
     </phase>
-
+    
     <phase id="R.3">
         <active pattern="v11-all-geometries-in-project-area"/>
     </phase>
-
+    
     <phase id="R.5">
         <active pattern="v11-gisid-assetid-check"/>
     </phase>
@@ -38,5 +35,9 @@
     
     <phase id="R.7">
         <active pattern="v11-cables-have-subnettype"/>
+    </phase>
+    
+    <phase id="R.14">
+        <active pattern="v11-stations-kasten-have-required-values"/>
     </phase>
 </schema>
