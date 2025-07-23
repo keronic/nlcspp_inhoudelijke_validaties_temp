@@ -14,7 +14,7 @@
   <xsl:template match="/">
     <xsl:for-each select="$scopes">
       <xsl:variable name="scope" select="."/>
-      <xsl:variable name="rules" select="$scope/nvr:scopeValidatieRegels/nvr:scopeValidatieRegel/nvr:nummer"/>
+      <xsl:variable name="rules" select="$scope/nvr:scopeValidatieRegels/nvr:scopeValidatieRegel"/>
       <xsl:variable name="filename" select="lower-case(translate(@naam, ' ', '_'))"/>
       <xsl:variable name="file" select="concat('validation_schemas/', $filename, '.sch')"/>
 
@@ -39,7 +39,7 @@
   <!-- Only copy required <phase> elements -->
   <xsl:template match="sch:phase">
     <xsl:param name="rules"/>
-    <xsl:if test="some $rule in $rules satisfies @id = $rule">
+    <xsl:if test="some $rule in $rules satisfies @id = $rule/nvr:nummer">
       <xsl:copy>
         <xsl:apply-templates select="@* | node()"/>
       </xsl:copy>
