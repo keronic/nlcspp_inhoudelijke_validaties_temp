@@ -11,10 +11,7 @@
     <ns prefix="keronic" uri = "http://example.com/my-functions"/>
     <ns prefix="gml" uri="http://www.opengis.net/gml/3.2"/>
     <ns prefix="nlcs" uri="NLCSnetbeheer"/>
-    
-    <include href="setup.sch"/>
-    <include href="all-rules.sch"/>
-    
+
     <!-- declaring the rules -->
     <phase id="R.1">
         <active pattern="v11-aprojectreferentie-has-other-objects"/>
@@ -38,5 +35,9 @@
     
     <phase id="R.7">
         <active pattern="v11-cables-have-subnettype"/>
+    </phase>
+
+    <phase id="R.15">
+        <active pattern="v11-mantelbuis-has-required-values"/>
     </phase>
 </schema>
