@@ -13,21 +13,31 @@
     <ns prefix="nlcs" uri="NLCSnetbeheer"/>
     
     <include href="setup.sch"/>
-    <include href="all-rules.sch"/>
-    
+    <xsl:include href="../xsl_functions/global_functions/config_functions.xsl"/>
+    <xsl:include href="../xsl_functions/helper_functions/helper_functions.xsl"/>
+    <xsl:include href="../xsl_functions/geometry_functions/2d_geometry_functions.xsl"/>
+    <xsl:include href="../xsl_functions/geometry_functions/3d_geometry_functions.xsl"/>
+    <xsl:include href="../xsl_functions/geometry_functions/2d_geometry_interface_functions.xsl"/>
+    <xsl:include href="../xsl_functions/geometry_functions/3d_geometry_interface_functions.xsl"/>
+    <xsl:include href="../xsl_functions/geometry_functions/3d_2d_geometry_interface_functions.xsl"/>
+    <xsl:include href="../xsl_functions/geometry_functions/geometry_interface_functions.xsl"/>
+    <xsl:include href="../xsl_functions/geometry_functions/line_interface_functions.xsl"/>
+    <xsl:include href="../xsl_functions/geometry_functions/line_functions.xsl"/>
+    <xsl:include href="../xsl_functions/geometry_functions/depth_functions.xsl"/>
+    <xsl:include href="../xsl_functions/geometry_functions/depth_interface_functions.xsl"/>
     <!-- declaring the rules -->
     <phase id="R.1">
         <active pattern="v11-aprojectreferentie-has-other-objects"/>
     </phase>
-
+    
     <phase id="R.2">
         <active pattern="v11-statuses-allowed-for-tekening-type"/>
     </phase>
-
+    
     <phase id="R.3">
         <active pattern="v11-all-geometries-in-project-area"/>
     </phase>
-
+    
     <phase id="R.5">
         <active pattern="v11-gisid-assetid-check"/>
     </phase>
@@ -39,4 +49,10 @@
     <phase id="R.7">
         <active pattern="v11-cables-have-subnettype"/>
     </phase>
+    
+    <phase id="R.11">
+        <active pattern="v11-ovloverdrachtspunt-have-required-values"/>
+    </phase>
+    
+    <include href="../patterns/verplichte_waardes/ovloverdrachtspunt_have_required_values.sch"/>
 </schema>
