@@ -5,7 +5,8 @@
                 exclude-result-prefixes="sch nvr">
   
   <xsl:output method="xml" indent="yes"/>
-  
+  <xsl:strip-space elements="*"/>
+
   <!-- Load documents -->
   <xsl:variable name="schema" select="document('../validation_schemas/v11.sch')"/>
   <xsl:variable name="config-doc" select="document('../doc/NLCSValidatieRegels.xml')"/>
@@ -38,27 +39,11 @@
   <!-- Only copy required <phase> elements -->
   <xsl:template match="sch:phase">
     <xsl:param name="rules"/>
-    <xsl:variable name="rule" select="$rules[nvr:nummer = current()/@id]"/>
-    <xsl:if test="$rule">
+    <xsl:if test="@id = $rules/nvr:nummer">
       <xsl:copy>
-        <xsl:apply-templates select="@* | node()">
-          <xsl:with-param name="level" select="$rule/nvr:niveau"/>            
-        </xsl:apply-templates>
+        <xsl:apply-templates select="@* | node()"/>
       </xsl:copy>
     </xsl:if>
   </xsl:template>  
-  
-  <xsl:template match="sch:active">
-    <xsl:param name="level"/>
-    <xsl:copy>
-      <xsl:attribute name="pattern">
-        <xsl:if test="$level = 'Fout'">
-          <xsl:value-of select="@pattern"/>
-        </xsl:if>
-        <xsl:if test="$level = 'Informerend'">
-          <xsl:value-of select="concat(@pattern, '-', lower-case($level))"/>
-        </xsl:if>
-      </xsl:attribute>
-    </xsl:copy>
-  </xsl:template>  
+ 
 </xsl:stylesheet>
