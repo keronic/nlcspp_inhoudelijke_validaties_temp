@@ -25,18 +25,27 @@
                          )
                "/>
           
+          <let name="measurement-message"
+               value="keronic:get-translation('line-segment-measurement-incorrect')"/>
+          
+          <let name="angle-message"
+               value="keronic:get-translation('line-angle-larger-than-45')"/>
+          
+          <let name="placeholders"
+               value="let $map := map{
+                              'handle' : $handle
+                         }
+                    return $map
+               "/>
+          
           <assert id="assert-line-meets-length-demand"
                test="not(some $d in $distances satisfies $d le 100 or $d ge 500)">
-               Een lijnsegment mag niet korter dan 10 cm of langer dan 50 cm zijn! Het volgende object voeldoet niet aan deze eis:
-               
-               <value-of select="$handle"/>
+               <value-of select="keronic:replace-placeholders($measurement-message. $placeholders)"/>
           </assert>
           
           <assert id="assert-line-meets-angle-demand"
                test="not(keronic:line-3d-contains-larger-angle-than($geometry, '45'))">
-               Een lijnsegment mag geen knikken bevatten! Het volgende object voldoet niet aan deze eis:
-               
-               <value-of select="$handle"/>
+               <value-of select="keronic:replace-placeholders($angle-message, $placeholders)"/>
           </assert>
      </rule>
 </pattern>

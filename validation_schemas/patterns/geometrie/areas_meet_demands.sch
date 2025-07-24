@@ -25,11 +25,19 @@
                          )
                "/>
           
+          <let name="message"
+               value="keronic:get-translation('line-segment-measurement-incorrect')"/>
+          
+          <let name="placeholders"
+               value="let $map := map{
+                              'handle': $handle   
+                         }
+                    return $map
+               "/>
+          
           <assert id="assert-line-meets-length-demand"
                test="not(some $d in $distances satisfies $d le 10 or $d ge 50)">
-               Een lijnsegment mag niet korter dan 10 cm of langer dan 50 cm zijn! Het volgende object voeldoet niet aan deze eis:
-               
-               <value-of select="$handle"/>
+               <value-of select="keronic:replace-placeholders($message, $placeholders)"/>
           </assert>
      </rule>
 </pattern>

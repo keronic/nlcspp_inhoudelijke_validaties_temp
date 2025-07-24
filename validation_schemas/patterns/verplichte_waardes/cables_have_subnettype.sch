@@ -4,8 +4,18 @@
         <let name="subnettype"
             value="nlcs:Subnettype"/>
         
+        <let name="placeholders"
+            value="let $map := map{
+                        'handle': nlcs:Handle 
+                    }
+                return $map
+            "/>
+        
+        <let name="message"
+            value="keronic:get-translation('cable-has-no-subtype')"/>
+        
         <assert test="keronic:element-exists-and-not-empty($subnettype)">
-                Het object <value-of select="nlcs:Handle"/> moet een waarde voor Subnettype hebben!
+            <value-of select="keronic:replace-placeholders($message, $placeholders)"/>
         </assert>
     </rule>
 </pattern>

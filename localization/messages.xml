@@ -1,0 +1,98 @@
+<messages xmlns:xml="http://www.w3.org/XML/1998/namespace">
+  <message id="aprojectreferentie-not-present-or-only-object">
+    <message-text xml:lang="en">
+      The NLCS++ file needs to contain an Aprojectreferentie and at least 1 other NLCS++ object. Current amount of objects:
+      {amount-of-objects}
+    </message-text>
+    <message-text xml:lang="nl">
+      Het NLCS++ bestand moet een Aprojectreferentie en minstens 1 ander NLCS object bevatten. Huidig aantal objecten:
+      {amount-of-objects}
+    </message-text>
+  </message>
+  <message id="invalid-status-for-tekening-type">
+    <message-text xml:lang="en">
+      Invalid statuses for tekening type {tekening-type}, must be one of: {allowed-statuses}
+      
+      Invalid objects: 
+      {invalid-objects}
+    </message-text>
+    <message-text xml:lang="nl">
+      Ongeldige statusen voor tekening type {tekening-type}, deze moet een van {allowed-statuses} zijn
+      
+      Invalide objecten: 
+      {invalid-objects}
+    </message-text>
+  </message>
+  <message id="point-outside-of-project-area">
+    <message-text xml:lang="en">
+     Point of handle {handle} is outside of project area.
+    </message-text>
+    <message-text xml:lang="nl">
+      Punt met handle {handle} is buiten het project gebiefd
+    </message-text>
+  </message>
+  <message id="line-outside-of-project-area">
+    <message-text xml:lang="en">
+      Line with handle {handle} is outside the project area.
+    </message-text>
+    <message-text xml:lang="nl">
+      Lijn met handle {handle} valt buiten het project gebied.
+    </message-text>
+  </message>
+  <message id="area-outside-of-project-area">
+    <message-text xml:lang="en">
+      Area with handle {handle} is outside the project area.
+    </message-text>
+    <message-text xml:lang="nl">
+      Gebied met handle {handle} valt buiten het project gebied.
+    </message-text>
+  </message>
+  <message id="line-segment-measurement-incorrect">
+    <message-text xml:lang="en">
+      A line segment on object {handle} is shroter than 10cm or longer than 50cm
+    </message-text>
+    <message-text xml:lang="nl">
+      Een lijnsegment bij object {handle} is korter dan 10 cm of langer dan 50 cm!
+    </message-text>
+  </message>
+  <message id="line-angle-larger-than-45">
+    <message-text xml:lang="en">
+      A linesegment in object {handle} contains a kink! Angles of linesegments cannot exceed 45 degrees
+    </message-text>
+    <message-text xml:lang="nl">
+      Een lijnsegment binnen object {handle} bevat een knik! Hoeken van lijnsegmenten mogen niet groter dan 45 graden zijn
+    </message-text>
+  </message>
+  <message id="cable-has-no-subtype">
+    <message-text xml:lang="en">
+      The object {handle} does not have a subtype!
+    </message-text>
+    <message-text xml:lang="nl">
+      Het object {handle} heeft geen subtype!
+    </message-text>
+  </message>
+  <message id="elec-objects-does-not-have-inmeetwijze-or-nauwkeurigheid">
+    <message-text xml:lang="nl">
+      Object {handle} moet een inmeetwijze en nauwkeurigheid hebben.
+    </message-text>
+    <message-text xml:lang="en">
+      Object {handle} need an inmeetwijze en nauwkeurigheid
+    </message-text>
+  </message>
+  <message id="gisId-assetId-not-unset-if-new-revision-existing">
+    <message-text xml:lang="nl">
+      Het gis id en assset id van object {handle} mogen niet leeg zijn als de status {statuses} is
+    </message-text>
+    <message-text xml:lang="en">
+      The gis id and asset id of object {handle} cannot be empty if the status is of {statuses}
+    </message-text>
+  </message>
+  <message id="gisId-assetId-are-unset-if-new">
+    <message-text xml:lang="nl">
+      Het gis id en assset id van object {handle} MOETEN leeg zijn als de status NIET {statuses} is!
+    </message-text>
+    <message-text xml:lang="en">
+      The gis id and asset id of object {handle} HAVE TO be empty if the status IS NOT of type {statuses}
+    </message-text>
+  </message>
+</messages>
