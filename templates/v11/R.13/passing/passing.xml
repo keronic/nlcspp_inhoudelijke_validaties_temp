@@ -23,8 +23,8 @@
     </AprojectReferentie>
     <MSoverdrachtspunt>
         <Handle>5558</Handle>
-        <Status>BESTAAND</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
         <Functie>LICHTMAST</Functie>
         <Identificatie>1234567</Identificatie>
         <Eigenaar>Gemeente</Eigenaar>
