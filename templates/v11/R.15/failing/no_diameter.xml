@@ -25,7 +25,8 @@
         <Handle>630C</Handle>
         <Materiaal>PVC</Materiaal>
         <DatumAanleg>2023-10-10</DatumAanleg>
-        <Status>BESTAAND</Status>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
         <Inmeetwijze>GPS</Inmeetwijze>
         <Nauwkeurigheid>tot 3cm</Nauwkeurigheid>
         <Thema>ET_LS</Thema>

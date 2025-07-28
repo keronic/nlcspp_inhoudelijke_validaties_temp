@@ -26,7 +26,8 @@
         <Materiaal>PVC</Materiaal>
         <Diameter>110</Diameter>
         <DatumAanleg>2023-10-10</DatumAanleg>
-        <Status>BESTAAND</Status>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
         <Inmeetwijze>GPS</Inmeetwijze>
         <Nauwkeurigheid>tot 3cm</Nauwkeurigheid>
         <Eigenaar>Netbeheerder</Eigenaar>
