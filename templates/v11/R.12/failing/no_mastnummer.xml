@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NLCSnetbeheerType xmlns:keuzelijst="NLCSnetbeheer"
+                   xmlns:gml="http://www.opengis.net/gml/3.2"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="NLCSnetbeheer">
+    <VersieNummer>11</VersieNummer>
+    <AprojectReferentie>
+        <Handle>Keronic</Handle>
+        <Projectnummer>1</Projectnummer>
+        <DeelrevisieVolgnummer>1</DeelrevisieVolgnummer>
+        <TekeningType>{{TEKENING TYPE}}</TekeningType>
+        <Geometry>
+            <gml:Polygon
+                srsDimension="2"
+                srsName="EPSG:28992">
+                <gml:exterior>
+                    <gml:LinearRing>
+                        <gml:posList>100.0 100.0 200.0 100.0 200.0 200.0 100.0 200.0 100.0 100.0</gml:posList>
+                    </gml:LinearRing>
+                </gml:exterior>
+            </gml:Polygon>
+        </Geometry>
+    </AprojectReferentie>
+    <OVLoverdrachtspunt>
+        <Handle>553E</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+        <Functie>LICHTMAST</Functie>
+        <Spanningsniveau>230 V</Spanningsniveau>
+        <Doorlaatwaarde>6</Doorlaatwaarde>
+        <Aansluitwijze>Aftak</Aansluitwijze>
+        <VoedingEnSturing>OV gevoed en geschakeld</VoedingEnSturing>
+        <Schakeling>Avond en nacht</Schakeling>
+        <Eigenaar>Gemeente</Eigenaar>
+        <Aansluitset>AK OVL</Aansluitset>
+        <Beheerder>Gemeente</Beheerder>
+        <AssetId>{17170B1A-EA8B-4CEA-8604-ACE1857A2E1F}</AssetId>
+        <Geometry>
+            <gml:Point
+                srsDimension="3"
+                srsName="EPSG:28992">
+                <gml:pos>171005.54899999872 369888.22100000083 0</gml:pos>
+            </gml:Point>
+        </Geometry>
+    </OVLoverdrachtspunt>
+</NLCSnetbeheerType>
