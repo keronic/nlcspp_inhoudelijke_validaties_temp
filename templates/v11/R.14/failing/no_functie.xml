@@ -25,8 +25,8 @@
         <Handle>6132</Handle>
         <Naam>Neerlanden</Naam>
         <Nummer>098.607</Nummer>
-        <Status>BESTAAND</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
         <Straatnaam>De Neerlanden </Straatnaam>
         <Huisnummer>10</Huisnummer>
         <Postcode>6026 ET</Postcode>

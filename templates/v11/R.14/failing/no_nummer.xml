@@ -24,8 +24,8 @@
     <MSstation>
         <Handle>6132</Handle>
         <Naam>Neerlanden</Naam>
-        <Status>BESTAAND</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
         <Functie>NETSTATION</Functie>
         <Straatnaam>De Neerlanden </Straatnaam>
         <Huisnummer>10</Huisnummer>
