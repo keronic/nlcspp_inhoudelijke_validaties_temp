@@ -25,8 +25,8 @@
         <Handle>5A45</Handle>
         <Doorlaatwaarde>16</Doorlaatwaarde>
         <EigenRichting>Nee</EigenRichting>
-        <Status>BESTAAND</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
         <FaseAanduiding>3 Fasen</FaseAanduiding>
         <Eigenaar>Netbeheerder</Eigenaar>
         <Beheerder>Netbeheerder</Beheerder>
