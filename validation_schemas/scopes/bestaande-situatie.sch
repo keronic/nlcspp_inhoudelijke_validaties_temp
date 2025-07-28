@@ -49,10 +49,9 @@
     <phase id="R.7">
         <active pattern="v11-cables-have-subnettype"/>
     </phase>
-    
+    <phase id="R.10">
+        <active pattern="v11-moffen-have-required-values"/>
     <phase id="R.11">
-        <active pattern="v11-ovloverdrachtspunt-have-required-values"/>
+        <active pattern="v11-lsoverdrachtspunt-has-required-values"/>
     </phase>
-    
-    <include href="../patterns/verplichte_waardes/ovloverdrachtspunt_have_required_values.sch"/>
 </schema>
