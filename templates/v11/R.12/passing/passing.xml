@@ -23,8 +23,8 @@
     </AprojectReferentie>
     <OVLoverdrachtspunt>
         <Handle>553E</Handle>
-        <Status>BESTAAND</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
         <Functie>LICHTMAST</Functie>
         <Spanningsniveau>230 V</Spanningsniveau>
         <Doorlaatwaarde>6</Doorlaatwaarde>
