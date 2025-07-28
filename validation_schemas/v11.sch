@@ -37,6 +37,11 @@
         <active pattern="v11-cables-have-subnettype"/>
     </phase>
 
+    <phase id="R.8">
+        <active pattern="v11-kabels-have-required-values"/>
+        <active pattern="v11-lskabels-have-required-values"/>
+    </phase>
+
     <!-- function delcarations -->
     <xsl:include href="xsl_functions/global_functions/config_functions.xsl"/>
     <xsl:include href="xsl_functions/helper_functions/helper_functions.xsl"/>
@@ -59,4 +64,6 @@
     <include href="patterns/verplichte_waardes/gisid_assetid_check.sch"/>
     <include href="patterns/verplichte_waardes/elec_assets_have_measurement_details.sch"/>
     <include href="patterns/verplichte_waardes/cables_have_subnettype.sch"/>
+    <include href="patterns/verplichte_waardes/kabels_have_required_values.sch"/>
+    <include href="patterns/verplichte_waardes/lskabels_have_required_values.sch"/>
 </schema>

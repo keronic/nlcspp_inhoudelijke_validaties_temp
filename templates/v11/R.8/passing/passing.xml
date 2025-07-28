@@ -31,13 +31,13 @@
         <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
         <Verbindingsnummer>1</Verbindingsnummer>
         <Spanningsniveau>10 kV</Spanningsniveau>
-        <Aardingssysteem>123</Aardingssysteem>
+        <Aardingsysteem>TN</Aardingsysteem>
         <Inmeetwijze>GPS</Inmeetwijze>
         <Nauwkeurigheid>tot 3cm</Nauwkeurigheid>
         <Subnettype>DISTRIBUTIE</Subnettype>
         <FaseAanduiding>3 Fasen</FaseAanduiding>
-        <Bovengronds>A</Bovengronds>
-        <Functie>B</Functie>
+        <Bovengronds>Ja</Bovengronds>
+        <Functie>LSOV</Functie>
         <Eigenaar>Netbeheerder</Eigenaar>
         <Beheerder>Netbeheerder</Beheerder>
         <GisId>83412</GisId>
@@ -60,7 +60,7 @@
         <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
         <Verbindingsnummer>1</Verbindingsnummer>
         <Spanningsniveau>10 kV</Spanningsniveau>
-        <Aardingssysteem>123</Aardingssysteem>
+        <Aardingsysteem>TN</Aardingsysteem>
         <Inmeetwijze>GPS</Inmeetwijze>
         <Nauwkeurigheid>tot 3cm</Nauwkeurigheid>
         <Subnettype>DISTRIBUTIE</Subnettype>
@@ -87,7 +87,7 @@
         <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
         <Verbindingsnummer>1</Verbindingsnummer>
         <Spanningsniveau>10 kV</Spanningsniveau>
-        <Aardingssysteem>123</Aardingssysteem>
+        <Aardingsysteem>TN</Aardingsysteem>
         <Inmeetwijze>GPS</Inmeetwijze>
         <Nauwkeurigheid>tot 3cm</Nauwkeurigheid>
         <Subnettype>DISTRIBUTIE</Subnettype>
@@ -115,7 +115,7 @@
         <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
         <Verbindingsnummer>1</Verbindingsnummer>
         <Spanningsniveau>10 kV</Spanningsniveau>
-        <Aardingssysteem>123</Aardingssysteem>
+        <Aardingsysteem>TN</Aardingsysteem>
         <Inmeetwijze>GPS</Inmeetwijze>
         <Nauwkeurigheid>tot 3cm</Nauwkeurigheid>
         <Subnettype>DISTRIBUTIE</Subnettype>
