@@ -23,7 +23,8 @@
     <MSmof>
         <Handle>5911</Handle>
         <DatumAanleg>1971-06-14</DatumAanleg>
-        <Status>BESTAAND</Status>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
         <Eigenaar>Netbeheerder</Eigenaar>
         <Beheerder>Netbeheerder</Beheerder>
         <CrossBondingAanwezig>Ja</CrossBondingAanwezig>
