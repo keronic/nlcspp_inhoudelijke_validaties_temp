@@ -19,11 +19,11 @@
     <phase id="R.1">
         <active pattern="v11-aprojectreferentie-has-other-objects"/>
     </phase>
-
+    
     <phase id="R.2">
         <active pattern="v11-statuses-allowed-for-tekening-type"/>
     </phase>
-
+    
     <phase id="R.3">
         <active pattern="v11-all-geometries-in-project-area"/>
     </phase>
@@ -32,7 +32,7 @@
         <active pattern="v11-areas-meet-demands"/>
         <active pattern="v11-lines-meet-demands"/>
     </phase>
-
+    
     <phase id="R.5">
         <active pattern="v11-gisid-assetid-check"/>
     </phase>
@@ -43,5 +43,9 @@
     
     <phase id="R.7">
         <active pattern="v11-cables-have-subnettype"/>
+    </phase>
+    
+    <phase id="R.10">
+        <active pattern="v11-moffen-have-required-values"/>
     </phase>
 </schema>
