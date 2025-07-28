@@ -25,6 +25,11 @@
         <active pattern="v11-all-geometries-in-project-area"/>
     </phase>
 
+    <phase id="R.4">
+        <active pattern="v11-lines-meet-demands"/>
+        <active pattern="v11-areas-meet-demands"/>
+    </phase>
+
     <phase id="R.5">
         <active pattern="v11-gisid-assetid-check"/>
     </phase>

@@ -36,7 +36,7 @@
         <let name="placeholders"
             value="let $map := map{
                         'invalid-objects': $invalid_objects,
-                        'allowed-statuses': $allowed_statuses,
+                        'allowed-statuses': string-join($allowed_statuses, ', '),
                         'tekening-type': $tekening_type
                     }
                 return $map

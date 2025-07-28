@@ -40,7 +40,7 @@
           
           <assert id="assert-line-meets-length-demand"
                test="not(some $d in $distances satisfies $d le 100 or $d ge 500)">
-               <value-of select="keronic:replace-placeholders($measurement-message. $placeholders)"/>
+               <value-of select="keronic:replace-placeholders($measurement-message, $placeholders)"/>
           </assert>
           
           <assert id="assert-line-meets-angle-demand"

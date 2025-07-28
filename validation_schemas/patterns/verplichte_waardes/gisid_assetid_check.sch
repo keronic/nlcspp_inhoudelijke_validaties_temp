@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="r5-gisid-assetid-check">
+<pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="v11-gisid-assetid-check">
     <rule context="//nlcs:MSstation | //nlcs:MSkabel | //nlcs:MSmof | //nlcs:Amantelbuis">        
         <let name="statuses"
             value="keronic:get-statuses-where-gisid-required()"/>
@@ -10,17 +10,14 @@
         <let name="statuses-in-object"
             value="keronic:elements-exist-and-not-empty((nlcs:GisId, nlcs:AssetId))"/>
         
-        <let name="placeholders"
-            value="let $map := map{
-                        'handle': $handle   
-                    }
-                return $map
-            "/>
-        
+
+        <let name="handle"
+            value="nlcs:Handle"/>
+
         <let name="placeholders"
             value="let $map := map{
                         'handle': $handle,
-                        'statuses': $statuses 
+                        'statuses': string-join($statuses, ', ')
                     }
                 return $map
             "/>

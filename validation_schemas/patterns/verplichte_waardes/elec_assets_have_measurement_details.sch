@@ -13,6 +13,13 @@
         <let name="message"
             value="keronic:get-translation('elec-objects-does-not-have-inmeetwijze-or-nauwkeurigheid')"/>
 
+        <let name="placeholders"
+            value="let $map := map{
+                    'handle': $handle
+            }
+            return $map
+            "/>
+
         <assert id="elec-objects-does-not-have-inmeetwijze-or-nauwkeurigheid"
             test="$inmeetwijze_is_valid and $nauwkeurigheid_is_valid">
             <value-of select="keronic:replace-placeholders($message, $placeholders)"/>
