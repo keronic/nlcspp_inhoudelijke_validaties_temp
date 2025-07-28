@@ -10,9 +10,6 @@
         <let name="nauwkeurigheid_is_valid"
             value="keronic:element-exists-and-not-empty(nlcs:Nauwkeurigheid)"/>
 
-        <let name="message"
-            value="keronic:get-translation('elec-objects-does-not-have-inmeetwijze-or-nauwkeurigheid')"/>
-
         <let name="placeholders"
             value="let $map := map{
                     'handle': $handle
@@ -22,7 +19,7 @@
 
         <assert id="elec-objects-does-not-have-inmeetwijze-or-nauwkeurigheid"
             test="$inmeetwijze_is_valid and $nauwkeurigheid_is_valid">
-            <value-of select="keronic:replace-placeholders($message, $placeholders)"/>
+            <value-of select="keronic:get-translations-and-replace-placeholders('elec-objects-does-not-have-inmeetwijze-or-nauwkeurigheid', $placeholders)"/>
         </assert>
     </rule>
 </pattern>

@@ -107,6 +107,13 @@
     <value-of select="$translation"/>
   </function>
   
+  <function name="keronic:get-translation-and-replace-placeholders">
+    <param name="message_id"/>
+    <param name="placeholders"/>
+    <variable name="translation" select="keronic:get-translation($message_id)"/>
+    <value-of select="keronic:replace-placeholders($translation, $placeholders)"/>
+  </function>
+  
   <function name="keronic:element-exists-and-not-empty" as="xs:boolean">
     <param name="element"/>
     <sequence select="$element and normalize-space($element)"/>

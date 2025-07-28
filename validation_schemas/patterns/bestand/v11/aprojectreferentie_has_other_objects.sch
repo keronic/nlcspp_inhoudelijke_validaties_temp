@@ -6,10 +6,7 @@
         
         <let name="aprojectreferenties"
             value="nlcs:AprojectReferentie"/>
-        
-        <let name="message"
-            value="keronic:get-translation('aprojectreferentie-not-present-or-only-object')"/>
-        
+
         <let name="placeholders"
             value="let $map := map{
                         'amount-of-objects': count($nlcs_objecten)
@@ -19,7 +16,7 @@
             
             <assert id="assert-objects-in-file" 
                 test="count($nlcs_objecten) > 0 and count($aprojectreferenties) = 1">
-                <value-of select="keronic:replace-placeholders($message, $placeholders)"/>
+                <value-of select="keronic:get-translation-and-replace-placeholders('aprojectreferentie-not-present-or-only-object', $placeholders)"/>
             </assert>
         </rule>
     </pattern>

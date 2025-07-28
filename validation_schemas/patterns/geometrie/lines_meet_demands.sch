@@ -25,12 +25,6 @@
                          )
                "/>
           
-          <let name="measurement-message"
-               value="keronic:get-translation('line-segment-measurement-incorrect')"/>
-          
-          <let name="angle-message"
-               value="keronic:get-translation('line-angle-larger-than-45')"/>
-          
           <let name="placeholders"
                value="let $map := map{
                               'handle' : $handle
@@ -40,12 +34,12 @@
           
           <assert id="assert-line-meets-length-demand"
                test="not(some $d in $distances satisfies $d le 100 or $d ge 500)">
-               <value-of select="keronic:replace-placeholders($measurement-message, $placeholders)"/>
+               <value-of select="keronic:get-translations-and-replace-placeholders('line-segment-measurement-incorrect', $placeholders)"/>
           </assert>
           
           <assert id="assert-line-meets-angle-demand"
                test="not(keronic:line-3d-contains-larger-angle-than($geometry, '45'))">
-               <value-of select="keronic:replace-placeholders($angle-message, $placeholders)"/>
+               <value-of select="keronic:get-translations-and-replace-placeholders('line-angle-larger-than-45', $placeholders)"/>
           </assert>
      </rule>
 </pattern>

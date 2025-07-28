@@ -30,9 +30,6 @@
         <let name="invalid_objects"
             value="string-join(for $nlcs_object in $nlcs_objecten_with_invalid_statuses return concat('Handle: ', $nlcs_object/nlcs:Handle, ', Status: ', $nlcs_object/nlcs:Status), ' | ')"/>
 
-        <let name="message"
-            value="keronic:get-translation('invalid-status-for-tekening-type')"/>
-
         <let name="placeholders"
             value="let $map := map{
                         'invalid-objects': $invalid_objects,
@@ -44,7 +41,7 @@
         
         <assert id="status-in-line-with-type" 
             test="count($nlcs_objecten_with_invalid_statuses) = 0">
-            <value-of select="keronic:replace-placeholders($message, $placeholders)"/>
+            <value-of select="keronic:get-translation-and-replace-placeholders('invalid-status-for-tekening-type', $placeholders)"/>
         </assert>
     </rule>
 </pattern>

@@ -11,11 +11,8 @@
                 return $map
             "/>
         
-        <let name="message"
-            value="keronic:get-translation('cable-has-no-subtype')"/>
-        
         <assert test="keronic:element-exists-and-not-empty($subnettype)">
-            <value-of select="keronic:replace-placeholders($message, $placeholders)"/>
+            <value-of select="keronic:get-translations-and-replace-placeholders('cable-has-no-subtype', $placeholders)"/>
         </assert>
     </rule>
 </pattern>

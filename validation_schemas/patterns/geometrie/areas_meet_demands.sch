@@ -25,9 +25,6 @@
                          )
                "/>
           
-          <let name="message"
-               value="keronic:get-translation('line-segment-measurement-incorrect')"/>
-          
           <let name="placeholders"
                value="let $map := map{
                               'handle': $handle   
@@ -37,7 +34,7 @@
           
           <assert id="assert-line-meets-length-demand"
                test="not(some $d in $distances satisfies $d le 10 or $d ge 50)">
-               <value-of select="keronic:replace-placeholders($message, $placeholders)"/>
+               <value-of select="keronic:get-translations-and-replace-placeholders('line-segment-measurement-incorrect', $placeholders)"/>
           </assert>
      </rule>
 </pattern>
