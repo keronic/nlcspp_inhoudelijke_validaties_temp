@@ -35,6 +35,8 @@
     <phase id="R.7">
         <active pattern="v11-cables-have-subnettype"/>
     </phase>
+    <phase id="R.15">
+        <active pattern="v11-mantelbuis-has-required-values"/>
     <phase id="R.14">
         <active pattern="v11-stations-kasten-have-required-values"/>
     <phase id="R.13">
