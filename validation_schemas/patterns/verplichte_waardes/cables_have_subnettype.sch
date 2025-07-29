@@ -12,7 +12,7 @@
             "/>
         
         <assert test="keronic:element-exists-and-not-empty($subnettype)">
-            <value-of select="keronic:get-translations-and-replace-placeholders('cable-has-no-subtype', $placeholders)"/>
+            <value-of select="keronic:get-translation-and-replace-placeholders('cable-has-no-subtype', $placeholders)"/>
         </assert>
     </rule>
 </pattern>

@@ -34,7 +34,7 @@
           
           <assert id="assert-line-meets-length-demand"
                test="not(some $d in $distances satisfies $d le 10 or $d ge 50)">
-               <value-of select="keronic:get-translations-and-replace-placeholders('line-segment-measurement-incorrect', $placeholders)"/>
+               <value-of select="keronic:get-translation-and-replace-placeholders('line-segment-measurement-incorrect', $placeholders)"/>
           </assert>
      </rule>
 </pattern>

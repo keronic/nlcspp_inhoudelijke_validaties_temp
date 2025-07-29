@@ -2,16 +2,16 @@
   <message id="aprojectreferentie-not-present-or-only-object">
     <message-text xml:lang="en">
       The NLCS++ file needs to contain an Aprojectreferentie and at least 1 other NLCS++ object. Current amount of objects:
-      {amount-of-objects}
+      {1}
     </message-text>
     <message-text xml:lang="nl">
       Het NLCS++ bestand moet een Aprojectreferentie en minstens 1 ander NLCS object bevatten. Huidig aantal objecten:
-      {amount-of-objects}
+      {1}
     </message-text>
   </message>
   <message id="invalid-status-for-tekening-type">
     <message-text xml:lang="en">
-      Invalid statuses for tekening type {tekening-type}, must be one of: {allowed-statuses}
+      Invalid statuses for tekening type {1}, must be one of: {2}
       
       Invalid objects: 
       {invalid-objects}
@@ -93,6 +93,22 @@
     </message-text>
     <message-text xml:lang="en">
       The gis id and asset id of object {handle} HAVE TO be empty if the status IS NOT of type {statuses}
+    </message-text>
+  </message>
+  <message id="functie-not-present">
+    <message-text xml:lang="nl">
+      De functie op object {handle} is niet aanwezig!
+    </message-text>
+    <message-text xml:lang="en">
+      The attribute of Functie on object {handle} is not present!
+    </message-text>
+  </message>
+  <message id="eigen-richting-not-present">
+    <message-text xml:lang="nl">
+      Het attribuut {attribute} op object {handle} is niet aanwezig!
+    </message-text>
+    <message-text xml:lang="en">
+      The attribute {attribute} on object {handle} is not present!
     </message-text>
   </message>
 </messages>

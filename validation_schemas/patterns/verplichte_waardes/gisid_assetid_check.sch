@@ -24,12 +24,12 @@
         
         <assert id="gisId-assetId-not-unset-if-revision-existing"
             test="not($status-requires-id) or $statuses-in-object">
-            <value-of select="keronic:get-translations-and-replace-placeholders('gisId-assetId-not-unset-if-new-revision-existing', $placeholders)"/>
+            <value-of select="keronic:get-translation-and-replace-placeholders('gisId-assetId-not-unset-if-new-revision-existing', $placeholders)"/>
         </assert>
         
         <assert id="gisId-assetId-are-unset-if-new"
             test="$status-requires-id or not(nlcs:GisId or nlcs:AssetId)">
-            <value-of select="keronic:get-translations-and-replace-placeholders('gisId-assetId-are-unset-if-new', $placeholders)"/>
+            <value-of select="keronic:get-translation-and-replace-placeholders('gisId-assetId-are-unset-if-new', $placeholders)"/>
         </assert>
     </rule>
 </pattern>

@@ -106,14 +106,7 @@
     <variable name="translation" select="$translation_file//message[@id=$message_id]/message-text[@xml:lang=$language]"/>
     <value-of select="$translation"/>
   </function>
-  
-  <function name="keronic:get-translation-and-replace-placeholders">
-    <param name="message_id"/>
-    <param name="placeholders"/>
-    <variable name="translation" select="keronic:get-translation($message_id)"/>
-    <value-of select="keronic:replace-placeholders($translation, $placeholders)"/>
-  </function>
-  
+
   <function name="keronic:element-exists-and-not-empty" as="xs:boolean">
     <param name="element"/>
     <sequence select="$element and normalize-space($element)"/>
@@ -124,48 +117,53 @@
     <sequence select="every $el in $elements satisfies keronic:element-exists-and-not-empty($el)"/>
   </function>
   
+  <function name="keronic:get-statuses-where-gisid-required" as="xs:string*">
+    <sequence select="$config_file/config/V11/GisIdRequiredStatuses/Status"/>
+  </function>
+  
+  <function name="keronic:get-translation-and-replace-placeholders">
+    <param name="message_id"/>
+    <param name="placeholders" as="xs:string*"/> <!-- sequence of strings -->
+    <variable name="translation" select="keronic:get-translation($message_id)"/>
+    <value-of select="keronic:replace-placeholders($translation, $placeholders)"/>
+  </function>
+  
   <function name="keronic:replace-placeholders">
-    <param name="message"/>
-    <param name="placeholders"/>
+    <param name="message" as="xs:string"/>
+    <param name="placeholders" as="xs:string*"/> <!-- sequence of strings -->
     <variable name="result">
       <call-template name="keronic:replace-recursively">
         <with-param name="message" select="$message"/>
         <with-param name="placeholders" select="$placeholders"/>
+        <with-param name="index" select="1"/> <!-- start at first placeholder -->
       </call-template>
     </variable>
     <value-of select="$result"/>
   </function>
   
-  <function name="keronic:get-statuses-where-gisid-required" as="xs:string*">
-    <sequence select="$config_file/config/V11/GisIdRequiredStatuses/Status"/>
-  </function>
-  
-  <!-- recursively replaces placeholder strings with values from a keyed map -->
+  <!-- Recursively replace {1}, {2}, ... placeholders -->
   <template name="keronic:replace-recursively">
-    <param name="message"/>
-    <param name="placeholders"/>
+    <param name="message" as="xs:string"/>
+    <param name="placeholders" as="xs:string*"/>
+    <param name="index" as="xs:integer"/>
     
     <choose>
-      <when test="exists(map:keys($placeholders))">
-        <variable name="key" select="map:keys($placeholders)[1]"/>
-        <variable name="value" select="xs:string(map:get($placeholders, $key))"/>
-        <variable name="placeholder" select="concat('\{', $key, '\}')"/>
-        
+      <when test="$index &lt;= count($placeholders)">
+        <variable name="placeholder" select="concat('\{', $index, '\}')"/>
+        <variable name="value" select="$placeholders[$index]"/>
         <variable name="new_message" select="replace($message, $placeholder, $value)"/>
-        <variable name="new_placeholders" select="map:remove($placeholders, $key)"/>
-        
-        <!-- Recursively call the template with updated message and map -->
         <call-template name="keronic:replace-recursively">
           <with-param name="message" select="$new_message"/>
-          <with-param name="placeholders" select="$new_placeholders"/>
+          <with-param name="placeholders" select="$placeholders"/>
+          <with-param name="index" select="$index + 1"/>
         </call-template>
       </when>
       <otherwise>
-        <!-- No placeholders left, return the final message -->
         <value-of select="$message"/>
       </otherwise>
     </choose>
   </template>
+
   
   
 </stylesheet>

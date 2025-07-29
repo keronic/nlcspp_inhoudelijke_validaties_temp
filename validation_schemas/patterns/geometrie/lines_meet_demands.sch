@@ -34,12 +34,12 @@
           
           <assert id="assert-line-meets-length-demand"
                test="not(some $d in $distances satisfies $d le 100 or $d ge 500)">
-               <value-of select="keronic:get-translations-and-replace-placeholders('line-segment-measurement-incorrect', $placeholders)"/>
+               <value-of select="keronic:get-translation-and-replace-placeholders('line-segment-measurement-incorrect', $placeholders)"/>
           </assert>
           
           <assert id="assert-line-meets-angle-demand"
                test="not(keronic:line-3d-contains-larger-angle-than($geometry, '45'))">
-               <value-of select="keronic:get-translations-and-replace-placeholders('line-angle-larger-than-45', $placeholders)"/>
+               <value-of select="keronic:get-translation-and-replace-placeholders('line-angle-larger-than-45', $placeholders)"/>
           </assert>
      </rule>
 </pattern>
