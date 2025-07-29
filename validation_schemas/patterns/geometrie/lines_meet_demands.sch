@@ -26,11 +26,7 @@
                "/>
           
           <let name="placeholders"
-               value="let $map := map{
-                              'handle' : $handle
-                         }
-                    return $map
-               "/>
+               value="[$handle]"/>
           
           <assert id="assert-line-meets-length-demand"
                test="not(some $d in $distances satisfies $d le 100 or $d ge 500)">

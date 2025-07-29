@@ -15,11 +15,7 @@
             value="nlcs:Handle"/>
 
         <let name="placeholders"
-            value="let $map := map{
-                        'handle': $handle,
-                        'statuses': string-join($statuses, ', ')
-                    }
-                return $map
+            value="[$handle, string-join($statuses, ', ')]
             "/>
         
         <assert id="gisId-assetId-not-unset-if-revision-existing"

@@ -7,23 +7,12 @@
         
         <assert id="functie_present"
             test="keronic:element-exists-and-not-empty(nlcs:Functie)">
-            <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', map{'handle':$handle, 'attribute':'Functie'})"/>
-        </assert>
-
-        <assert id="verbindingnummer_present"
-            test="keronic:element-exists-and-not-empty(nlcs:Verbindingnummer)">
-            <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', map{'handle':$handle, 'attribute':'Verbindingnummer'})"/>
-        </assert>
-    </rule>
-    <rule context="//nlcs:MSmof | //nlcs:HSmof">
-        <assert id="naam_monteur_present"
-            test="keronic:element-exists-and-not-empty(nlcs:NaamMonteur)">
-            Het attribuut NaamMonteur op object <value-of select="nlcs:Handle"/> is niet aanwezig!
+            <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['Functie', $handle])"/>
         </assert>
         
-        <assert id="cross_bonding_present"
-            test="keronic:element-exists-and-not-empty(nlcs:CrossBoundingAanwezig)">
-            Het attribuut CrossBondingAanwezig op object <value-of select="nlcs:Handle"/> is niet aanwezig!
+        <assert id="verbindingnummer_present"
+            test="keronic:element-exists-and-not-empty(nlcs:Verbindingnummer)">
+            <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['Verbindingnummer', $handle])"/>
         </assert>
     </rule>
 </pattern>

@@ -34,7 +34,7 @@
             test="count($nlcs_objecten_with_invalid_statuses) = 0">
             <value-of select="keronic:get-translation-and-replace-placeholders(
                     'invalid-status-for-tekening-type',
-                    [string($tekening_type), string-join($allowed_statuses, ', '), 'hello']
+                    [string($tekening_type), string-join($allowed_statuses, ', '), $invalid_objects]
                 )"/>
         </assert>
         

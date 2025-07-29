@@ -11,11 +11,7 @@
             value="keronic:element-exists-and-not-empty(nlcs:Nauwkeurigheid)"/>
 
         <let name="placeholders"
-            value="let $map := map{
-                    'handle': $handle
-            }
-            return $map
-            "/>
+            value="[$handle]"/>
 
         <assert id="elec-objects-does-not-have-inmeetwijze-or-nauwkeurigheid"
             test="$inmeetwijze_is_valid and $nauwkeurigheid_is_valid">
