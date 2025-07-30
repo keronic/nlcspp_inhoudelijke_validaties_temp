@@ -4,10 +4,13 @@
         <let name="mskabel_pos_lists"
             value="//nlcs:MSkabel/nlcs:Geometry/gml:LineString/gml:posList"/>
 
-        <let name="point_connected"
-            value="some $pos_list in $mskabel_pos_lists satisfies true()"/>
+        <let name="geometry"
+            value="tokenize(normalize-space(nlcs:Geometry/gml:Point/gml:pos))"/>
 
-        <assert test="false()">
+        <let name="point_connected"
+            value="some $pos_list in $mskabel_pos_lists satisfies keronic:point-3d-connected-to-line-3d($geometry, tokenize(normalize-space($pos_list)), 1)"/>
+
+        <assert test="$point_connected">
 
             Count:   <value-of select="count($mskabel_pos_lists)"/>
             Content: <value-of select="$mskabel_pos_lists[1]"/>
