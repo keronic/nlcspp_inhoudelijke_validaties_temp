@@ -85,10 +85,10 @@
   </message>
   <message id="point-not-connected-to-any-line">
     <message-text xml:lang="nl">
-      Het punt van object {1} is niet verbonden met een kabel
+      Object {1} is niet verbonden met een kabel
     </message-text>
     <message-text xml:lang="en">
-      The point of object {1} is not connected to any cable
+      Object {1} is not connected to any cable
     </message-text>
   </message>
 </messages>
