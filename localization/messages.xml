@@ -14,7 +14,7 @@
       Invalid statuses for tekening type {1}, must be one of: {2}
       
       Invalid objects: 
-      {invalid-objects}
+      {3}
     </message-text>
     <message-text xml:lang="nl">
       Ongeldige statusen voor tekening type {1}, deze moet een van {2} zijn

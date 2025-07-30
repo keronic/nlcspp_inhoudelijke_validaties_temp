@@ -9,7 +9,7 @@
             <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['NaamMonteur', $handle])"/>
         </assert>
         
-        <assert id="cross_bonding_present"
+        <assert id="cross_bounding_present"
             test="keronic:element-exists-and-not-empty(nlcs:CrossBoundingAanwezig)">
             <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['CrossboundingAanwezig', $handle])"/>
         </assert>
