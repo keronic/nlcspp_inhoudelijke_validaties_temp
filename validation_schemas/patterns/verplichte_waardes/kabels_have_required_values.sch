@@ -9,41 +9,41 @@
 
         <assert id="kabel-has-uitvoering"
             test="keronic:element-exists-and-not-empty($uitvoering)">
-            UITVOERING
+            <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['Uitvoering', $handle])"/>
         </assert>
 
         <assert id="kabel-uitvoering-keuze-ontbreekt-uit-lijst-has-omschrijving-uitvoering"
             test="not($uitvoering = 'KEUZE ONTBREEKT IN LIJST') or keronic:element-exists-and-not-empty(nlcs:OmschrijvingUitvoering)">
-            OMSCHRIJVING UITVOERING
+            <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['OmschrijvingUitvoering', $handle])"/>
         </assert>
         
         <assert id="kabel-has-kabelopbouw"
             test="keronic:element-exists-and-not-empty(nlcs:Kabelopbouw)">
-            KABELOPBOUW
+            <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['Kabelopbouw', $handle])"/>
         </assert>
         
         <assert id="kabel-has-fabrikant"
             test="keronic:element-exists-and-not-empty(nlcs:Fabrikant)">
-            FABRIKANT
+            <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['Fabrikant', $handle])"/>
         </assert>
         
         <assert id="kabel-has-verbindingsnummer"
             test="keronic:element-exists-and-not-empty(nlcs:Verbindingsnummer)">
-            VERBINDINGSNUMMER
+            <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['Verbindingsnummer', $handle])"/>
         </assert>
         
         <assert id="kabel-has-spanningsniveau"
             test="keronic:element-exists-and-not-empty(nlcs:Spanningsniveau)">
-            SPANNINGSNIVEAU
+            <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['Spanningsniveau', $handle])"/>
         </assert>
         
         <assert id="kabel-has-aardingsysteem"
             test="keronic:element-exists-and-not-empty(nlcs:Aardingsysteem)">
-            AARDINGSYSTEEM
+            <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['Aardingsysteem', $handle])"/>
         </assert>
         <assert id="kabel-has-fase-aanduiding"
             test="keronic:element-exists-and-not-empty(nlcs:FaseAanduiding)">
-            FASE AANDUIDING
+            <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['FaseAanduiding', $handle])"/>
         </assert>
     </rule>
 </pattern>
