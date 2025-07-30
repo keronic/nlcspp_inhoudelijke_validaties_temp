@@ -83,4 +83,12 @@
       Het attribuut {1} is niet aanwezig op object {2}.
     </message-text>
   </message>
+  <message id="point-not-connected-to-any-line">
+    <message-text xml:lang="nl">
+      Object {1} is niet verbonden met een kabel
+    </message-text>
+    <message-text xml:lang="en">
+      Object {1} is not connected to any cable
+    </message-text>
+  </message>
 </messages>
