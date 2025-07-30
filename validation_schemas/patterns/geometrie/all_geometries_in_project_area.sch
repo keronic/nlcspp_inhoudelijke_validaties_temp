@@ -5,9 +5,6 @@
         <let name="handle"
             value="nlcs:Handle"/>
         
-        <let name="placeholders"
-            value="[$handle]"/>
-        
         <let name="project_area_pos_list"
             value="tokenize(normalize-space(//nlcs:AprojectReferentie/nlcs:Geometry/gml:Polygon/gml:exterior/gml:LinearRing/gml:posList))"/>
         
@@ -48,9 +45,6 @@
         
         <let name="area_pos_list"
             value="tokenize(normalize-space((nlcs:Geometry/gml:Polygon/gml:exterior/gml:LinearRing/gml:posList)))"/>
-        
-        <let name="placeholders"
-            value="[$handle]"/>
         
         <assert id="assert-area-interacts-with-project-area" test="keronic:area-2d-interacts-with-area-2d($area_pos_list, $project_area_pos_list)">
             <value-of select="keronic:get-translation-and-replace-placeholders('area-outside-of-project-area', [$handle])"/>
