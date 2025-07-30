@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NLCSnetbeheerType xmlns:keuzelijst="NLCSnetbeheer"
+                   xmlns:gml="http://www.opengis.net/gml/3.2"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="NLCSnetbeheer">
+    <VersieNummer>11</VersieNummer>
+    <AprojectReferentie>
+        <Handle>Keronic</Handle>
+        <Projectnummer>1</Projectnummer>
+        <DeelrevisieVolgnummer>1</DeelrevisieVolgnummer>
+        <Geometry>
+            <gml:Polygon
+                srsDimension="2"
+                srsName="EPSG:28992">
+                <gml:exterior>
+                    <gml:LinearRing>
+                        <gml:posList>100.0 100.0 200.0 100.0 200.0 200.0 100.0 200.0 100.0 100.0</gml:posList>
+                    </gml:LinearRing>
+                </gml:exterior>
+            </gml:Polygon>
+        </Geometry>
+    </AprojectReferentie>
+    <!-- Green -->
+    <MSkabel>
+        <Handle>6301</Handle>
+        <Uitvoering>3x240Alrm as35</Uitvoering>
+        <Kabelopbouw>YMeKrvaslqwd</Kabelopbouw>
+        <Fabrikant>NKF</Fabrikant>
+        <DatumAanleg>2023-10-10</DatumAanleg>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>RESERVE</Bedrijfstoestand>
+        <Spanningsniveau>10 kV</Spanningsniveau>
+        <Inmeetwijze>GPS</Inmeetwijze>
+        <Nauwkeurigheid>tot 3cm</Nauwkeurigheid>
+        <Subnettype>DISTRIBUTIE</Subnettype>
+        <FaseAanduiding>3 Fasen</FaseAanduiding>
+        <Eigenaar>Netbeheerder</Eigenaar>
+        <Beheerder>Netbeheerder</Beheerder>
+        <GisId>83412</GisId>
+        <AssetId>{38518CAF-0F42-448D-8CD6-1E655152A0AD}</AssetId>
+        <Geometry>
+            <gml:LineString
+                srsDimension="3"
+                srsName="EPSG:28992">
+                <gml:posList>40.0 40.0 -1.0 240.0 120.0 -1.0 360.0 280.0 -2.0</gml:posList>
+            </gml:LineString>
+        </Geometry>
+    </MSkabel>
+    
+    <!-- Yellow -->
+    <MSkabel>
+        <Handle>6302</Handle>
+        <Uitvoering>3x240Alrm as35</Uitvoering>
+        <Kabelopbouw>YMeKrvaslqwd</Kabelopbouw>
+        <Fabrikant>NKF</Fabrikant>
+        <DatumAanleg>2023-10-10</DatumAanleg>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>RESERVE</Bedrijfstoestand>
+        <Spanningsniveau>10 kV</Spanningsniveau>
+        <Inmeetwijze>GPS</Inmeetwijze>
+        <Nauwkeurigheid>tot 3cm</Nauwkeurigheid>
+        <Subnettype>DISTRIBUTIE</Subnettype>
+        <FaseAanduiding>3 Fasen</FaseAanduiding>
+        <Eigenaar>Netbeheerder</Eigenaar>
+        <Beheerder>Netbeheerder</Beheerder>
+        <GisId>83412</GisId>
+        <AssetId>{38518CAF-0F42-448D-8CD6-1E655152A0AD}</AssetId>
+        <Geometry>
+            <gml:LineString
+                srsDimension="3"
+                srsName="EPSG:28992">
+                <gml:posList>360.0 280.0 -2.0 480.0 240.0 -2.0 560.0 160.0 -2.0</gml:posList>
+            </gml:LineString>
+        </Geometry>
+    </MSkabel>
+    
+    <!-- Red -->
+    <MSkabel>
+        <Handle>6303</Handle>
+        <Uitvoering>3x240Alrm as35</Uitvoering>
+        <Kabelopbouw>YMeKrvaslqwd</Kabelopbouw>
+        <Fabrikant>NKF</Fabrikant>
+        <DatumAanleg>2023-10-10</DatumAanleg>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>RESERVE</Bedrijfstoestand>
+        <Spanningsniveau>10 kV</Spanningsniveau>
+        <Inmeetwijze>GPS</Inmeetwijze>
+        <Nauwkeurigheid>tot 3cm</Nauwkeurigheid>
+        <Subnettype>DISTRIBUTIE</Subnettype>
+        <FaseAanduiding>3 Fasen</FaseAanduiding>
+        <Eigenaar>Netbeheerder</Eigenaar>
+        <Beheerder>Netbeheerder</Beheerder>
+        <GisId>83412</GisId>
+        <AssetId>{38518CAF-0F42-448D-8CD6-1E655152A0AD}</AssetId>
+        <Geometry>
+            <gml:LineString
+                srsDimension="3"
+                srsName="EPSG:28992">
+                <gml:posList>50.0 280.0 -2.0 210.0 280.0 -1.0 330.0 240.0 -2.0</gml:posList>
+            </gml:LineString>
+        </Geometry>
+    </MSkabel>
+    
+    <!-- Blue -->
+    <MSkabel>
+        <Handle>6304</Handle>
+        <Uitvoering>3x240Alrm as35</Uitvoering>
+        <Kabelopbouw>YMeKrvaslqwd</Kabelopbouw>
+        <Fabrikant>NKF</Fabrikant>
+        <DatumAanleg>2023-10-10</DatumAanleg>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>RESERVE</Bedrijfstoestand>
+        <Spanningsniveau>10 kV</Spanningsniveau>
+        <Inmeetwijze>GPS</Inmeetwijze>
+        <Nauwkeurigheid>tot 3cm</Nauwkeurigheid>
+        <Subnettype>DISTRIBUTIE</Subnettype>
+        <FaseAanduiding>3 Fasen</FaseAanduiding>
+        <Eigenaar>Netbeheerder</Eigenaar>
+        <Beheerder>Netbeheerder</Beheerder>
+        <GisId>83412</GisId>
+        <AssetId>{38518CAF-0F42-448D-8CD6-1E655152A0AD}</AssetId>
+        <Geometry>
+            <gml:LineString
+                srsDimension="3"
+                srsName="EPSG:28992">
+                <gml:posList>300.0 200.0 -1.5 420.0 160.0 -2.0 500.0 80.0 -3.0</gml:posList>
+            </gml:LineString>
+        </Geometry>
+    </MSkabel>
+    
+    <!-- Blue <-> Green -->
+    <MSmof>
+        <Handle>5911</Handle>
+        <DatumAanleg>1971-06-14</DatumAanleg>
+        <Status>BESTAAND</Status>
+        <Eigenaar>Netbeheerder</Eigenaar>
+        <Beheerder>Netbeheerder</Beheerder>
+        <GisId>53264168</GisId>
+        <AssetId>{D1185DFB-9CF4-42D6-BF83-9F8448E75D68}</AssetId>
+        <Geometry>
+            <gml:Point
+                srsDimension="3"
+                srsName="EPSG:7415">
+                <gml:pos>300.0 200.0 -1.5</gml:pos>
+            </gml:Point>
+        </Geometry>
+    </MSmof>
+
+    <!-- Yellow <-> Green -->
+    <MSmof>
+        <Handle>5912</Handle>
+        <DatumAanleg>1971-06-14</DatumAanleg>
+        <Status>BESTAAND</Status>
+        <Eigenaar>Netbeheerder</Eigenaar>
+        <Beheerder>Netbeheerder</Beheerder>
+        <GisId>53264168</GisId>
+        <AssetId>{D1185DFB-9CF4-42D6-BF83-9F8448E75D68}</AssetId>
+        <Geometry>
+            <gml:Point
+                srsDimension="3"
+                srsName="EPSG:7415">
+                <gml:pos>360.0 280.0 -2.0</gml:pos>
+            </gml:Point>
+        </Geometry>
+    </MSmof>
+    
+    <MSoverdrachtspunt>
+        <Handle>55E9</Handle>
+        <DatumAanleg>2024-01-10</DatumAanleg>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <Identificatie>MS-0123</Identificatie>
+        <Eigenaar>Netbeheerder</Eigenaar>
+        <Beheerder>Netbeheerder</Beheerder>
+        <GisId>6431</GisId>
+        <AssetId>{39437C1B-1F2C-4D8E-83CF-E55B6B9ADA57}</AssetId>
+        <Hoek>45</Hoek>
+        <Geometry>
+            <gml:Point
+                srsDimension="3"
+                srsName="EPSG:28992">
+                <gml:pos>40.0 40.0 -1.0</gml:pos>
+            </gml:Point>
+        </Geometry>
+    </MSoverdrachtspunt>
+
+</NLCSnetbeheerType>

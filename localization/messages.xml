@@ -1,0 +1,94 @@
+<messages xmlns:xml="http://www.w3.org/XML/1998/namespace">
+  <message id="aprojectreferentie-not-present-or-only-object">
+    <message-text xml:lang="en">
+      The NLCS++ file needs to contain an Aprojectreferentie and at least 1 other NLCS++ object. Current amount of objects: {1}
+    </message-text>
+    <message-text xml:lang="nl">
+      Het NLCS++ bestand moet een Aprojectreferentie en minstens 1 ander NLCS object bevatten. Huidig aantal objecten: {1}
+    </message-text>
+  </message>
+  <message id="invalid-status-for-tekening-type">
+    <message-text xml:lang="en">
+      Invalid statuses for tekening type {1}, must be one of: {2}
+      
+      Invalid objects: {3}
+    </message-text>
+    <message-text xml:lang="nl">
+      Ongeldige statussen voor tekening type {1}, moet een van de volgende zijn: {2} 
+      
+      Ongeldige objecten: {3}
+    </message-text>
+  </message>
+  <message id="point-outside-of-project-area">
+    <message-text xml:lang="en">
+      Point with handle {1} is outside of project area.
+    </message-text>
+    <message-text xml:lang="nl">
+      Punt met handle {1} ligt buiten het projectgebied.
+    </message-text>
+  </message>
+  <message id="line-outside-of-project-area">
+    <message-text xml:lang="en">
+      Line with handle {1} is outside the project area.
+    </message-text>
+    <message-text xml:lang="nl">
+      Lijn met handle {1} valt buiten het projectgebied.
+    </message-text>
+  </message>
+  <message id="area-outside-of-project-area">
+    <message-text xml:lang="en">
+      Area with handle {1} is outside the project area.
+    </message-text>
+    <message-text xml:lang="nl">
+      Vlak met handle {1} valt buiten het projectgebied.
+    </message-text>
+  </message>
+  <message id="line-segment-measurement-incorrect">
+    <message-text xml:lang="en">
+      A line segment on object {1} is shorter than 10cm or longer than 50cm.
+    </message-text>
+    <message-text xml:lang="nl">
+      Een lijnsegment bij object {1} is korter dan 10cm of langer dan 50 cm.
+    </message-text>
+  </message>
+  <message id="line-angle-larger-than-45">
+    <message-text xml:lang="en">
+      A line segment in object {1} contains a kink. Angles between line segments cannot exceed 45 degrees.
+    </message-text>
+    <message-text xml:lang="nl">
+      Een lijnsegment binnen object {1} bevat een knik. Hoeken tussen lijnsegmenten mogen niet groter dan 45 graden zijn.
+    </message-text>
+  </message>
+  <message id="gisid-assetid-not-unset-if-new-revision-existing">
+    <message-text xml:lang="en">
+      The attributes GisId and AssetId of object {1} cannot be empty if the status is one of: {2}
+    </message-text>
+    <message-text xml:lang="nl">
+      De attributen GisId en AssetId van object {1} mogen niet leeg zijn indien de status een van de volgende is: {2}
+    </message-text>
+  </message>
+  <message id="gisid-assetid-are-unset-if-new">
+    <message-text xml:lang="en">
+      The attributes GisId and AssetId of object {1} must be empty if the status IS NOT one of: {2}
+    </message-text>
+    <message-text xml:lang="nl">
+      De attributen GisId en AssetId van object {1} moeten leeg zijn indien de status een van de volgende is: {2}
+    </message-text>
+  </message>
+  <message id="attribute-not-present">
+    <message-text xml:lang="en">
+      The attribute {1} is not present on object {2}.
+    </message-text>
+    <message-text xml:lang="nl">
+      Het attribuut {1} is niet aanwezig op object {2}.
+    </message-text>
+  </message>
+  <message id="point-not-connected-to-any-line">
+    <message-text xml:lang="nl">
+      Object {1} is niet verbonden met een kabel
+    </message-text>
+    <message-text xml:lang="en">
+      Object {1} is not connected to any cable
+    </message-text>
+  </message>
+</messages>

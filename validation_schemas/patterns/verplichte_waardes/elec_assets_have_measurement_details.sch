@@ -3,16 +3,15 @@
     <rule context="//nlcs:MSstation | //nlcs:MSkabel | //nlcs:MSmof | //nlcs:MSoverdrachtspunt | //nlcs:Amantelbuis">
         <let name="handle" 
             value="nlcs:Handle"/>
-    
-        <let name="inmeetwijze_is_valid"
-            value="keronic:element-exists-and-not-empty(nlcs:Inmeetwijze)"/>
 
-        <let name="nauwkeurigheid_is_valid"
-            value="keronic:element-exists-and-not-empty(nlcs:Nauwkeurigheid)"/>
+        <assert id="elec-object-has-inmeetwijze"
+            test="keronic:element-exists-and-not-empty(nlcs:Inmeetwijze)">
+            <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['Inmeetwijze', $handle])"/>
+        </assert>
         
-        <assert id="elec-objects-does-not-have-inmeetwijze-or-nauwkeurigheid"
-            test="$inmeetwijze_is_valid and $nauwkeurigheid_is_valid">
-            Object <value-of select="$handle"/> moet een inmeetwijze en nauwkeurigheid hebben.
+        <assert id="elec-object-has-nauwkeurigheid"
+            test="keronic:element-exists-and-not-empty(nlcs:Nauwkeurigheid)">
+            <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['Nauwkeurigheid', $handle])"/>
         </assert>
     </rule>
 </pattern>
