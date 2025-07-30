@@ -27,9 +27,7 @@
           
           <assert id="assert-line-meets-length-demand"
                test="not(some $d in $distances satisfies $d le 10 or $d ge 50)">
-               Een lijnsegment mag niet korter dan 10 cm of langer dan 50 cm zijn! Het volgende object voeldoet niet aan deze eis:
-               
-               <value-of select="$handle"/>
+               <value-of select="keronic:get-translation-and-replace-placeholders('line-segment-measurement-incorrect', [$handle])"/>
           </assert>
      </rule>
 </pattern>

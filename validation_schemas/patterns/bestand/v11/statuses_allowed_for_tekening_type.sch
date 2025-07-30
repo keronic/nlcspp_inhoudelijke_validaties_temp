@@ -3,7 +3,7 @@
     <rule context="//nlcs:NLCSnetbeheerType">
         
         <let name="tekening_type"
-            value="nlcs:AprojectReferentie/nlcs:TekeningType"/>
+            value="string(nlcs:AprojectReferentie/nlcs:TekeningType)"/>
         
         <let name="allowed_statuses"
             value="
@@ -27,13 +27,17 @@
         <let name="nlcs_objecten_with_invalid_statuses"
             value="$nlcs_objecten[nlcs:Status[not(. = $allowed_statuses)]]"/>
         
+        <let name="invalid_objects"
+            value="string-join(for $nlcs_object in $nlcs_objecten_with_invalid_statuses return concat('Handle: ', $nlcs_object/nlcs:Handle, ', Status: ', $nlcs_object/nlcs:Status), ' | ')"/>
+        
         <assert id="status-in-line-with-type" 
             test="count($nlcs_objecten_with_invalid_statuses) = 0">
-            Invalid statuses for tekening type <value-of select="$tekening_type"/>, must be one of: <value-of select="$allowed_statuses"/>
-            
-            Invalid objects: 
-            <value-of select="string-join(for $nlcs_object in $nlcs_objecten_with_invalid_statuses return concat('Handle: ', $nlcs_object/nlcs:Handle, ', Status: ', $nlcs_object/nlcs:Status), ' | ')"/>
+            <value-of select="keronic:get-translation-and-replace-placeholders(
+                    'invalid-status-for-tekening-type',
+                    [string($tekening_type), string-join($allowed_statuses, ', '), $invalid_objects]
+                )"/>
         </assert>
+        
     </rule>
 </pattern>
 
