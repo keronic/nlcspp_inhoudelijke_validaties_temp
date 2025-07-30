@@ -8,7 +8,7 @@
             value="nlcs:Subnettype"/>
         
         <assert test="keronic:element-exists-and-not-empty($subnettype)">
-            <value-of select="keronic:get-translation-and-replace-placeholders('cable-has-no-subtype', [$handle])"/>
+            <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['Subnettype', $handle])"/>
         </assert>
     </rule>
 </pattern>
