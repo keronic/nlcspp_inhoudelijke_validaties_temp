@@ -4,14 +4,21 @@
         <let name="mskabel_pos_lists"
             value="//nlcs:MSkabel/nlcs:Geometry/gml:LineString/gml:posList"/>
 
-        <let name="geometry"
+        <let name="point"
             value="tokenize(normalize-space(nlcs:Geometry/gml:Point/gml:pos))"/>
 
         <let name="point_connected"
-            value="some $pos_list in $mskabel_pos_lists satisfies keronic:point-3d-connected-to-line-3d($geometry, tokenize(normalize-space($pos_list)), 0)"/>
+            value="some $pos_list in $mskabel_pos_lists satisfies keronic:point-3d-connected-to-line-3d($point, tokenize(normalize-space($pos_list)), 0)"/>
 
-        <assert test="$point_connected">
-            <value-of select="keronic:get-translation-and-replace-placeholders('point-not-connected-to-any-line', [nlcs:Handle])"/>
+        <let name="rule_number" value="20"/>
+        <let name="object_type" value="name(.)"/>
+        <let name="object_id" value="nlcs:Handle"/>
+        <let name="geometry_3d" value="$point"/>
+
+        <assert id="point-connected-to-kabel"
+            test="$point_connected"
+            properties="rule-number object-type object-id geometry-3d">
+            <value-of select="keronic:get-translation('point-not-connected-to-any-line')"/>
         </assert>
     </rule>
 </pattern>

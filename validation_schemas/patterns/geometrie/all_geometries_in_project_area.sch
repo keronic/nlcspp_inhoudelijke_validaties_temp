@@ -2,36 +2,41 @@
 <pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="v11-all-geometries-in-project-area">
     <!-- Point geometries -->
     <rule context="//nlcs:MSmof | //nlcs:MSoverdrachtspunt">
-        <let name="handle"
-            value="nlcs:Handle"/>
-        
         <let name="project_area_pos_list"
             value="tokenize(normalize-space(//nlcs:AprojectReferentie/nlcs:Geometry/gml:Polygon/gml:exterior/gml:LinearRing/gml:posList))"/>
         
         <let name="point_pos"
             value="tokenize(normalize-space((nlcs:Geometry/gml:Point/gml:pos)))"/>
+
+        <let name="rule_number" value="3"/>
+        <let name="object_type" value="name(.)"/>
+        <let name="object_id" value="nlcs:Handle"/>
+        <let name="geometry_3d" value="$point_pos"/>
         
-        <assert id="assert-point-inside-project-area" test="keronic:point-3d-interacts-with-area-2d($point_pos, $project_area_pos_list)">
-           <value-of select="keronic:get-translation-and-replace-placeholders('point-outside-of-project-area', [$handle])"/>
+        <assert id="assert-point-inside-project-area" 
+            test="keronic:point-3d-interacts-with-area-2d($point_pos, $project_area_pos_list)"
+            properties="rule-number object-type object-id geometry-3d">
+            <value-of select="keronic:get-translation('object-outside-project-area')"/>
         </assert>
     </rule>
     
     <!-- Line geometries -->
     <rule context="//nlcs:MSkabel | //nlcs:Amantelbuis | //nlcs:Akunstwerk | //nlcs:EAarddraad | //nlcs:Aaanlegtechniek">
-        <let name="handle"
-            value="nlcs:Handle"/>
-        
-        <let name="line-message"
-            value="keronic:get-translation('line-outside-of-project-area')"/>
-        
         <let name="project_area_pos_list"
             value="tokenize(normalize-space(//nlcs:AprojectReferentie/nlcs:Geometry/gml:Polygon/gml:exterior/gml:LinearRing/gml:posList))"/>
         
         <let name="line_pos_list"
             value="tokenize(normalize-space((nlcs:Geometry/gml:LineString/gml:posList)))"/>
+
+        <let name="rule_number" value="3"/>
+        <let name="object_type" value="name(.)"/>
+        <let name="object_id" value="nlcs:Handle"/>
+        <let name="geometry_3d" value="$line_pos_list"/>
         
-        <assert id="assert-line-inside-project-area" test="keronic:line-3d-interacts-with-area-2d($line_pos_list, $project_area_pos_list)">
-            <value-of select="keronic:get-translation-and-replace-placeholders('line-outside-of-project-area', [$handle])"/>
+        <assert id="assert-line-inside-project-area" 
+            test="keronic:line-3d-interacts-with-area-2d($line_pos_list, $project_area_pos_list)"
+            properties="rule-number object-type object-id geometry-3d">
+            <value-of select="keronic:get-translation('object-outside-project-area')"/>
         </assert>
     </rule>
     
@@ -40,14 +45,18 @@
         <let name="project_area_pos_list"
             value="tokenize(normalize-space(//nlcs:AprojectReferentie/nlcs:Geometry/gml:Polygon/gml:exterior/gml:LinearRing/gml:posList))"/>
         
-        <let name="handle"
-            value="nlcs:Handle"/>
-        
         <let name="area_pos_list"
             value="tokenize(normalize-space((nlcs:Geometry/gml:Polygon/gml:exterior/gml:LinearRing/gml:posList)))"/>
-        
-        <assert id="assert-area-interacts-with-project-area" test="keronic:area-2d-interacts-with-area-2d($area_pos_list, $project_area_pos_list)">
-            <value-of select="keronic:get-translation-and-replace-placeholders('area-outside-of-project-area', [$handle])"/>
+
+        <let name="rule_number" value="3"/>
+        <let name="object_type" value="name(.)"/>
+        <let name="object_id" value="nlcs:Handle"/>
+        <let name="geometry_2d" value="$area_pos_list"/>
+
+        <assert id="assert-area-interacts-with-project-area" 
+            test="keronic:area-2d-interacts-with-area-2d($area_pos_list, $project_area_pos_list)"
+            properties="rule-number object-type object-id geometry-2d">
+            <value-of select="keronic:get-translation('object-outside-project-area')"/>
         </assert>
     </rule>
 </pattern>

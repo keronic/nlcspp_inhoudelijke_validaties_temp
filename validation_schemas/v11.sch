@@ -10,7 +10,18 @@
     <!-- schematron namespace declarations -->
     <ns prefix="keronic" uri = "http://example.com/my-functions"/>
     <ns prefix="gml" uri="http://www.opengis.net/gml/3.2"/>
+    <ns prefix="xs" uri="http://www.w3.org/2001/XMLSchema"/>
     <ns prefix="nlcs" uri="NLCSnetbeheer"/>
+
+    <!-- properties for more detailed assert reports -->
+    <properties>
+        <property id="scope"><value-of select="$scope"/></property>
+        <property id="rule-number"><value-of select="$rule_number"/></property>
+        <property id="object-type"><value-of select="$object_type"/></property>
+        <property id="object-id"><value-of select="$object_id"/></property>
+        <property id="geometry-2d"><value-of select="$geometry_2d"/></property>
+        <property id="geometry-3d"><value-of select="$geometry_3d"/></property>
+    </properties>
 
     <!-- declaring the rules -->
     <phase id="R.1">
@@ -57,7 +68,7 @@
     </phase>
     
     <phase id="R.12">
-        <active pattern="v11-ovloverdrachtspunt-have-required-values"/>
+        <active pattern="v11-ovloverdrachtspunt-has-required-values"/>
     </phase>
     
     <phase id="R.13">
@@ -95,17 +106,17 @@
     <include href="patterns/geometrie/all_geometries_in_project_area.sch"/>
     <include href="patterns/geometrie/areas_meet_demands.sch"/>
     <include href="patterns/geometrie/lines_meet_demands.sch"/>
-    <include href="patterns/verplichte_waardes/gisid_assetid_check.sch"/>
-    <include href="patterns/verplichte_waardes/elec_assets_have_measurement_details.sch"/>
-    <include href="patterns/verplichte_waardes/cables_have_subnettype.sch"/>
+    <include href="patterns/verplichte_waarde/gisid_assetid_check.sch"/>
+    <include href="patterns/verplichte_waarde/elec_assets_have_measurement_details.sch"/>
+    <include href="patterns/verplichte_waarde/cables_have_subnettype.sch"/>
+    <include href="patterns/verplichte_waarde/kabels_have_required_values.sch"/>
+    <include href="patterns/verplichte_waarde/lskabels_have_required_values.sch"/>
+    <include href="patterns/verplichte_waarde/moffen_have_required_values.sch"/>
+    <include href="patterns/verplichte_waarde/hs_msmoffen_have_required_values.sch"/>
+    <include href="patterns/verplichte_waarde/lsoverdrachtspunt_has_required_values.sch"/>
+    <include href="patterns/verplichte_waarde/ovloverdrachtspunt_have_required_values.sch"/>
+    <include href="patterns/verplichte_waarde/msoverdrachtspunt_has_identification.sch"/>
+    <include href="patterns/verplichte_waarde/stations_kasten_have_required_values.sch"/>
+    <include href="patterns/verplichte_waarde/mantelbuis_has_required_values.sch"/>
     <include href="patterns/topologie/points_connected_to_lines.sch"/>
-    <include href="patterns/verplichte_waardes/kabels_have_required_values.sch"/>
-    <include href="patterns/verplichte_waardes/lskabels_have_required_values.sch"/>
-    <include href="patterns/verplichte_waardes/moffen_have_required_values.sch"/>
-    <include href="patterns/geometrie/hs-msmoffen-have-required-values.sch"/>
-    <include href="patterns/verplichte_waardes/lsoverdrachtpunt-has-required-values.sch"/>
-    <include href="patterns/verplichte_waardes/ovloverdrachtspunt_have_required_values.sch"/>
-    <include href="patterns/verplichte_waardes/msoverdrachtspunt_has_identification.sch"/>
-    <include href="patterns/verplichte_waardes/stations_kasten_have_required_values.sch"/>
-    <include href="patterns/verplichte_waardes/mantelbuis_has_required_values.sch"/>
 </schema>

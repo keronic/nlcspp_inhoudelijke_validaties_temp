@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="v11-lines-meet-demands">
-     <rule context="//nlcs:MSkabel | //nlcs:EAarddraad | //nlcs:AaanlegTechniek | //nlcs:Akunstwerk">
-          <let name="handle"
-               value="nlcs:Handle"/>
-          
+     <rule context="//nlcs:MSkabel | //nlcs:EAarddraad | //nlcs:AaanlegTechniek | //nlcs:Akunstwerk">          
           <let name="geometry"
                value="tokenize(normalize-space(nlcs:Geometry/gml:LineString/gml:posList))"/>
           
@@ -24,15 +21,24 @@
                               $coords[(3 * ($i + 1)) - 2], $coords[(3 * ($i + 1)) - 1], $coords[(3 * ($i + 1))]
                          )
                "/>
+
+          <let name="rule_number" 
+               value="4"/>
+          <let name="object_type" 
+               value="name(.)"/>
+          <let name="object_id" 
+               value="nlcs:Handle"/>
           
           <assert id="assert-line-meets-length-demand"
-               test="not(some $d in $distances satisfies $d le 100 or $d ge 500)">
-               <value-of select="keronic:get-translation-and-replace-placeholders('line-segment-measurement-incorrect', [$handle])"/>
+               test="not(some $d in $distances satisfies $d le 100 or $d ge 500)"
+               properties="rule-number object-type object-id">
+               <value-of select="keronic:get-translation('line-segment-measurement-incorrect')"/>
           </assert>
           
           <assert id="assert-line-meets-angle-demand"
-               test="not(keronic:line-3d-contains-larger-angle-than($geometry, '45'))">
-               <value-of select="keronic:get-translation-and-replace-placeholders('line-angle-larger-than-45', [$handle])"/>
+               test="not(keronic:line-3d-contains-larger-angle-than($geometry, '45'))"
+               properties="rule-number object-type object-id">
+               <value-of select="keronic:get-translation('line-angle-larger-than-45')"/>
           </assert>
      </rule>
 </pattern>
