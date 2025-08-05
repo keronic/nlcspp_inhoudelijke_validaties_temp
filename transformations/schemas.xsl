@@ -21,6 +21,7 @@
       <xsl:result-document href="{$file}">
         <xsl:apply-templates select="$schema/*">
           <xsl:with-param name="rules" select="$rules"/>
+          <xsl:with-param name="scope-name" select="@naam"/>
         </xsl:apply-templates>
       </xsl:result-document>
     </xsl:for-each>
@@ -29,9 +30,11 @@
   <!-- Identity template: copies all nodes -->
   <xsl:template match="@* | node()">
     <xsl:param name="rules"/>
+    <xsl:param name="scope-name"/>
     <xsl:copy>
       <xsl:apply-templates select="@* | node()">
-        <xsl:with-param name="rules" select="$rules"/>        
+        <xsl:with-param name="rules" select="$rules"/>       
+        <xsl:with-param name="scope-name" select="$scope-name"/>
       </xsl:apply-templates>
     </xsl:copy>
   </xsl:template>
@@ -44,6 +47,15 @@
         <xsl:apply-templates select="@* | node()"/>
       </xsl:copy>
     </xsl:if>
-  </xsl:template>  
+  </xsl:template>
+  
+  <!-- Replace the scope property value -->
+  <xsl:template match="sch:property[@id='scope']">
+    <xsl:param name="scope-name"/>
+    <xsl:copy>
+      <xsl:apply-templates select="@*"/>
+      <xsl:value-of select="$scope-name"/>
+    </xsl:copy>
+  </xsl:template>
  
 </xsl:stylesheet>

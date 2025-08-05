@@ -17,7 +17,7 @@
 
         <assert id="point-connected-to-kabel"
             test="$point_connected"
-            properties="rule-number object-type object-id geometry-3d">
+            properties="scope rule-number object-type object-id geometry-3d">
             <value-of select="keronic:get-translation('point-not-connected-to-any-line')"/>
         </assert>
     </rule>

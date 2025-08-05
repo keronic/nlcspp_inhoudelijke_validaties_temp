@@ -8,13 +8,13 @@
         
         <assert id="naam_monteur_present"
             test="keronic:element-exists-and-not-empty(nlcs:NaamMonteur)"
-            properties="rule-number object-type object-id">
+            properties="scope rule-number object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['NaamMonteur'])"/>
         </assert>
         
         <assert id="cross_bounding_present"
             test="keronic:element-exists-and-not-empty(nlcs:CrossBoundingAanwezig)"
-            properties="rule-number object-type object-id">
+            properties="scope rule-number object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['CrossboundingAanwezig'])"/>
         </assert>
     </rule>

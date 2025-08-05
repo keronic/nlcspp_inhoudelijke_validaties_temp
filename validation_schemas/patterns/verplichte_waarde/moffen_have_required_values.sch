@@ -8,13 +8,13 @@
         
         <assert id="functie_present"
             test="keronic:element-exists-and-not-empty(nlcs:Functie)"
-            properties="rule-number object-type object-id">
+            properties="scope rule-number object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['Functie'])"/>
         </assert>
         
         <assert id="verbindingnummer_present"
             test="keronic:element-exists-and-not-empty(nlcs:Verbindingsnummer)"
-            properties="rule-number object-type object-id">
+            properties="scope rule-number object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['Verbindingsnummer'])"/>
         </assert>
     </rule>

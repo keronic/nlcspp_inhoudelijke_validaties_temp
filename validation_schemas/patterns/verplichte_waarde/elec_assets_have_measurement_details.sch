@@ -7,13 +7,13 @@
 
         <assert id="elec-object-has-inmeetwijze"
             test="keronic:element-exists-and-not-empty(nlcs:Inmeetwijze)"
-            properties="rule-number object-type object-id">
+            properties="scope rule-number object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['Inmeetwijze'])"/>
         </assert>
         
         <assert id="elec-object-has-nauwkeurigheid"
             test="keronic:element-exists-and-not-empty(nlcs:Nauwkeurigheid)"
-            properties="rule-number object-type object-id">
+            properties="scope rule-number object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['Nauwkeurigheid'])"/>
         </assert>
     </rule>

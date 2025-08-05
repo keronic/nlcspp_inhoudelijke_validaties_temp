@@ -15,7 +15,7 @@
         
         <assert id="assert-point-inside-project-area" 
             test="keronic:point-3d-interacts-with-area-2d($point_pos, $project_area_pos_list)"
-            properties="rule-number object-type object-id geometry-3d">
+            properties="scope rule-number object-type object-id geometry-3d">
             <value-of select="keronic:get-translation('object-outside-project-area')"/>
         </assert>
     </rule>
@@ -35,7 +35,7 @@
         
         <assert id="assert-line-inside-project-area" 
             test="keronic:line-3d-interacts-with-area-2d($line_pos_list, $project_area_pos_list)"
-            properties="rule-number object-type object-id geometry-3d">
+            properties="scope rule-number object-type object-id geometry-3d">
             <value-of select="keronic:get-translation('object-outside-project-area')"/>
         </assert>
     </rule>
@@ -55,7 +55,7 @@
 
         <assert id="assert-area-interacts-with-project-area" 
             test="keronic:area-2d-interacts-with-area-2d($area_pos_list, $project_area_pos_list)"
-            properties="rule-number object-type object-id geometry-2d">
+            properties="scope rule-number object-type object-id geometry-2d">
             <value-of select="keronic:get-translation('object-outside-project-area')"/>
         </assert>
     </rule>

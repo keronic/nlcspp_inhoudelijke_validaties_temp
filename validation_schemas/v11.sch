@@ -15,7 +15,7 @@
 
     <!-- properties for more detailed assert reports -->
     <properties>
-        <property id="scope"><value-of select="$scope"/></property>
+        <property id="scope">NO SCOPE SELECTED</property>
         <property id="rule-number"><value-of select="$rule_number"/></property>
         <property id="object-type"><value-of select="$object_type"/></property>
         <property id="object-id"><value-of select="$object_id"/></property>

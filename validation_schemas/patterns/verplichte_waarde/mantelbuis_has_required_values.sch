@@ -7,19 +7,19 @@
         
         <assert id="mantelbuis-has-thema"
             test="keronic:element-exists-and-not-empty(nlcs:Thema)"
-            properties="rule-number object-type object-id">
+            properties="scope rule-number object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['Thema'])"/>
         </assert>
 
         <assert id="mantelbuis-has-materiaal"
             test="keronic:element-exists-and-not-empty(nlcs:Materiaal)"
-            properties="rule-number object-type object-id">
+            properties="scope rule-number object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['Materiaal'])"/>
         </assert>
         
         <assert id="mantelbuis-has-diameter"
             test="keronic:element-exists-and-not-empty(nlcs:Diameter)"
-            properties="rule-number object-type object-id">
+            properties="scope rule-number object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['Diameter'])"/>
         </assert>
     </rule>

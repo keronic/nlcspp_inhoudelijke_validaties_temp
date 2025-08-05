@@ -38,7 +38,7 @@
         
         <assert id="nlcs-object-has-allowed-status" 
             test="not($is_nlcs_object) or $status_is_allowed"
-            properties="rule-number object-type object-id">
+            properties="scope rule-number object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders('invalid-status-for-tekening-type', [$status, $tekening_type, string-join($allowed_statuses, ', ')])"/>
         </assert>
     </rule>

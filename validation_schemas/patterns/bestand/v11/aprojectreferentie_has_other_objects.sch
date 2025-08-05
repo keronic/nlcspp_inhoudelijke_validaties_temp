@@ -17,7 +17,7 @@
 
         <assert id="file-has-nlcs-objects" 
             test="count($nlcs_objects) > 0"
-            properties="rule-number">
+            properties="scope rule-number">
             <value-of select="keronic:get-translation('no-nlcs-objects-present')"/>
         </assert>
     </rule>

@@ -37,7 +37,7 @@
           
           <assert id="assert-line-meets-angle-demand"
                test="not(keronic:line-3d-contains-larger-angle-than($geometry, '45'))"
-               properties="rule-number object-type object-id">
+               properties="scope rule-number object-type object-id">
                <value-of select="keronic:get-translation('line-angle-larger-than-45')"/>
           </assert>
      </rule>
