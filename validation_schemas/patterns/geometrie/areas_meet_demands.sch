@@ -29,7 +29,7 @@
           <let name="object_id" 
                value="nlcs:Handle"/>     
           
-          <assert id="assert-line-meets-length-demand"
+          <assert id="assert-area-meets-length-demand"
                test="not(some $d in $distances satisfies $d le 10 or $d ge 50)"
                properties="scope rule-number object-type object-id">
                <value-of select="keronic:get-translation('line-segment-measurement-incorrect')"/>

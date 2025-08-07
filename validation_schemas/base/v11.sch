@@ -88,35 +88,35 @@
     </phase>
     
     <!-- function delcarations -->
-    <xsl:include href="xsl_functions/global_functions/config_functions.xsl"/>
-    <xsl:include href="xsl_functions/helper_functions/helper_functions.xsl"/>
-    <xsl:include href="xsl_functions/geometry_functions/2d_geometry_functions.xsl"/>
-    <xsl:include href="xsl_functions/geometry_functions/3d_geometry_functions.xsl"/>
-    <xsl:include href="xsl_functions/geometry_functions/2d_geometry_interface_functions.xsl"/>
-    <xsl:include href="xsl_functions/geometry_functions/3d_geometry_interface_functions.xsl"/>
-    <xsl:include href="xsl_functions/geometry_functions/3d_2d_geometry_interface_functions.xsl"/>
-    <xsl:include href="xsl_functions/geometry_functions/geometry_interface_functions.xsl"/>
-    <xsl:include href="xsl_functions/geometry_functions/line_interface_functions.xsl"/>
-    <xsl:include href="xsl_functions/geometry_functions/line_functions.xsl"/>
-    <xsl:include href="xsl_functions/geometry_functions/depth_functions.xsl"/>
-    <xsl:include href="xsl_functions/geometry_functions/depth_interface_functions.xsl"/>
+    <xsl:include href="../xsl_functions/global_functions/config_functions.xsl"/>
+    <xsl:include href="../xsl_functions/helper_functions/helper_functions.xsl"/>
+    <xsl:include href="../xsl_functions/geometry_functions/2d_geometry_functions.xsl"/>
+    <xsl:include href="../xsl_functions/geometry_functions/3d_geometry_functions.xsl"/>
+    <xsl:include href="../xsl_functions/geometry_functions/2d_geometry_interface_functions.xsl"/>
+    <xsl:include href="../xsl_functions/geometry_functions/3d_geometry_interface_functions.xsl"/>
+    <xsl:include href="../xsl_functions/geometry_functions/3d_2d_geometry_interface_functions.xsl"/>
+    <xsl:include href="../xsl_functions/geometry_functions/geometry_interface_functions.xsl"/>
+    <xsl:include href="../xsl_functions/geometry_functions/line_interface_functions.xsl"/>
+    <xsl:include href="../xsl_functions/geometry_functions/line_functions.xsl"/>
+    <xsl:include href="../xsl_functions/geometry_functions/depth_functions.xsl"/>
+    <xsl:include href="../xsl_functions/geometry_functions/depth_interface_functions.xsl"/>
 
-    <include href="patterns/bestand/v11/aprojectreferentie_has_other_objects.sch"/>
-    <include href="patterns/bestand/v11/statuses_allowed_for_tekening_type.sch"/>
-    <include href="patterns/geometrie/all_geometries_in_project_area.sch"/>
-    <include href="patterns/geometrie/areas_meet_demands.sch"/>
-    <include href="patterns/geometrie/lines_meet_demands.sch"/>
-    <include href="patterns/verplichte_waarde/gisid_assetid_check.sch"/>
-    <include href="patterns/verplichte_waarde/elec_assets_have_measurement_details.sch"/>
-    <include href="patterns/verplichte_waarde/cables_have_subnettype.sch"/>
-    <include href="patterns/verplichte_waarde/kabels_have_required_values.sch"/>
-    <include href="patterns/verplichte_waarde/lskabels_have_required_values.sch"/>
-    <include href="patterns/verplichte_waarde/moffen_have_required_values.sch"/>
-    <include href="patterns/verplichte_waarde/hs_msmoffen_have_required_values.sch"/>
-    <include href="patterns/verplichte_waarde/lsoverdrachtspunt_has_required_values.sch"/>
-    <include href="patterns/verplichte_waarde/ovloverdrachtspunt_have_required_values.sch"/>
-    <include href="patterns/verplichte_waarde/msoverdrachtspunt_has_identification.sch"/>
-    <include href="patterns/verplichte_waarde/stations_kasten_have_required_values.sch"/>
-    <include href="patterns/verplichte_waarde/mantelbuis_has_required_values.sch"/>
-    <include href="patterns/topologie/points_connected_to_lines.sch"/>
+    <include href="../patterns/bestand/v11/aprojectreferentie_has_other_objects.sch"/>
+    <include href="../patterns/bestand/v11/statuses_allowed_for_tekening_type.sch"/>
+    <include href="../patterns/geometrie/all_geometries_in_project_area.sch"/>
+    <include href="../patterns/geometrie/areas_meet_demands.sch"/>
+    <include href="../patterns/geometrie/lines_meet_demands.sch"/>
+    <include href="../patterns/verplichte_waarde/gisid_assetid_check.sch"/>
+    <include href="../patterns/verplichte_waarde/elec_assets_have_measurement_details.sch"/>
+    <include href="../patterns/verplichte_waarde/cables_have_subnettype.sch"/>
+    <include href="../patterns/verplichte_waarde/kabels_have_required_values.sch"/>
+    <include href="../patterns/verplichte_waarde/lskabels_have_required_values.sch"/>
+    <include href="../patterns/verplichte_waarde/moffen_have_required_values.sch"/>
+    <include href="../patterns/verplichte_waarde/hs_msmoffen_have_required_values.sch"/>
+    <include href="../patterns/verplichte_waarde/lsoverdrachtspunt_has_required_values.sch"/>
+    <include href="../patterns/verplichte_waarde/ovloverdrachtspunt_have_required_values.sch"/>
+    <include href="../patterns/verplichte_waarde/msoverdrachtspunt_has_identification.sch"/>
+    <include href="../patterns/verplichte_waarde/stations_kasten_have_required_values.sch"/>
+    <include href="../patterns/verplichte_waarde/mantelbuis_has_required_values.sch"/>
+    <include href="../patterns/topologie/points_connected_to_lines.sch"/>
 </schema>
