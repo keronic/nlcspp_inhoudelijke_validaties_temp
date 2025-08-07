@@ -2,8 +2,6 @@
 
 version="v11"
 
-echo "Validating templates..."
-
 for phase_dir in templates/$version/*; do
     phase=$(basename "$phase_dir")
     for test_dir in $phase_dir/*; do

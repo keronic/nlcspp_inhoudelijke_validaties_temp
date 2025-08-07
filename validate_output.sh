@@ -2,8 +2,6 @@
 
 version="v11"
 
-echo "Validating output..."
-
 for phase_dir in validation_output/$version/*; do
     phase=$(basename "$phase_dir")
     for test_dir in $phase_dir/*; do
@@ -29,8 +27,8 @@ if [[ ${#failed_tests[@]} -gt 0 ]]; then
         # Format output text
         cleaned_path="${f#validation_test_results/}"
         cleaned_path="${cleaned_path%.txt}"                         
-        cleaned_path="${cleaned_path//\//\t}"
-        echo -e "$cleaned_path"
+        cleaned_path="${cleaned_path//\//   }"
+        echo "  $cleaned_path"
     done
     exit 1
 else

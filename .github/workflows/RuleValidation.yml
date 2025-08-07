@@ -6,9 +6,11 @@ on:
 
 env:
   SCHXSLT2_VERSION: 1.4.4
+  SAXON_HE_MAJOR: 12
+  SAXON_HE_MINOR: 8
 
 jobs:
-  validate-validation-output:
+  validate-rules:
     runs-on: ubuntu-latest
 
     steps:
@@ -21,17 +23,43 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
 
-      # TODO: download Saxon
-      # TODO: cache downloads
+      # - name: Cache dependencies
+      #   id: cache-deps
+      #   uses: actions/cache@v4
+      #   with:
+      #     path: |
+      #       saxon-he.jar
+      #       lib/
+      #       transpile.xsl
+      #     key: deps-v1
+
+      # Saxon-HE setup
+
+      - name: Download Saxon-HE zip
+        run: |
+          curl -L -o SaxonHE${SAXON_HE_MAJOR}-${SAXON_HE_MINOR}J.zip \
+          https://github.com/Saxonica/Saxon-HE/releases/download/SaxonHE-${SAXON_HE_MAJOR}-${SAXON_HE_MINOR}/SaxonHE${SAXON_HE_MAJOR}-${SAXON_HE_MINOR}J.zip
+
+      - name: Unzip Saxon-HE
+        run: unzip -q SaxonHE${SAXON_HE_MAJOR}-${SAXON_HE_MINOR}J.zip
+
+      - name: Remove version from JAR filename
+        run: mv saxon-he-${SAXON_HE_MAJOR}.${SAXON_HE_MINOR}.jar saxon-he.jar
+
+      # SchXslt2 setup
 
       - name: Download SchXslt2 zip
-        run: curl -L -o schxslt2-$SCHXSLT2_VERSION.zip https://codeberg.org/SchXslt/schxslt2/releases/download/v$SCHXSLT2_VERSION/schxslt2-$SCHXSLT2_VERSION.zip
+        run: |
+          curl -L -o schxslt2-${SCHXSLT2_VERSION}.zip \
+          https://codeberg.org/SchXslt/schxslt2/releases/download/v${SCHXSLT2_VERSION}/schxslt2-${SCHXSLT2_VERSION}.zip
 
       - name: Unzip SchXslt2
-        run: unzip -q schxslt2-$SCHXSLT2_VERSION.zip
+        run: unzip -q schxslt2-${SCHXSLT2_VERSION}.zip
 
       - name: Move transpile XSL to root
-        run: mv schxslt2-$SCHXSLT2_VERSION/transpile.xsl .
+        run: mv schxslt2-${SCHXSLT2_VERSION}/transpile.xsl .
+
+      # Validate rules
 
       - name: Transpile Schematron to XSL per phase (rule)
         run: ./transpile_phases.sh
@@ -39,6 +67,12 @@ jobs:
       - name: Perform validation of template XMLs against phase XSL
         run: ./validate_templates.sh
 
-      - name: Validate if failing tests fail and passing test pass
+      - name: Upload validation results
+        uses: actions/upload-artifact@v4
+        with:
+          name: validation-results
+          path: validation_output
+
+      - name: Validate whether failing tests fail and passing test pass
         run: ./validate_output.sh
         
