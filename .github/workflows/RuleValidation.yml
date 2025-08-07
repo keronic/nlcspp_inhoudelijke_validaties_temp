@@ -1,0 +1,44 @@
+name: Rule Validation CI
+
+on:
+  push:
+    # TODO: run only on PR on main
+
+env:
+  SCHXSLT2_VERSION: 1.4.4
+
+jobs:
+  validate-validation-output:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      # TODO: download Saxon
+      # TODO: cache downloads
+
+      - name: Download SchXslt2 zip
+        run: curl -L -o schxslt2-$SCHXSLT2_VERSION.zip https://codeberg.org/SchXslt/schxslt2/releases/download/v$SCHXSLT2_VERSION/schxslt2-$SCHXSLT2_VERSION.zip
+
+      - name: Unzip SchXslt2
+        run: unzip -q schxslt2-$SCHXSLT2_VERSION.zip
+
+      - name: Move transpile XSL to root
+        run: mv schxslt2-$SCHXSLT2_VERSION/transpile.xsl .
+
+      - name: Transpile Schematron to XSL per phase (rule)
+        run: ./transpile_phases.sh
+
+      - name: Perform validation of template XMLs against phase XSL
+        run: ./validate_templates.sh
+
+      - name: Validate if failing tests fail and passing test pass
+        run: ./validate_output.sh
+        

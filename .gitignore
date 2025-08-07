@@ -7,6 +7,8 @@ validation_output/
 validation_schemas/base_included/
 validation_schemas/scopes/
 validation_schemas/scopes_transpiled/
+validation_schemas/phases_transpiled/
+validation_test_results/
 
 # Dependencies from other repos
 transpile.xsl
