@@ -2,14 +2,14 @@
 
 version="v11"
 
-# for phase_dir in validation_output/$version/*; do
-#     phase=$(basename "$phase_dir")
-#     for test_dir in $phase_dir/*; do
-#         test=$(basename "$test_dir")
-#         mkdir -p validation_test_results/$version/$phase/$test
-#         java -jar saxon-he.jar -xsl:transformations/validation_output.xsl -s:validation_output/$version/$phase/$test/ -o:validation_test_results/$version/$phase/$test/
-#     done
-# done
+for phase_dir in validation_output/$version/*; do
+    phase=$(basename "$phase_dir")
+    for test_dir in $phase_dir/*; do
+        test=$(basename "$test_dir")
+        mkdir -p validation_test_results/$version/$phase/$test
+        java -jar saxon-he.jar -xsl:transformations/validation_output.xsl -s:validation_output/$version/$phase/$test/ -o:validation_test_results/$version/$phase/$test/
+    done
+done
 
 has_failures=false
 
