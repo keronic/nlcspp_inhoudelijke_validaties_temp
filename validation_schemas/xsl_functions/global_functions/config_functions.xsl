@@ -5,8 +5,8 @@
             xmlns:map="http://www.w3.org/2005/xpath-functions/map"
             version="3.0">
   
-  <variable name="config_file" select= "document('../../../doc/configuration/config.xml')"/>
-  <variable name="language" select= "'nl'"/>
+  <variable name="config_file" select= "document('../../../configuration/config.xml')"/>
+  <variable name="language" select= "$config_file/config/V11/Language"/>
   <variable name="translation_file" select= "document('../../../localization/messages.xml')"/>
   
   <function name="keronic:get-connected-threshold">

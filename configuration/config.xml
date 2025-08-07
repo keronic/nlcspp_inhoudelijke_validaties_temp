@@ -1,5 +1,6 @@
 <config>
     <V11>
+        <Language>nl</Language>
         <GisIdRequiredStatuses>
             <Status>BESTAAND</Status>
             <Status>REVISIE</Status>
