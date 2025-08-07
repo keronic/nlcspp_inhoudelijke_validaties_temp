@@ -4,11 +4,6 @@ on:
   push:
     # TODO: run only on PR on main
 
-env:
-  SCHXSLT2_VERSION: 1.4.4
-  SAXON_HE_MAJOR: 12
-  SAXON_HE_MINOR: 8
-
 jobs:
   validate-rules:
     runs-on: ubuntu-latest
@@ -33,33 +28,11 @@ jobs:
       #       transpile.xsl
       #     key: deps-v1
 
-      # Saxon-HE setup
+      - name: Setup Saxon-HE
+        run: ./setup_saxon_he.sh
 
-      - name: Download Saxon-HE zip
-        run: |
-          curl -L -o SaxonHE${SAXON_HE_MAJOR}-${SAXON_HE_MINOR}J.zip \
-          https://github.com/Saxonica/Saxon-HE/releases/download/SaxonHE-${SAXON_HE_MAJOR}-${SAXON_HE_MINOR}/SaxonHE${SAXON_HE_MAJOR}-${SAXON_HE_MINOR}J.zip
-
-      - name: Unzip Saxon-HE
-        run: unzip -q SaxonHE${SAXON_HE_MAJOR}-${SAXON_HE_MINOR}J.zip
-
-      - name: Remove version from JAR filename
-        run: mv saxon-he-${SAXON_HE_MAJOR}.${SAXON_HE_MINOR}.jar saxon-he.jar
-
-      # SchXslt2 setup
-
-      - name: Download SchXslt2 zip
-        run: |
-          curl -L -o schxslt2-${SCHXSLT2_VERSION}.zip \
-          https://codeberg.org/SchXslt/schxslt2/releases/download/v${SCHXSLT2_VERSION}/schxslt2-${SCHXSLT2_VERSION}.zip
-
-      - name: Unzip SchXslt2
-        run: unzip -q schxslt2-${SCHXSLT2_VERSION}.zip
-
-      - name: Move transpile XSL to root
-        run: mv schxslt2-${SCHXSLT2_VERSION}/transpile.xsl .
-
-      # Validate rules
+      - name: Setup SchXslt2
+        run: ./setup_schxslt2.sh
 
       - name: Transpile Schematron to XSL per phase (rule)
         run: ./transpile_phases.sh
