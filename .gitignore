@@ -1,4 +1,12 @@
 .DS_Store
 .project
+
+# Generated data
 validation_data/
 validation_output/
+validation_schemas/base_included/
+validation_schemas/scopes/
+validation_schemas/scopes_transpiled/
+
+# Dependencies from other repos
+transpile.xsl

@@ -27,9 +27,9 @@
         <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
         <Eigenaar>Netbeheerder</Eigenaar>
         <Beheerder>Netbeheerder</Beheerder>
-        <CrossBondingAanwezig>Ja</CrossBondingAanwezig>
+        <CrossBoundingAanwezig>Ja</CrossBoundingAanwezig>
         <NaamMonteur>John Doe</NaamMonteur>
-        <Verbindingnummer>123456</Verbindingnummer>
+        <Verbindingsnummer>123456</Verbindingsnummer>
         <Type>Wikkelmof</Type>
         <Functie>AFTAK</Functie>
         <GisId>53264168</GisId>
