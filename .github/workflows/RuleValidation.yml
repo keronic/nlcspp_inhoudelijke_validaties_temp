@@ -15,9 +15,7 @@ jobs:
 
     steps:
       - name: Test annotations
-        run: |
-          echo "::error file=README.md,title=Annotation test::Test annotation link to README"
-          exit 1
+        run: ./test.sh
       # - name: Checkout repository
       #   uses: actions/checkout@v4
 
