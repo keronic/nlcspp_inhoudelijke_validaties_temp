@@ -26,7 +26,7 @@ while IFS= read -r -d '' file; do
             message="Report contains no failed asserts, expected at least one"
         fi
         
-        echo "::error file=$template_path,title=Validation Failed::$message"
+        echo "::error file=$template_path,line=1,title=Validation Failed::$message"
         has_failures=true
     fi
 done < <(find validation_test_results/"$version" -type f -print0)
