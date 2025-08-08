@@ -16,49 +16,46 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        
-      - name: Test annotations
-        run: ./test.sh
 
-      # - name: Set up JDK
-      #   uses: actions/setup-java@v4
+      - name: Set up JDK
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      # - name: Cache dependencies
+      #   id: cache-deps
+      #   uses: actions/cache@v4
       #   with:
-      #     java-version: '21'
-      #     distribution: 'temurin'
+      #     path: |
+      #       saxon-he.jar
+      #       lib/
+      #       transpile.xsl
+      #     key: deps-v1
 
-      # # - name: Cache dependencies
-      # #   id: cache-deps
-      # #   uses: actions/cache@v4
-      # #   with:
-      # #     path: |
-      # #       saxon-he.jar
-      # #       lib/
-      # #       transpile.xsl
-      # #     key: deps-v1
+      - name: Saxon dependencies
+        run: |
+          curl -L -o SaxonHE${SAXON_HE_MAJOR}-${SAXON_HE_MINOR}J.zip https://github.com/Saxonica/Saxon-HE/releases/download/SaxonHE-${SAXON_HE_MAJOR}-${SAXON_HE_MINOR}/SaxonHE${SAXON_HE_MAJOR}-${SAXON_HE_MINOR}J.zip
+          unzip -p SaxonHE${SAXON_HE_MAJOR}-${SAXON_HE_MINOR}J.zip saxon-he-${SAXON_HE_MAJOR}.${SAXON_HE_MINOR}.jar >saxon-he.jar
+          unzip SaxonHE${SAXON_HE_MAJOR}-${SAXON_HE_MINOR}J.zip "lib/*"
 
-      # - name: Saxon dependencies
-      #   run: |
-      #     curl -L -o SaxonHE${SAXON_HE_MAJOR}-${SAXON_HE_MINOR}J.zip https://github.com/Saxonica/Saxon-HE/releases/download/SaxonHE-${SAXON_HE_MAJOR}-${SAXON_HE_MINOR}/SaxonHE${SAXON_HE_MAJOR}-${SAXON_HE_MINOR}J.zip
-      #     unzip -p SaxonHE${SAXON_HE_MAJOR}-${SAXON_HE_MINOR}J.zip saxon-he-${SAXON_HE_MAJOR}.${SAXON_HE_MINOR}.jar >saxon-he.jar
-      #     unzip SaxonHE${SAXON_HE_MAJOR}-${SAXON_HE_MINOR}J.zip "lib/*"
+      - name: SchXslt2 dependencies
+        run: |
+          curl -L -o schxslt2-${SCHXSLT2_VERSION}.zip https://codeberg.org/SchXslt/schxslt2/releases/download/v${SCHXSLT2_VERSION}/schxslt2-${SCHXSLT2_VERSION}.zip
+          unzip -p schxslt2-${SCHXSLT2_VERSION}.zip schxslt2-${SCHXSLT2_VERSION}/transpile.xsl >transpile.xsl
 
-      # - name: SchXslt2 dependencies
-      #   run: |
-      #     curl -L -o schxslt2-${SCHXSLT2_VERSION}.zip https://codeberg.org/SchXslt/schxslt2/releases/download/v${SCHXSLT2_VERSION}/schxslt2-${SCHXSLT2_VERSION}.zip
-      #     unzip -p schxslt2-${SCHXSLT2_VERSION}.zip schxslt2-${SCHXSLT2_VERSION}/transpile.xsl >transpile.xsl
+      - name: Transpile Schematron to XSL per phase (rule)
+        run: ./transpile_phases.sh
 
-      # - name: Transpile Schematron to XSL per phase (rule)
-      #   run: ./transpile_phases.sh
+      - name: Perform validation of template XMLs against phase XSL
+        run: ./validate_templates.sh
 
-      # - name: Perform validation of template XMLs against phase XSL
-      #   run: ./validate_templates.sh
+      - name: Upload validation results
+        uses: actions/upload-artifact@v4
+        with:
+          name: validation-results
+          path: validation_output
 
-      # - name: Upload validation results
-      #   uses: actions/upload-artifact@v4
-      #   with:
-      #     name: validation-results
-      #     path: validation_output
-
-      # - name: Validate whether failing tests fail and passing test pass
-      #   run: ./validate_output.sh
+      - name: Validate whether failing tests fail and passing test pass
+        run: ./validate_output.sh
         

@@ -11,27 +11,36 @@ for phase_dir in validation_output/$version/*; do
     done
 done
 
+SUMMARY_FILE="$GITHUB_STEP_SUMMARY"
+
+{
+  echo "## Validation Failures"
+  echo ""
+  echo "| Message | File | Link |"
+  echo "|---------|------|------|"
+} >> "$SUMMARY_FILE"
+
 has_failures=false
 
 # Loop over all files and check contents
 while IFS= read -r -d '' file; do
     if [[ "$(cat "$file")" != "PASS" ]]; then
+        has_failures=true
+
         template_path="${file/validation_test_results\//templates/}"
         template_path="${template_path/%.txt/.xml}"
-
-        test=$(echo "$file" | cut -d'/' -f4)
-        if [[ "$test" == "passing" ]]; then
-            message="Report contains failed asserts, expected none"
+        
+        test_type=$(echo "$file" | cut -d'/' -f4)
+        if [[ "$test_type" == "passing" ]]; then
+            message="Failed asserts found, expected none"
         else
-            message="Report contains no failed asserts, expected at least one"
+            message="Expected failed asserts, found none"
         fi
         
-        echo "::error file=$template_path,line=1,title=Validation Failed::$message"
-        has_failures=true
+        echo "| $message | $template_path |[View file](https://github.com/${GITHUB_REPOSITORY}/blob/${GITHUB_REF_NAME}/$template_path) |" >> $SUMMARY_FILE
     fi
 done < <(find validation_test_results/"$version" -type f -print0)
 
 if [[ "$has_failures" == true ]]; then
-    echo "::notice title=Validation Reports in Artifacts::Check the job artifacts for the reports of every validation."
     exit 1
 fi
