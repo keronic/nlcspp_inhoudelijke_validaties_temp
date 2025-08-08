@@ -14,3 +14,4 @@ validation_test_results/
 saxon-he.jar
 lib/
 transpile.xsl
+*.zip
