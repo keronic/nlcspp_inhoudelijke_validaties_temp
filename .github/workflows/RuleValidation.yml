@@ -14,10 +14,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
       - name: Test annotations
         run: ./test.sh
-      # - name: Checkout repository
-      #   uses: actions/checkout@v4
 
       # - name: Set up JDK
       #   uses: actions/setup-java@v4
