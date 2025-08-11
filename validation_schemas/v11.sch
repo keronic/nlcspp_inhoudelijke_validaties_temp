@@ -11,7 +11,7 @@
     <ns prefix="keronic" uri = "http://example.com/my-functions"/>
     <ns prefix="gml" uri="http://www.opengis.net/gml/3.2"/>
     <ns prefix="nlcs" uri="NLCSnetbeheer"/>
-
+    
     <!-- declaring the rules -->
     <phase id="R.1">
         <active pattern="v11-aprojectreferentie-has-other-objects"/>
@@ -41,7 +41,7 @@
     <phase id="R.7">
         <active pattern="v11-cables-have-subnettype"/>
     </phase>
-
+    
     <phase id="R.8">
         <active pattern="v11-kabels-have-required-values"/>
         <active pattern="v11-lskabels-have-required-values"/>
@@ -71,11 +71,15 @@
     <phase id="R.15">
         <active pattern="v11-mantelbuis-has-required-values"/>
     </phase>
-
+    
     <phase id="R.20">
         <active pattern="v11-points-connected-to-lines"/>
     </phase>
     
+    <phase id="R.21">
+        <active pattern="v11-mskabel-connected-to-correct-object"/>
+    </phase>
+
     <!-- function delcarations -->
     <xsl:include href="xsl_functions/global_functions/config_functions.xsl"/>
     <xsl:include href="xsl_functions/helper_functions/helper_functions.xsl"/>
@@ -89,7 +93,7 @@
     <xsl:include href="xsl_functions/geometry_functions/line_functions.xsl"/>
     <xsl:include href="xsl_functions/geometry_functions/depth_functions.xsl"/>
     <xsl:include href="xsl_functions/geometry_functions/depth_interface_functions.xsl"/>
-
+    
     <include href="patterns/bestand/v11/aprojectreferentie_has_other_objects.sch"/>
     <include href="patterns/bestand/v11/statuses_allowed_for_tekening_type.sch"/>
     <include href="patterns/geometrie/all_geometries_in_project_area.sch"/>
@@ -108,4 +112,5 @@
     <include href="patterns/verplichte_waardes/msoverdrachtspunt_has_identification.sch"/>
     <include href="patterns/verplichte_waardes/stations_kasten_have_required_values.sch"/>
     <include href="patterns/verplichte_waardes/mantelbuis_has_required_values.sch"/>
+    <include href="patterns/netlogica/cables_connected_to_correct_objects.sch"/>
 </schema>
