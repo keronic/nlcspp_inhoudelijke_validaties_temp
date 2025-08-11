@@ -55,8 +55,13 @@ jobs:
       - name: Transpile Schematron to XSL per scope
         run: scripts/transpile_scopes.sh
 
-      - name: Upload validation results
+      - name: Upload scope XSLs
         uses: actions/upload-artifact@v4
         with:
           name: scopes-transpiled
           path: validation_schemas/scopes_transpiled
+      
+      - name: Release scope XSLs
+        uses: softprops/action-gh-release@v2
+        with: 
+          files: validation_schemas/scopes_transpiled
