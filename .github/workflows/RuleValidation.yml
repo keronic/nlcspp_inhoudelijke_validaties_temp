@@ -1,8 +1,8 @@
 name: Rule Validation CI
 
 on:
-  push:
-    # TODO: run only on PR on main
+  pull_request:
+    branches: [ "main" ]
 
 env:
   SCHXSLT2_VERSION: 1.4.4
@@ -45,10 +45,10 @@ jobs:
           unzip -p schxslt2-${SCHXSLT2_VERSION}.zip schxslt2-${SCHXSLT2_VERSION}/transpile.xsl >transpile.xsl
 
       - name: Transpile Schematron to XSL per phase (rule)
-        run: ./transpile_phases.sh
+        run: scripts/transpile_phases.sh
 
       - name: Perform validation of template XMLs against phase XSL
-        run: ./validate_templates.sh
+        run: scripts/validate_templates.sh
 
       - name: Upload validation results
         uses: actions/upload-artifact@v4
@@ -57,5 +57,5 @@ jobs:
           path: validation_output
 
       - name: Validate whether failing tests fail and passing test pass
-        run: ./validate_output.sh
+        run: scripts/validate_output.sh
         
