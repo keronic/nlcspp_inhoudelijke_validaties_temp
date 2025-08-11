@@ -4,7 +4,7 @@
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
                 xmlns:svrl="http://purl.oclc.org/dsdl/svrl">
   
-  <xsl:import href="transpile.xsl"/>
+  <xsl:import href="../transpile.xsl"/>
   
   <!-- Use phase as an alternative for schxslt:phase since namespaced parameters cannot be passed through Saxon CLI -->
   <xsl:param name="phase" as="xs:string" select="'#DEFAULT'"/>
