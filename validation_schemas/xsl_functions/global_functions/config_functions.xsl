@@ -112,11 +112,6 @@
     <sequence select="$element and normalize-space($element)"/>
   </function>
   
-  <function name="keronic:elements-exist-and-not-empty" as="xs:boolean">
-    <param name="elements"/>
-    <sequence select="every $el in $elements satisfies keronic:element-exists-and-not-empty($el)"/>
-  </function>
-  
   <function name="keronic:get-statuses-where-gisid-required" as="xs:string*">
     <sequence select="$config_file/config/V11/GisIdRequiredStatuses/Status"/>
   </function>
