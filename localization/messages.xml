@@ -87,4 +87,12 @@
       De DatumAanleg op object is in de toekomst!
     </message-text>
   </message>
+  <message id="cable-not-connected-to-valid-object">
+    <message-text xml:lang="nl">
+      De kabel is niet verbonden met een mof, overdrachtspunt of station
+    </message-text>
+    <message-text xml:lang="en">
+      The cable is not connected to a mof, overdrachtpunt or station
+    </message-text>
+  </message>
 </messages>
