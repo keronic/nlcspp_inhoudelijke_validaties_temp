@@ -6,20 +6,19 @@
         <let name="object_type" value="name(.)"/>
         <let name="object_id" value="nlcs:Handle"/>
         
-        <let name="datumaanleg"
-            value="nlcs:DatumAanleg"/>
+        <let name="datum-aanleg-present"
+            value="keronic:element-exists-and-not-empty(nlcs:DatumAanleg)"/>
         
         <assert id="date-exists"
                 properties="scope rule-number object-type object-id"
-            test="keronic:element-exists-and-not-empty($datumaanleg)">
+            test="$datum-aanleg-present">
             <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['DatumAanleg'])"/>
         </assert>
         
-        <!-- Only flag this if the datumaanleg exists, otherwise the first assert will catch it anyway -->
         <assert id="date-not-in-future"
                 properties="scope rule-number object-type object-id"
-            test="if ($datumaanleg) then xs:date($datumaanleg) le current-date() else true()">
-            <value-of select="keronic:get-translation-and-replace-placeholders('date-in-the-future', [])"/>
+            test="not($datum-aanleg-present) or (xs:date(nlcs:DatumAanleg) le current-date())">
+            <value-of select="keronic:get-translation('date-in-the-future')"/>
         </assert>
     </rule>
 </pattern>
