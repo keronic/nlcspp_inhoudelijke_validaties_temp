@@ -4,6 +4,11 @@
         <let name="geometry"
             value="tokenize(normalize-space(nlcs:Geometry/gml:LineString/gml:posList))"/>
         
+        <let name="rule_number" value="21"/>
+        <let name="object_type" value="name(.)"/>
+        <let name="object_id" value="nlcs:Handle"/>
+        <let name="geometry_3d" value="$geometry"/>
+        
         <let name="moffen-geometries"
             value="//nlcs:MSmof/nlcs:Geometry/gml:Point/gml:pos"/>
         
@@ -12,7 +17,7 @@
         
         <let name="station-geometries"
             value="//nlcs:MSstation/nlcs:Geometry/gml:polygon/gml:exterior/gml:LinearRing/gml:posList"/>
-
+        
         <let name="first-point"
             value="$geometry[1], $geometry[2], $geometry[3]"
             as="xs:string*"/>
