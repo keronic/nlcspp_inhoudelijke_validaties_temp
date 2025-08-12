@@ -79,4 +79,12 @@
       Object moet verbonden zijn met een kabel.
     </message-text>
   </message>
+  <message id="date-in-the-future">
+    <message-text xml:lang="en">
+      The DatumAanleg on object is in the future!
+    </message-text>
+    <message-text xml:lang="nl">
+      De DatumAanleg op object is in de toekomst!
+    </message-text>
+  </message>
 </messages>
