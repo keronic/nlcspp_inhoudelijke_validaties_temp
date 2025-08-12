@@ -123,5 +123,5 @@
     <include href="../patterns/verplichte_waarde/stations_kasten_have_required_values.sch"/>
     <include href="../patterns/verplichte_waarde/mantelbuis_has_required_values.sch"/>
     <include href="../patterns/topologie/points_connected_to_lines.sch"/>
-    <include href="../patterns/netlogica/cables_connected_to_correct_objects.sch"/>
+    <include href="../patterns/topologie/cables_connected_to_correct_objects.sch"/>
 </schema>

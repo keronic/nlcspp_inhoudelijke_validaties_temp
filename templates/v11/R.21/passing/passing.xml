@@ -114,7 +114,7 @@
             <gml:Point
                 srsDimension="3"
                 srsName="EPSG:7415">
-                <gml:pos>300.0 200.0 -1.5</gml:pos>
+                <gml:pos>500.0 80.0 -3.0</gml:pos>
             </gml:Point>
         </Geometry>
     </MSmof>
@@ -156,4 +156,41 @@
             </gml:Point>
         </Geometry>
     </MSoverdrachtspunt>
+    
+    <MSoverdrachtspunt>
+        <Handle>55F0</Handle>
+        <DatumAanleg>2024-01-10</DatumAanleg>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <Identificatie>MS-0123</Identificatie>
+        <Eigenaar>Netbeheerder</Eigenaar>
+        <Beheerder>Netbeheerder</Beheerder>
+        <GisId>6431</GisId>
+        <AssetId>{39437C1B-1F2C-4D8E-83CF-E55B6B9ADA57}</AssetId>
+        <Hoek>45</Hoek>
+        <Geometry>
+            <gml:Point
+                srsDimension="3"
+                srsName="EPSG:28992">
+                <gml:pos>560.0 160.0 -2.0</gml:pos>
+            </gml:Point>
+        </Geometry>
+    </MSoverdrachtspunt>
+    
+    <MSmof>
+        <Handle>55F1</Handle>
+        <DatumAanleg>1971-06-14</DatumAanleg>
+        <Status>BESTAAND</Status>
+        <Eigenaar>Netbeheerder</Eigenaar>
+        <Beheerder>Netbeheerder</Beheerder>
+        <GisId>53264168</GisId>
+        <AssetId>{D1185DFB-9CF4-42D6-BF83-9F8448E75D68}</AssetId>
+        <Geometry>
+            <gml:Point
+                srsDimension="3"
+                srsName="EPSG:7415">
+                <gml:pos>300.0 200.0 -1.5</gml:pos>
+            </gml:Point>
+        </Geometry>
+    </MSmof>
 </NLCSnetbeheerType>

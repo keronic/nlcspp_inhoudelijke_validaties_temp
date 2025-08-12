@@ -29,16 +29,32 @@
         <let name="kabel-is-verlaten"
             value="//nlcs:Bedrijfstoestand = 'VERLATEN'"/>
         
-        <let name="connected-to-moffen"
-            value="some $mof-geometry in $moffen-geometries satisfies keronic:point-3d-connected-to-point-3d($first-point, tokenize(normalize-space($mof-geometry)), 0) or keronic:point-3d-connected-to-point-3d($last-point, tokenize(normalize-space($mof-geometry)), 0)"/>
+        <let name="first-connected-to-moffen"
+            value="keronic:point-3d-connected-to-one-of-several-point-3d($first-point, $moffen-geometries)"/>
         
-        <let name="connected-to-overdrachtspunt"
-            value="some $overdrachtspunt-geometry in $overdrachtspunt-geometries satisfies keronic:point-3d-connected-to-point-3d($first-point, tokenize(normalize-space($overdrachtspunt-geometry)), 0) or keronic:point-3d-connected-to-point-3d($last-point, tokenize(normalize-space($overdrachtspunt-geometry)), 0)"/>
+        <let name="last-connected-to-moffen"
+            value="keronic:point-3d-connected-to-one-of-several-point-3d($last-point, $moffen-geometries)"/>
         
-        <let name="connected-to-station"
-            value="some $station-geometry in $station-geometries satisfies keronic:point-3d-connected-to-area-3d($first-point, tokenize(normalize-space($station-geometry)), 0) or keronic:point-3d-connected-to-area-3d($first-point, tokenize(normalize-space($station-geometry)), 0)"/>
+        <let name="first-connected-to-overdrachtspunt"
+            value="keronic:point-3d-connected-to-one-of-several-point-3d($first-point, $overdrachtspunt-geometries)"/>
         
-        <assert test="$kabel-is-verlaten or ($connected-to-moffen or $connected-to-overdrachtspunt or $connected-to-station)">
+        <let name="last-connected-to-overdrachtspunt"
+            value="keronic:point-3d-connected-to-one-of-several-point-3d($last-point, $overdrachtspunt-geometries)"/>
+        
+        <let name="first-connected-to-station"
+            value="keronic:point-3d-connected-to-one-of-several-area-3d($first-point, $station-geometries)"/>
+        
+        <let name="last-connected-to-station"
+            value="keronic:point-3d-connected-to-one-of-several-area-3d($last-point, $station-geometries)"/>
+        
+        <let name="first-connected"
+            value="$first-connected-to-moffen or $first-connected-to-overdrachtspunt or $first-connected-to-station"/>
+        
+        <let name="last-connected"
+            value="$last-connected-to-moffen or $last-connected-to-overdrachtspunt or $last-connected-to-station"/>
+        
+        <assert test="$kabel-is-verlaten or ($first-connected and $last-connected)"
+                properties="scope rule-number object-type object-id geometry-3d">
             <value-of select="keronic:get-translation-and-replace-placeholders('cable-not-connected-to-valid-object', [nlcs:Handle])"/>
         </assert>
     </rule>
