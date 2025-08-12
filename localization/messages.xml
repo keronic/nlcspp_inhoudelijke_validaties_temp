@@ -81,10 +81,10 @@
   </message>
   <message id="cable-not-connected-to-valid-object">
     <message-text xml:lang="nl">
-      De kabel {1} is niet verbonden met een mof, overdrachtspunt of station
+      De kabel is niet verbonden met een mof, overdrachtspunt of station
     </message-text>
     <message-text xml:lang="en">
-      The cable {1} is not connected to a mof, overdrachtpunt or station
+      The cable is not connected to a mof, overdrachtpunt or station
     </message-text>
   </message>
 </messages>
