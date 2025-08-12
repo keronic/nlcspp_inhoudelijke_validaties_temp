@@ -24,7 +24,7 @@
     <!-- Green -->
     <MSkabel>
         <Handle>6301</Handle>
-        <Uitvoering>3x240Alrm as35</Uitvoering>
+        <Uitvoering>1x800Alrm as35</Uitvoering>
         <Kabelopbouw>YMeKrvaslqwd</Kabelopbouw>
         <Fabrikant>NKF</Fabrikant>
         <DatumAanleg>2023-10-10</DatumAanleg>
@@ -34,7 +34,7 @@
         <Inmeetwijze>GPS</Inmeetwijze>
         <Nauwkeurigheid>tot 3cm</Nauwkeurigheid>
         <Subnettype>DISTRIBUTIE</Subnettype>
-        <FaseAanduiding>3 Fasen</FaseAanduiding>
+        <FaseAanduiding>L2</FaseAanduiding>
         <Eigenaar>Netbeheerder</Eigenaar>
         <Beheerder>Netbeheerder</Beheerder>
         <GisId>83412</GisId>
@@ -51,7 +51,7 @@
     <!-- Yellow -->
     <MSkabel>
         <Handle>6302</Handle>
-        <Uitvoering>3x240Alrm as35</Uitvoering>
+        <Uitvoering>1x800Alrm as35</Uitvoering>
         <Kabelopbouw>YMeKrvaslqwd</Kabelopbouw>
         <Fabrikant>NKF</Fabrikant>
         <DatumAanleg>2023-10-10</DatumAanleg>
@@ -78,7 +78,7 @@
     <!-- Red -->
     <MSkabel>
         <Handle>6303</Handle>
-        <Uitvoering>3x240Alrm as35</Uitvoering>
+        <Uitvoering>1x800Alrm as35</Uitvoering>
         <Kabelopbouw>YMeKrvaslqwd</Kabelopbouw>
         <Fabrikant>NKF</Fabrikant>
         <DatumAanleg>2023-10-10</DatumAanleg>
@@ -88,7 +88,7 @@
         <Inmeetwijze>GPS</Inmeetwijze>
         <Nauwkeurigheid>tot 3cm</Nauwkeurigheid>
         <Subnettype>DISTRIBUTIE</Subnettype>
-        <FaseAanduiding>3 Fasen</FaseAanduiding>
+        <FaseAanduiding>L1</FaseAanduiding>
         <Eigenaar>Netbeheerder</Eigenaar>
         <Beheerder>Netbeheerder</Beheerder>
         <GisId>83412</GisId>
@@ -125,6 +125,31 @@
                 srsDimension="3"
                 srsName="EPSG:28992">
                 <gml:posList>300.0 200.0 -1.5 420.0 160.0 -2.0 500.0 80.0 -3.0</gml:posList>
+            </gml:LineString>
+        </Geometry>
+    </MSkabel>
+    <MSkabel>
+        <Handle>6305</Handle>
+        <Uitvoering>1x800Alrm as35</Uitvoering>
+        <Kabelopbouw>YMeKrvaslqwd</Kabelopbouw>
+        <Fabrikant>NKF</Fabrikant>
+        <DatumAanleg>2023-10-10</DatumAanleg>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>RESERVE</Bedrijfstoestand>
+        <Spanningsniveau>10 kV</Spanningsniveau>
+        <Inmeetwijze>GPS</Inmeetwijze>
+        <Nauwkeurigheid>tot 3cm</Nauwkeurigheid>
+        <Subnettype>DISTRIBUTIE</Subnettype>
+        <FaseAanduiding>L3</FaseAanduiding>
+        <Eigenaar>Netbeheerder</Eigenaar>
+        <Beheerder>Netbeheerder</Beheerder>
+        <GisId>83412</GisId>
+        <AssetId>{38518CAF-0F42-448D-8CD6-1E655152A0AD}</AssetId>
+        <Geometry>
+            <gml:LineString
+                srsDimension="3"
+                srsName="EPSG:28992">
+                <gml:posList>50.0 280.0 -2.0 210.0 280.0 -1.0 330.0 240.0 -2.0</gml:posList>
             </gml:LineString>
         </Geometry>
     </MSkabel>
