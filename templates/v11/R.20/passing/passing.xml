@@ -20,6 +20,7 @@
             </gml:Polygon>
         </Geometry>
     </AprojectReferentie>
+    
     <!-- Green -->
     <MSkabel>
         <Handle>6301</Handle>
@@ -128,7 +129,7 @@
         </Geometry>
     </MSkabel>
     
-    <!-- Blue <-> Green -->
+    <!-- Mof connecting blue with green -->
     <MSmof>
         <Handle>5911</Handle>
         <DatumAanleg>1971-06-14</DatumAanleg>
@@ -146,7 +147,7 @@
         </Geometry>
     </MSmof>
 
-    <!-- Yellow <-> Green -->
+    <!-- Mof connecting yellow with green -->
     <MSmof>
         <Handle>5912</Handle>
         <DatumAanleg>1971-06-14</DatumAanleg>
@@ -164,6 +165,7 @@
         </Geometry>
     </MSmof>
     
+    <!-- Overdrachtspunt at end of green-->
     <MSoverdrachtspunt>
         <Handle>55E9</Handle>
         <DatumAanleg>2024-01-10</DatumAanleg>
