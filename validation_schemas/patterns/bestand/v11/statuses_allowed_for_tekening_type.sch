@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="v11-statuses-allowed-for-tekening-type">
+    <rule context="//nlcs:NLCSnetbeheerType/*">
+        <let name="rule_number"
+            value="2"/>
+        <let name="object_type"
+            value="name(.)"/>
+        <let name="object_id"
+            value="nlcs:Handle"/>
+
+        <let name="is_nlcs_object"
+            value="$object_type ne 'AprojectReferentie' and $object_type ne 'VersieNummer'"/>
+        
+        <let name="tekening_type"
+            value="string(//nlcs:AprojectReferentie/nlcs:TekeningType)"/>
+
+        <let name="status"
+            value="nlcs:Status"/>
+
+        <let name="allowed_statuses"
+            value="
+                if ($tekening_type = 'BESTAANDE SITUATIE') then 
+                    ['BESTAAND']
+                else if ($tekening_type = 'DEELREVISIE') then 
+                    ['BESTAAND', 'NIEUW', 'REVISIE', 'VERWIJDERD', 'TIJDELIJK']
+                else if ($tekening_type = 'DEFINITIEF ONTWERP') then 
+                    ['BESTAAND', 'NIEUW', 'REVISIE', 'VERWIJDERD', 'TIJDELIJK']
+                else if ($tekening_type = 'EINDREVISIE') then 
+                    ['BESTAAND', 'NIEUW', 'REVISIE', 'VERWIJDERD']
+                else if ($tekening_type = 'VOORONTWERP') then 
+                    []
+                else 
+                    []
+            "/>
+
+        <let name="status_is_allowed"
+            value="some $allowed_status in $allowed_statuses satisfies $allowed_status = $status"/>
+        
+        <assert id="nlcs-object-has-allowed-status" 
+            test="not($is_nlcs_object) or $status_is_allowed"
+            properties="scope rule-number object-type object-id">
+            <value-of select="keronic:get-translation-and-replace-placeholders('invalid-status-for-tekening-type', [$status, $tekening_type, string-join($allowed_statuses, ', ')])"/>
+        </assert>
+    </rule>
+</pattern>
+

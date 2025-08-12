@@ -1,4 +1,17 @@
 .DS_Store
 .project
+
+# Generated data
 validation_data/
 validation_output/
+validation_schemas/base_included/
+validation_schemas/scopes/
+validation_schemas/scopes_transpiled/
+validation_schemas/phases_transpiled/
+validation_test_results/
+
+# Dependencies from other repos
+saxon-he.jar
+lib/
+transpile.xsl
+*.zip

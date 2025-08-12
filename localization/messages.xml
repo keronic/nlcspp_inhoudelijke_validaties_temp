@@ -1,0 +1,82 @@
+<messages xmlns:xml="http://www.w3.org/XML/1998/namespace">
+  <message id="aprojectreferentie-not-present">
+    <message-text xml:lang="en">
+      The NLCS++ file must contain an AprojectReferentie.
+    </message-text>
+    <message-text xml:lang="nl">
+      Het NLCS++ bestand moet een AprojectReferentie bevatten.
+    </message-text>
+  </message>
+  <message id="no-nlcs-objects-present">
+    <message-text xml:lang="en">
+      The NLCS++ file must contain at least 1 NLCS object.
+    </message-text>
+    <message-text xml:lang="nl">
+      Het NLCS++ bestand moet op zijn minst 1 NLCS object bevatten.
+    </message-text>
+  </message>
+  <message id="invalid-status-for-tekening-type">
+    <message-text xml:lang="en">
+      Invalid status {1} for TekeningType {2}, must be one of: {3}
+    </message-text>
+    <message-text xml:lang="nl">
+      Ongeldige status {1} voor TekeningType {2}, moet een van de volgende zijn: {3} 
+    </message-text>
+  </message>
+  <message id="object-outside-project-area">
+    <message-text xml:lang="en">
+      Object is outside of project area.
+    </message-text>
+    <message-text xml:lang="nl">
+      Object ligt buiten het projectgebied.
+    </message-text>
+  </message>
+  <message id="line-segment-measurement-incorrect">
+    <message-text xml:lang="en">
+      A line segment is shorter than 10cm or longer than 50cm.
+    </message-text>
+    <message-text xml:lang="nl">
+      Een lijnsegment is korter dan 10cm of langer dan 50cm.
+    </message-text>
+  </message>
+  <message id="line-angle-larger-than-45">
+    <message-text xml:lang="en">
+      The object contains a kink. Angles between line segments cannot exceed 45 degrees.
+    </message-text>
+    <message-text xml:lang="nl">
+      Het object bevat een knik. Hoeken tussen lijnsegmenten mogen niet groter dan 45 graden zijn.
+    </message-text>
+  </message>
+  <message id="gisid-assetid-not-unset-if-new-revision-existing">
+    <message-text xml:lang="en">
+      The attributes GisId and AssetId cannot be empty if the status is one of: {1}
+    </message-text>
+    <message-text xml:lang="nl">
+      De attributen GisId en AssetId mogen niet leeg zijn indien de status een van de volgende is: {1}
+    </message-text>
+  </message>
+  <message id="gisid-assetid-are-unset-if-new">
+    <message-text xml:lang="en">
+      The attributes GisId and AssetId must be empty if the status IS NOT one of: {1}
+    </message-text>
+    <message-text xml:lang="nl">
+      De attributen GisId en AssetId moeten leeg zijn indien de status een van de volgende is: {1}
+    </message-text>
+  </message>
+  <message id="attribute-not-present">
+    <message-text xml:lang="en">
+      The attribute {1} is not present on object.
+    </message-text>
+    <message-text xml:lang="nl">
+      Het attribuut {1} is niet aanwezig op object.
+    </message-text>
+  </message>
+  <message id="point-not-connected-to-any-line">
+    <message-text xml:lang="en">
+      Object must be connected to a cable.
+    </message-text>
+    <message-text xml:lang="nl">
+      Object moet verbonden zijn met een kabel.
+    </message-text>
+  </message>
+</messages>

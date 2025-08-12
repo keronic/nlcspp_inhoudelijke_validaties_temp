@@ -134,7 +134,7 @@
 					- Fabrikant
 					- Verbindingsnummer
 					- Spanningsniveau
-					- Aardingssysteem
+					- Aardingsysteem
 					- FaseAanduiding 
 				Voor LS kabels zijn er nog 2 extra kenmerken die gevuld moeten zijn: 
 					- Bovengronds
@@ -260,9 +260,7 @@
 			</definitie>
 			<toelichting></toelichting>
 			<validatieObjecten> <!--  -->
-				<validatieObject><naam>LSkast</naam></validatieObject>
-				<validatieObject><naam>MSstation</naam></validatieObject>
-				<validatieObject><naam>HSstation</naam></validatieObject>
+				<validatieObject><naam>Amantelbuis</naam></validatieObject>
 			</validatieObjecten>		
 		</validatieRegel>
 		<validatieRegel nummer="R.20" naam="Topologie punt objecten Elec">
