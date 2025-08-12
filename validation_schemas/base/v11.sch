@@ -87,6 +87,10 @@
         <active pattern="v11-points-connected-to-lines"/>
     </phase>
     
+    <phase id="R.21">
+        <active pattern="v11-mskabel-connected-to-correct-object"/>
+    </phase>
+
     <!-- function delcarations -->
     <xsl:include href="../xsl_functions/global_functions/config_functions.xsl"/>
     <xsl:include href="../xsl_functions/helper_functions/helper_functions.xsl"/>
@@ -119,4 +123,5 @@
     <include href="../patterns/verplichte_waarde/stations_kasten_have_required_values.sch"/>
     <include href="../patterns/verplichte_waarde/mantelbuis_has_required_values.sch"/>
     <include href="../patterns/topologie/points_connected_to_lines.sch"/>
+    <include href="../patterns/netlogica/cables_connected_to_correct_objects.sch"/>
 </schema>

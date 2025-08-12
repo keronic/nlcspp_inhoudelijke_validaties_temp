@@ -74,33 +74,6 @@
         </Geometry>
     </MSkabel>
     
-    <!-- Red -->
-    <MSkabel>
-        <Handle>6303</Handle>
-        <Uitvoering>3x240Alrm as35</Uitvoering>
-        <Kabelopbouw>YMeKrvaslqwd</Kabelopbouw>
-        <Fabrikant>NKF</Fabrikant>
-        <DatumAanleg>2023-10-10</DatumAanleg>
-        <Status>BESTAAND</Status>
-        <Bedrijfstoestand>RESERVE</Bedrijfstoestand>
-        <Spanningsniveau>10 kV</Spanningsniveau>
-        <Inmeetwijze>GPS</Inmeetwijze>
-        <Nauwkeurigheid>tot 3cm</Nauwkeurigheid>
-        <Subnettype>DISTRIBUTIE</Subnettype>
-        <FaseAanduiding>3 Fasen</FaseAanduiding>
-        <Eigenaar>Netbeheerder</Eigenaar>
-        <Beheerder>Netbeheerder</Beheerder>
-        <GisId>83412</GisId>
-        <AssetId>{38518CAF-0F42-448D-8CD6-1E655152A0AD}</AssetId>
-        <Geometry>
-            <gml:LineString
-                srsDimension="3"
-                srsName="EPSG:28992">
-                <gml:posList>50.0 280.0 -2.0 210.0 280.0 -1.0 330.0 240.0 -2.0</gml:posList>
-            </gml:LineString>
-        </Geometry>
-    </MSkabel>
-    
     <!-- Blue -->
     <MSkabel>
         <Handle>6304</Handle>
