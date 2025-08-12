@@ -24,7 +24,7 @@
         <assert id="fase-and-uitvoering-same"
                 properties="scope rule-number object-type object-id"
                 test="$fase-first-char = 'N' or $uitvoering-first-char = $expected-first-char">
-                <value-of select="$expected-first-char"/>
+                <value-of select="keronic:get-translation-and-replace-placeholders('fase-not-the-same-as-uitvoering', [])"/>
         </assert>
     </rule>
 </pattern>
