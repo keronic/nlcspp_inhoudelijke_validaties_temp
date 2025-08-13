@@ -138,5 +138,5 @@
     <include href="../patterns/topologie/points_connected_to_lines.sch"/>
     <include href="../patterns/topologie/cables_connected_to_correct_objects.sch"/>
     <include href="../patterns/inhoud_waarde/fase_ms_kabel.sch"/>
-    <include href="../patterns/inhoud_waarde/mantelbuis_inhoud_fits_in_mantelbuis"/>
+    <include href="../patterns/inhoud_waarde/mantelbuis_inhoud_fits_in_mantelbuis.sch"/>
 </schema>
