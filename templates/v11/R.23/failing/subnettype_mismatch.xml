@@ -33,7 +33,7 @@
         <Spanningsniveau>10 kV</Spanningsniveau>
         <Inmeetwijze>GPS</Inmeetwijze>
         <Nauwkeurigheid>tot 3cm</Nauwkeurigheid>
-        <Subnettype>DISTRIBUTIE</Subnettype>
+        <Subnettype>AANSLUITNET</Subnettype>
         <FaseAanduiding>3 Fasen</FaseAanduiding>
         <Eigenaar>Netbeheerder</Eigenaar>
         <Beheerder>Netbeheerder</Beheerder>
@@ -117,7 +117,7 @@
         <Spanningsniveau>10 kV</Spanningsniveau>
         <Inmeetwijze>GPS</Inmeetwijze>
         <Nauwkeurigheid>tot 3cm</Nauwkeurigheid>
-        <Subnettype>DISTRIBUTIE</Subnettype>
+        <Subnettype>TRANSPORT</Subnettype>
         <FaseAanduiding>3 Fasen</FaseAanduiding>
         <Eigenaar>Netbeheerder</Eigenaar>
         <Beheerder>Netbeheerder</Beheerder>

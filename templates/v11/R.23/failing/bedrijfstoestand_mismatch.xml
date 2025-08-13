@@ -29,7 +29,7 @@
         <Fabrikant>NKF</Fabrikant>
         <DatumAanleg>2023-10-10</DatumAanleg>
         <Status>BESTAAND</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <Bedrijfstoestand>RESERVE</Bedrijfstoestand>
         <Spanningsniveau>10 kV</Spanningsniveau>
         <Inmeetwijze>GPS</Inmeetwijze>
         <Nauwkeurigheid>tot 3cm</Nauwkeurigheid>
@@ -113,7 +113,7 @@
         <Fabrikant>NKF</Fabrikant>
         <DatumAanleg>2023-10-10</DatumAanleg>
         <Status>BESTAAND</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <Bedrijfstoestand>VERLATEN</Bedrijfstoestand>
         <Spanningsniveau>10 kV</Spanningsniveau>
         <Inmeetwijze>GPS</Inmeetwijze>
         <Nauwkeurigheid>tot 3cm</Nauwkeurigheid>

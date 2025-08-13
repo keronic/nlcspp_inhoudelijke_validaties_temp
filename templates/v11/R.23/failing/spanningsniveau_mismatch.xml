@@ -30,7 +30,7 @@
         <DatumAanleg>2023-10-10</DatumAanleg>
         <Status>BESTAAND</Status>
         <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
-        <Spanningsniveau>10 kV</Spanningsniveau>
+        <Spanningsniveau>20 kV</Spanningsniveau>
         <Inmeetwijze>GPS</Inmeetwijze>
         <Nauwkeurigheid>tot 3cm</Nauwkeurigheid>
         <Subnettype>DISTRIBUTIE</Subnettype>
@@ -114,7 +114,7 @@
         <DatumAanleg>2023-10-10</DatumAanleg>
         <Status>BESTAAND</Status>
         <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
-        <Spanningsniveau>10 kV</Spanningsniveau>
+        <Spanningsniveau>3 kV</Spanningsniveau>
         <Inmeetwijze>GPS</Inmeetwijze>
         <Nauwkeurigheid>tot 3cm</Nauwkeurigheid>
         <Subnettype>DISTRIBUTIE</Subnettype>
@@ -142,7 +142,7 @@
         <DatumAanleg>2023-10-10</DatumAanleg>
         <Status>BESTAAND</Status>
         <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
-        <Spanningsniveau>10 kV</Spanningsniveau>
+        <Spanningsniveau>6 kV</Spanningsniveau>
         <Inmeetwijze>GPS</Inmeetwijze>
         <Nauwkeurigheid>tot 3cm</Nauwkeurigheid>
         <Subnettype>DISTRIBUTIE</Subnettype>
