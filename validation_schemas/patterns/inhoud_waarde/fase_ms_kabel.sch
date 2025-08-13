@@ -12,19 +12,15 @@
         <let name="uitvoering"
             value="nlcs:Uitvoering"/>
         
-        <let name="fase-first-chars"
-            value="substring($fase, 1, 1)"/>
+        <let name="expected_uitvoering_prefix"
+            value="if ($fase = '3 Fasen') then '3x'
+                else if ($fase = 'L1' or $fase = 'L2' or $fase = 'L3') then '1x'
+                else ''"/>
         
-        <let name="uitvoering-first-chars"
-            value="substring($uitvoering, 1, 2)"/>
-        
-        <let name="expected-first-chars"
-            value="if ($fase-first-chars = '3') then '3x' else '1x'"/>
-
         <assert id="fase-and-uitvoering-same"
                 properties="scope rule-number object-type object-id"
-                test="$fase-first-chars = 'N' or $uitvoering-first-chars = $expected-first-chars">
-                <value-of select="keronic:get-translation('fase-not-the-same-as-uitvoering')"/>
+            test="starts-with($uitvoering, $expected_uitvoering_prefix)">
+            <value-of select="keronic:get-translation('fase-not-the-same-as-uitvoering')"/>
         </assert>
     </rule>
 </pattern>
