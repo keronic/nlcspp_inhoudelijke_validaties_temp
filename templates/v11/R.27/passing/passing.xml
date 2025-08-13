@@ -26,7 +26,7 @@
         <Materiaal>PVC</Materiaal>
         <Diameter>110</Diameter>
         <DatumAanleg>2023-10-10</DatumAanleg>
-        <Status>BESTAAND</Status>
+        <Status>{{STATUS}}</Status>
         <Inmeetwijze>GPS</Inmeetwijze>
         <Nauwkeurigheid>tot 3cm</Nauwkeurigheid>
         <Thema>ET_LS</Thema>
@@ -49,7 +49,7 @@
         <ObjectTypeKabelLeiding>MSkabel</ObjectTypeKabelLeiding>
         <Diameter>100</Diameter>
         <AssetIdKabelLeiding>{65F078E6-DA3B-4373-9A14-8974FBE77A09}</AssetIdKabelLeiding>
-        <Status>BESTAAND</Status>
+        <Status>{{STATUS}}</Status>
         <MantelbuisLabel>- GPLK 4x50</MantelbuisLabel>
         <Geometry>
             <gml:LineString
