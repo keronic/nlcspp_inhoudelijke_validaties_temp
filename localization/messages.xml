@@ -115,4 +115,20 @@
       De fase van het object is niet hetzelfde als de Uitvoering!
     </message-text>
   </message>
+  <message id="inhoud-not-found">
+    <message-text xml:lang="nl">
+      Als de Mantelbuis RESERVE is mag deze geen inhoud hebben.
+    </message-text>
+    <message-text xml:lang="en">
+      If the Mantelbuis is RESERVE, it is not allowed to have an Inhoud.
+    </message-text>
+  </message>
+  <message id="inhoud-found">
+    <message-text xml:lang="nl">
+      Als de Mantelbuis IN BEDRIJF is MOET deze een inhoud hebben.
+    </message-text>
+    <message-text xml:lang="en">
+      If the Mantelbuis is IN BEDRIJF an Inhoud is REQUIRED.
+    </message-text>
+  </message>
 </messages>
