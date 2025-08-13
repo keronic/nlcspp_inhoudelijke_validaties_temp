@@ -103,4 +103,12 @@
       De fase van het object is niet hetzelfde als de Uitvoering!
     </message-text>
   </message>
+  <message id="inhoud-not-correct-for-bedrijfstoestand">
+    <message-text xml:lang="nl">
+      Als de Mantelbuis RESERVE is mag deze geen inhoud hebben. Als deze niet RESERVE is dan MOET deze een inhoud hebben
+    </message-text>
+    <message-text xml:lang="en">
+      If the Mantelbuis is RESERVE, it is not allowed to have an Inhoud. If it is not RESERVE than an Inhoud is REQUIRED
+    </message-text>
+  </message>
 </messages>
