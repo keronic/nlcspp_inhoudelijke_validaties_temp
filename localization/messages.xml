@@ -116,10 +116,10 @@
     </message-text>
     <message id="inhoud_diameter_too_large">
       <message-text xml:lang="nl">
-        De diameter van de bijbehorende AmantelbuisInhoud {1} is te groot! Deze moet kleiner dan {2} zijn
+        De diameter van de bijbehorende AmantelbuisInhoud {1} is {2} en daarom te groot! Deze moet kleiner dan {3} zijn
       </message-text>
       <message-text xml:lang="en">
-        The diameter of the associated AmantelbuisInhoud {1} is too large! This has to be smaller than {2}
+        The diameter of the associated AmantelbuisInhoud {1} is {2} and therefore too large! This has to be smaller than {3}
       </message-text>
     </message>
   </message>
