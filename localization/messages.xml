@@ -49,18 +49,18 @@
   </message>
   <message id="gisid-assetid-not-unset-if-new-revision-existing">
     <message-text xml:lang="en">
-      The attributes GisId and AssetId cannot be empty if the status is one of: {1}
+      The attributes GisId and AssetId cannot be empty if the status is one of: {1}.
     </message-text>
     <message-text xml:lang="nl">
-      De attributen GisId en AssetId mogen niet leeg zijn indien de status een van de volgende is: {1}
+      De attributen GisId en AssetId mogen niet leeg zijn indien de status een van de volgende is: {1}.
     </message-text>
   </message>
   <message id="gisid-assetid-are-unset-if-new">
     <message-text xml:lang="en">
-      The attributes GisId and AssetId must be empty if the status IS NOT one of: {1}
+      The attributes GisId and AssetId must be empty if the status IS NOT one of: {1}.
     </message-text>
     <message-text xml:lang="nl">
-      De attributen GisId en AssetId moeten leeg zijn indien de status een van de volgende is: {1}
+      De attributen GisId en AssetId moeten leeg zijn indien de status een van de volgende is: {1}.
     </message-text>
   </message>
   <message id="attribute-not-present">
@@ -88,11 +88,23 @@
     </message-text>
   </message>
   <message id="cable-not-connected-to-valid-object">
-    <message-text xml:lang="nl">
-      De kabel is niet verbonden met een mof, overdrachtspunt of station
-    </message-text>
     <message-text xml:lang="en">
-      The cable is not connected to a mof, overdrachtpunt or station
+      The cable is not connected to a mof, overdrachtspunt, or station.
+    </message-text>
+    <message-text xml:lang="nl">
+      De kabel is niet verbonden met een mof, overdrachtspunt of station.
+    </message-text>
+  </message>
+  <message id="connected-cable-does-not-match-property">
+    <message-text xml:lang="en">
+      One or more connected cable does not shared the same value for attribute {1}.
+      Expected: {2}
+      Found:    {3}
+    </message-text>
+    <message-text xml:lang="nl">
+      Een of meerdere verbonden kabels hebben niet dezelfde waarde voor attribuut {1}.
+      Verwacht: {2}
+      Gevonden: {3}
     </message-text>
   </message>
   <message id="fase-not-the-same-as-uitvoering">
