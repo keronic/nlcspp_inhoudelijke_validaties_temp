@@ -12,7 +12,7 @@
     <ns prefix="gml" uri="http://www.opengis.net/gml/3.2"/>
     <ns prefix="xs" uri="http://www.w3.org/2001/XMLSchema"/>
     <ns prefix="nlcs" uri="NLCSnetbeheer"/>
-
+    
     <!-- properties for more detailed assert reports -->
     <properties>
         <property id="scope">NO SCOPE SELECTED</property>
@@ -22,7 +22,7 @@
         <property id="geometry-2d"><value-of select="$geometry_2d"/></property>
         <property id="geometry-3d"><value-of select="$geometry_3d"/></property>
     </properties>
-
+    
     <!-- declaring the rules -->
     <phase id="R.1">
         <active pattern="v11-aprojectreferentie-has-other-objects"/>
@@ -52,10 +52,14 @@
     <phase id="R.7">
         <active pattern="v11-cables-have-subnettype"/>
     </phase>
-
+    
     <phase id="R.8">
         <active pattern="v11-kabels-have-required-values"/>
         <active pattern="v11-lskabels-have-required-values"/>
+    </phase>
+    
+    <phase id="R.9">
+        <active pattern="v11-objects-have-valid-date"/>
     </phase>
     
     <phase id="R.10">
@@ -82,7 +86,7 @@
     <phase id="R.15">
         <active pattern="v11-mantelbuis-has-required-values"/>
     </phase>
-
+    
     <phase id="R.20">
         <active pattern="v11-points-connected-to-lines"/>
     </phase>
@@ -94,7 +98,11 @@
     <phase id="R.23">
         <active pattern="v11-connected-kabels-share-properties"/>
     </phase>
-
+    
+    <phase id="R.24">
+        <active pattern="v11-fase-and-uitvoering-same"/>
+    </phase>
+    
     <!-- function delcarations -->
     <xsl:include href="../xsl_functions/global_functions/config_functions.xsl"/>
     <xsl:include href="../xsl_functions/helper_functions/helper_functions.xsl"/>
@@ -108,7 +116,7 @@
     <xsl:include href="../xsl_functions/geometry_functions/line_functions.xsl"/>
     <xsl:include href="../xsl_functions/geometry_functions/depth_functions.xsl"/>
     <xsl:include href="../xsl_functions/geometry_functions/depth_interface_functions.xsl"/>
-
+    
     <include href="../patterns/bestand/v11/aprojectreferentie_has_other_objects.sch"/>
     <include href="../patterns/bestand/v11/statuses_allowed_for_tekening_type.sch"/>
     <include href="../patterns/geometrie/all_geometries_in_project_area.sch"/>
@@ -117,6 +125,7 @@
     <include href="../patterns/verplichte_waarde/gisid_assetid_check.sch"/>
     <include href="../patterns/verplichte_waarde/elec_assets_have_measurement_details.sch"/>
     <include href="../patterns/verplichte_waarde/cables_have_subnettype.sch"/>
+    <include href="../patterns/verplichte_waarde/objects-have-valid-date.sch"/>
     <include href="../patterns/verplichte_waarde/kabels_have_required_values.sch"/>
     <include href="../patterns/verplichte_waarde/lskabels_have_required_values.sch"/>
     <include href="../patterns/verplichte_waarde/moffen_have_required_values.sch"/>
@@ -129,4 +138,5 @@
     <include href="../patterns/topologie/points_connected_to_lines.sch"/>
     <include href="../patterns/topologie/cables_connected_to_correct_objects.sch"/>
     <include href="../patterns/netlogica/connected_kabels_share_properties.sch"/>
+    <include href="../patterns/inhoud_waarde/fase_ms_kabel.sch"/>
 </schema>
