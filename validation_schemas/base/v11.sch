@@ -58,6 +58,10 @@
         <active pattern="v11-lskabels-have-required-values"/>
     </phase>
     
+    <phase id="R.9">
+        <active pattern="v11-objects-have-valid-date"/>
+    </phase>
+    
     <phase id="R.10">
         <active pattern="v11-moffen-have-required-values"/>
         <active pattern="v11-hs-msmoffen-have-required-values"/>
@@ -117,6 +121,7 @@
     <include href="../patterns/verplichte_waarde/gisid_assetid_check.sch"/>
     <include href="../patterns/verplichte_waarde/elec_assets_have_measurement_details.sch"/>
     <include href="../patterns/verplichte_waarde/cables_have_subnettype.sch"/>
+    <include href="../patterns/verplichte_waarde/objects-have-valid-date.sch"/>
     <include href="../patterns/verplichte_waarde/kabels_have_required_values.sch"/>
     <include href="../patterns/verplichte_waarde/lskabels_have_required_values.sch"/>
     <include href="../patterns/verplichte_waarde/moffen_have_required_values.sch"/>
