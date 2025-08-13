@@ -87,4 +87,12 @@
       The cable is not connected to a mof, overdrachtpunt or station
     </message-text>
   </message>
+  <message id="fase-not-the-same-as-uitvoering">
+    <message-text xml:lang="en">
+      The Fase of the object is not the same as the Uitvoering!
+    </message-text>
+    <message-text xml:lang="nl">
+      De fase van het object is niet hetzelfde als de Uitvoering!
+    </message-text>
+  </message>
 </messages>
