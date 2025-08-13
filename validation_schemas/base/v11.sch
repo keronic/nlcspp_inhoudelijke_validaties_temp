@@ -99,6 +99,10 @@
         <active pattern="v11-fase-and-uitvoering-same"/>
     </phase>
     
+    <phase id="R.27">
+        <active pattern="v11-mantelbuis-inhoud-fits-in-mantelbuis"/>
+    </phase>
+
     <!-- function delcarations -->
     <xsl:include href="../xsl_functions/global_functions/config_functions.xsl"/>
     <xsl:include href="../xsl_functions/helper_functions/helper_functions.xsl"/>
@@ -134,4 +138,5 @@
     <include href="../patterns/topologie/points_connected_to_lines.sch"/>
     <include href="../patterns/topologie/cables_connected_to_correct_objects.sch"/>
     <include href="../patterns/inhoud_waarde/fase_ms_kabel.sch"/>
+    <include href="../patterns/inhoud_waarde/mantelbuis_inhoud_fits_in_mantelbuis"/>
 </schema>

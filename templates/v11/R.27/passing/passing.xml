@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NLCSnetbeheerType xmlns:keuzelijst="NLCSnetbeheer"
+                   xmlns:gml="http://www.opengis.net/gml/3.2"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="NLCSnetbeheer">
+    <VersieNummer>11</VersieNummer>
+    <AprojectReferentie>
+        <Handle>Keronic</Handle>
+        <Projectnummer>1</Projectnummer>
+        <DeelrevisieVolgnummer>1</DeelrevisieVolgnummer>
+        <TekeningType>{{TEKENING TYPE}}</TekeningType>
+        <Geometry>
+            <gml:Polygon
+                srsDimension="2"
+                srsName="EPSG:28992">
+                <gml:exterior>
+                    <gml:LinearRing>
+                        <gml:posList>100.0 100.0 200.0 100.0 200.0 200.0 100.0 200.0 100.0 100.0</gml:posList>
+                    </gml:LinearRing>
+                </gml:exterior>
+            </gml:Polygon>
+        </Geometry>
+    </AprojectReferentie>
+    <Amantelbuis>
+        <Handle>630C</Handle>
+        <Materiaal>PVC</Materiaal>
+        <Diameter>110</Diameter>
+        <DatumAanleg>2023-10-10</DatumAanleg>
+        <Status>BESTAAND</Status>
+        <Inmeetwijze>GPS</Inmeetwijze>
+        <Nauwkeurigheid>tot 3cm</Nauwkeurigheid>
+        <Thema>ET_LS</Thema>
+        <Eigenaar>Netbeheerder</Eigenaar>
+        <Beheerder>Netbeheerder</Beheerder>
+        <GisId>875215</GisId>
+        <AssetId>{3ED3669F-86E9-4A87-A06D-B5742A468E84}</AssetId>
+        <Geometry>
+            <gml:LineString
+                srsDimension="3"
+                srsName="EPSG:28992">
+                <gml:posList>162195.21200000122 498641.21990000084 0 162165.126600001 498617.8828999996 0</gml:posList>
+            </gml:LineString>
+        </Geometry>
+    </Amantelbuis>
+    <AmantelbuisInhoud>
+        <Handle>9164</Handle>
+        <AssetId>{DD13FD24-1AA2-4E3C-B6E2-438718297DD0}</AssetId>
+        <MantelbuisAssetId>{3ED3669F-86E9-4A87-A06D-B5742A468E84}</MantelbuisAssetId>
+        <ObjectTypeKabelLeiding>MSkabel</ObjectTypeKabelLeiding>
+        <Diameter>100</Diameter>
+        <AssetIdKabelLeiding>{65F078E6-DA3B-4373-9A14-8974FBE77A09}</AssetIdKabelLeiding>
+        <Status>BESTAAND</Status>
+        <MantelbuisLabel>- GPLK 4x50</MantelbuisLabel>
+        <Geometry>
+            <gml:LineString
+                srsDimension="3"
+                srsName="EPSG:28992">
+                <gml:posList>162195.21200000122 498641.21990000084 0 162165.126600001 498617.8828999996 0</gml:posList>
+            </gml:LineString>
+        </Geometry>
+    </AmantelbuisInhoud>
+</NLCSnetbeheerType>

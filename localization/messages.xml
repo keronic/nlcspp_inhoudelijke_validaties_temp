@@ -102,5 +102,13 @@
     <message-text xml:lang="nl">
       De fase van het object is niet hetzelfde als de Uitvoering!
     </message-text>
+    <message id="inhoud_diameter_too_large">
+      <message-text xml:lang="nl">
+        De diameter van de bijbehorende AmantelbuisInhoud {1} is te groot! Deze moet kleiner dan {2} zijn
+      </message-text>
+      <message-text xml:lang="en">
+        The diameter of the associated AmantelbuisInhoud {1} is too large! This has to be smaller than {2}
+      </message-text>
+    </message>
   </message>
 </messages>
