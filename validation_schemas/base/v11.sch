@@ -102,7 +102,7 @@
     <phase id="R.24">
         <active pattern="v11-fase-and-uitvoering-same"/>
     </phase>
-
+ 
     <phase id="R.27">
         <active pattern="v11-mantelbuis-inhoud-fits-in-mantelbuis"/>
     </phase>
