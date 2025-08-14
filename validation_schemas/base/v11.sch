@@ -114,7 +114,7 @@
     <phase id="R.28">
         <active pattern="v11-mantelbuis-inhoud-correct"/>
     </phase>
-    
+
     <!-- function delcarations -->
     <xsl:include href="../xsl_functions/global_functions/config_functions.xsl"/>
     <xsl:include href="../xsl_functions/helper_functions/helper_functions.xsl"/>
