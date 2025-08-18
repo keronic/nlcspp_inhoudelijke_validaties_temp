@@ -171,4 +171,12 @@
       If the Mantelbuis is IN BEDRIJF an Inhoud is REQUIRED.
     </message-text>
   </message>
+  <message id="verplaatsen-incorrectly-applied">
+    <message-text xml:lang="nl">
+      Een kabel met Status REVISIE en Bewerking VERPLAATSEN verwacht een soortgelijke kabel met dezelfde GisID en Status BESTAAND.
+    </message-text>
+    <message-text xml:lang="en">
+      A cable with Status REVISIE and Bewerking VERPLAATSEN expects a similar cable with the same GisID and Status BESTAAND.
+    </message-text>
+  </message>
 </messages>

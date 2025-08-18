@@ -114,6 +114,10 @@
     <phase id="R.28">
         <active pattern="v11-mantelbuis-inhoud-correct"/>
     </phase>
+    
+    <phase id="R.29">
+        <active pattern="v11-verplaatsen-correctly-applied"/>
+    </phase>
 
     <!-- function delcarations -->
     <xsl:include href="../xsl_functions/global_functions/config_functions.xsl"/>
@@ -154,4 +158,5 @@
     <include href="../patterns/inhoud_waarde/connected_kabels_have_correct_fase.sch"/>
     <include href="../patterns/inhoud_waarde/mantelbuis_inhoud_fits_in_mantelbuis.sch"/>
     <include href="../patterns/consistentie/mantelbus_inhoud_correct.sch"/>
+    <include href="../patterns/consistentie/verplaatsen_correctly_applied.sch"/>
 </schema>
