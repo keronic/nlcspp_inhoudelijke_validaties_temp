@@ -5,11 +5,6 @@ on:
   push:
     branches: [ "main" ]
 
-env:
-  SCHXSLT2_VERSION: 1.4.4
-  SAXON_HE_MAJOR: 12
-  SAXON_HE_MINOR: 8
-
 jobs:
   validate-rules:
     runs-on: ubuntu-latest
@@ -24,18 +19,8 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
 
-      - name: Saxon dependencies
-        run: |
-          curl -L -o SaxonHE${SAXON_HE_MAJOR}-${SAXON_HE_MINOR}J.zip https://github.com/Saxonica/Saxon-HE/releases/download/SaxonHE-${SAXON_HE_MAJOR}-${SAXON_HE_MINOR}/SaxonHE${SAXON_HE_MAJOR}-${SAXON_HE_MINOR}J.zip
-          unzip -p SaxonHE${SAXON_HE_MAJOR}-${SAXON_HE_MINOR}J.zip saxon-he-${SAXON_HE_MAJOR}.${SAXON_HE_MINOR}.jar >saxon-he.jar
-          unzip SaxonHE${SAXON_HE_MAJOR}-${SAXON_HE_MINOR}J.zip "lib/*"
-          rm SaxonHE${SAXON_HE_MAJOR}-${SAXON_HE_MINOR}J.zip
-
-      - name: SchXslt2 dependencies
-        run: |
-          curl -L -o schxslt2-${SCHXSLT2_VERSION}.zip https://codeberg.org/SchXslt/schxslt2/releases/download/v${SCHXSLT2_VERSION}/schxslt2-${SCHXSLT2_VERSION}.zip
-          unzip -p schxslt2-${SCHXSLT2_VERSION}.zip schxslt2-${SCHXSLT2_VERSION}/transpile.xsl >transpile.xsl
-          rm schxslt2-${SCHXSLT2_VERSION}.zip
+      - name: Install dependencies
+        run: scripts/install_dependencies.sh
 
       - name: Transpile Schematron to XSL per phase (rule)
         run: scripts/transpile_phases.sh
