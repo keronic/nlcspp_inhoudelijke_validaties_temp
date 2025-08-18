@@ -30,14 +30,14 @@ while IFS= read -r -d '' file; do
 
         template_path="${file/validation_test_results\//templates/}"
         template_path="${template_path/%.txt/.xml}"
-        
+
         test_type=$(echo "$file" | cut -d'/' -f4)
         if [[ "$test_type" == "passing" ]]; then
             message="Failed asserts found, expected none"
         else
             message="Expected failed asserts, found none"
         fi
-        
+
         echo "| $message | $template_path |[View file](https://github.com/${GITHUB_REPOSITORY}/blob/${GITHUB_REF_NAME}/$template_path) |" >> $SUMMARY_FILE
     fi
 done < <(find validation_test_results/"$version" -type f -print0)

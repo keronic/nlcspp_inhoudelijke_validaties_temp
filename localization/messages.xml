@@ -20,7 +20,7 @@
       Invalid status {1} for TekeningType {2}, must be one of: {3}
     </message-text>
     <message-text xml:lang="nl">
-      Ongeldige status {1} voor TekeningType {2}, moet een van de volgende zijn: {3} 
+      Ongeldige status {1} voor TekeningType {2}, moet een van de volgende zijn: {3}
     </message-text>
   </message>
   <message id="object-outside-project-area">
@@ -141,10 +141,10 @@
   </message>
   <message id="connected-fases-do-not-match">
     <message-text xml:lang="nl">
-      Verbonden kabels moeten dezelfde Fase hebben, maar kwam verschillende waardes tegen: {1} 
+      Verbonden kabels moeten dezelfde Fase hebben, maar kwam verschillende waardes tegen: {1}
     </message-text>
     <message-text xml:lang="en">
-      Connected cables should have the same Fase, but found different values: {1} 
+      Connected cables should have the same Fase, but found different values: {1}
     </message-text>
   </message>
   <message id="connected-fases-do-not-split">
@@ -152,7 +152,7 @@
       Elke verbonden kabel moeten elke één van de unieke Fasen hebben ({1}), maar kwam enkel deze waardes tegen: {2}
     </message-text>
     <message-text xml:lang="en">
-      Each connected kabel should each have one of the unique Fase values ({1}), but only found the following: {2}      
+      Each connected kabel should each have one of the unique Fase values ({1}), but only found the following: {2}
     </message-text>
   </message>
   <message id="inhoud-found">
