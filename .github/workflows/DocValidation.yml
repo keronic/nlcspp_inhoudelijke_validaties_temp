@@ -4,6 +4,7 @@ on:
   pull_request:
   push:
     branches: [ "main" ]
+    paths: ["doc/**"]
 
 jobs:
   build:
@@ -16,5 +17,18 @@ jobs:
       with:
         java-version: '21'
         distribution: 'temurin'
+
     - name: Run tests
       run: java test/XMLValidation.java doc/NLCSValidatieRegels.xsd doc/NLCSValidatieRegels.xml
+
+    - name: Install dependencies
+      run: scripts/install_dependencies.sh
+
+    - name: Generate and compare HTML
+      run: java -jar saxon-he.jar -xsl:doc/NLCSValidatieRegels.xsl -s:doc/NLCSValidatieRegels.xml -o:doc/NLCSValidatieRegels.html
+    
+    - name: Generated HTML diff check
+      run: |
+        git status
+        exit $(git status --porcelain=v1 2>/dev/null | grep -c doc/NLCSValidatieRegels.html)
+      
