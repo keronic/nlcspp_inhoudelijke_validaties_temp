@@ -8,7 +8,7 @@
 - R.7		Subnettype gevuld voor LS en MS Kabel
 - R.8		Verplichte kenmerken Kabels
 - R.9		Aanlegdatum gevuld
-- R.10	Verplichte kenmerken moffen	
+- R.10	Verplichte kenmerken moffen
 - R.11	Verplichte kenmerken LSoverdrachtspunt
 - R.12	Verplichte kenmerken OVLoverdrachtspunt
 - R.13	Verplichte kenmerken MSSoverdrachtspunt

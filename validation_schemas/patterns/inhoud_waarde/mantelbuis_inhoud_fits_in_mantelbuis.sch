@@ -4,13 +4,13 @@
         <let name="rule_number" value="27"/>
         <let name="object_type" value="name(.)"/>
         <let name="object_id" value="nlcs:Handle"/>
-        
+
         <let name="assetId"
              value="nlcs:AssetId"/>
-        
+
         <let name="inhoud"
             value="//nlcs:AmantelbuisInhoud[nlcs:MantelbuisAssetId = $assetId]"/>
-        
+
         <let name="inhoud_diameter"
              value="$inhoud/nlcs:Diameter"/>
         <assert id="mantelbuis_inhoud_fits_in_mantelbuis"

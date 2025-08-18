@@ -45,7 +45,7 @@
             </gml:LineString>
         </Geometry>
     </MSkabel>
-    
+
     <MSstation>
         <Handle>5638</Handle>
         <Naam>MS-12345 Teststation</Naam>
@@ -95,7 +95,7 @@
             </gml:LineString>
         </Geometry>
     </Amantelbuis>
-    
+
     <MSmof>
         <Handle>5911</Handle>
         <DatumAanleg>1971-06-14</DatumAanleg>

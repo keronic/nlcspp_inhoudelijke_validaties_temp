@@ -46,7 +46,7 @@
             </gml:LineString>
         </Geometry>
     </MSkabel>
-    
+
     <!-- Yellow -->
     <MSkabel>
         <Handle>6302</Handle>
@@ -73,7 +73,7 @@
             </gml:LineString>
         </Geometry>
     </MSkabel>
-    
+
     <!-- Blue -->
     <MSkabel>
         <Handle>6304</Handle>
@@ -100,7 +100,7 @@
             </gml:LineString>
         </Geometry>
     </MSkabel>
-    
+
     <!-- Blue <-> Green -->
     <MSmof>
         <Handle>5911</Handle>
@@ -118,7 +118,7 @@
             </gml:Point>
         </Geometry>
     </MSmof>
-    
+
     <!-- Yellow <-> Green -->
     <MSmof>
         <Handle>5912</Handle>
@@ -136,7 +136,7 @@
             </gml:Point>
         </Geometry>
     </MSmof>
-    
+
     <MSoverdrachtspunt>
         <Handle>55E9</Handle>
         <DatumAanleg>2024-01-10</DatumAanleg>
@@ -156,7 +156,7 @@
             </gml:Point>
         </Geometry>
     </MSoverdrachtspunt>
-    
+
     <MSoverdrachtspunt>
         <Handle>55F0</Handle>
         <DatumAanleg>2024-01-10</DatumAanleg>

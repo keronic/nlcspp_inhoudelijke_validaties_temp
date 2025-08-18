@@ -47,7 +47,7 @@
             </gml:LineString>
         </Geometry>
     </MSkabel>
-    
+
     <!-- Yellow -->
     <MSkabel>
         <Handle>6302</Handle>
@@ -74,7 +74,7 @@
             </gml:LineString>
         </Geometry>
     </MSkabel>
-    
+
     <!-- Red -->
     <MSkabel>
         <Handle>6303</Handle>
@@ -101,7 +101,7 @@
             </gml:LineString>
         </Geometry>
     </MSkabel>
-    
+
     <!-- Blue -->
     <MSkabel>
         <Handle>6304</Handle>
@@ -128,7 +128,7 @@
             </gml:LineString>
         </Geometry>
     </MSkabel>
-    
+
     <!-- Mof at correct position but not correct height -->
     <MSmof>
         <Handle>5911</Handle>
@@ -146,7 +146,7 @@
             </gml:Point>
         </Geometry>
     </MSmof>
-    
+
     <!-- Overdrachtspunt not connected in any dimension -->
     <MSoverdrachtspunt>
         <Handle>55E9</Handle>
@@ -167,5 +167,5 @@
             </gml:Point>
         </Geometry>
     </MSoverdrachtspunt>
-    
+
 </NLCSnetbeheerType>

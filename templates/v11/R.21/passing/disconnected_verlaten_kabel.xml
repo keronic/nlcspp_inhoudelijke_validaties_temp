@@ -47,7 +47,7 @@
             </gml:LineString>
         </Geometry>
     </MSkabel>
-    
+
     <!-- Blue <-> Green -->
     <MSmof>
         <Handle>5911</Handle>
@@ -65,7 +65,7 @@
             </gml:Point>
         </Geometry>
     </MSmof>
-    
+
     <!-- Yellow <-> Green -->
     <MSoverdrachtspunt>
         <Handle>5912</Handle>
@@ -83,7 +83,7 @@
             </gml:Point>
         </Geometry>
     </MSoverdrachtspunt>
-    
+
     <MSoverdrachtspunt>
         <Handle>55E9</Handle>
         <DatumAanleg>2024-01-10</DatumAanleg>
@@ -103,5 +103,5 @@
             </gml:Point>
         </Geometry>
     </MSoverdrachtspunt>
-    
+
 </NLCSnetbeheerType>

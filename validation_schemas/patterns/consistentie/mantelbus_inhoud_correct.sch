@@ -4,22 +4,22 @@
         <let name="rule_number" value="28"/>
         <let name="object_type" value="name(.)"/>
         <let name="object_id" value="nlcs:Handle"/>
-        
+
         <let name="bedrijfsToestand"
             value="nlcs:BedrijfsToestand"/>
-        
+
         <let name="assetId"
             value="nlcs:AssetId"/>
-        
+
         <let name="inhoud"
             value="//nlcs:AmantelbuisInhoud[nlcs:MantelbuisAssetId = $assetId]"/>
-        
-        <assert id="inhoud_exists_when_in_bedrijf" 
+
+        <assert id="inhoud_exists_when_in_bedrijf"
             test="if ($bedrijfsToestand = 'IN BEDRIJF') then $inhoud else true()"
             properties="scope rule-number object-type object-id">
             <value-of select="keronic:get-translation('inhoud-not-found')"/>
         </assert>
-        
+
         <assert id="inhoud_does_not_exist_when_reserve"
             test="if ($bedrijfsToestand = 'RESERVE') then not($inhoud) else true()"
             properties="scope rule-number object-type object-id">

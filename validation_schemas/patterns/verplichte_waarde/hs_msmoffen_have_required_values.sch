@@ -5,13 +5,13 @@
         <let name="rule_number" value="10"/>
         <let name="object_type" value="name(.)"/>
         <let name="object_id" value="nlcs:Handle"/>
-        
+
         <assert id="naam_monteur_present"
             test="keronic:element-exists-and-not-empty(nlcs:NaamMonteur)"
             properties="scope rule-number object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['NaamMonteur'])"/>
         </assert>
-        
+
         <assert id="cross_bounding_present"
             test="keronic:element-exists-and-not-empty(nlcs:CrossBoundingAanwezig)"
             properties="scope rule-number object-type object-id">

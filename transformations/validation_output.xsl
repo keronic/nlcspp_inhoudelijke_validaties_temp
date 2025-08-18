@@ -7,10 +7,10 @@
   <xsl:template match="/">
     <xsl:variable name="filename"
                   select="replace(tokenize(base-uri(), '/')[last()], '\.xml$', '.txt')"/>
-    
+
     <xsl:variable name="has_failed_asserts"
                   select="count(//svrl:failed-assert) &gt; 0"/>
-    
+
     <xsl:variable name="test"
                   select="tokenize(base-uri(), '/')[last() - 1]"/>
 

@@ -3,16 +3,16 @@
      <rule context="//nlcs:ABeschermingvlak | //nlcs:MSstation">
           <let name="geometry"
                value="tokenize(normalize-space(nlcs:Geometry/gml:Polygon/gml:exterior/gml:LinearRing/gml:posList))"/>
-          
+
           <let name="geometry_doubles"
                value="for $v in $geometry return xs:double($v)"/>
-          
+
           <let name="coords_amount"
                value="count($geometry) idiv 2"/>
-          
+
           <let name="coords"
                value="for $v in $geometry return xs:double($v)"/>
-          
+
           <let name="distances"
                value="
                     for $i in 1 to $coords_amount - 1
@@ -22,13 +22,13 @@
                          )
                "/>
 
-          <let name="rule_number" 
+          <let name="rule_number"
                value="4"/>
-          <let name="object_type" 
+          <let name="object_type"
                value="name(.)"/>
-          <let name="object_id" 
-               value="nlcs:Handle"/>     
-          
+          <let name="object_id"
+               value="nlcs:Handle"/>
+
           <assert id="assert-area-meets-length-demand"
                test="not(some $d in $distances satisfies $d le 10 or $d ge 50)"
                properties="scope rule-number object-type object-id">

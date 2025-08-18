@@ -26,4 +26,3 @@ jobs:
 
     - name: Generate validatieregels HTML and check if its content matches the current HTML
       run: scripts/generate_and_compare_htmls.sh
-      
