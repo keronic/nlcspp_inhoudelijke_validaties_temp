@@ -114,7 +114,7 @@
     <phase id="R.28">
         <active pattern="v11-mantelbuis-inhoud-correct"/>
     </phase>
-    
+
     <phase id="R.29">
         <active pattern="v11-verplaatsen-correctly-applied"/>
     </phase>
