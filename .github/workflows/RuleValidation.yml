@@ -2,6 +2,7 @@ name: Rule Validation CI
 
 on:
   pull_request:
+  push:
     branches: [ "main" ]
 
 env:
@@ -45,7 +46,7 @@ jobs:
       - name: Upload validation results
         uses: actions/upload-artifact@v4
         with:
-          name: validation-results
+          name: rule-validation-results
           path: validation_output
 
       - name: Validate whether failing tests fail and passing test pass
