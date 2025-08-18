@@ -2,6 +2,7 @@ name: Rule Coverage CI
 
 on:
   pull_request:
+  push:
     branches: [ "main" ]
 
 jobs:
