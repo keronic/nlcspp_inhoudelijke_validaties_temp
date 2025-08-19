@@ -25,7 +25,9 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Prepare homepage
-        run: cp doc/NLCSValidatieRegels.html index.html
+        run: |
+          cp doc/NLCSValidatieRegels.html index.html
+          cp doc/NLCSValidatieRegels.css index.css
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
