@@ -22,12 +22,20 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v5
+      - name: Create redirect index.html
+        run: |
+          echo '<!DOCTYPE html>
+          <html>
+            <head>
+              <meta http-equiv="refresh" content="0; url=doc/NLCSValidatieRegels.html" />
+              <title>Redirecting...</title>
+            </head>
+            <body>
+              <p>Redirecting to <a href="doc/NLCSValidatieRegels.html">documentation</a>...</p>
+            </body>
+          </html>' > index.html
       - name: Setup Pages
         uses: actions/configure-pages@v5
-      - name: Prepare homepage
-        run: |
-          cp doc/NLCSValidatieRegels.html index.html
-          cp doc/NLCSValidatieRegels.css index.css
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
