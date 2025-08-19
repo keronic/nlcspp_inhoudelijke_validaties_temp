@@ -28,7 +28,7 @@
         <DatumAanleg>2023-10-10</DatumAanleg>
         <Status>{{STATUS}}</Status>
         <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
-        <Verbindingsnummer>1</Verbindingsnummer>
+        <Verbindingnummer>1</Verbindingnummer>
         <Spanningsniveau>10 kV</Spanningsniveau>
         <Aardingsysteem>TN</Aardingsysteem>
         <Inmeetwijze>GPS</Inmeetwijze>

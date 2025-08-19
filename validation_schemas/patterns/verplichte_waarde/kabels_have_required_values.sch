@@ -32,10 +32,10 @@
             <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['Fabrikant'])"/>
         </assert>
 
-        <assert id="kabel-has-verbindingsnummer"
-            test="keronic:element-exists-and-not-empty(nlcs:Verbindingsnummer)"
+        <assert id="kabel-has-verbindingnummer"
+            test="keronic:element-exists-and-not-empty(nlcs:Verbindingnummer)"
             properties="scope rule-number object-type object-id">
-            <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['Verbindingsnummer'])"/>
+            <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['Verbindingnummer'])"/>
         </assert>
 
         <assert id="kabel-has-spanningsniveau"

@@ -29,7 +29,7 @@
         <Beheerder>Netbeheerder</Beheerder>
         <CrossBoundingAanwezig>Ja</CrossBoundingAanwezig>
         <NaamMonteur>John Doe</NaamMonteur>
-        <Verbindingsnummer>123456</Verbindingsnummer>
+        <Verbindingnummer>123456</Verbindingnummer>
         <Type>Wikkelmof</Type>
         <GisId>53264168</GisId>
         <AssetId>{D1185DFB-9CF4-42D6-BF83-9F8448E75D68}</AssetId>
