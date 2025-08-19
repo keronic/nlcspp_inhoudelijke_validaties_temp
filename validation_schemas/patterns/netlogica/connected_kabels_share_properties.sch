@@ -7,13 +7,13 @@
         <let name="connected_msmoffen"
             value="//nlcs:MSmof[
                 keronic:point-3d-connected-to-line-3d(
-                    tokenize(normalize-space(nlcs:Geometry/gml:Point/gml:pos)), 
-                    tokenize(normalize-space($mskabel/nlcs:Geometry/gml:LineString/gml:posList)), 
+                    tokenize(normalize-space(nlcs:Geometry/gml:Point/gml:pos)),
+                    tokenize(normalize-space($mskabel/nlcs:Geometry/gml:LineString/gml:posList)),
                     0)]"/>
 
         <let name="connected_mskabels"
             value="//nlcs:MSkabel[
-                some $connected_mof in $connected_msmoffen satisfies 
+                some $connected_mof in $connected_msmoffen satisfies
                     keronic:line-3d-connected-to-point-3d(
                         tokenize(normalize-space(nlcs:Geometry/gml:LineString/gml:posList)),
                         tokenize(normalize-space($connected_mof/nlcs:Geometry/gml:Point/gml:pos)),
@@ -35,12 +35,12 @@
             test="empty($unexpected_bedrijfstoestanden)"
             properties="scope rule-number object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders(
-                'connected-cable-does-not-match-property', 
+                'connected-cable-does-not-match-property',
                 ['Bedrijfstoestand', $expected_bedrijfstoestand, string-join($unexpected_bedrijfstoestanden, ', ')])"/>
         </assert>
 
         <!-- Compare subnettypes against original-->
-        
+
         <let name="expected_subnettype"
             value="nlcs:Subnettype"/>
 
@@ -51,7 +51,7 @@
             test="empty($unexpected_subnettypes)"
             properties="scope rule-number object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders(
-                'connected-cable-does-not-match-property', 
+                'connected-cable-does-not-match-property',
                 ['Subnettype', $expected_subnettype, string-join($unexpected_subnettypes, ', ')])"/>
         </assert>
 
@@ -67,7 +67,7 @@
             test="empty($unexpected_verbindingnummers)"
             properties="scope rule-number object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders(
-                'connected-cable-does-not-match-property', 
+                'connected-cable-does-not-match-property',
                 ['Verbindingnummer', $expected_verbindingnummer, string-join($unexpected_verbindingnummers, ', ')])"/>
         </assert>
 
@@ -78,12 +78,12 @@
 
         <let name="unexpected_spanningsniveaus"
             value="distinct-values($connected_mskabels/nlcs:Spanningsniveau)[. != $expected_spanningsniveau]"/>
-        
+
         <assert id="connected-mskabel-does-not-match-spanningsniveau"
             test="empty($unexpected_spanningsniveaus)"
             properties="scope rule-number object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders(
-                'connected-cable-does-not-match-property', 
+                'connected-cable-does-not-match-property',
                 ['Spanningsniveau', $expected_spanningsniveau, string-join($unexpected_spanningsniveaus, ', ')])"/>
         </assert>
     </rule>

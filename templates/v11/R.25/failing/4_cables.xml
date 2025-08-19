@@ -20,7 +20,7 @@
             </gml:Polygon>
         </Geometry>
     </AprojectReferentie>
-    
+
     <MSkabel>
         <Handle>6301</Handle>
         <Uitvoering>3x240Alrm as35</Uitvoering>
@@ -47,7 +47,7 @@
             </gml:LineString>
         </Geometry>
     </MSkabel>
-    
+
     <MSkabel>
         <Handle>6302</Handle>
         <Uitvoering>3x240Alrm as35</Uitvoering>
@@ -74,7 +74,7 @@
             </gml:LineString>
         </Geometry>
     </MSkabel>
-    
+
     <MSkabel>
         <Handle>6303</Handle>
         <Uitvoering>3x240Alrm as35</Uitvoering>
@@ -101,7 +101,7 @@
             </gml:LineString>
         </Geometry>
     </MSkabel>
-    
+
     <MSkabel>
         <Handle>6304</Handle>
         <Uitvoering>3x240Alrm as35</Uitvoering>
@@ -128,7 +128,7 @@
             </gml:LineString>
         </Geometry>
     </MSkabel>
-    
+
     <MSmof>
         <Handle>5911</Handle>
         <DatumAanleg>1971-06-14</DatumAanleg>

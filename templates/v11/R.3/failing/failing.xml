@@ -42,7 +42,7 @@
             </gml:Point>
         </Geometry>
     </MSoverdrachtspunt>
-    
+
     <!-- Point outside in concave area -->
     <MSoverdrachtspunt>
         <Handle>55E9</Handle>
@@ -63,7 +63,7 @@
             </gml:Point>
         </Geometry>
     </MSoverdrachtspunt>
-    
+
     <!-- Line fully outside -->
     <Amantelbuis>
         <Handle>5639</Handle>
@@ -87,7 +87,7 @@
             </gml:LineString>
         </Geometry>
     </Amantelbuis>
-    
+
 
     <!-- Area fully outside -->
     <MSstation>

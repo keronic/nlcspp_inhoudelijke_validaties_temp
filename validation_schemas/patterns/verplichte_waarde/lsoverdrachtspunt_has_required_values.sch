@@ -16,13 +16,13 @@
             properties="scope rule-number object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['EigenRichting'])"/>
         </assert>
-        
+
         <assert id="fase-aanduiding-present"
             test="keronic:element-exists-and-not-empty(nlcs:FaseAanduiding)"
             properties="scope rule-number object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['FaseAanduiding'])"/>
         </assert>
-        
+
         <assert id="aardingsysteem-present"
             test="keronic:element-exists-and-not-empty(nlcs:Aardingsysteem)"
             properties="scope rule-number object-type object-id">

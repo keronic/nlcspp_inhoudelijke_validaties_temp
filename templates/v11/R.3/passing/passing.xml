@@ -59,7 +59,7 @@
             </gml:Point>
         </Geometry>
     </MSmof>
-    
+
     <!-- Line fully inside -->
     <MSkabel>
         <Handle>6301</Handle>
@@ -86,7 +86,7 @@
             </gml:LineString>
         </Geometry>
     </MSkabel>
-    
+
     <!-- Line one point inside one point outside -->
     <Akunstwerk>
         <Handle>145A</Handle>
@@ -103,8 +103,8 @@
                 <gml:posList>320.0 60.0 0 420.0 110.0 0</gml:posList>
             </gml:LineString>
         </Geometry>
-    </Akunstwerk>    
-    
+    </Akunstwerk>
+
     <!-- Line all points outside but an edge inside -->
     <EAarddraad>
         <Handle>2232</Handle>
@@ -126,7 +126,7 @@
             </gml:LineString>
         </Geometry>
     </EAarddraad>
-    
+
     <!-- Line one point exactly on edge -->
     <Aaanlegtechniek>
         <Handle>1234</Handle>
@@ -145,7 +145,7 @@
             </gml:LineString>
         </Geometry>
     </Aaanlegtechniek>
-    
+
     <!-- Line two points exactly on edge -->
     <MSkabel>
         <Handle>6302</Handle>
@@ -224,7 +224,7 @@
             </gml:Polygon>
         </Geometry>
     </MSstation>
-    
+
     <!-- Area points fully outside but an edge inside -->
     <ABeschermingsvlak>
         <Handle>44AF</Handle>
@@ -246,7 +246,7 @@
             </gml:Polygon>
         </Geometry>
     </ABeschermingsvlak>
-    
+
     <!-- Area points fully outside, no edges crossing, but covers entire polygon-->
     <MSstation>
         <Handle>5640</Handle>

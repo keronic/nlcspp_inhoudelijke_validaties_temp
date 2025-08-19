@@ -6,7 +6,7 @@
         <let name="nlcs_objects"
             value="*[not(self::nlcs:VersieNummer or self::nlcs:AprojectReferentie)]"/>
 
-        <assert id="file-has-aprojectreferentie" 
+        <assert id="file-has-aprojectreferentie"
             test="count($aprojectreferenties) = 1"
             properties="rule-number">
             <value-of select="keronic:get-translation('aprojectreferentie-not-present')"/>
@@ -15,11 +15,10 @@
         <let name="aprojectreferenties"
             value="nlcs:AprojectReferentie"/>
 
-        <assert id="file-has-nlcs-objects" 
+        <assert id="file-has-nlcs-objects"
             test="count($nlcs_objects) > 0"
             properties="scope rule-number">
             <value-of select="keronic:get-translation('no-nlcs-objects-present')"/>
         </assert>
     </rule>
 </pattern>
-    
