@@ -1,4 +1,4 @@
-name: Deploy static content to GH Pages
+name: Deploy NLCSValidatieRegels as GH Pages
 
 on:
   push:
@@ -21,13 +21,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      - name: Prepare homepage
+        run: cp doc/NLCSValidatieRegels.html index.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: index.html
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
