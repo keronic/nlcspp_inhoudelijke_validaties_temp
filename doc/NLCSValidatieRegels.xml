@@ -132,7 +132,7 @@
 					- Uitvoering
 					- Kabelopbouw
 					- Fabrikant
-					- Verbindingsnummer
+					- Verbindingnummer
 					- Spanningsniveau
 					- Aardingsysteem
 					- FaseAanduiding
@@ -176,7 +176,7 @@
 			<definitie>
 				Iedere mof moet een waarde voor de volgende kenmerken hebben:
 					- Functie
-					- Verbindingsnummer
+					- Verbindingnummer
 				Iedere LS mof moet een waarde voor de volgende kenmerken hebben:
 					- Bovengronds
 				Iedere MS en HS mof moet een waarde voor de volgende kenmerken hebben:
