@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns="NLCSValidatieRegelsNameSpace" 
+<xs:schema xmlns="NLCSValidatieRegelsNameSpace"
 		   xmlns:xs="http://www.w3.org/2001/XMLSchema"
 		   targetNamespace="NLCSValidatieRegelsNameSpace"
-		   elementFormDefault="qualified" 
+		   elementFormDefault="qualified"
 		   attributeFormDefault="unqualified">
-	
-	<!--- Type Definities -->	
+
+	<!--- Type Definities -->
 	<xs:simpleType name="SoortValidatieRegelType">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="Bestand"/>
@@ -33,8 +33,8 @@
 			<xs:enumeration value="LSkast"/>
 			<xs:enumeration value="LSmof"/>
 			<xs:enumeration value="LSkabel"/>
-			<xs:enumeration value="LSoverdrachtspunt"/>	
-			<xs:enumeration value="OVLoverdrachtspunt"/>			
+			<xs:enumeration value="LSoverdrachtspunt"/>
+			<xs:enumeration value="OVLoverdrachtspunt"/>
 			<xs:enumeration value="MSstation"/>
 			<xs:enumeration value="MSoverdrachtspunt"/>
 			<xs:enumeration value="MSkabel"/>
@@ -57,7 +57,7 @@
 			<xs:enumeration value="Abeschermingvlak"/>
 			<xs:enumeration value="Amarkeringsobject"/>
 			<xs:enumeration value="AinUittredepunt"/>
-			<xs:enumeration value="AbeschermingVlak"/>			
+			<xs:enumeration value="AbeschermingVlak"/>
 			<xs:enumeration value="Gstation"/>
 			<xs:enumeration value="Gleiding"/>
 			<xs:enumeration value="Gafsluiter"/>
@@ -85,9 +85,9 @@
 			<xs:enumeration value="Tkabel"/>
 			<xs:enumeration value="Tmof"/>
 			<xs:enumeration value="Toverdrachtspunt"/>
-			
+
 		</xs:restriction>
-	</xs:simpleType>	
+	</xs:simpleType>
 	<xs:simpleType name="ObjectSoortType">
 		<xs:restriction base="xs:string">
 			<xs:enumeration value="LS"/>
@@ -99,7 +99,7 @@
 			<xs:enumeration value="Gas"/>
 			<xs:enumeration value="KB"/>
 		</xs:restriction>
-	</xs:simpleType>	
+	</xs:simpleType>
 	<xs:complexType name="ValidatieObjectType">
 		<xs:sequence>
 			<xs:element name="naam"        type="NLCSObjectType"  minOccurs="1" maxOccurs="1"/>
@@ -154,13 +154,13 @@
 		</xs:sequence>
 		<xs:attribute name="naam" type="xs:string" use="required"/>
 	</xs:complexType>
-	
+
 	<xs:complexType name="ScopeVerzamelingType">
 		<xs:sequence>
 			<xs:element name="scope" type="ScopeType" minOccurs="1" maxOccurs="unbounded"/>
 		</xs:sequence>
 	</xs:complexType>
-	
+
 	<xs:complexType name="ValidatieRegelType">
 		<xs:sequence>
 			<xs:element name="beschrijving"     type="xs:string" minOccurs="1" maxOccurs="1">
@@ -174,7 +174,7 @@
 					<xs:documentation>Definitie waarmee de daadwerkelijke Schematron inhoudelijke validatie ontwikkeld kan worden</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="toelichting"       type="xs:string" minOccurs="1" maxOccurs="1"> 
+			<xs:element name="toelichting"       type="xs:string" minOccurs="1" maxOccurs="1">
 				<xs:annotation>
 					<xs:documentation>Ruimte voor aanvullend toelichting wat niet past in beschrijving of definitie</xs:documentation>
 				</xs:annotation>
@@ -184,26 +184,26 @@
 		<xs:attribute name="nummer" type="xs:ID" use="required"/>
 		<xs:attribute name="naam" type="xs:string" use="required"/>
 	</xs:complexType>
-	
+
 	<xs:complexType name="ValidatieRegelVerzamelingType">
 		<xs:sequence>
 			<xs:element name="validatieRegel" type="ValidatieRegelType" minOccurs="1" maxOccurs="unbounded"/>
 		</xs:sequence>
 	</xs:complexType>
-	
+
 	<xs:complexType name="ScopeValidatieRegelsReferentieType">
 		<xs:sequence>
 			<xs:element name="nummer" type="xs:IDREF" minOccurs="1" maxOccurs="1"/>
 			<xs:element name="niveau" type="NiveauRegelType" minOccurs="1" maxOccurs="1"/>
 		</xs:sequence>
 	</xs:complexType>
-	
+
 	<xs:complexType name="ScopeValidatieRegelsVerzamelingType">
 		<xs:sequence>
 			<xs:element name="scopeValidatieRegel" type="ScopeValidatieRegelsReferentieType" minOccurs="1" maxOccurs="unbounded"/>
 		</xs:sequence>
 	</xs:complexType>
-	
+
 	<!--  Root element -->
 	<xs:element name="NLCSValidatieregels">
 		<xs:complexType>

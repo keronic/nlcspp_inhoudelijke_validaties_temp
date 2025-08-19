@@ -45,9 +45,9 @@ jobs:
         with:
           name: scopes-transpiled
           path: validation_schemas/scopes_transpiled
-      
+
       # - name: Release scope XSLs
       #   uses: softprops/action-gh-release@v2
       #   if: github.ref_type == 'tag'
-      #   with: 
+      #   with:
       #     files: validation_schemas/scopes_transpiled

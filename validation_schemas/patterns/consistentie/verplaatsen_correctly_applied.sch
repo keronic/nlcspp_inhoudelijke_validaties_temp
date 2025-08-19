@@ -10,7 +10,7 @@
 
         <let name="hasSomeOriginal"
             value="some $kabel in //nlcs:MSkabel satisfies $kabel ne . and $kabel/nlcs:Status = 'BESTAAND' and $kabel/nlcs:GisId = nlcs:GisId"/>
-               
+
         <assert id="verplaatsen_correctly_applied"
             test="if ($isVerplaatsing) then $hasSomeOriginal else true()"
             properties="scope rule-number object-type object-id">

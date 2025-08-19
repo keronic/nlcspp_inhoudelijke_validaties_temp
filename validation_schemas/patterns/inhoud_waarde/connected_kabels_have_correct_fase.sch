@@ -33,15 +33,15 @@
             properties="scope rule-number object-type object-id"
             test="if($connections = 2 or $connections = 3) then $all_connected_cables_match_fases else true()">
             <value-of select="keronic:get-translation-and-replace-placeholders(
-                'connected-fases-do-not-match', 
+                'connected-fases-do-not-match',
                 [string-join($unique_connected_phases, ', ')])"/>
         </assert>
-        
+
         <assert id="msmof-4-connected-cables-have-combined-and-split-fasen"
             properties="scope rule-number object-type object-id"
             test="if($connections = 4) then $all_connected_cables_have_combined_and_split_fases else true()">
             <value-of select="keronic:get-translation-and-replace-placeholders(
-                'connected-fases-do-not-split', 
+                'connected-fases-do-not-split',
                 [string-join($allowed_phases, ', '), string-join($unique_connected_phases, ', ')])"/>
         </assert>
 

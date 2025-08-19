@@ -4,7 +4,7 @@
         <let name="rule_number" value="7"/>
         <let name="object_type" value="name(.)"/>
         <let name="object_id" value="nlcs:Handle"/>
-        
+
         <assert id="subnettype-present"
             test="keronic:element-exists-and-not-empty(nlcs:Subnettype)"
             properties="scope rule-number object-type object-id">

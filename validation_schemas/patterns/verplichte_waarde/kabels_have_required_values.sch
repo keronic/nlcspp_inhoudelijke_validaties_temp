@@ -19,31 +19,31 @@
             properties="scope rule-number object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['OmschrijvingUitvoering'])"/>
         </assert>
-        
+
         <assert id="kabel-has-kabelopbouw"
             test="keronic:element-exists-and-not-empty(nlcs:Kabelopbouw)"
             properties="scope rule-number object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['Kabelopbouw'])"/>
         </assert>
-        
+
         <assert id="kabel-has-fabrikant"
             test="keronic:element-exists-and-not-empty(nlcs:Fabrikant)"
             properties="scope rule-number object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['Fabrikant'])"/>
         </assert>
-        
+
         <assert id="kabel-has-verbindingsnummer"
             test="keronic:element-exists-and-not-empty(nlcs:Verbindingsnummer)"
             properties="scope rule-number object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['Verbindingsnummer'])"/>
         </assert>
-        
+
         <assert id="kabel-has-spanningsniveau"
             test="keronic:element-exists-and-not-empty(nlcs:Spanningsniveau)"
             properties="scope rule-number object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['Spanningsniveau'])"/>
         </assert>
-        
+
         <assert id="kabel-has-aardingsysteem"
             test="keronic:element-exists-and-not-empty(nlcs:Aardingsysteem)"
             properties="scope rule-number object-type object-id">
