@@ -19,7 +19,7 @@
         <assert id="mof_connected_to_right_amount_of_cables"
                 properties="scope rule-number object-type object-id"
             test="count($connected_mskabels) = $required_amount">
-            <value-of select="keronic:get-translation-and-replace-placeholders('cable-amount-incorrect', [$required_amount, count($connected_mskabels)])"/>
+            <value-of select="keronic:get-translation-and-replace-placeholders('cable-amount-incorrect', [string($required_amount), string(count($connected_mskabels))])"/>
         </assert>
     </rule>
     
@@ -46,7 +46,7 @@
         <assert id="mof_connected_to_right_amount_of_cables"
                 properties="scope rule-number object-type object-id"
             test="count($connected_mskabels) = $required_amount">
-            <value-of select="keronic:get-translation-and-replace-placeholders('cable-amount-incorrect', [$required_amount, count($connected_mskabels)])"/>
+            <value-of select="keronic:get-translation-and-replace-placeholders('cable-amount-incorrect', [string($required_amount), string(count($connected_mskabels))])"/>
         </assert>
     </rule>
     <rule context="//nlcs:MSmof[nlcs:Functie = ('AFTAK')]">
@@ -71,7 +71,7 @@
         <assert id="mof_connected_to_right_amount_of_cables"
                 properties="scope rule-number object-type object-id"
             test="count($connected_mskabels) = $required_amount">
-            <value-of select="keronic:get-translation-and-replace-placeholders('cable-amount-incorrect', [$required_amount, count($connected_mskabels)])"/>
+            <value-of select="keronic:get-translation-and-replace-placeholders('cable-amount-incorrect', [string($required_amount), string(count($connected_mskabels))])"/>
         </assert>
         
         <assert id="bestaande_cable_also_connected_to_one_new_cable"
