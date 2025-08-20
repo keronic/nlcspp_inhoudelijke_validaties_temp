@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NLCSnetbeheerType xmlns:keuzelijst="NLCSnetbeheer"
+                   xmlns:gml="http://www.opengis.net/gml/3.2"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="NLCSnetbeheer">
+    <VersieNummer>11</VersieNummer>
+    <AprojectReferentie>
+        <Handle>Keronic</Handle>
+        <Projectnummer>1</Projectnummer>
+        <DeelrevisieVolgnummer>1</DeelrevisieVolgnummer>
+        <Geometry>
+            <gml:Polygon
+                srsDimension="2"
+                srsName="EPSG:28992">
+                <gml:exterior>
+                    <gml:LinearRing>
+                        <gml:posList>100.0 100.0 200.0 100.0 200.0 200.0 100.0 200.0 100.0 100.0</gml:posList>
+                    </gml:LinearRing>
+                </gml:exterior>
+            </gml:Polygon>
+        </Geometry>
+    </AprojectReferentie>
+    <MSmof>
+        <Handle>5911</Handle>
+        <Status>NIEUW</Status>
+        <Functie>AFTAK</Functie>
+        <Geometry>
+            <gml:Point
+                srsDimension="3"
+                srsName="EPSG:7415">
+                <gml:pos>240.0 40.0 -1.0</gml:pos>
+            </gml:Point>
+        </Geometry>
+    </MSmof>
+    <MSkabel>
+        <Handle>6301</Handle>
+        <Status>NIEUW</Status>
+        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <FaseAanduiding>3 Fasen</FaseAanduiding>
+        <Geometry>
+            <gml:LineString
+                srsDimension="3"
+                srsName="EPSG:28992">
+                <gml:posList>40.0 40.0 -1.0 240.0 40.0 -1.0</gml:posList>
+            </gml:LineString>
+        </Geometry>
+    </MSkabel>
+    <MSkabel>
+        <Handle>6302</Handle>
+        <Status>NIEUW</Status>
+        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <FaseAanduiding>3 Fasen</FaseAanduiding>
+        <Geometry>
+            <gml:LineString
+                srsDimension="3"
+                srsName="EPSG:28992">
+                <gml:posList>50.0 50.0 -1.0 240.0 40.0 -1.0</gml:posList>
+            </gml:LineString>
+        </Geometry>
+    </MSkabel>
+</NLCSnetbeheerType>

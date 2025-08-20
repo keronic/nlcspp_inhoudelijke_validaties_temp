@@ -20,7 +20,7 @@
       Invalid status {1} for TekeningType {2}, must be one of: {3}
     </message-text>
     <message-text xml:lang="nl">
-      Ongeldige status {1} voor TekeningType {2}, moet een van de volgende zijn: {3}
+      Ongeldige status {1} voor TekeningType {2}, moet een van de volgende zijn: {3} 
     </message-text>
   </message>
   <message id="object-outside-project-area">
@@ -114,46 +114,6 @@
     <message-text xml:lang="nl">
       De fase van het object is niet hetzelfde als de Uitvoering!
     </message-text>
-    <message id="inhoud_diameter_too_large">
-      <message-text xml:lang="nl">
-        De diameter van de bijbehorende AmantelbuisInhoud {1} is {2} en daarom te groot! Deze moet kleiner dan {3} zijn
-      </message-text>
-      <message-text xml:lang="en">
-        The diameter of the associated AmantelbuisInhoud {1} is {2} and therefore too large! This has to be smaller than {3}
-      </message-text>
-    </message>
-  </message>
-  <message id="inhoud-not-found">
-    <message-text xml:lang="nl">
-      Als de Mantelbuis RESERVE is mag deze geen inhoud hebben.
-    </message-text>
-    <message-text xml:lang="en">
-      If the Mantelbuis is RESERVE, it is not allowed to have an Inhoud.
-    </message-text>
-  </message>
-  <message id="inhoud-found">
-    <message-text xml:lang="nl">
-      Als de Mantelbuis IN BEDRIJF is MOET deze een inhoud hebben.
-    </message-text>
-    <message-text xml:lang="en">
-      If the Mantelbuis is IN BEDRIJF an Inhoud is REQUIRED.
-    </message-text>
-  </message>
-  <message id="connected-fases-do-not-match">
-    <message-text xml:lang="nl">
-      Verbonden kabels moeten dezelfde Fase hebben, maar kwam verschillende waardes tegen: {1}
-    </message-text>
-    <message-text xml:lang="en">
-      Connected cables should have the same Fase, but found different values: {1}
-    </message-text>
-  </message>
-  <message id="connected-fases-do-not-split">
-    <message-text xml:lang="nl">
-      Elke verbonden kabel moeten elke één van de unieke Fasen hebben ({1}), maar kwam enkel deze waardes tegen: {2}
-    </message-text>
-    <message-text xml:lang="en">
-      Each connected kabel should each have one of the unique Fase values ({1}), but only found the following: {2}
-    </message-text>
   </message>
   <message id="inhoud-found">
     <message-text xml:lang="nl">
@@ -169,14 +129,6 @@
     </message-text>
     <message-text xml:lang="en">
       If the Mantelbuis is IN BEDRIJF an Inhoud is REQUIRED.
-    </message-text>
-  </message>
-  <message id="verplaatsen-incorrectly-applied">
-    <message-text xml:lang="nl">
-      Een kabel met Status REVISIE en Bewerking VERPLAATSEN verwacht een soortgelijke kabel met dezelfde GisID en Status BESTAAND.
-    </message-text>
-    <message-text xml:lang="en">
-      A cable with Status REVISIE and Bewerking VERPLAATSEN expects a similar cable with the same GisID and Status BESTAAND.
     </message-text>
   </message>
 </messages>
