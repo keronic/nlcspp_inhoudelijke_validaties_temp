@@ -124,46 +124,6 @@
     <message-text xml:lang="nl">
       De fase van het object is niet hetzelfde als de Uitvoering!
     </message-text>
-    <message id="inhoud_diameter_too_large">
-      <message-text xml:lang="nl">
-        De diameter van de bijbehorende AmantelbuisInhoud {1} is {2} en daarom te groot! Deze moet kleiner dan {3} zijn
-      </message-text>
-      <message-text xml:lang="en">
-        The diameter of the associated AmantelbuisInhoud {1} is {2} and therefore too large! This has to be smaller than {3}
-      </message-text>
-    </message>
-  </message>
-  <message id="inhoud-not-found">
-    <message-text xml:lang="nl">
-      Als de Mantelbuis RESERVE is mag deze geen inhoud hebben.
-    </message-text>
-    <message-text xml:lang="en">
-      If the Mantelbuis is RESERVE, it is not allowed to have an Inhoud.
-    </message-text>
-  </message>
-  <message id="inhoud-found">
-    <message-text xml:lang="nl">
-      Als de Mantelbuis IN BEDRIJF is MOET deze een inhoud hebben.
-    </message-text>
-    <message-text xml:lang="en">
-      If the Mantelbuis is IN BEDRIJF an Inhoud is REQUIRED.
-    </message-text>
-  </message>
-  <message id="connected-fases-do-not-match">
-    <message-text xml:lang="nl">
-      Verbonden kabels moeten dezelfde Fase hebben, maar kwam verschillende waardes tegen: {1}
-    </message-text>
-    <message-text xml:lang="en">
-      Connected cables should have the same Fase, but found different values: {1}
-    </message-text>
-  </message>
-  <message id="connected-fases-do-not-split">
-    <message-text xml:lang="nl">
-      Elke verbonden kabel moeten elke één van de unieke Fasen hebben ({1}), maar kwam enkel deze waardes tegen: {2}
-    </message-text>
-    <message-text xml:lang="en">
-      Each connected kabel should each have one of the unique Fase values ({1}), but only found the following: {2}
-    </message-text>
   </message>
   <message id="inhoud-found">
     <message-text xml:lang="nl">
@@ -181,12 +141,28 @@
       If the Mantelbuis is IN BEDRIJF an Inhoud is REQUIRED.
     </message-text>
   </message>
-  <message id="verplaatsen-incorrectly-applied">
+  <message id="cable-amount-incorrect">
+    <message-text xml:lang="en">
+      There are not enough cables connected to this mof. {1} are required, but found {2}
+    </message-text>
     <message-text xml:lang="nl">
-      Een kabel met Status REVISIE en Bewerking VERPLAATSEN verwacht een soortgelijke kabel met dezelfde GisID en Status BESTAAND.
+      Er zijn niet genoeg kabels verbonden aan de mof. {1} zijn nodig, maar kon er maar {1} vinden
+    </message-text>
+  </message>
+  <message id="phases-are-incorrect">
+    <message-text xml:lang="en">
+      The expected phases for the connected cables are incorrect. Expected {1} but got {2}
+    </message-text>
+    <message-text xml:lang="nl">
+      De verwachte faseaanduidingen voor de verbonden kabels zijn incorrect. Expected {1} maar kreeg {2}
+    </message-text>
+  </message>
+  <message id="bestaande-cable-not-connected-to-new-cable">
+    <message-text xml:lang="nl">
+      Een aftakmof op een bestaande kabel moet ook verbonden zijn aan een nieuwe kabel
     </message-text>
     <message-text xml:lang="en">
-      A cable with Status REVISIE and Bewerking VERPLAATSEN expects a similar cable with the same GisID and Status BESTAAND.
+      An aftakmof on an existing cable also needs to be connected to a new cable
     </message-text>
   </message>
 </messages>

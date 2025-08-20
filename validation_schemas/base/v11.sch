@@ -111,6 +111,10 @@
         <active pattern="v11-connected-kabels-have-correct-phase"/>
     </phase>
 
+    <phase id="R.26">
+        <active pattern="v11-amount-of-cables-correct-for-mof-functie"/>
+    </phase>
+
     <phase id="R.27">
         <active pattern="v11-mantelbuis-inhoud-fits-in-mantelbuis"/>
     </phase>
@@ -164,4 +168,5 @@
     <include href="../patterns/inhoud_waarde/mantelbuis_inhoud_fits_in_mantelbuis.sch"/>
     <include href="../patterns/consistentie/mantelbus_inhoud_correct.sch"/>
     <include href="../patterns/consistentie/verplaatsen_correctly_applied.sch"/>
+    <include href="../patterns/inhoud_waarde/amount_of_cables_correct_for_mof_functie.sch"/>
 </schema>
