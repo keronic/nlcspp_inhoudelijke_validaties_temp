@@ -95,6 +95,10 @@
         <active pattern="v11-mskabel-connected-to-correct-object"/>
     </phase>
 
+    <phase id="R.22">
+        <active pattern="v11-connected-kabels-share-netvlak"/>
+    </phase>
+
     <phase id="R.23">
         <active pattern="v11-connected-kabels-share-properties"/>
     </phase>
@@ -153,6 +157,7 @@
     <include href="../patterns/verplichte_waarde/mantelbuis_has_required_values.sch"/>
     <include href="../patterns/topologie/points_connected_to_lines.sch"/>
     <include href="../patterns/topologie/cables_connected_to_correct_objects.sch"/>
+    <include href="../patterns/netlogica/connected_kabels_share_netvlak.sch"/>
     <include href="../patterns/netlogica/connected_kabels_share_properties.sch"/>
     <include href="../patterns/inhoud_waarde/fase_ms_kabel.sch"/>
     <include href="../patterns/inhoud_waarde/connected_kabels_have_correct_fase.sch"/>
