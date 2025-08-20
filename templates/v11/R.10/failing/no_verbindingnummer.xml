@@ -27,7 +27,7 @@
         <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
         <Eigenaar>Netbeheerder</Eigenaar>
         <Beheerder>Netbeheerder</Beheerder>
-        <CrossBoundingAanwezig>Ja</CrossBoundingAanwezig>
+        <CrossBondingAanwezig>Ja</CrossBondingAanwezig>
         <NaamMonteur>John Doe</NaamMonteur>
         <Type>Wikkelmof</Type>
         <Functie>AFTAK</Functie>
