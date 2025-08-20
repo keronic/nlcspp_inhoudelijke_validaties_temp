@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NLCSnetbeheerType xmlns:keuzelijst="NLCSnetbeheer"
+                   xmlns:gml="http://www.opengis.net/gml/3.2"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="NLCSnetbeheer">
+    <VersieNummer>11</VersieNummer>
+    <AprojectReferentie>
+        <Handle>Keronic</Handle>
+    </AprojectReferentie>
+
+    <MSkabel>
+        <Handle>6301</Handle>
+        <Status>BESTAAND</Status>
+        <GisId>83412</GisId>
+        <AssetId>{38518CAF-0F42-448D-8CD6-1E655152A0AD}</AssetId>
+    </MSkabel>
+
+    <MSkabel>
+        <Handle>6301</Handle>
+        <Status>REVISIE</Status>
+        <GisId>83413</GisId>
+        <AssetId>{38518CAF-0F42-448D-8CD6-1E655152A0AE}</AssetId>
+    </MSkabel>
+
+    <MSstation>
+        <Handle>5638</Handle>
+        <Status>VERWIJDERD</Status>
+        <GisId>83414</GisId>
+        <AssetId>{6D43A69E-C176-401A-8517-E2605079A344}</AssetId>
+    </MSstation>
+
+    <Amantelbuis>
+        <Handle>5639</Handle>
+        <Status>NIEUW</Status>
+    </Amantelbuis>
+
+    <MSmof>
+        <Handle>5911</Handle>
+        <Status>TIJDELIJK</Status>
+    </MSmof>
+</NLCSnetbeheerType>
