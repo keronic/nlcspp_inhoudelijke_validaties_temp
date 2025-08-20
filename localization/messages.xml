@@ -105,7 +105,7 @@
       Verwachtte enkel {1} elementen, maar kwam {2} {3} element(en) tegen.
     </message-text>
   </message>
-  <message id="connected-cable-does-not-match-vlak">
+  <message id="connected-cable-does-not-match-property">
     <message-text xml:lang="en">
       One or more connected cable does not shared the same value for attribute {1}.
       Expected: {2}
