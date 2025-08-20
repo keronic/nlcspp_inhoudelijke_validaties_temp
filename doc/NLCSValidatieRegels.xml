@@ -372,7 +372,7 @@
 			<definitie>
 				Afhankelijk van de Functie van de Mof moet er een aantal kabels verbonden zijn met de mof:
 				- EINDMOF, EINDDOP, LOODKOP, EIND GEAARD: 1 kabel
-				- VERBINDNG, ZEGELWIJZIGING, MANTELREPARATIE: 2 kabels met dezelfde Fase of 4 kabels indien 3 fase met L1, L2 en L3
+				- VERBINDING, ZEGELWIJZIGING, MANTELREPARATIE: 2 kabels met dezelfde Fase of 4 kabels indien 3 fase met L1, L2 en L3
 				- AFTAK (op bestaande kabel]): 2 kabels: 1 nieuwe en moet op een bestaande liggen evt met marge.
 				- AFTAK (op nieuwe kabel): 3 kabels.
 			</definitie>

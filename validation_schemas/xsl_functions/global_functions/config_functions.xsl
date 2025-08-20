@@ -120,7 +120,8 @@
     <param name="message_id"/>
     <param name="placeholders" as="xs:string*"/> <!-- sequence of strings -->
     <variable name="translation" select="keronic:get-translation($message_id)"/>
-    <value-of select="keronic:replace-placeholders($translation, $placeholders)"/>
+    <variable name="placeholders-as-strings" select="for $p in $placeholders return string($p)"/>
+    <value-of select="keronic:replace-placeholders($translation, $placeholders-as-strings)"/>
   </function>
 
   <function name="keronic:replace-placeholders">

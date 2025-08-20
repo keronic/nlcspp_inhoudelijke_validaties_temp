@@ -19,11 +19,11 @@
         <assert id="mof_connected_to_right_amount_of_cables"
                 properties="scope rule-number object-type object-id"
             test="count($connected_mskabels) = $required_amount">
-            <value-of select="keronic:get-translation-and-replace-placeholders('cable-amount-incorrect', [string($required_amount), string(count($connected_mskabels))])"/>
+                        <value-of select="keronic:get-translation-and-replace-placeholders('cable-amount-incorrect', [$required_amount, count($connected_mskabels)])"/>
         </assert>
     </rule>
     
-    <rule context="//nlcs:MSmof[nlcs:Functie = ('VERBINDNG', 'ZEGELWIJZIGING', 'MANTELREPARATIE')]">
+    <rule context="//nlcs:MSmof[nlcs:Functie = ('VERBINDING', 'ZEGELWIJZIGING', 'MANTELREPARATIE')]">
         <let name="rule_number" value="26"/>
         <let name="object_type" value="name(.)"/>
         <let name="object_id" value="nlcs:Handle"/>
@@ -46,7 +46,11 @@
         <assert id="mof_connected_to_right_amount_of_cables"
                 properties="scope rule-number object-type object-id"
             test="count($connected_mskabels) = $required_amount">
-            <value-of select="keronic:get-translation-and-replace-placeholders('cable-amount-incorrect', [string($required_amount), string(count($connected_mskabels))])"/>
+                        <value-of select="keronic:get-translation-and-replace-placeholders('cable-amount-incorrect', [$required_amount, count($connected_mskabels)])"/>
+        
+        <assert id="if_connected_to_4_cables_phases_contains_l1_l2_l3"
+            test="not($required_amount = 4) or (count($unique_connected_phases) ge 3 and not(some $phase in ('L1', 'L2', 'L3') satisfies not($phase = $unique_connected_phases)))">
+            <value-of select="keronic:get-translation-and-replace-placeholders(('L1', 'L2', 'L3'), $unique_connected_phases)"/>
         </assert>
     </rule>
     <rule context="//nlcs:MSmof[nlcs:Functie = ('AFTAK')]">
@@ -71,7 +75,7 @@
         <assert id="mof_connected_to_right_amount_of_cables"
                 properties="scope rule-number object-type object-id"
             test="count($connected_mskabels) = $required_amount">
-            <value-of select="keronic:get-translation-and-replace-placeholders('cable-amount-incorrect', [string($required_amount), string(count($connected_mskabels))])"/>
+            <value-of select="keronic:get-translation-and-replace-placeholders('cable-amount-incorrect', [$required_amount, count($connected_mskabels)])"/>
         </assert>
         
         <assert id="bestaande_cable_also_connected_to_one_new_cable"
