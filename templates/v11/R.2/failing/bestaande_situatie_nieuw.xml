@@ -4,7 +4,13 @@
                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    xmlns="NLCSnetbeheer">
     <VersieNummer>11</VersieNummer>
-    <MSkabel>
-        <Handle>6301</Handle>
-    </MSkabel>
+    <AprojectReferentie>
+        <Handle>Keronic</Handle>
+        <TekeningType>BESTAANDE SITUATIE</TekeningType>
+    </AprojectReferentie>
+
+    <Amantelbuis>
+        <Handle>5639</Handle>
+        <Status>NIEUW</Status>
+    </Amantelbuis>
 </NLCSnetbeheerType>
