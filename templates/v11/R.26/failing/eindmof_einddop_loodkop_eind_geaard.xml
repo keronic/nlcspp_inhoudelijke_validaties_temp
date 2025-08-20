@@ -32,7 +32,7 @@
             </gml:Point>
         </Geometry>
     </MSmof>
-    
+
     <MSmof>
         <Handle>5912</Handle>
         <Status>BESTAAND</Status>
@@ -45,7 +45,7 @@
             </gml:Point>
         </Geometry>
     </MSmof>
-    
+
     <MSmof>
         <Handle>5913</Handle>
         <Status>BESTAAND</Status>
@@ -84,7 +84,7 @@
             </gml:LineString>
         </Geometry>
     </MSkabel>
-    
+
     <MSmof>
         <Handle>5914</Handle>
         <Status>BESTAAND</Status>

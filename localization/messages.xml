@@ -20,7 +20,7 @@
       Invalid status {1} for TekeningType {2}, must be one of: {3}
     </message-text>
     <message-text xml:lang="nl">
-      Ongeldige status {1} voor TekeningType {2}, moet een van de volgende zijn: {3} 
+      Ongeldige status {1} voor TekeningType {2}, moet een van de volgende zijn: {3}
     </message-text>
   </message>
   <message id="object-outside-project-area">
@@ -93,6 +93,16 @@
     </message-text>
     <message-text xml:lang="nl">
       De kabel is niet verbonden met een mof, overdrachtspunt of station.
+    </message-text>
+  </message>
+  <message id="connected-cable-does-not-match-netvlak">
+    <message-text xml:lang="en">
+      Cables connected to each other though a mof must share the same netvlak.
+      Expected only {1} elements, but found {2} {3} element(s).
+    </message-text>
+    <message-text xml:lang="nl">
+      Kabels die via een mof verbonden zijn met elkaar moeten van hetzelfde netvlak zijn.
+      Verwachtte enkel {1} elementen, maar kwam {2} {3} element(en) tegen.
     </message-text>
   </message>
   <message id="connected-cable-does-not-match-property">
