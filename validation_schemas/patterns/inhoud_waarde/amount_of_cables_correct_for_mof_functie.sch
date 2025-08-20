@@ -48,11 +48,6 @@
             test="count($connected_mskabels) = $required_amount">
             <value-of select="keronic:get-translation-and-replace-placeholders('cable-amount-incorrect', [string($required_amount), string(count($connected_mskabels))])"/>
         </assert>
-        
-        <assert id="if_connected_to_4_cables_phases_contains_l1_l2_l3"
-            test="not($required_amount = 4) or (count($unique_connected_phases) ge 3 and not(some $phase in ('L1', 'L2', 'L3') satisfies not($phase = $unique_connected_phases)))">
-            <value-of select="keronic:get-translation-and-replace-placeholders(('L1', 'L2', 'L3'), $unique_connected_phases)"/>
-        </assert>
     </rule>
     <rule context="//nlcs:MSmof[nlcs:Functie = ('AFTAK')]">
         <let name="rule_number" value="26"/>
