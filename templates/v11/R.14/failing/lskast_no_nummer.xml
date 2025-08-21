@@ -10,20 +10,7 @@
 
     <LSkast>
         <Handle>6131</Handle>
-        <Nummer>098.606</Nummer>
         <Functie>NETSTATION</Functie>
     </LSkast>
-
-    <MSstation>
-        <Handle>6132</Handle>
-        <Nummer>098.607</Nummer>
-        <Functie>NETSTATION</Functie>
-    </MSstation>
-
-    <HSstation>
-        <Handle>6133</Handle>
-        <Nummer>098.608</Nummer>
-        <Functie>NETSTATION</Functie>
-    </HSstation>
 
 </NLCSnetbeheerType>
