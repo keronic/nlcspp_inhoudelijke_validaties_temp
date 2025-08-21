@@ -8,19 +8,16 @@
         <Handle>Keronic</Handle>
     </AprojectReferentie>
 
-    <MSkabel>
-        <Handle>6301</Handle>
-        <Subnettype>DISTRIBUTIE</Subnettype>
-    </MSkabel>
-
     <LSkabel>
-        <Handle>6302</Handle>
-        <Subnettype>DISTRIBUTIE</Subnettype>
-    </LSkabel>
-
-    <LSmof>
         <Handle>6303</Handle>
-        <Subnettype>DISTRIBUTIE</Subnettype>
-    </LSmof>
+        <Uitvoering>3x240Alrm as35</Uitvoering>
+        <Fabrikant>NKF</Fabrikant>
+        <Verbindingnummer>1</Verbindingnummer>
+        <Spanningsniveau>10 kV</Spanningsniveau>
+        <Aardingsysteem>TN</Aardingsysteem>
+        <FaseAanduiding>3 Fasen</FaseAanduiding>
+        <Bovengronds>Ja</Bovengronds>
+        <Functie>LSOV</Functie>
+    </LSkabel>
 
 </NLCSnetbeheerType>
