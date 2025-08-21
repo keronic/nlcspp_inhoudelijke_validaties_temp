@@ -6,42 +6,28 @@
     <VersieNummer>11</VersieNummer>
     <AprojectReferentie>
         <Handle>Keronic</Handle>
-        <Projectnummer>1</Projectnummer>
-        <DeelrevisieVolgnummer>1</DeelrevisieVolgnummer>
-        <Geometry>
-            <gml:Polygon
-                srsDimension="2"
-                srsName="EPSG:28992">
-                <gml:exterior>
-                    <gml:LinearRing>
-                        <gml:posList>100.0 100.0 200.0 100.0 200.0 200.0 100.0 200.0 100.0 100.0</gml:posList>
-                    </gml:LinearRing>
-                </gml:exterior>
-            </gml:Polygon>
-        </Geometry>
     </AprojectReferentie>
+
+    <LSmof>
+        <Handle>5910</Handle>
+        <Functie>AFTAK</Functie>
+        <Verbindingnummer>123456</Verbindingnummer>
+        <Bovengronds>Nee</Bovengronds>
+    </LSmof>
+
     <MSmof>
         <Handle>5911</Handle>
-        <DatumAanleg>1971-06-14</DatumAanleg>
-        <Status>{{STATUS}}</Status>
-        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
-        <Eigenaar>Netbeheerder</Eigenaar>
-        <Beheerder>Netbeheerder</Beheerder>
-        <CrossBondingAanwezig>Ja</CrossBondingAanwezig>
-        <NaamMonteur>John Doe</NaamMonteur>
-        <Verbindingnummer>123456</Verbindingnummer>
-        <Type>Wikkelmof</Type>
         <Functie>AFTAK</Functie>
-        <GisId>53264168</GisId>
-        <AssetId>{D1185DFB-9CF4-42D6-BF83-9F8448E75D68}</AssetId>
-        <Geometry>
-            <gml:Point
-                srsDimension="3"
-                srsName="EPSG:7415">
-                <gml:pos>
-                    170509.942 369699.791 0
-                </gml:pos>
-            </gml:Point>
-        </Geometry>
+        <Verbindingnummer>123456</Verbindingnummer>
+        <NaamMonteur>John Doe</NaamMonteur>
+        <CrossBondingAanwezig>Ja</CrossBondingAanwezig>
+    </MSmof>
+
+    <MSmof>
+        <Handle>5911</Handle>
+        <Functie>AFTAK</Functie>
+        <Verbindingnummer>123456</Verbindingnummer>
+        <NaamMonteur>John Doe</NaamMonteur>
+        <CrossBondingAanwezig>Ja</CrossBondingAanwezig>
     </MSmof>
 </NLCSnetbeheerType>

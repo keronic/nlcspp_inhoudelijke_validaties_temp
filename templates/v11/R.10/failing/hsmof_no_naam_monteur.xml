@@ -8,24 +8,11 @@
         <Handle>Keronic</Handle>
     </AprojectReferentie>
 
-    <MSstation>
-        <Handle>5638</Handle>
-        <DatumAanleg>2023-10-10</DatumAanleg>
-    </MSstation>
-
-    <MSkabel>
-        <Handle>6301</Handle>
-        <DatumAanleg>2023-10-10</DatumAanleg>
-    </MSkabel>
-
-    <MSmof>
+    <HSmof>
         <Handle>5911</Handle>
-        <DatumAanleg>1971-06-14</DatumAanleg>
-    </MSmof>
-
-    <MSoverdrachtspunt>
-        <Handle>55E9</Handle>
-        <DatumAanleg>2024-01-10</DatumAanleg>
-    </MSoverdrachtspunt>
+        <Functie>AFTAK</Functie>
+        <Verbindingnummer>123456</Verbindingnummer>
+        <CrossBondingAanwezig>Ja</CrossBondingAanwezig>
+    </HSmof>
 
 </NLCSnetbeheerType>
