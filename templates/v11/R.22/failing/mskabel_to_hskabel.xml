@@ -4,8 +4,10 @@
                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    xmlns="NLCSnetbeheer">
     <VersieNummer>11</VersieNummer>
+    <AprojectReferentie>
+        <Handle>Keronic</Handle>
+    </AprojectReferentie>
 
-    <!-- Green -->
     <MSkabel>
         <Handle>6301</Handle>
         <Geometry>
@@ -22,7 +24,6 @@
         </Geometry>
     </MSkabel>
 
-    <!-- Red -->
     <HSkabel>
         <Handle>630A</Handle>
         <Geometry>

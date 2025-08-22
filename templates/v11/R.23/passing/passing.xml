@@ -6,40 +6,16 @@
     <VersieNummer>11</VersieNummer>
     <AprojectReferentie>
         <Handle>Keronic</Handle>
-        <Projectnummer>1</Projectnummer>
-        <DeelrevisieVolgnummer>1</DeelrevisieVolgnummer>
-        <Geometry>
-            <gml:Polygon
-                srsDimension="2"
-                srsName="EPSG:28992">
-                <gml:exterior>
-                    <gml:LinearRing>
-                        <gml:posList>100.0 100.0 200.0 100.0 200.0 200.0 100.0 200.0 100.0 100.0</gml:posList>
-                    </gml:LinearRing>
-                </gml:exterior>
-            </gml:Polygon>
-        </Geometry>
     </AprojectReferentie>
+
 
     <!-- Green 1 -->
     <MSkabel>
         <Handle>6301</Handle>
-        <Uitvoering>3x240Alrm as35</Uitvoering>
-        <Kabelopbouw>YMeKrvaslqwd</Kabelopbouw>
-        <Fabrikant>NKF</Fabrikant>
-        <DatumAanleg>2023-10-10</DatumAanleg>
-        <Status>BESTAAND</Status>
         <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
-        <Spanningsniveau>10 kV</Spanningsniveau>
-        <Inmeetwijze>GPS</Inmeetwijze>
-        <Nauwkeurigheid>tot 3cm</Nauwkeurigheid>
         <Subnettype>DISTRIBUTIE</Subnettype>
-        <FaseAanduiding>3 Fasen</FaseAanduiding>
-        <Eigenaar>Netbeheerder</Eigenaar>
-        <Beheerder>Netbeheerder</Beheerder>
         <Verbindingnummer>123</Verbindingnummer>
-        <GisId>83412</GisId>
-        <AssetId>{38518CAF-0F42-448D-8CD6-1E655152A0AD}</AssetId>
+        <Spanningsniveau>10 kV</Spanningsniveau>
         <Geometry>
             <gml:LineString
                 srsDimension="3"
@@ -52,22 +28,10 @@
     <!-- Green 2 -->
     <MSkabel>
         <Handle>630A</Handle>
-        <Uitvoering>3x240Alrm as35</Uitvoering>
-        <Kabelopbouw>YMeKrvaslqwd</Kabelopbouw>
-        <Fabrikant>NKF</Fabrikant>
-        <DatumAanleg>2023-10-10</DatumAanleg>
-        <Status>BESTAAND</Status>
         <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
-        <Spanningsniveau>10 kV</Spanningsniveau>
-        <Inmeetwijze>GPS</Inmeetwijze>
-        <Nauwkeurigheid>tot 3cm</Nauwkeurigheid>
         <Subnettype>DISTRIBUTIE</Subnettype>
-        <FaseAanduiding>3 Fasen</FaseAanduiding>
-        <Eigenaar>Netbeheerder</Eigenaar>
-        <Beheerder>Netbeheerder</Beheerder>
         <Verbindingnummer>123</Verbindingnummer>
-        <GisId>83412</GisId>
-        <AssetId>{38518CAF-0F42-448D-8CD6-1E655152A0AD}</AssetId>
+        <Spanningsniveau>10 kV</Spanningsniveau>
         <Geometry>
             <gml:LineString
                 srsDimension="3"
@@ -80,22 +44,10 @@
     <!-- Yellow (all 4 props different value but not connected to other kabels) -->
     <MSkabel>
         <Handle>6302</Handle>
-        <Uitvoering>3x240Alrm as35</Uitvoering>
-        <Kabelopbouw>YMeKrvaslqwd</Kabelopbouw>
-        <Fabrikant>NKF</Fabrikant>
-        <DatumAanleg>2023-10-10</DatumAanleg>
-        <Status>BESTAAND</Status>
-        <Bedrijfstoestand>RESERVE</Bedrijfstoestand>
-        <Spanningsniveau>20 kV</Spanningsniveau>
-        <Inmeetwijze>GPS</Inmeetwijze>
-        <Nauwkeurigheid>tot 3cm</Nauwkeurigheid>
-        <Subnettype>AANSLUITNET</Subnettype>
-        <FaseAanduiding>3 Fasen</FaseAanduiding>
-        <Eigenaar>Netbeheerder</Eigenaar>
-        <Beheerder>Netbeheerder</Beheerder>
-        <Verbindingnummer>456</Verbindingnummer>
-        <GisId>83412</GisId>
-        <AssetId>{38518CAF-0F42-448D-8CD6-1E655152A0AD}</AssetId>
+        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <Subnettype>DISTRIBUTIE</Subnettype>
+        <Verbindingnummer>123</Verbindingnummer>
+        <Spanningsniveau>10 kV</Spanningsniveau>
         <Geometry>
             <gml:LineString
                 srsDimension="3"
@@ -108,22 +60,10 @@
     <!-- Red -->
     <MSkabel>
         <Handle>6303</Handle>
-        <Uitvoering>3x240Alrm as35</Uitvoering>
-        <Kabelopbouw>YMeKrvaslqwd</Kabelopbouw>
-        <Fabrikant>NKF</Fabrikant>
-        <DatumAanleg>2023-10-10</DatumAanleg>
-        <Status>BESTAAND</Status>
         <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
-        <Spanningsniveau>10 kV</Spanningsniveau>
-        <Inmeetwijze>GPS</Inmeetwijze>
-        <Nauwkeurigheid>tot 3cm</Nauwkeurigheid>
         <Subnettype>DISTRIBUTIE</Subnettype>
-        <FaseAanduiding>3 Fasen</FaseAanduiding>
-        <Eigenaar>Netbeheerder</Eigenaar>
-        <Beheerder>Netbeheerder</Beheerder>
         <Verbindingnummer>123</Verbindingnummer>
-        <GisId>83412</GisId>
-        <AssetId>{38518CAF-0F42-448D-8CD6-1E655152A0AD}</AssetId>
+        <Spanningsniveau>10 kV</Spanningsniveau>
         <Geometry>
             <gml:LineString
                 srsDimension="3"
@@ -136,22 +76,10 @@
     <!-- Blue -->
     <MSkabel>
         <Handle>6304</Handle>
-        <Uitvoering>3x240Alrm as35</Uitvoering>
-        <Kabelopbouw>YMeKrvaslqwd</Kabelopbouw>
-        <Fabrikant>NKF</Fabrikant>
-        <DatumAanleg>2023-10-10</DatumAanleg>
-        <Status>BESTAAND</Status>
         <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
-        <Spanningsniveau>10 kV</Spanningsniveau>
-        <Inmeetwijze>GPS</Inmeetwijze>
-        <Nauwkeurigheid>tot 3cm</Nauwkeurigheid>
         <Subnettype>DISTRIBUTIE</Subnettype>
-        <FaseAanduiding>3 Fasen</FaseAanduiding>
-        <Eigenaar>Netbeheerder</Eigenaar>
-        <Beheerder>Netbeheerder</Beheerder>
         <Verbindingnummer>123</Verbindingnummer>
-        <GisId>83412</GisId>
-        <AssetId>{38518CAF-0F42-448D-8CD6-1E655152A0AD}</AssetId>
+        <Spanningsniveau>10 kV</Spanningsniveau>
         <Geometry>
             <gml:LineString
                 srsDimension="3"
@@ -164,12 +92,10 @@
     <!-- Mof connecting blue with green -->
     <MSmof>
         <Handle>5911</Handle>
-        <DatumAanleg>1971-06-14</DatumAanleg>
-        <Status>BESTAAND</Status>
-        <Eigenaar>Netbeheerder</Eigenaar>
-        <Beheerder>Netbeheerder</Beheerder>
-        <GisId>53264168</GisId>
-        <AssetId>{D1185DFB-9CF4-42D6-BF83-9F8448E75D68}</AssetId>
+        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <Subnettype>DISTRIBUTIE</Subnettype>
+        <Verbindingnummer>123</Verbindingnummer>
+        <Spanningsniveau>10 kV</Spanningsniveau>
         <Geometry>
             <gml:Point
                 srsDimension="3"
@@ -182,12 +108,10 @@
     <!-- Mof connecting red with green -->
     <MSmof>
         <Handle>5912</Handle>
-        <DatumAanleg>1971-06-14</DatumAanleg>
-        <Status>BESTAAND</Status>
-        <Eigenaar>Netbeheerder</Eigenaar>
-        <Beheerder>Netbeheerder</Beheerder>
-        <GisId>53264168</GisId>
-        <AssetId>{D1185DFB-9CF4-42D6-BF83-9F8448E75D68}</AssetId>
+        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <Subnettype>DISTRIBUTIE</Subnettype>
+        <Verbindingnummer>123</Verbindingnummer>
+        <Spanningsniveau>10 kV</Spanningsniveau>
         <Geometry>
             <gml:Point
                 srsDimension="3"
@@ -200,12 +124,10 @@
     <!-- Mof connecting red with blue -->
     <MSmof>
         <Handle>5913</Handle>
-        <DatumAanleg>1971-06-14</DatumAanleg>
-        <Status>BESTAAND</Status>
-        <Eigenaar>Netbeheerder</Eigenaar>
-        <Beheerder>Netbeheerder</Beheerder>
-        <GisId>53264168</GisId>
-        <AssetId>{D1185DFB-9CF4-42D6-BF83-9F8448E75D68}</AssetId>
+        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <Subnettype>DISTRIBUTIE</Subnettype>
+        <Verbindingnummer>123</Verbindingnummer>
+        <Spanningsniveau>10 kV</Spanningsniveau>
         <Geometry>
             <gml:Point
                 srsDimension="3"
