@@ -71,7 +71,7 @@
 
         <sequence select="
                     some $geometry in $geometries
-                    satisfies keronic:point-3d-connected-to-area-3d(
+                    satisfies keronic:point-3d-touches-line-3d(
                     $point,
                     tokenize(normalize-space($geometry)),
                     0
