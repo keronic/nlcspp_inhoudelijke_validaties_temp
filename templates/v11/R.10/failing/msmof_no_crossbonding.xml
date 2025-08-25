@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NLCSnetbeheerType xmlns:keuzelijst="NLCSnetbeheer"
+                   xmlns:gml="http://www.opengis.net/gml/3.2"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="NLCSnetbeheer">
+    <VersieNummer>11</VersieNummer>
+    <AprojectReferentie>
+        <Handle>Keronic</Handle>
+    </AprojectReferentie>
+
+    <MSmof>
+        <Handle>5911</Handle>
+        <Functie>AFTAK</Functie>
+        <Verbindingnummer>123456</Verbindingnummer>
+        <NaamMonteur>John Doe</NaamMonteur>
+    </MSmof>
+
+</NLCSnetbeheerType>
