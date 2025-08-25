@@ -190,7 +190,7 @@
         <param name="threshold" as="xs:double?"/>
 
         <choose>
-            <when test="$index gt count($line) - 4">
+            <when test="($index + 2) gt count($line)">
                 <value-of select="false()"/>
             </when>
             <otherwise>
@@ -367,7 +367,7 @@
                     else if ($cross_product &gt; 0) then 1
                                      else 2"/>
     </function>
-    <function name="keronic-geom:area-2d-interacts-with-area-2d">
+    <function name="keronic-geom:area-2d-interacts-with-area-2d" as="xs:boolean">
         <param name="area1" as="xs:double*"/>
         <param name="area2" as="xs:double*"/>
 
