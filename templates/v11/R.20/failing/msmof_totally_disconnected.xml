@@ -23,46 +23,17 @@
         </Geometry>
     </MSkabel>
 
-    <!-- Point at end of line -->
-    <MSmof>
-        <Handle>5911</Handle>
-        <Geometry>
-            <gml:Point
-                srsDimension="3"
-                srsName="EPSG:7415">
-                <gml:pos>
-                    40.0 40.0 -1.0
-                </gml:pos>
-            </gml:Point>
-        </Geometry>
-    </MSmof>
-
-    <!-- Point at some point along line -->
-    <MSmof>
-        <Handle>5912</Handle>
-        <Geometry>
-            <gml:Point
-                srsDimension="3"
-                srsName="EPSG:7415">
-                <gml:pos>
-                    240.0 120.0 -1.0
-                </gml:pos>
-            </gml:Point>
-        </Geometry>
-    </MSmof>
-
-    <!-- Point on line segment -->
+    <!-- Point totally disconnected from line -->
     <MSmof>
         <Handle>5913</Handle>
         <Geometry>
             <gml:Point
                 srsDimension="3"
-                srsName="EPSG:28992">
+                srsName="EPSG:7415">
                 <gml:pos>
-                    300.0 200.0 -1.5
+                    160.0 120.0 -1
                 </gml:pos>
             </gml:Point>
         </Geometry>
     </MSmof>
-
 </NLCSnetbeheerType>
