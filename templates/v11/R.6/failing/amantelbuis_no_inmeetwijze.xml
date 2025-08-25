@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NLCSnetbeheerType xmlns:keuzelijst="NLCSnetbeheer"
+                   xmlns:gml="http://www.opengis.net/gml/3.2"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="NLCSnetbeheer">
+    <VersieNummer>11</VersieNummer>
+    <AprojectReferentie>
+        <Handle>Keronic</Handle>
+    </AprojectReferentie>
+
+    <Amantelbuis>
+        <Handle>5638</Handle>
+        <Nauwkeurigheid>tot 3cm</Nauwkeurigheid>
+    </Amantelbuis>
+
+</NLCSnetbeheerType>

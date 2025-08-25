@@ -8,7 +8,7 @@
             value="tokenize(normalize-space(nlcs:Geometry/gml:Point/gml:pos))"/>
 
         <let name="point_connected"
-            value="some $pos_list in $mskabel_pos_lists satisfies keronic:point-3d-connected-to-line-3d($point, tokenize(normalize-space($pos_list)), 0)"/>
+            value="some $pos_list in $mskabel_pos_lists satisfies keronic:point-3d-touches-line-3d($point, tokenize(normalize-space($pos_list)), 0)"/>
 
         <let name="rule_number" value="20"/>
         <let name="object_type" value="name(.)"/>
