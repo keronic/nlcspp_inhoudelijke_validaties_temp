@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="v11-areas-meet-demands">
-     <rule context="//nlcs:ABeschermingvlak | //nlcs:MSstation | Akunstwerk">
+     <rule context="//nlcs:ABeschermingvlak | //nlcs:MSstation | //nlcs:Akunstwerk">
           <let name="geometry"
                value="tokenize(normalize-space(nlcs:Geometry/gml:Polygon/gml:exterior/gml:LinearRing/gml:posList))"/>
 
