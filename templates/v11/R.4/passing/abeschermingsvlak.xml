@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NLCSnetbeheerType xmlns:keuzelijst="NLCSnetbeheer"
+                   xmlns:gml="http://www.opengis.net/gml/3.2"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="NLCSnetbeheer">
+    <VersieNummer>11</VersieNummer>
+    <AprojectReferentie>
+        <Handle>Keronic</Handle>
+    </AprojectReferentie>
+    <ABeschermingsvlak>
+        <Handle>44AE</Handle>
+        <Geometry>
+            <gml:Polygon
+                srsDimension="3"
+                srsName="EPSG:28992">
+                <gml:exterior>
+                    <gml:LinearRing>
+                        <gml:posList>
+                            162051.3975000009 498521.1004999988 0.0
+                            162042.91010000184 498514.01579999924 0.0
+                            162035.89719999954 498522.2153999992 0.0
+                            162044.52840000018 498529.37209999934 0.0
+                            162051.3975000009 498521.1004999988 0.0
+                        </gml:posList>
+                    </gml:LinearRing>
+                </gml:exterior>
+            </gml:Polygon>
+        </Geometry>
+    </ABeschermingsvlak>
+</NLCSnetbeheerType>
