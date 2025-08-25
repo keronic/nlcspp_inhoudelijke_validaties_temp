@@ -101,7 +101,7 @@
         </choose>
     </function>
 
-    <function name="keronic-geom:point-3d-connected-to-line-3d-part">
+    <function name="keronic-geom:point-3d-connected-to-line-3d-part" as="xs:boolean">
         <param name="point" as="xs:double*"/>
         <param name="line" as="xs:double*"/>
         <param name="threshold" as="xs:double?"/>
@@ -245,14 +245,14 @@
         <value-of select="$result"/>
     </function>
 
-    <function name="keronic-geom:inside-line-3d-connected-to-point-3d">
+    <function name="keronic-geom:inside-line-3d-connected-to-point-3d" as="xs:boolean">
         <param name="line" as="xs:double*"/>
         <param name="point" as="xs:double*"/>
         <param name="index" as="xs:integer"/>
         <param name="threshold" as="xs:double?"/>
 
         <choose>
-            <when test="$index gt count($line) - 6">
+            <when test="($index + 3) gt count($line)">
                 <value-of select="false()"/>
             </when>
             <otherwise>
