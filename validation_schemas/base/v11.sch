@@ -65,7 +65,6 @@
     <phase id="R.10">
         <active pattern="v11-moffen-have-required-values"/>
         <active pattern="v11-hs-msmoffen-have-required-values"/>
-        <active pattern="v11-ls-moffen-have-required-values"
     </phase>
 
     <phase id="R.11">

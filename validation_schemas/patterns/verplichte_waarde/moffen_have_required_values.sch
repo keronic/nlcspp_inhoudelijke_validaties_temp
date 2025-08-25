@@ -18,10 +18,6 @@
             <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['Verbindingnummer'])"/>
         </assert>
     </rule>
-</pattern>
-
-<pattern xmlns ="http://purl.oclc.org/dsdl/schematron"
-         id="v11-ls-moffen-have-required-values">
     <rule context="//nlcs:LSmof">
         <let name="rule_number" value="10"/>
         <let name="object_type" value="name(.)"/>
