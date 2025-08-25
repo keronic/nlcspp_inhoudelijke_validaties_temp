@@ -1,6 +1,6 @@
 # NLCS++ Inhoudelijke validaties
 
-(Tijdelijke) Opzet van NLCS++ [inhoudelijke validaties](doc/NLCSValidatieRegels.html) incl. wijze van documentatie.
+(Tijdelijke) Opzet van NLCS++ [inhoudelijke validaties](https://keronic.github.io/nlcspp_inhoudelijke_validaties_temp/doc/NLCSValidatieRegels.html) incl. wijze van documentatie.
 
 ## License
 
