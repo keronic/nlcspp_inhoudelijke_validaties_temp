@@ -11,29 +11,13 @@
     <!-- Green -->
     <MSkabel>
         <Handle>6301</Handle>
-        <FaseAanduiding>3 Fasen</FaseAanduiding>
+        <FaseAanduiding>L3</FaseAanduiding>
         <Geometry>
             <gml:LineString
                 srsDimension="3"
                 srsName="EPSG:28992">
                 <gml:posList>
                     40.0 160.0 -1.0
-                    240.0 160.0 -1.0
-                </gml:posList>
-            </gml:LineString>
-        </Geometry>
-    </MSkabel>
-
-    <!-- Red -->
-    <MSkabel>
-        <Handle>6302</Handle>
-        <FaseAanduiding>L1</FaseAanduiding>
-        <Geometry>
-            <gml:LineString
-                srsDimension="3"
-                srsName="EPSG:28992">
-                <gml:posList>
-                    400.0  40.0 -1.0
                     240.0 160.0 -1.0
                 </gml:posList>
             </gml:LineString>
@@ -43,29 +27,13 @@
     <!-- Blue -->
     <MSkabel>
         <Handle>6303</Handle>
-        <FaseAanduiding>L2</FaseAanduiding>
+        <FaseAanduiding>L3</FaseAanduiding>
         <Geometry>
             <gml:LineString
                 srsDimension="3"
                 srsName="EPSG:28992">
                 <gml:posList>
                     440.0 160.0 -1.0
-                    240.0 160.0 -1.0
-                </gml:posList>
-            </gml:LineString>
-        </Geometry>
-    </MSkabel>
-
-    <!-- Yellow -->
-    <MSkabel>
-        <Handle>6304</Handle>
-        <FaseAanduiding>L1</FaseAanduiding>
-        <Geometry>
-            <gml:LineString
-                srsDimension="3"
-                srsName="EPSG:28992">
-                <gml:posList>
-                    40.0 160.0 -1.0
                     240.0 160.0 -1.0
                 </gml:posList>
             </gml:LineString>
