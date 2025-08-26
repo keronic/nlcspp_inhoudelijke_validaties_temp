@@ -22,7 +22,7 @@
         <let name="connected_hskabels"
             value="//nlcs:HSkabel[
                 some $connected_mof in $connected_msmoffen satisfies
-                    keronic:line-3d-connected-to-point-3d(
+                    keronic:line-3d-touches-point-3d(
                         tokenize(normalize-space(nlcs:Geometry/gml:LineString/gml:posList)),
                         tokenize(normalize-space($connected_mof/nlcs:Geometry/gml:Point/gml:pos)),
                         0)]"/>

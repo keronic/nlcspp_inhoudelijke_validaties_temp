@@ -13,14 +13,14 @@
         <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
         <Spanningsniveau>10 kV</Spanningsniveau>
         <Subnettype>DISTRIBUTIE</Subnettype>
-        <Verbindingnummer>456</Verbindingnummer>
+        <Verbindingnummer>123</Verbindingnummer>
         <Geometry>
             <gml:LineString
                 srsDimension="3"
                 srsName="EPSG:28992">
                 <gml:posList>
-                    40.0  40.0 -1.0
-                    80.0 120.0 -1.0
+                     40.0  40.0 -1.0
+                     80.0 120.0 -1.0
                     320.0 200.0 -1.0
                     400.0 280.0 -1.0
                 </gml:posList>
