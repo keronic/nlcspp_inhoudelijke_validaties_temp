@@ -9,7 +9,6 @@
     </AprojectReferentie>
     <MSmof>
         <Handle>5911</Handle>
-        <Status>BESTAAND</Status>
         <Functie>EINDMOF</Functie>
         <Geometry>
             <gml:Point
@@ -22,7 +21,6 @@
 
     <MSmof>
         <Handle>5912</Handle>
-        <Status>BESTAAND</Status>
         <Functie>LOODKOP</Functie>
         <Geometry>
             <gml:Point
@@ -35,7 +33,6 @@
 
     <MSmof>
         <Handle>5913</Handle>
-        <Status>BESTAAND</Status>
         <Functie>LOODKOP</Functie>
         <Geometry>
             <gml:Point
@@ -47,8 +44,6 @@
     </MSmof>
     <MSkabel>
         <Handle>6303</Handle>
-        <Status>BESTAAND</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
         <FaseAanduiding>3 Fasen</FaseAanduiding>
         <Geometry>
             <gml:LineString
@@ -60,8 +55,6 @@
     </MSkabel>
     <MSkabel>
         <Handle>6303</Handle>
-        <Status>BESTAAND</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
         <FaseAanduiding>3 Fasen</FaseAanduiding>
         <Geometry>
             <gml:LineString
@@ -74,7 +67,6 @@
 
     <MSmof>
         <Handle>5914</Handle>
-        <Status>BESTAAND</Status>
         <Functie>EIND GEAARD</Functie>
         <Geometry>
             <gml:Point
