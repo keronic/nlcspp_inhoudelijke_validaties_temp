@@ -6,24 +6,13 @@
     <AprojectReferentie>
         <Handle>Keronic</Handle>
     </AprojectReferentie>
-    <MSkabel>
-        <Handle>6301</Handle>
-        <Status>BESTAAND</Status>
-        <GisId>83412</GisId>
-    </MSkabel>
-    <MSkabel>
-        <Handle>6302</Handle>
-        <Status>REVISIE</Status>
-        <Bewerking>VERPLAATSEN</Bewerking>
-        <GisId>83412</GisId>
-    </MSkabel>
     <LSkabel>
-        <Handle>5301</Handle>
-        <Status>BESTAAND</Status>
+        <Handle>6301</Handle>
+        <Status>VERWIJDERD</Status>
         <GisId>83412</GisId>
     </LSkabel>
     <LSkabel>
-        <Handle>5302</Handle>
+        <Handle>6302</Handle>
         <Status>REVISIE</Status>
         <Bewerking>VERPLAATSEN</Bewerking>
         <GisId>83412</GisId>
