@@ -153,6 +153,13 @@
       Gevonden waardes: {2}
     </message-text>
   </message>
+  <message id="mantelbuis-inhoud-diameter-larger-than-own">
+    <message-text xml:lang="nl">
+      The Amantelbuis's diameter ({1}) should be larger than that of its AmantelbuisInhoud ({2}).
+    </message-text>
+    <message-text xml:lang="en">
+    </message-text>
+  </message>
   <message id="inhoud-found">
     <message-text xml:lang="nl">
       Als de Mantelbuis RESERVE is mag deze geen inhoud hebben.
