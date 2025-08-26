@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="v11-verplaatsen-correctly-applied">
-    <rule context="//nlcs:MSkabel">
+    <rule context="//nlcs:MSkabel | //nlcs:LSkabel">
         <let name="rule_number" value="29"/>
         <let name="object_type" value="name(.)"/>
         <let name="object_id" value="nlcs:Handle"/>
