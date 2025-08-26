@@ -8,7 +8,7 @@
         <Handle>Keronic</Handle>
     </AprojectReferentie>
 
-    <MSkabel>
+    <HSkabel>
         <Handle>6301</Handle>
         <Geometry>
             <gml:LineString
@@ -22,9 +22,9 @@
                 </gml:posList>
             </gml:LineString>
         </Geometry>
-    </MSkabel>
+    </HSkabel>
 
-    <HSkabel>
+    <MSkabel>
         <Handle>630A</Handle>
         <Geometry>
             <gml:LineString
@@ -37,7 +37,7 @@
                 </gml:posList>
             </gml:LineString>
         </Geometry>
-    </HSkabel>
+    </MSkabel>
 
     <MSmof>
         <Handle>5911</Handle>
