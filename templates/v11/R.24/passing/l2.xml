@@ -22,7 +22,7 @@
     </AprojectReferentie>
     <MSkabel>
         <Handle>6307</Handle>
-        <Uitvoering>3x240Alrm as35</Uitvoering>
+        <Uitvoering>1x800Alrm as35</Uitvoering>
         <FaseAanduiding>L2</FaseAanduiding>
     </MSkabel>
 </NLCSnetbeheerType>
