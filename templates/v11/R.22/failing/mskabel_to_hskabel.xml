@@ -4,9 +4,11 @@
                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    xmlns="NLCSnetbeheer">
     <VersieNummer>11</VersieNummer>
+    <AprojectReferentie>
+        <Handle>Keronic</Handle>
+    </AprojectReferentie>
 
-    <!-- Green -->
-    <MSkabel>
+    <HSkabel>
         <Handle>6301</Handle>
         <Geometry>
             <gml:LineString
@@ -20,10 +22,9 @@
                 </gml:posList>
             </gml:LineString>
         </Geometry>
-    </MSkabel>
+    </HSkabel>
 
-    <!-- Red -->
-    <HSkabel>
+    <MSkabel>
         <Handle>630A</Handle>
         <Geometry>
             <gml:LineString
@@ -36,7 +37,7 @@
                 </gml:posList>
             </gml:LineString>
         </Geometry>
-    </HSkabel>
+    </MSkabel>
 
     <MSmof>
         <Handle>5911</Handle>

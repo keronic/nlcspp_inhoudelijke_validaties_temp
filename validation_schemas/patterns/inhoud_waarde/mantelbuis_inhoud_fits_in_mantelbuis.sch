@@ -13,10 +13,13 @@
 
         <let name="inhoud_diameter"
              value="$inhoud/nlcs:Diameter"/>
+
         <assert id="mantelbuis_inhoud_fits_in_mantelbuis"
-            test="$inhoud_diameter lt nlcs:Diameter"
+            test="nlcs:Diameter > $inhoud_diameter"
             properties="scope rule-number object-type object-id">
-            <value-of select="keronic:get-translation-and-replace-placeholders('inhoud_diameter_too_large', [$inhoud/nlcs:Handle, $inhoud_diameter, nlcs:Diameter])"/>
+            <value-of select="keronic:get-translation-and-replace-placeholders(
+                'mantelbuis-inhoud-diameter-larger-than-own',
+                [nlcs:Diameter, $inhoud_diameter])"/>
         </assert>
     </rule>
 </pattern>

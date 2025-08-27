@@ -6,130 +6,79 @@
     <VersieNummer>11</VersieNummer>
     <AprojectReferentie>
         <Handle>Keronic</Handle>
-        <Projectnummer>1</Projectnummer>
-        <DeelrevisieVolgnummer>1</DeelrevisieVolgnummer>
-        <TekeningType>{{TEKENING TYPE}}</TekeningType>
-        <Geometry>
-            <gml:Polygon
-                srsDimension="2"
-                srsName="EPSG:28992">
-                <gml:exterior>
-                    <gml:LinearRing>
-                        <gml:posList>100.0 100.0 200.0 100.0 200.0 200.0 100.0 200.0 100.0 100.0</gml:posList>
-                    </gml:LinearRing>
-                </gml:exterior>
-            </gml:Polygon>
-        </Geometry>
     </AprojectReferentie>
+
     <LSkabel>
         <Handle>6301</Handle>
         <Uitvoering>3x240Alrm as35</Uitvoering>
         <Kabelopbouw>YMeKrvaslqwd</Kabelopbouw>
         <Fabrikant>NKF</Fabrikant>
-        <DatumAanleg>2023-10-10</DatumAanleg>
-        <Status>{{STATUS}}</Status>
-        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
         <Verbindingnummer>1</Verbindingnummer>
         <Spanningsniveau>10 kV</Spanningsniveau>
         <Aardingsysteem>TN</Aardingsysteem>
-        <Inmeetwijze>GPS</Inmeetwijze>
-        <Nauwkeurigheid>tot 3cm</Nauwkeurigheid>
-        <Subnettype>DISTRIBUTIE</Subnettype>
         <FaseAanduiding>3 Fasen</FaseAanduiding>
         <Bovengronds>Ja</Bovengronds>
         <Functie>LSOV</Functie>
-        <Eigenaar>Netbeheerder</Eigenaar>
-        <Beheerder>Netbeheerder</Beheerder>
-        <GisId>83412</GisId>
-        <AssetId>{38518CAF-0F42-448D-8CD6-1E655152A0AD}</AssetId>
-        <Geometry>
-            <gml:LineString
-                srsDimension="3"
-                srsName="EPSG:28992">
-                <gml:posList> 21000.0 21000.0 -0.80 21000.0 22000.0 -0.80 22000.0 22000.0 -0.80</gml:posList>
-            </gml:LineString>
-        </Geometry>
     </LSkabel>
-    <MSkabel>
+
+    <LSkabel>
         <Handle>6302</Handle>
-        <Uitvoering>3x240Alrm as35</Uitvoering>
+        <Uitvoering>KEUZE ONTBREEKT IN LIJST</Uitvoering>
+        <OmschrijvingUitvoering>Onbekend</OmschrijvingUitvoering>
         <Kabelopbouw>YMeKrvaslqwd</Kabelopbouw>
         <Fabrikant>NKF</Fabrikant>
-        <DatumAanleg>2023-10-10</DatumAanleg>
-        <Status>{{STATUS}}</Status>
-        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
         <Verbindingnummer>1</Verbindingnummer>
         <Spanningsniveau>10 kV</Spanningsniveau>
         <Aardingsysteem>TN</Aardingsysteem>
-        <Inmeetwijze>GPS</Inmeetwijze>
-        <Nauwkeurigheid>tot 3cm</Nauwkeurigheid>
-        <Subnettype>DISTRIBUTIE</Subnettype>
         <FaseAanduiding>3 Fasen</FaseAanduiding>
-        <Eigenaar>Netbeheerder</Eigenaar>
-        <Beheerder>Netbeheerder</Beheerder>
-        <GisId>83412</GisId>
-        <AssetId>{38518CAF-0F42-448D-8CD6-1E655152A0AD}</AssetId>
-        <Geometry>
-            <gml:LineString
-                srsDimension="3"
-                srsName="EPSG:28992">
-                <gml:posList> 21000.0 21000.0 -0.80 21000.0 22000.0 -0.80 22000.0 22000.0 -0.80</gml:posList>
-            </gml:LineString>
-        </Geometry>
-    </MSkabel>
-    <HSkabel>
+        <Bovengronds>Ja</Bovengronds>
+        <Functie>LSOV</Functie>
+    </LSkabel>
+
+    <MSkabel>
         <Handle>6303</Handle>
         <Uitvoering>3x240Alrm as35</Uitvoering>
         <Kabelopbouw>YMeKrvaslqwd</Kabelopbouw>
         <Fabrikant>NKF</Fabrikant>
-        <DatumAanleg>2023-10-10</DatumAanleg>
-        <Status>{{STATUS}}</Status>
-        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
         <Verbindingnummer>1</Verbindingnummer>
         <Spanningsniveau>10 kV</Spanningsniveau>
         <Aardingsysteem>TN</Aardingsysteem>
-        <Inmeetwijze>GPS</Inmeetwijze>
-        <Nauwkeurigheid>tot 3cm</Nauwkeurigheid>
-        <Subnettype>DISTRIBUTIE</Subnettype>
         <FaseAanduiding>3 Fasen</FaseAanduiding>
-        <Eigenaar>Netbeheerder</Eigenaar>
-        <Beheerder>Netbeheerder</Beheerder>
-        <GisId>83412</GisId>
-        <AssetId>{38518CAF-0F42-448D-8CD6-1E655152A0AD}</AssetId>
-        <Geometry>
-            <gml:LineString
-                srsDimension="3"
-                srsName="EPSG:28992">
-                <gml:posList> 21000.0 21000.0 -0.80 21000.0 22000.0 -0.80 22000.0 22000.0 -0.80</gml:posList>
-            </gml:LineString>
-        </Geometry>
-    </HSkabel>
+    </MSkabel>
+
     <MSkabel>
         <Handle>6304</Handle>
         <Uitvoering>KEUZE ONTBREEKT IN LIJST</Uitvoering>
         <OmschrijvingUitvoering>Onbekend</OmschrijvingUitvoering>
         <Kabelopbouw>YMeKrvaslqwd</Kabelopbouw>
         <Fabrikant>NKF</Fabrikant>
-        <DatumAanleg>2023-10-10</DatumAanleg>
-        <Status>{{STATUS}}</Status>
-        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
         <Verbindingnummer>1</Verbindingnummer>
         <Spanningsniveau>10 kV</Spanningsniveau>
         <Aardingsysteem>TN</Aardingsysteem>
-        <Inmeetwijze>GPS</Inmeetwijze>
-        <Nauwkeurigheid>tot 3cm</Nauwkeurigheid>
-        <Subnettype>DISTRIBUTIE</Subnettype>
         <FaseAanduiding>3 Fasen</FaseAanduiding>
-        <Eigenaar>Netbeheerder</Eigenaar>
-        <Beheerder>Netbeheerder</Beheerder>
-        <GisId>83412</GisId>
-        <AssetId>{38518CAF-0F42-448D-8CD6-1E655152A0AD}</AssetId>
-        <Geometry>
-            <gml:LineString
-                srsDimension="3"
-                srsName="EPSG:28992">
-                <gml:posList> 21000.0 21000.0 -0.80 21000.0 22000.0 -0.80 22000.0 22000.0 -0.80</gml:posList>
-            </gml:LineString>
-        </Geometry>
     </MSkabel>
+
+    <HSkabel>
+        <Handle>6305</Handle>
+        <Uitvoering>3x240Alrm as35</Uitvoering>
+        <Kabelopbouw>YMeKrvaslqwd</Kabelopbouw>
+        <Fabrikant>NKF</Fabrikant>
+        <Verbindingnummer>1</Verbindingnummer>
+        <Spanningsniveau>10 kV</Spanningsniveau>
+        <Aardingsysteem>TN</Aardingsysteem>
+        <FaseAanduiding>3 Fasen</FaseAanduiding>
+    </HSkabel>
+
+    <HSkabel>
+        <Handle>6306</Handle>
+        <Uitvoering>KEUZE ONTBREEKT IN LIJST</Uitvoering>
+        <OmschrijvingUitvoering>Onbekend</OmschrijvingUitvoering>
+        <Kabelopbouw>YMeKrvaslqwd</Kabelopbouw>
+        <Fabrikant>NKF</Fabrikant>
+        <Verbindingnummer>1</Verbindingnummer>
+        <Spanningsniveau>10 kV</Spanningsniveau>
+        <Aardingsysteem>TN</Aardingsysteem>
+        <FaseAanduiding>3 Fasen</FaseAanduiding>
+    </HSkabel>
+
 </NLCSnetbeheerType>

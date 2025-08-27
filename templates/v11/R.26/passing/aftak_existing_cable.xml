@@ -6,19 +6,6 @@
     <VersieNummer>11</VersieNummer>
     <AprojectReferentie>
         <Handle>Keronic</Handle>
-        <Projectnummer>1</Projectnummer>
-        <DeelrevisieVolgnummer>1</DeelrevisieVolgnummer>
-        <Geometry>
-            <gml:Polygon
-                srsDimension="2"
-                srsName="EPSG:28992">
-                <gml:exterior>
-                    <gml:LinearRing>
-                        <gml:posList>100.0 100.0 200.0 100.0 200.0 200.0 100.0 200.0 100.0 100.0</gml:posList>
-                    </gml:LinearRing>
-                </gml:exterior>
-            </gml:Polygon>
-        </Geometry>
     </AprojectReferentie>
     <MSmof>
         <Handle>5911</Handle>
