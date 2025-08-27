@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NLCSnetbeheerType xmlns:keuzelijst="NLCSnetbeheer"
+                   xmlns:gml="http://www.opengis.net/gml/3.2"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="NLCSnetbeheer">
+    <VersieNummer>11</VersieNummer>
+    <AprojectReferentie>
+        <Handle>Keronic</Handle>
+        <TekeningType>DEFINITIEF ONTWERP</TekeningType>
+    </AprojectReferentie>
+
+    <MSkabel>
+        <Handle>6301</Handle>
+        <Status>NIEUW</Status>
+        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+    </MSkabel>
+
+    <MSkabel>
+        <Handle>6301</Handle>
+        <Status>NIEUW</Status>
+        <Bedrijfstoestand>RESERVE</Bedrijfstoestand>
+    </MSkabel>
+
+    <MSkabel>
+        <Handle>6301</Handle>
+        <Status>NIEUW</Status>
+        <Bedrijfstoestand>VERLATEN</Bedrijfstoestand>
+    </MSkabel>
+
+    <MSkabel>
+        <Handle>6301</Handle>
+        <Status>REVISIE</Status>
+        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+    </MSkabel>
+
+    <MSkabel>
+        <Handle>6301</Handle>
+        <Status>REVISIE</Status>
+        <Bedrijfstoestand>RESERVE</Bedrijfstoestand>
+    </MSkabel>
+
+    <MSkabel>
+        <Handle>6301</Handle>
+        <Status>REVISIE</Status>
+        <Bedrijfstoestand>VERLATEN</Bedrijfstoestand>
+    </MSkabel>
+
+    <MSkabel>
+        <Handle>6301</Handle>
+        <Status>VERWIJDERD</Status>
+        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+    </MSkabel>
+
+    <MSkabel>
+        <Handle>6301</Handle>
+        <Status>VERWIJDERD</Status>
+        <Bedrijfstoestand>RESERVE</Bedrijfstoestand>
+    </MSkabel>
+
+    <MSkabel>
+        <Handle>6301</Handle>
+        <Status>VERWIJDERD</Status>
+        <Bedrijfstoestand>VERLATEN</Bedrijfstoestand>
+    </MSkabel>
+
+</NLCSnetbeheerType>

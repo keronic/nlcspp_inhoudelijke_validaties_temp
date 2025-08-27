@@ -3,11 +3,15 @@
             xmlns:keronic="http://example.com/my-functions"
             xmlns:xs="http://www.w3.org/2001/XMLSchema"
             xmlns:map="http://www.w3.org/2005/xpath-functions/map"
+            xmlns:nlcs="NLCSnetbeheer"
+            xmlns:nvr="NLCSValidatieRegelsNameSpace"
             version="3.0">
 
   <variable name="config_file" select= "document('../../../configuration/config.xml')"/>
   <variable name="language" select= "$config_file/config/V11/Language"/>
   <variable name="translation_file" select= "document('../../../localization/messages.xml')"/>
+  <variable name="validatieregels_file" select="document('../../../doc/NLCSValidatieRegels.xml')"/>
+  <variable name="scopes" select="$validatieregels_file/nvr:NLCSValidatieregels/nvr:scopes/nvr:scope"/>
 
   <function name="keronic:get-connected-threshold">
     <value-of select="$config_file/config/V10/Topology/ConnectedThreshold"/>
@@ -159,6 +163,44 @@
     </choose>
   </template>
 
+  <function name="keronic:rule-within-scope-for-object" as="xs:boolean">
+    <param name="rule_number" as="xs:string"/>
+    <param name="nlcs_object"/>
 
+    <variable name="matching_scope" select="keronic:matching-scope($nlcs_object)"/>
+
+    <value-of select="some $rule in $matching_scope/nvr:scopeValidatieRegels/nvr:scopeValidatieRegel satisfies $rule/nvr:nummer = $rule_number"/>
+  </function>
+
+  <function name="keronic:scope-name" as="xs:string">
+    <param name="nlcs_object"/>
+
+    <variable name="matching_scope" select="keronic:matching-scope($nlcs_object)"/>
+
+    <value-of select="$matching_scope/@naam"/>
+  </function>
+
+  <function name="keronic:rule-severity" as="xs:string">
+    <param name="rule_number" as="xs:string"/>
+    <param name="nlcs_object"/>
+
+    <variable name="matching_scope" select="keronic:matching-scope($nlcs_object)"/>
+    <variable name="validatie_regels" select="$matching_scope/nvr:scopeValidatieRegels/nvr:scopeValidatieRegel"/>
+
+    <value-of select="$validatie_regels[nvr:nummer = $rule_number]/nvr:niveau"/>
+  </function>
+
+  <function name="keronic:matching-scope">
+    <param name="nlcs_object"/>
+
+    <variable name="tekening_type" select="$nlcs_object//preceding-sibling::nlcs:AprojectReferentie/nlcs:TekeningType"/>
+    <variable name="status" select="$nlcs_object/nlcs:Status"/>
+    <variable name="bedrijfstoestand" select="$nlcs_object/nlcs:Bedrijfstoestand"/>
+
+    <sequence select="$scopes[
+                      upper-case(nvr:tekeningSoort) = $tekening_type
+                      and nvr:statussen/nvr:status = $status
+                      and nvr:bedrijfsToestanden/nvr:bedrijfstoestand = $bedrijfstoestand]"/>
+  </function>
 
 </stylesheet>

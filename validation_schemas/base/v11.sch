@@ -12,6 +12,7 @@
     <ns prefix="gml" uri="http://www.opengis.net/gml/3.2"/>
     <ns prefix="xs" uri="http://www.w3.org/2001/XMLSchema"/>
     <ns prefix="nlcs" uri="NLCSnetbeheer"/>
+    <ns prefix="nvr" uri="NLCSValidatieRegelsNameSpace"/>
 
     <!-- properties for more detailed assert reports -->
     <properties>
