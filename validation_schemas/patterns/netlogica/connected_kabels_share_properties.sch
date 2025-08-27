@@ -6,7 +6,7 @@
 
         <let name="connected_msmoffen"
             value="//nlcs:MSmof[
-                keronic:point-3d-connected-to-line-3d(
+                keronic:point-3d-touches-line-3d(
                     tokenize(normalize-space(nlcs:Geometry/gml:Point/gml:pos)),
                     tokenize(normalize-space($mskabel/nlcs:Geometry/gml:LineString/gml:posList)),
                     0)]"/>
@@ -14,7 +14,8 @@
         <let name="connected_mskabels"
             value="//nlcs:MSkabel[
                 some $connected_mof in $connected_msmoffen satisfies
-                    keronic:line-3d-connected-to-point-3d(
+                    . ne $mskabel and
+                    keronic:line-3d-touches-point-3d(
                         tokenize(normalize-space(nlcs:Geometry/gml:LineString/gml:posList)),
                         tokenize(normalize-space($connected_mof/nlcs:Geometry/gml:Point/gml:pos)),
                         0)]"/>

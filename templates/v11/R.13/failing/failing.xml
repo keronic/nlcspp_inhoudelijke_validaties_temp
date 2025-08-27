@@ -6,35 +6,8 @@
     <VersieNummer>11</VersieNummer>
     <AprojectReferentie>
         <Handle>Keronic</Handle>
-        <Projectnummer>1</Projectnummer>
-        <DeelrevisieVolgnummer>1</DeelrevisieVolgnummer>
-        <TekeningType>{{TEKENING TYPE}}</TekeningType>
-        <Geometry>
-            <gml:Polygon
-                srsDimension="2"
-                srsName="EPSG:28992">
-                <gml:exterior>
-                    <gml:LinearRing>
-                        <gml:posList>100.0 100.0 200.0 100.0 200.0 200.0 100.0 200.0 100.0 100.0</gml:posList>
-                    </gml:LinearRing>
-                </gml:exterior>
-            </gml:Polygon>
-        </Geometry>
     </AprojectReferentie>
+
     <MSoverdrachtspunt>
-        <Handle>5558</Handle>
-        <Status>{{STATUS}}</Status>
-        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
-        <Functie>LICHTMAST</Functie>
-        <Eigenaar>Gemeente</Eigenaar>
-        <Beheerder>Gemeente</Beheerder>
-        <AssetId>{3181B821-B78D-4A2D-9F4F-D303903E442F}</AssetId>
-        <Geometry>
-            <gml:Point
-                srsDimension="3"
-                srsName="EPSG:28992">
-                <gml:pos>170987.18400000036 369831.7250000015 0</gml:pos>
-            </gml:Point>
-        </Geometry>
     </MSoverdrachtspunt>
 </NLCSnetbeheerType>

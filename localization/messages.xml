@@ -125,6 +125,41 @@
       De fase van het object is niet hetzelfde als de Uitvoering!
     </message-text>
   </message>
+  <message id="connected-fases-not-allowed">
+    <message-text xml:lang="en">
+      When {1} cables are connected to a mof, the following Fase values are not allowed: {2}
+    </message-text>
+    <message-text xml:lang="nl">
+      Wanneer {1} kabels verbonden zijn met een mof mogen zij niet een van de volgende Fasen hebben: {2}
+    </message-text>
+  </message>
+  <message id="connected-fases-do-not-match">
+    <message-text xml:lang="en">
+      When {1} cables are connected to a mof, they should share the same Fase.
+      Found values: {2}
+    </message-text>
+    <message-text xml:lang="nl">
+      Wanneer {1} kabels verbonden zijn met een mof moeten zij dezelfde Fase hebben.
+      Gevonden waardes: {2}
+    </message-text>
+  </message>
+  <message id="connected-fases-do-not-split">
+    <message-text xml:lang="en">
+      When 4 cables are connected to a mof, all Fase values must be unique and one of: {1}
+      Found values: {2}
+    </message-text>
+    <message-text xml:lang="nl">
+      Wanneer 4 kabels verbonden zijn met een mof moeten alle Fasen uniek en een van de volgende zijn: {1}
+      Gevonden waardes: {2}
+    </message-text>
+  </message>
+  <message id="mantelbuis-inhoud-diameter-larger-than-own">
+    <message-text xml:lang="nl">
+      The Amantelbuis's diameter ({1}) should be larger than that of its AmantelbuisInhoud ({2}).
+    </message-text>
+    <message-text xml:lang="en">
+    </message-text>
+  </message>
   <message id="inhoud-found">
     <message-text xml:lang="nl">
       Als de Mantelbuis RESERVE is mag deze geen inhoud hebben.

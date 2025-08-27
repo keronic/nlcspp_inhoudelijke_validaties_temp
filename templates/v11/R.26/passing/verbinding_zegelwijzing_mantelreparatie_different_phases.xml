@@ -6,23 +6,9 @@
     <VersieNummer>11</VersieNummer>
     <AprojectReferentie>
         <Handle>Keronic</Handle>
-        <Projectnummer>1</Projectnummer>
-        <DeelrevisieVolgnummer>1</DeelrevisieVolgnummer>
-        <Geometry>
-            <gml:Polygon
-                srsDimension="2"
-                srsName="EPSG:28992">
-                <gml:exterior>
-                    <gml:LinearRing>
-                        <gml:posList>100.0 100.0 200.0 100.0 200.0 200.0 100.0 200.0 100.0 100.0</gml:posList>
-                    </gml:LinearRing>
-                </gml:exterior>
-            </gml:Polygon>
-        </Geometry>
     </AprojectReferentie>
     <MSmof>
         <Handle>5911</Handle>
-        <Status>BESTAAND</Status>
         <Functie>VERBINDING</Functie>
         <Geometry>
             <gml:Point
@@ -34,7 +20,6 @@
     </MSmof>
     <MSkabel>
         <Handle>6301</Handle>
-        <Status>BESTAAND</Status>
         <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
         <FaseAanduiding>L1</FaseAanduiding>
         <Geometry>
@@ -47,8 +32,6 @@
     </MSkabel>
     <MSkabel>
         <Handle>5301</Handle>
-        <Status>BESTAAND</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
         <FaseAanduiding>L2</FaseAanduiding>
         <Geometry>
             <gml:LineString
@@ -60,8 +43,6 @@
     </MSkabel>
     <MSkabel>
         <Handle>4301</Handle>
-        <Status>BESTAAND</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
         <FaseAanduiding>L3</FaseAanduiding>
         <Geometry>
             <gml:LineString
@@ -73,8 +54,6 @@
     </MSkabel>
     <MSkabel>
         <Handle>3301</Handle>
-        <Status>BESTAAND</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
         <FaseAanduiding>L3</FaseAanduiding>
         <Geometry>
             <gml:LineString
@@ -86,7 +65,6 @@
     </MSkabel>
     <MSmof>
         <Handle>5912</Handle>
-        <Status>BESTAAND</Status>
         <Functie>ZEGELWIJZIGING</Functie>
         <Geometry>
             <gml:Point
@@ -98,8 +76,6 @@
     </MSmof>
     <MSkabel>
         <Handle>6302</Handle>
-        <Status>BESTAAND</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
         <FaseAanduiding>L1</FaseAanduiding>
         <Geometry>
             <gml:LineString
@@ -111,8 +87,6 @@
     </MSkabel>
     <MSkabel>
         <Handle>5302</Handle>
-        <Status>BESTAAND</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
         <FaseAanduiding>L2</FaseAanduiding>
         <Geometry>
             <gml:LineString
@@ -124,8 +98,6 @@
     </MSkabel>
     <MSkabel>
         <Handle>4302</Handle>
-        <Status>BESTAAND</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
         <FaseAanduiding>L3</FaseAanduiding>
         <Geometry>
             <gml:LineString
@@ -137,8 +109,6 @@
     </MSkabel>
     <MSkabel>
         <Handle>3302</Handle>
-        <Status>BESTAAND</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
         <FaseAanduiding>L3</FaseAanduiding>
         <Geometry>
             <gml:LineString
@@ -150,7 +120,6 @@
     </MSkabel>
     <MSmof>
         <Handle>5913</Handle>
-        <Status>BESTAAND</Status>
         <Functie>ZEGELWIJZIGING</Functie>
         <Geometry>
             <gml:Point
@@ -162,8 +131,6 @@
     </MSmof>
     <MSkabel>
         <Handle>6303</Handle>
-        <Status>BESTAAND</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
         <FaseAanduiding>L1</FaseAanduiding>
         <Geometry>
             <gml:LineString
@@ -175,8 +142,6 @@
     </MSkabel>
     <MSkabel>
         <Handle>5303</Handle>
-        <Status>BESTAAND</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
         <FaseAanduiding>L2</FaseAanduiding>
         <Geometry>
             <gml:LineString
@@ -188,8 +153,6 @@
     </MSkabel>
     <MSkabel>
         <Handle>4303</Handle>
-        <Status>BESTAAND</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
         <FaseAanduiding>L3</FaseAanduiding>
         <Geometry>
             <gml:LineString
@@ -201,8 +164,6 @@
     </MSkabel>
     <MSkabel>
         <Handle>3303</Handle>
-        <Status>BESTAAND</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
         <FaseAanduiding>L3</FaseAanduiding>
         <Geometry>
             <gml:LineString

@@ -3,6 +3,9 @@
                    xmlns:gml="http://www.opengis.net/gml/3.2"
                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                    xmlns="NLCSnetbeheer">
+    <AprojectReferentie>
+        <Handle>Keronic</Handle>
+    </AprojectReferentie>
     <MSkabel>
         <Handle>6301</Handle>
         <Status>BESTAAND</Status>
@@ -14,4 +17,15 @@
         <Bewerking>VERPLAATSEN</Bewerking>
         <GisId>83412</GisId>
     </MSkabel>
+    <LSkabel>
+        <Handle>5301</Handle>
+        <Status>BESTAAND</Status>
+        <GisId>83412</GisId>
+    </LSkabel>
+    <LSkabel>
+        <Handle>5302</Handle>
+        <Status>REVISIE</Status>
+        <Bewerking>VERPLAATSEN</Bewerking>
+        <GisId>83412</GisId>
+    </LSkabel>
 </NLCSnetbeheerType>

@@ -6,39 +6,13 @@
     <VersieNummer>11</VersieNummer>
     <AprojectReferentie>
         <Handle>Keronic</Handle>
-        <Projectnummer>1</Projectnummer>
-        <DeelrevisieVolgnummer>1</DeelrevisieVolgnummer>
-        <TekeningType>{{TEKENING TYPE}}</TekeningType>
-        <Geometry>
-            <gml:Polygon
-                srsDimension="2"
-                srsName="EPSG:28992">
-                <gml:exterior>
-                    <gml:LinearRing>
-                        <gml:posList>100.0 100.0 200.0 100.0 200.0 200.0 100.0 200.0 100.0 100.0</gml:posList>
-                    </gml:LinearRing>
-                </gml:exterior>
-            </gml:Polygon>
-        </Geometry>
     </AprojectReferentie>
+
     <LSoverdrachtspunt>
         <Handle>5A45</Handle>
-        <Doorlaatwaarde>16</Doorlaatwaarde>
         <EigenRichting>Nee</EigenRichting>
-        <Status>{{STATUS}}</Status>
-        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
         <Functie>Huisaansluiting</Functie>
         <FaseAanduiding>3 Fasen</FaseAanduiding>
-        <Eigenaar>Netbeheerder</Eigenaar>
-        <Beheerder>Netbeheerder</Beheerder>
-        <Aardingsysteem>"TN"</Aardingsysteem>
-        <AssetId>{D3949751-C5DC-4C0D-B14F-79C1281E7CA3}</AssetId>
-        <Geometry>
-            <gml:Point
-                srsDimension="3"
-                srsName="EPSG:28992">
-                <gml:pos>170453.3299999982 369781.1000000015 0</gml:pos>
-            </gml:Point>
-        </Geometry>
+        <Aardingsysteem>TN</Aardingsysteem>
     </LSoverdrachtspunt>
 </NLCSnetbeheerType>
