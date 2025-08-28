@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="statuses-allowed-for-tekening-type" abstract="true">
+<pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="combinatie-nlcs-status-en-tekeningsoort" abstract="true">
     <rule context="//nlcs:NLCSnetbeheerType/*[not(self::nlcs:VersieNummer or self::nlcs:AprojectReferentie)]">
-        <let name="rule_number"
-            value="2"/>
-        <let name="object_type"
-            value="name(.)"/>
-        <let name="object_id"
-            value="nlcs:Handle"/>
-
         <let name="tekening_type"
             value="string(//nlcs:AprojectReferentie/nlcs:TekeningType)"/>
 

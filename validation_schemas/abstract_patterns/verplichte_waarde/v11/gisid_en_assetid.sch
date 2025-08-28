@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="v11-gisid-assetid-check">
+<pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="gisid-en-assetid" abstract="true">
     <rule context="//nlcs:MSstation | //nlcs:MSkabel | //nlcs:MSmof | //nlcs:Amantelbuis">
         <let name="statuses-requiring-ids"
             value="keronic:get-statuses-where-gisid-required()"/>
@@ -12,10 +12,6 @@
 
         <let name="object-has-asset-id"
             value="keronic:element-exists-and-not-empty(nlcs:AssetId)"/>
-
-        <let name="rule_number" value="5"/>
-        <let name="object_type" value="name(.)"/>
-        <let name="object_id" value="nlcs:Handle"/>
 
         <assert id="gisid-assetid-not-unset-if-revision-existing"
             test="not($status-requires-ids) or ($object-has-gis-id and $object-has-asset-id)"

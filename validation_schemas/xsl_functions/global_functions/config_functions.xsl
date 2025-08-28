@@ -181,7 +181,7 @@
   <function name="keronic:rule-severity-within-scope" as="xs:string">
     <param name="rule_number" as="xs:integer"/>
     <param name="nlcs_object"/>
-    <variable name="rule_string" select="rule-string($rule_number)"/>
+    <variable name="rule_string" select="keronic:rule-string($rule_number)"/>
 
     <variable name="matching_scope" select="keronic:matching-scope($nlcs_object)"/>
     <variable name="validatie_regels" select="$matching_scope/nvr:scopeValidatieRegels/nvr:scopeValidatieRegel"/>

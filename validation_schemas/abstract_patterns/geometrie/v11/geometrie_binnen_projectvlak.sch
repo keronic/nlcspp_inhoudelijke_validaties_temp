@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="all-geometries-in-project-area" abstract="true">
+<pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="geometrie-binnen-projectvlak" abstract="true">
     <!-- Point geometries -->
     <rule context="//nlcs:MSmof | //nlcs:MSoverdrachtspunt">
         <let name="project_area_pos_list"
