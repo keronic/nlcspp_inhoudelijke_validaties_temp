@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="v11-mskabel-connected-to-correct-object">
+<pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="geldig-eindpunt-kabel" abstract="true">
     <rule context="//nlcs:MSkabel[nlcs:Bedrijfstoestand ne 'VERLATEN']">
         <let name="geometry"
             value="tokenize(normalize-space(nlcs:Geometry/gml:LineString/gml:posList))"/>
-
-        <let name="rule_number" value="21"/>
-        <let name="object_type" value="name(.)"/>
-        <let name="object_id" value="nlcs:Handle"/>
-        <let name="geometry_3d" value="$geometry"/>
 
         <let name="moffen-geometries"
             value="//nlcs:MSmof/nlcs:Geometry/gml:Point/gml:pos"/>
@@ -49,6 +44,8 @@
 
         <let name="last-connected"
             value="$last-connected-to-moffen or $last-connected-to-overdrachtspunt or $last-connected-to-station"/>
+
+        <let name="geometry_3d" value="$geometry"/>
 
         <assert test="$first-connected and $last-connected"
                 properties="scope rule-number object-type object-id geometry-3d">

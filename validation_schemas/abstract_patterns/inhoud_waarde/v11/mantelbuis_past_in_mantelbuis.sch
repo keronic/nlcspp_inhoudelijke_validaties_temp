@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="v11-mantelbuis-inhoud-fits-in-mantelbuis">
+<pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="mantelbuis-past-in-mantelbuis" abstract="true">
     <rule context="//nlcs:Amantelbuis">
-        <let name="rule_number" value="27"/>
-        <let name="object_type" value="name(.)"/>
-        <let name="object_id" value="nlcs:Handle"/>
-
         <let name="assetId"
              value="nlcs:AssetId"/>
 

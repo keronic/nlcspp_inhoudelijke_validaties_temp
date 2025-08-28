@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="v11-mantelbuis-inhoud-correct">
+<pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="mantelbuis-inhoud-aanwezig" abstract="true">
     <rule context="//nlcs:Amantelbuis">
-        <let name="rule_number" value="28"/>
-        <let name="object_type" value="name(.)"/>
-        <let name="object_id" value="nlcs:Handle"/>
-
         <let name="bedrijfsToestand"
             value="nlcs:BedrijfsToestand"/>
 

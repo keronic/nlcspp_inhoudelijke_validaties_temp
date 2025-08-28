@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="v11-connected-kabels-share-properties">
+<pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="verbonden-kabels-juiste-kenmerken" abstract="true">
     <rule context="//nlcs:MSkabel">
         <let name="mskabel"
             value="."/>
@@ -19,10 +19,6 @@
                         tokenize(normalize-space(nlcs:Geometry/gml:LineString/gml:posList)),
                         tokenize(normalize-space($connected_mof/nlcs:Geometry/gml:Point/gml:pos)),
                         0)]"/>
-
-        <let name="rule_number" value="23"/>
-        <let name="object_type" value="name(.)"/>
-        <let name="object_id" value="nlcs:Handle"/>
 
         <!-- Compare bedrijfstoestanden against original-->
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="v11-points-connected-to-lines">
+<pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="topologie-punt-objecten-elec" abstract="true">
     <rule context="//nlcs:MSmof | //nlcs:MSoverdrachtspunt">
         <let name="mskabel_pos_lists"
             value="//nlcs:MSkabel/nlcs:Geometry/gml:LineString/gml:posList"/>
@@ -10,9 +10,6 @@
         <let name="point_connected"
             value="some $pos_list in $mskabel_pos_lists satisfies keronic:point-3d-touches-line-3d($point, tokenize(normalize-space($pos_list)), 0)"/>
 
-        <let name="rule_number" value="20"/>
-        <let name="object_type" value="name(.)"/>
-        <let name="object_id" value="nlcs:Handle"/>
         <let name="geometry_3d" value="$point"/>
 
         <assert id="point-connected-to-kabel"

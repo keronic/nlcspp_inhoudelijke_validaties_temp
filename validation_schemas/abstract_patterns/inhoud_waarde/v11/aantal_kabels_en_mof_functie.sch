@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="v11-amount-of-cables-correct-for-mof-functie">
+<pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="aantal-kabels-en-mof-functie" abstract="true">
     <rule context="//nlcs:MSmof[nlcs:Functie = ('EINDMOF', 'EINDDOP', 'LOODKOP', 'EIND GEAARD')]">
-        <let name="rule_number" value="26"/>
-        <let name="object_type" value="name(.)"/>
-        <let name="object_id" value="nlcs:Handle"/>
-
         <let name="msmof"
             value="."/>
 
@@ -22,12 +18,7 @@
             <value-of select="keronic:get-translation-and-replace-placeholders('cable-amount-incorrect', [string($required_amount), string(count($connected_mskabels))])"/>
         </assert>
     </rule>
-
     <rule context="//nlcs:MSmof[nlcs:Functie = ('VERBINDING', 'ZEGELWIJZIGING', 'MANTELREPARATIE')]">
-        <let name="rule_number" value="26"/>
-        <let name="object_type" value="name(.)"/>
-        <let name="object_id" value="nlcs:Handle"/>
-
         <let name="msmof"
             value="."/>
 
@@ -50,10 +41,6 @@
         </assert>
     </rule>
     <rule context="//nlcs:MSmof[nlcs:Functie = ('AFTAK')]">
-        <let name="rule_number" value="26"/>
-        <let name="object_type" value="name(.)"/>
-        <let name="object_id" value="nlcs:Handle"/>
-
         <let name="msmof"
             value="."/>
 

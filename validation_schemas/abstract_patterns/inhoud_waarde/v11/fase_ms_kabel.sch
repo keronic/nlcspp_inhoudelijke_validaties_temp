@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="v11-fase-and-uitvoering-same">
+<pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="fase-ms-kabel" abstract="true">
     <rule context="//nlcs:MSkabel">
-
-        <let name="rule_number" value="21"/>
-        <let name="object_type" value="name(.)"/>
-        <let name="object_id" value="nlcs:Handle"/>
-
         <let name="fase"
             value="nlcs:FaseAanduiding"/>
 

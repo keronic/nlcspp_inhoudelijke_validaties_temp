@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="v11-connected-kabels-have-correct-phase">
+<pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="verbonden-kabels-juiste-fase" abstract="true">
     <rule context="//nlcs:MSmof">
-        <let name="rule_number" value="25"/>
-        <let name="object_type" value="name(.)"/>
-        <let name="object_id" value="nlcs:Handle"/>
-
         <let name="msmof"
             value="."/>
 
