@@ -54,6 +54,7 @@
         <active pattern="R.7"/>
     </phase>
 
+    <!--
     <phase id="R.8">
         <active pattern="v11-kabels-have-required-values"/>
         <active pattern="v11-lskabels-have-required-values"/>
@@ -128,6 +129,8 @@
         <active pattern="R.29"/>
     </phase>
 
+    -->
+
     <!-- function delcarations -->
     <xsl:include href="../xsl_functions/global_functions/config_functions.xsl"/>
     <xsl:include href="../xsl_functions/helper_functions/helper_functions.xsl"/>
@@ -149,6 +152,7 @@
     <include href="../patterns/v11/R.5.sch"/>
     <include href="../patterns/v11/R.6.sch"/>
     <include href="../patterns/v11/R.7.sch"/>
+    <!--
     <include href="../patterns/v11/R.8.sch"/>
     <include href="../patterns/v11/R.9.sch"/>
     <include href="../patterns/v11/R.10.sch"/>
@@ -166,6 +170,7 @@
     <include href="../patterns/v11/R.27.sch"/>
     <include href="../patterns/v11/R.28.sch"/>
     <include href="../patterns/v11/R.29.sch"/>
+    -->
 
     <include href="../abstract_patterns/bestand/v11/bestand_bevat_nlcs_objecten.sch"/>
     <include href="../abstract_patterns/bestand/v11/combinatie_nlcs_status_en_tekeningsoort.sch"/>
@@ -175,6 +180,7 @@
     <include href="../abstract_patterns/verplichte_waarde/v11/inmeetwijze_en_nauwkeurigheid_assets_elec.sch"/>
     <include href="../abstract_patterns/verplichte_waarde/v11/subnettype_ingevuld_voor_ls_en_ms_kabel.sch"/>
 
+    <!--
     <include href="../abstract_patterns/verplichte_waarde/objects-have-valid-date.sch"/>
     <include href="../abstract_patterns/verplichte_waarde/kabels_have_required_values.sch"/>
     <include href="../abstract_patterns/verplichte_waarde/lskabels_have_required_values.sch"/>
@@ -195,4 +201,5 @@
     <include href="../abstract_patterns/consistentie/mantelbus_inhoud_correct.sch"/>
     <include href="../abstract_patterns/consistentie/verplaatsen_correctly_applied.sch"/>
     <include href="../abstract_patterns/inhoud_waarde/amount_of_cables_correct_for_mof_functie.sch"/>
+    -->
 </schema>
