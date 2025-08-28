@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="v11-msoverdrachtspunt-has-identification">
+<pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="verplichte-kenmerken-msoverdrachtspunt" abstract="true">
     <rule context="//nlcs:MSoverdrachtspunt">
-        <let name="rule_number" value="13"/>
-        <let name="object_type" value="name(.)"/>
-        <let name="object_id" value="nlcs:Handle"/>
-
         <assert id="v11-msoverdrachtspunt-has-identification"
             test="keronic:element-exists-and-not-empty(nlcs:Identificatie)"
             properties="scope rule-number object-type object-id">

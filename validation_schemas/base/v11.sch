@@ -54,10 +54,8 @@
         <active pattern="R.7"/>
     </phase>
 
-    <!--
     <phase id="R.8">
-        <active pattern="v11-kabels-have-required-values"/>
-        <active pattern="v11-lskabels-have-required-values"/>
+        <active pattern="R.8"/>
     </phase>
 
     <phase id="R.9">
@@ -65,8 +63,7 @@
     </phase>
 
     <phase id="R.10">
-        <active pattern="v11-moffen-have-required-values"/>
-        <active pattern="v11-hs-msmoffen-have-required-values"/>
+        <active pattern="R.10"/>
     </phase>
 
     <phase id="R.11">
@@ -88,6 +85,9 @@
     <phase id="R.15">
         <active pattern="R.15"/>
     </phase>
+    <!--
+
+
 
     <phase id="R.20">
         <active pattern="R.20"/>
@@ -152,14 +152,15 @@
     <include href="../patterns/v11/R.5.sch"/>
     <include href="../patterns/v11/R.6.sch"/>
     <include href="../patterns/v11/R.7.sch"/>
-    <!--
     <include href="../patterns/v11/R.8.sch"/>
     <include href="../patterns/v11/R.9.sch"/>
     <include href="../patterns/v11/R.10.sch"/>
     <include href="../patterns/v11/R.11.sch"/>
     <include href="../patterns/v11/R.12.sch"/>
+    <include href="../patterns/v11/R.13.sch"/>
     <include href="../patterns/v11/R.14.sch"/>
     <include href="../patterns/v11/R.15.sch"/>
+    <!--
     <include href="../patterns/v11/R.20.sch"/>
     <include href="../patterns/v11/R.21.sch"/>
     <include href="../patterns/v11/R.22.sch"/>
@@ -179,6 +180,14 @@
     <include href="../abstract_patterns/verplichte_waarde/v11/gisid_en_assetid.sch"/>
     <include href="../abstract_patterns/verplichte_waarde/v11/inmeetwijze_en_nauwkeurigheid_assets_elec.sch"/>
     <include href="../abstract_patterns/verplichte_waarde/v11/subnettype_ingevuld_voor_ls_en_ms_kabel.sch"/>
+    <include href="../abstract_patterns/verplichte_waarde/v11/verplichte_kenmerken_kabels.sch"/>
+    <include href="../abstract_patterns/verplichte_waarde/v11/aanlegdatum_gevuld.sch"/>
+    <include href="../abstract_patterns/verplichte_waarde/v11/verplichte_kenmerken_moffen.sch"/>
+    <include href="../abstract_patterns/verplichte_waarde/v11/verplichte_kenmerken_lsoverdrachtspunt.sch"/>
+    <include href="../abstract_patterns/verplichte_waarde/v11/verplichte_kenmerken_ovloverdrachtspunt.sch"/>
+    <include href="../abstract_patterns/verplichte_waarde/v11/verplichte_kenmerken_msoverdrachtspunt.sch"/>
+    <include href="../abstract_patterns/verplichte_waarde/v11/verplichte_kenmerken_stations_en_kasten.sch"/>
+    <include href="../abstract_patterns/verplichte_waarde/v11/verplichte_kenmerken_mantelbuis.sch"/>
 
     <!--
     <include href="../abstract_patterns/verplichte_waarde/objects-have-valid-date.sch"/>

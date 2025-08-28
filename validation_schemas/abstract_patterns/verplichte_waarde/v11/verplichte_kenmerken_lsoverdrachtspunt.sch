@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="v11-lsoverdrachtspunt-has-required-values">
+<pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="verplichte-kenmerken-lsoverdrachtspunt" abstract="true">
     <rule context="//nlcs:LSoverdrachtspunt">
-        <let name="rule_number" value="11"/>
-        <let name="object_type" value="name(.)"/>
-        <let name="object_id" value="nlcs:Handle"/>
-
         <assert id="functie-present"
             test="keronic:element-exists-and-not-empty(nlcs:Functie)"
             properties="scope rule-number object-type object-id">

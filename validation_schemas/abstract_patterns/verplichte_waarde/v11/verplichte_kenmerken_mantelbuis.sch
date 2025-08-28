@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="v11-mantelbuis-has-required-values">
+<pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="verplichte-kenmerken-mantelbuis" abstract="true">
     <rule context="//nlcs:Amantelbuis">
-        <let name="rule_number" value="15"/>
-        <let name="object_type" value="name(.)"/>
-        <let name="object_id" value="nlcs:Handle"/>
-
         <assert id="mantelbuis-has-thema"
             test="keronic:element-exists-and-not-empty(nlcs:Thema)"
             properties="scope rule-number object-type object-id">
