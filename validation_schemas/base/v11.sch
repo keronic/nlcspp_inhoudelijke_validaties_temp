@@ -15,9 +15,10 @@
     <ns prefix="nvr" uri="NLCSValidatieRegelsNameSpace"/>
 
     <!-- properties for more detailed assert reports -->
-    <properties>
-        <property id="scope">NO SCOPE SELECTED</property>
+       <properties>
+        <property id="scope"><value-of select="$scope"/></property>
         <property id="rule-number"><value-of select="$rule_number"/></property>
+        <property id="severity"><value-of select="$severity"/></property>
         <property id="object-type"><value-of select="$object_type"/></property>
         <property id="object-id"><value-of select="$object_id"/></property>
         <property id="geometry-2d"><value-of select="$geometry_2d"/></property>
@@ -26,15 +27,15 @@
 
     <!-- declaring the rules -->
     <phase id="R.1">
-        <active pattern="v11-aprojectreferentie-has-other-objects"/>
+        <active pattern="R.1"/>
     </phase>
 
     <phase id="R.2">
-        <active pattern="v11-statuses-allowed-for-tekening-type"/>
+        <active pattern="R.2"/>
     </phase>
 
     <phase id="R.3">
-        <active pattern="v11-all-geometries-in-project-area"/>
+        <active pattern="R.3"/>
     </phase>
 
     <phase id="R.4">
@@ -142,32 +143,36 @@
     <xsl:include href="../xsl_functions/geometry_functions/depth_functions.xsl"/>
     <xsl:include href="../xsl_functions/geometry_functions/depth_interface_functions.xsl"/>
 
-    <include href="../patterns/bestand/v11/aprojectreferentie_has_other_objects.sch"/>
-    <include href="../patterns/bestand/v11/statuses_allowed_for_tekening_type.sch"/>
-    <include href="../patterns/geometrie/all_geometries_in_project_area.sch"/>
-    <include href="../patterns/geometrie/areas_meet_demands.sch"/>
-    <include href="../patterns/geometrie/lines_meet_demands.sch"/>
-    <include href="../patterns/verplichte_waarde/gisid_assetid_check.sch"/>
-    <include href="../patterns/verplichte_waarde/elec_assets_have_measurement_details.sch"/>
-    <include href="../patterns/verplichte_waarde/cables_have_subnettype.sch"/>
-    <include href="../patterns/verplichte_waarde/objects-have-valid-date.sch"/>
-    <include href="../patterns/verplichte_waarde/kabels_have_required_values.sch"/>
-    <include href="../patterns/verplichte_waarde/lskabels_have_required_values.sch"/>
-    <include href="../patterns/verplichte_waarde/moffen_have_required_values.sch"/>
-    <include href="../patterns/verplichte_waarde/hs_msmoffen_have_required_values.sch"/>
-    <include href="../patterns/verplichte_waarde/lsoverdrachtspunt_has_required_values.sch"/>
-    <include href="../patterns/verplichte_waarde/ovloverdrachtspunt_have_required_values.sch"/>
-    <include href="../patterns/verplichte_waarde/msoverdrachtspunt_has_identification.sch"/>
-    <include href="../patterns/verplichte_waarde/stations_kasten_have_required_values.sch"/>
-    <include href="../patterns/verplichte_waarde/mantelbuis_has_required_values.sch"/>
-    <include href="../patterns/topologie/points_connected_to_lines.sch"/>
-    <include href="../patterns/topologie/cables_connected_to_correct_objects.sch"/>
-    <include href="../patterns/netlogica/connected_kabels_share_netvlak.sch"/>
-    <include href="../patterns/netlogica/connected_kabels_share_properties.sch"/>
-    <include href="../patterns/inhoud_waarde/fase_ms_kabel.sch"/>
-    <include href="../patterns/inhoud_waarde/connected_kabels_have_correct_fase.sch"/>
-    <include href="../patterns/inhoud_waarde/mantelbuis_inhoud_fits_in_mantelbuis.sch"/>
-    <include href="../patterns/consistentie/mantelbus_inhoud_correct.sch"/>
-    <include href="../patterns/consistentie/verplaatsen_correctly_applied.sch"/>
-    <include href="../patterns/inhoud_waarde/amount_of_cables_correct_for_mof_functie.sch"/>
+    <include href="../patterns/v11/R.1.sch"/>
+    <include href="../patterns/v11/R.2.sch"/>
+    <include href="../patterns/v11/R.3.sch"/>
+
+    <include href="../abstract_patterns/bestand/v11/aprojectreferentie_has_other_objects.sch"/>
+    <include href="../abstract_patterns/bestand/v11/statuses_allowed_for_tekening_type.sch"/>
+    <include href="../abstract_patterns/geometrie/all_geometries_in_project_area.sch"/>
+    <include href="../abstract_patterns/geometrie/areas_meet_demands.sch"/>
+    <include href="../abstract_patterns/geometrie/lines_meet_demands.sch"/>
+    <include href="../abstract_patterns/verplichte_waarde/gisid_assetid_check.sch"/>
+    <include href="../abstract_patterns/verplichte_waarde/elec_assets_have_measurement_details.sch"/>
+    <include href="../abstract_patterns/verplichte_waarde/cables_have_subnettype.sch"/>
+    <include href="../abstract_patterns/verplichte_waarde/objects-have-valid-date.sch"/>
+    <include href="../abstract_patterns/verplichte_waarde/kabels_have_required_values.sch"/>
+    <include href="../abstract_patterns/verplichte_waarde/lskabels_have_required_values.sch"/>
+    <include href="../abstract_patterns/verplichte_waarde/moffen_have_required_values.sch"/>
+    <include href="../abstract_patterns/verplichte_waarde/hs_msmoffen_have_required_values.sch"/>
+    <include href="../abstract_patterns/verplichte_waarde/lsoverdrachtspunt_has_required_values.sch"/>
+    <include href="../abstract_patterns/verplichte_waarde/ovloverdrachtspunt_have_required_values.sch"/>
+    <include href="../abstract_patterns/verplichte_waarde/msoverdrachtspunt_has_identification.sch"/>
+    <include href="../abstract_patterns/verplichte_waarde/stations_kasten_have_required_values.sch"/>
+    <include href="../abstract_patterns/verplichte_waarde/mantelbuis_has_required_values.sch"/>
+    <include href="../abstract_patterns/topologie/points_connected_to_lines.sch"/>
+    <include href="../abstract_patterns/topologie/cables_connected_to_correct_objects.sch"/>
+    <include href="../abstract_patterns/netlogica/connected_kabels_share_netvlak.sch"/>
+    <include href="../abstract_patterns/netlogica/connected_kabels_share_properties.sch"/>
+    <include href="../abstract_patterns/inhoud_waarde/fase_ms_kabel.sch"/>
+    <include href="../abstract_patterns/inhoud_waarde/connected_kabels_have_correct_fase.sch"/>
+    <include href="../abstract_patterns/inhoud_waarde/mantelbuis_inhoud_fits_in_mantelbuis.sch"/>
+    <include href="../abstract_patterns/consistentie/mantelbus_inhoud_correct.sch"/>
+    <include href="../abstract_patterns/consistentie/verplaatsen_correctly_applied.sch"/>
+    <include href="../abstract_patterns/inhoud_waarde/amount_of_cables_correct_for_mof_functie.sch"/>
 </schema>

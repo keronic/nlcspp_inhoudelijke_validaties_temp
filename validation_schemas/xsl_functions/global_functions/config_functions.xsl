@@ -163,13 +163,30 @@
     </choose>
   </template>
 
+  <function name="keronic:rule-string" as="xs:string">
+    <param name="rule_number" as="xs:integer"/>
+    <value-of select="concat('R.', $rule_number)"/>
+  </function>
+
   <function name="keronic:rule-within-scope-for-object" as="xs:boolean">
-    <param name="rule_number" as="xs:string"/>
+    <param name="rule_number" as="xs:integer"/>
     <param name="nlcs_object"/>
+    <variable name="rule_string" select="keronic:rule-string($rule_number)"/>
 
     <variable name="matching_scope" select="keronic:matching-scope($nlcs_object)"/>
 
-    <value-of select="some $rule in $matching_scope/nvr:scopeValidatieRegels/nvr:scopeValidatieRegel satisfies $rule/nvr:nummer = $rule_number"/>
+    <value-of select="some $rule in $matching_scope/nvr:scopeValidatieRegels/nvr:scopeValidatieRegel satisfies $rule/nvr:nummer = $rule_string"/>
+  </function>
+
+  <function name="keronic:rule-severity-within-scope" as="xs:string">
+    <param name="rule_number" as="xs:integer"/>
+    <param name="nlcs_object"/>
+    <variable name="rule_string" select="rule-string($rule_number)"/>
+
+    <variable name="matching_scope" select="keronic:matching-scope($nlcs_object)"/>
+    <variable name="validatie_regels" select="$matching_scope/nvr:scopeValidatieRegels/nvr:scopeValidatieRegel"/>
+
+    <value-of select="$validatie_regels[nvr:nummer = $rule_string]/nvr:niveau"/>
   </function>
 
   <function name="keronic:scope-name" as="xs:string">
@@ -178,16 +195,6 @@
     <variable name="matching_scope" select="keronic:matching-scope($nlcs_object)"/>
 
     <value-of select="$matching_scope/@naam"/>
-  </function>
-
-  <function name="keronic:rule-severity" as="xs:string">
-    <param name="rule_number" as="xs:string"/>
-    <param name="nlcs_object"/>
-
-    <variable name="matching_scope" select="keronic:matching-scope($nlcs_object)"/>
-    <variable name="validatie_regels" select="$matching_scope/nvr:scopeValidatieRegels/nvr:scopeValidatieRegel"/>
-
-    <value-of select="$validatie_regels[nvr:nummer = $rule_number]/nvr:niveau"/>
   </function>
 
   <function name="keronic:matching-scope">

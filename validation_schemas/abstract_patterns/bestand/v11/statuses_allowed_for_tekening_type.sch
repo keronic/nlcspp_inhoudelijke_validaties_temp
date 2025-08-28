@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="v11-statuses-allowed-for-tekening-type">
+<pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="statuses-allowed-for-tekening-type" abstract="true">
     <rule context="//nlcs:NLCSnetbeheerType/*[not(self::nlcs:VersieNummer or self::nlcs:AprojectReferentie)]">
         <let name="rule_number"
             value="2"/>
