@@ -168,30 +168,30 @@
     <include href="../patterns/v11/R.29.sch"/>
 
     <!-- import abstract patterns -->
-    <include href="../abstract_patterns/bestand/v11/bestand_bevat_nlcs_objecten.sch"/>
-    <include href="../abstract_patterns/bestand/v11/combinatie_nlcs_status_en_tekeningsoort.sch"/>
-    <include href="../abstract_patterns/geometrie/v11/geometrie_binnen_projectvlak.sch"/>
-    <include href="../abstract_patterns/geometrie/v11/lijn_geometrie.sch"/>
-    <include href="../abstract_patterns/verplichte_waarde/v11/gisid_en_assetid.sch"/>
-    <include href="../abstract_patterns/verplichte_waarde/v11/inmeetwijze_en_nauwkeurigheid_assets_elec.sch"/>
-    <include href="../abstract_patterns/verplichte_waarde/v11/subnettype_ingevuld_voor_ls_en_ms_kabel.sch"/>
-    <include href="../abstract_patterns/verplichte_waarde/v11/verplichte_kenmerken_kabels.sch"/>
-    <include href="../abstract_patterns/verplichte_waarde/v11/aanlegdatum_gevuld.sch"/>
-    <include href="../abstract_patterns/verplichte_waarde/v11/verplichte_kenmerken_moffen.sch"/>
-    <include href="../abstract_patterns/verplichte_waarde/v11/verplichte_kenmerken_lsoverdrachtspunt.sch"/>
-    <include href="../abstract_patterns/verplichte_waarde/v11/verplichte_kenmerken_ovloverdrachtspunt.sch"/>
-    <include href="../abstract_patterns/verplichte_waarde/v11/verplichte_kenmerken_msoverdrachtspunt.sch"/>
-    <include href="../abstract_patterns/verplichte_waarde/v11/verplichte_kenmerken_stations_en_kasten.sch"/>
-    <include href="../abstract_patterns/verplichte_waarde/v11/verplichte_kenmerken_mantelbuis.sch"/>
-    <include href="../abstract_patterns/topologie/v11/topologie_punt_objecten_elec.sch"/>
-    <include href="../abstract_patterns/topologie/v11/geldig_eindpunt_kabel.sch"/>
-    <include href="../abstract_patterns/netlogica/v11/kabels_zelfde_netvlak.sch"/>
-    <include href="../abstract_patterns/netlogica/v11/verbonden_kabels_juiste_kenmerken.sch"/>
-    <include href="../abstract_patterns/inhoud_waarde/v11/fase_ms_kabel.sch"/>
-    <include href="../abstract_patterns/inhoud_waarde/v11/verbonden_kabels_juiste_fase.sch"/>
-    <include href="../abstract_patterns/inhoud_waarde/v11/aantal_kabels_en_mof_functie.sch"/>
-    <include href="../abstract_patterns/inhoud_waarde/v11/mantelbuis_past_in_mantelbuis.sch"/>
-    <include href="../abstract_patterns/consistentie/v11/mantelbuis_inhoud_aanwezig.sch"/>
-    <include href="../abstract_patterns/consistentie/v11/verplaatsing_goed_vastgelegd.sch"/>
+    <include href="../abstract_patterns/v11/bestand/bestand_bevat_nlcs_objecten.sch"/>
+    <include href="../abstract_patterns/v11/bestand/combinatie_nlcs_status_en_tekeningsoort.sch"/>
+    <include href="../abstract_patterns/v11/geometrie/geometrie_binnen_projectvlak.sch"/>
+    <include href="../abstract_patterns/v11/geometrie/lijn_geometrie.sch"/>
+    <include href="../abstract_patterns/v11/verplichte_waarde/gisid_en_assetid.sch"/>
+    <include href="../abstract_patterns/v11/verplichte_waarde/inmeetwijze_en_nauwkeurigheid_assets_elec.sch"/>
+    <include href="../abstract_patterns/v11/verplichte_waarde/subnettype_ingevuld_voor_ls_en_ms_kabel.sch"/>
+    <include href="../abstract_patterns/v11/verplichte_waarde/verplichte_kenmerken_kabels.sch"/>
+    <include href="../abstract_patterns/v11/verplichte_waarde/aanlegdatum_gevuld.sch"/>
+    <include href="../abstract_patterns/v11/verplichte_waarde/verplichte_kenmerken_moffen.sch"/>
+    <include href="../abstract_patterns/v11/verplichte_waarde/verplichte_kenmerken_lsoverdrachtspunt.sch"/>
+    <include href="../abstract_patterns/v11/verplichte_waarde/verplichte_kenmerken_ovloverdrachtspunt.sch"/>
+    <include href="../abstract_patterns/v11/verplichte_waarde/verplichte_kenmerken_msoverdrachtspunt.sch"/>
+    <include href="../abstract_patterns/v11/verplichte_waarde/verplichte_kenmerken_stations_en_kasten.sch"/>
+    <include href="../abstract_patterns/v11/verplichte_waarde/verplichte_kenmerken_mantelbuis.sch"/>
+    <include href="../abstract_patterns/v11/topologie/topologie_punt_objecten_elec.sch"/>
+    <include href="../abstract_patterns/v11/topologie/geldig_eindpunt_kabel.sch"/>
+    <include href="../abstract_patterns/v11/netlogica/kabels_zelfde_netvlak.sch"/>
+    <include href="../abstract_patterns/v11/netlogica/verbonden_kabels_juiste_kenmerken.sch"/>
+    <include href="../abstract_patterns/v11/inhoud_waarde/fase_ms_kabel.sch"/>
+    <include href="../abstract_patterns/v11/inhoud_waarde/verbonden_kabels_juiste_fase.sch"/>
+    <include href="../abstract_patterns/v11/inhoud_waarde/aantal_kabels_en_mof_functie.sch"/>
+    <include href="../abstract_patterns/v11/inhoud_waarde/mantelbuis_past_in_mantelbuis.sch"/>
+    <include href="../abstract_patterns/v11/consistentie/mantelbuis_inhoud_aanwezig.sch"/>
+    <include href="../abstract_patterns/v11/consistentie/verplaatsing_goed_vastgelegd.sch"/>
 
 </schema>
