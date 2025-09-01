@@ -11,8 +11,8 @@
              value="$inhoud/nlcs:Diameter"/>
 
         <assert id="mantelbuis_inhoud_fits_in_mantelbuis"
-            test="nlcs:Diameter > $inhoud_diameter"
-            properties="scope rule-number severity object-type object-id">
+            test="not(keronic:element-exists-and-not-empty($inhoud_diameter)) or upper-case($inhoud_diameter) = 'KEUZE ONTBREEKT IN LIJST' or (nlcs:Diameter > $inhoud_diameter)"
+            properties="scope rule-number object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders(
                 'mantelbuis-inhoud-diameter-larger-than-own',
                 [nlcs:Diameter, $inhoud_diameter])"/>
