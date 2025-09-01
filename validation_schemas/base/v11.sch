@@ -8,15 +8,17 @@
         queryBinding="xslt3">
 
     <!-- schematron namespace declarations -->
-    <ns prefix="keronic" uri = "http://example.com/my-functions"/>
+    <ns prefix="keronic" uri="http://example.com/my-functions"/>
     <ns prefix="gml" uri="http://www.opengis.net/gml/3.2"/>
     <ns prefix="xs" uri="http://www.w3.org/2001/XMLSchema"/>
     <ns prefix="nlcs" uri="NLCSnetbeheer"/>
+    <ns prefix="nvr" uri="NLCSValidatieRegelsNameSpace"/>
 
-    <!-- properties for more detailed assert reports -->
+    <!-- properties for assert report details -->
     <properties>
-        <property id="scope">NO SCOPE SELECTED</property>
+        <property id="scope"><value-of select="$scope"/></property>
         <property id="rule-number"><value-of select="$rule_number"/></property>
+        <property id="severity"><value-of select="$severity"/></property>
         <property id="object-type"><value-of select="$object_type"/></property>
         <property id="object-id"><value-of select="$object_id"/></property>
         <property id="geometry-2d"><value-of select="$geometry_2d"/></property>
@@ -25,109 +27,106 @@
 
     <!-- declaring the rules -->
     <phase id="R.1">
-        <active pattern="v11-aprojectreferentie-has-other-objects"/>
+        <active pattern="R.1"/>
     </phase>
 
     <phase id="R.2">
-        <active pattern="v11-statuses-allowed-for-tekening-type"/>
+        <active pattern="R.2"/>
     </phase>
 
     <phase id="R.3">
-        <active pattern="v11-all-geometries-in-project-area"/>
+        <active pattern="R.3"/>
     </phase>
 
     <phase id="R.4">
-        <active pattern="v11-lines-meet-demands"/>
-        <active pattern="v11-areas-meet-demands"/>
+        <active pattern="R.4"/>
     </phase>
 
     <phase id="R.5">
-        <active pattern="v11-gisid-assetid-check"/>
+        <active pattern="R.5"/>
     </phase>
 
     <phase id="R.6">
-        <active pattern="v11-elec-assets-have-measurement-details"/>
+        <active pattern="R.6"/>
     </phase>
 
     <phase id="R.7">
-        <active pattern="v11-cables-have-subnettype"/>
+        <active pattern="R.7"/>
     </phase>
 
     <phase id="R.8">
-        <active pattern="v11-kabels-have-required-values"/>
-        <active pattern="v11-lskabels-have-required-values"/>
+        <active pattern="R.8"/>
     </phase>
 
     <phase id="R.9">
-        <active pattern="v11-objects-have-valid-date"/>
+        <active pattern="R.9"/>
     </phase>
 
     <phase id="R.10">
-        <active pattern="v11-moffen-have-required-values"/>
-        <active pattern="v11-hs-msmoffen-have-required-values"/>
+        <active pattern="R.10"/>
     </phase>
 
     <phase id="R.11">
-        <active pattern="v11-lsoverdrachtspunt-has-required-values"/>
+        <active pattern="R.11"/>
     </phase>
 
     <phase id="R.12">
-        <active pattern="v11-ovloverdrachtspunt-has-required-values"/>
+        <active pattern="R.12"/>
     </phase>
 
     <phase id="R.13">
-        <active pattern="v11-msoverdrachtspunt-has-identification"/>
+        <active pattern="R.13"/>
     </phase>
 
     <phase id="R.14">
-        <active pattern="v11-stations-kasten-have-required-values"/>
+        <active pattern="R.14"/>
     </phase>
 
     <phase id="R.15">
-        <active pattern="v11-mantelbuis-has-required-values"/>
+        <active pattern="R.15"/>
     </phase>
 
     <phase id="R.20">
-        <active pattern="v11-points-connected-to-lines"/>
+        <active pattern="R.20"/>
     </phase>
 
     <phase id="R.21">
-        <active pattern="v11-mskabel-connected-to-correct-object"/>
+        <active pattern="R.21"/>
     </phase>
 
     <phase id="R.22">
-        <active pattern="v11-connected-kabels-share-netvlak"/>
+        <active pattern="R.22"/>
     </phase>
 
     <phase id="R.23">
-        <active pattern="v11-connected-kabels-share-properties"/>
+        <active pattern="R.23"/>
     </phase>
 
     <phase id="R.24">
-        <active pattern="v11-fase-and-uitvoering-same"/>
+        <active pattern="R.24"/>
     </phase>
 
     <phase id="R.25">
-        <active pattern="v11-connected-kabels-have-correct-phase"/>
+        <active pattern="R.25"/>
     </phase>
 
     <phase id="R.26">
-        <active pattern="v11-amount-of-cables-correct-for-mof-functie"/>
+        <active pattern="R.26"/>
     </phase>
 
     <phase id="R.27">
-        <active pattern="v11-mantelbuis-inhoud-fits-in-mantelbuis"/>
+        <active pattern="R.27"/>
     </phase>
 
     <phase id="R.28">
-        <active pattern="v11-mantelbuis-inhoud-correct"/>
+        <active pattern="R.28"/>
     </phase>
 
     <phase id="R.29">
-        <active pattern="v11-verplaatsen-correctly-applied"/>
+        <active pattern="R.29"/>
     </phase>
 
-    <!-- function delcarations -->
+    <!-- import functions -->
     <xsl:include href="../xsl_functions/global_functions/config_functions.xsl"/>
     <xsl:include href="../xsl_functions/helper_functions/helper_functions.xsl"/>
     <xsl:include href="../xsl_functions/geometry_functions/2d_geometry_functions.xsl"/>
@@ -141,32 +140,58 @@
     <xsl:include href="../xsl_functions/geometry_functions/depth_functions.xsl"/>
     <xsl:include href="../xsl_functions/geometry_functions/depth_interface_functions.xsl"/>
 
-    <include href="../patterns/bestand/v11/aprojectreferentie_has_other_objects.sch"/>
-    <include href="../patterns/bestand/v11/statuses_allowed_for_tekening_type.sch"/>
-    <include href="../patterns/geometrie/all_geometries_in_project_area.sch"/>
-    <include href="../patterns/geometrie/areas_meet_demands.sch"/>
-    <include href="../patterns/geometrie/lines_meet_demands.sch"/>
-    <include href="../patterns/verplichte_waarde/gisid_assetid_check.sch"/>
-    <include href="../patterns/verplichte_waarde/elec_assets_have_measurement_details.sch"/>
-    <include href="../patterns/verplichte_waarde/cables_have_subnettype.sch"/>
-    <include href="../patterns/verplichte_waarde/objects-have-valid-date.sch"/>
-    <include href="../patterns/verplichte_waarde/kabels_have_required_values.sch"/>
-    <include href="../patterns/verplichte_waarde/lskabels_have_required_values.sch"/>
-    <include href="../patterns/verplichte_waarde/moffen_have_required_values.sch"/>
-    <include href="../patterns/verplichte_waarde/hs_msmoffen_have_required_values.sch"/>
-    <include href="../patterns/verplichte_waarde/lsoverdrachtspunt_has_required_values.sch"/>
-    <include href="../patterns/verplichte_waarde/ovloverdrachtspunt_have_required_values.sch"/>
-    <include href="../patterns/verplichte_waarde/msoverdrachtspunt_has_identification.sch"/>
-    <include href="../patterns/verplichte_waarde/stations_kasten_have_required_values.sch"/>
-    <include href="../patterns/verplichte_waarde/mantelbuis_has_required_values.sch"/>
-    <include href="../patterns/topologie/points_connected_to_lines.sch"/>
-    <include href="../patterns/topologie/cables_connected_to_correct_objects.sch"/>
-    <include href="../patterns/netlogica/connected_kabels_share_netvlak.sch"/>
-    <include href="../patterns/netlogica/connected_kabels_share_properties.sch"/>
-    <include href="../patterns/inhoud_waarde/fase_ms_kabel.sch"/>
-    <include href="../patterns/inhoud_waarde/connected_kabels_have_correct_fase.sch"/>
-    <include href="../patterns/inhoud_waarde/mantelbuis_inhoud_fits_in_mantelbuis.sch"/>
-    <include href="../patterns/consistentie/mantelbus_inhoud_correct.sch"/>
-    <include href="../patterns/consistentie/verplaatsen_correctly_applied.sch"/>
-    <include href="../patterns/inhoud_waarde/amount_of_cables_correct_for_mof_functie.sch"/>
+    <!-- import patterns -->
+    <include href="../patterns/v11/R.1.sch"/>
+    <include href="../patterns/v11/R.2.sch"/>
+    <include href="../patterns/v11/R.3.sch"/>
+    <include href="../patterns/v11/R.4.sch"/>
+    <include href="../patterns/v11/R.5.sch"/>
+    <include href="../patterns/v11/R.6.sch"/>
+    <include href="../patterns/v11/R.7.sch"/>
+    <include href="../patterns/v11/R.8.sch"/>
+    <include href="../patterns/v11/R.9.sch"/>
+    <include href="../patterns/v11/R.10.sch"/>
+    <include href="../patterns/v11/R.11.sch"/>
+    <include href="../patterns/v11/R.12.sch"/>
+    <include href="../patterns/v11/R.13.sch"/>
+    <include href="../patterns/v11/R.14.sch"/>
+    <include href="../patterns/v11/R.15.sch"/>
+    <include href="../patterns/v11/R.20.sch"/>
+    <include href="../patterns/v11/R.21.sch"/>
+    <include href="../patterns/v11/R.22.sch"/>
+    <include href="../patterns/v11/R.23.sch"/>
+    <include href="../patterns/v11/R.24.sch"/>
+    <include href="../patterns/v11/R.25.sch"/>
+    <include href="../patterns/v11/R.26.sch"/>
+    <include href="../patterns/v11/R.27.sch"/>
+    <include href="../patterns/v11/R.28.sch"/>
+    <include href="../patterns/v11/R.29.sch"/>
+
+    <!-- import abstract patterns -->
+    <include href="../abstract_patterns/v11/bestand/bestand_bevat_nlcs_objecten.sch"/>
+    <include href="../abstract_patterns/v11/bestand/combinatie_nlcs_status_en_tekeningsoort.sch"/>
+    <include href="../abstract_patterns/v11/geometrie/geometrie_binnen_projectvlak.sch"/>
+    <include href="../abstract_patterns/v11/geometrie/lijn_geometrie.sch"/>
+    <include href="../abstract_patterns/v11/verplichte_waarde/gisid_en_assetid.sch"/>
+    <include href="../abstract_patterns/v11/verplichte_waarde/inmeetwijze_en_nauwkeurigheid_assets_elec.sch"/>
+    <include href="../abstract_patterns/v11/verplichte_waarde/subnettype_ingevuld_voor_ls_en_ms_kabel.sch"/>
+    <include href="../abstract_patterns/v11/verplichte_waarde/verplichte_kenmerken_kabels.sch"/>
+    <include href="../abstract_patterns/v11/verplichte_waarde/aanlegdatum_gevuld.sch"/>
+    <include href="../abstract_patterns/v11/verplichte_waarde/verplichte_kenmerken_moffen.sch"/>
+    <include href="../abstract_patterns/v11/verplichte_waarde/verplichte_kenmerken_lsoverdrachtspunt.sch"/>
+    <include href="../abstract_patterns/v11/verplichte_waarde/verplichte_kenmerken_ovloverdrachtspunt.sch"/>
+    <include href="../abstract_patterns/v11/verplichte_waarde/verplichte_kenmerken_msoverdrachtspunt.sch"/>
+    <include href="../abstract_patterns/v11/verplichte_waarde/verplichte_kenmerken_stations_en_kasten.sch"/>
+    <include href="../abstract_patterns/v11/verplichte_waarde/verplichte_kenmerken_mantelbuis.sch"/>
+    <include href="../abstract_patterns/v11/topologie/topologie_punt_objecten_elec.sch"/>
+    <include href="../abstract_patterns/v11/topologie/geldig_eindpunt_kabel.sch"/>
+    <include href="../abstract_patterns/v11/netlogica/kabels_zelfde_netvlak.sch"/>
+    <include href="../abstract_patterns/v11/netlogica/verbonden_kabels_juiste_kenmerken.sch"/>
+    <include href="../abstract_patterns/v11/inhoud_waarde/fase_ms_kabel.sch"/>
+    <include href="../abstract_patterns/v11/inhoud_waarde/verbonden_kabels_juiste_fase.sch"/>
+    <include href="../abstract_patterns/v11/inhoud_waarde/aantal_kabels_en_mof_functie.sch"/>
+    <include href="../abstract_patterns/v11/inhoud_waarde/mantelbuis_past_in_mantelbuis.sch"/>
+    <include href="../abstract_patterns/v11/consistentie/mantelbuis_inhoud_aanwezig.sch"/>
+    <include href="../abstract_patterns/v11/consistentie/verplaatsing_goed_vastgelegd.sch"/>
+
 </schema>
