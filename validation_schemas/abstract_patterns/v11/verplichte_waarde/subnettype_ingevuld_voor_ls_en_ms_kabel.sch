@@ -3,7 +3,7 @@
     <rule context="//nlcs:MSkabel | //nlcs:LSkabel | nlcs:LSmof">
         <assert id="subnettype-present"
             test="keronic:element-exists-and-not-empty(nlcs:Subnettype)"
-            properties="scope rule-number object-type object-id">
+            properties="scope rule-number severity object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['Subnettype'])"/>
         </assert>
     </rule>

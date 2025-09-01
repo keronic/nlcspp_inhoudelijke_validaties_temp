@@ -3,13 +3,13 @@
     <rule context="//nlcs:OVLoverdrachtspunt">
         <assert id="aansluitset-present"
             test="keronic:element-exists-and-not-empty(nlcs:Aansluitset)"
-            properties="scope rule-number object-type object-id">
+            properties="scope rule-number severity object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['Aansluitset'])"/>
         </assert>
 
         <assert id="mastnummer-present"
             test="keronic:element-exists-and-not-empty(nlcs:Mastnummer)"
-            properties="scope rule-number object-type object-id">
+            properties="scope rule-number severity object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['Mastnummer'])"/>
         </assert>
     </rule>

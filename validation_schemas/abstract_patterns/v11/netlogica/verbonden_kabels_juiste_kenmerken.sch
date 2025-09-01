@@ -30,7 +30,7 @@
 
         <assert id="connected-mskabel-does-not-match-bedrijfstoestand"
             test="empty($unexpected_bedrijfstoestanden)"
-            properties="scope rule-number object-type object-id">
+            properties="scope rule-number severity object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders(
                 'connected-cable-does-not-match-property',
                 ['Bedrijfstoestand', $expected_bedrijfstoestand, string-join($unexpected_bedrijfstoestanden, ', ')])"/>
@@ -46,7 +46,7 @@
 
         <assert id="connected-mskabel-does-not-match-subnettype"
             test="empty($unexpected_subnettypes)"
-            properties="scope rule-number object-type object-id">
+            properties="scope rule-number severity object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders(
                 'connected-cable-does-not-match-property',
                 ['Subnettype', $expected_subnettype, string-join($unexpected_subnettypes, ', ')])"/>
@@ -62,7 +62,7 @@
 
         <assert id="connected-mskabel-does-not-match-verbindingnummer"
             test="empty($unexpected_verbindingnummers)"
-            properties="scope rule-number object-type object-id">
+            properties="scope rule-number severity object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders(
                 'connected-cable-does-not-match-property',
                 ['Verbindingnummer', $expected_verbindingnummer, string-join($unexpected_verbindingnummers, ', ')])"/>
@@ -78,7 +78,7 @@
 
         <assert id="connected-mskabel-does-not-match-spanningsniveau"
             test="empty($unexpected_spanningsniveaus)"
-            properties="scope rule-number object-type object-id">
+            properties="scope rule-number severity object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders(
                 'connected-cable-does-not-match-property',
                 ['Spanningsniveau', $expected_spanningsniveau, string-join($unexpected_spanningsniveaus, ', ')])"/>

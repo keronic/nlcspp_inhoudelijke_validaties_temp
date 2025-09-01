@@ -13,7 +13,7 @@
                 else ''"/>
 
         <assert id="fase-and-uitvoering-same"
-                properties="scope rule-number object-type object-id"
+                properties="scope rule-number severity object-type object-id"
             test="starts-with($uitvoering, $expected_uitvoering_prefix)">
             <value-of select="keronic:get-translation('fase-not-the-same-as-uitvoering')"/>
         </assert>

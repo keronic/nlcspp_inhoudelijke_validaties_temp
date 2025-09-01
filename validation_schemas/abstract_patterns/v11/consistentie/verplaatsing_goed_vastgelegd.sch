@@ -9,7 +9,7 @@
 
         <assert id="verplaatsen_correctly_applied"
             test="if ($isVerplaatsing) then $hasSomeOriginal else true()"
-            properties="scope rule-number object-type object-id">
+            properties="scope rule-number severity object-type object-id">
             <value-of select="keronic:get-translation('verplaatsen-incorrectly-applied')"/>
         </assert>
     </rule>

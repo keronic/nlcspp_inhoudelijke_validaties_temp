@@ -22,4 +22,15 @@
     </xsl:attribute>
   </xsl:template>
 
+  <xsl:template match="/">
+    <!-- Extract original filename without extension -->
+    <xsl:variable name="filename"
+      select="replace(tokenize(base-uri(.), '/')[last()], '\.[^.]+$', '')"/>
+
+    <!-- Write to that filename with .sch extension -->
+    <xsl:result-document href="{$filename}.sch" method="xml" indent="yes">
+      <xsl:apply-templates select="node()"/>
+    </xsl:result-document>
+  </xsl:template>
+
 </xsl:stylesheet>

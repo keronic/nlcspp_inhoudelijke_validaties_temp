@@ -3,13 +3,13 @@
     <rule context="//nlcs:MSstation | //nlcs:MSkabel | //nlcs:MSmof | //nlcs:MSoverdrachtspunt | //nlcs:Amantelbuis">
         <assert id="elec-object-has-inmeetwijze"
             test="keronic:element-exists-and-not-empty(nlcs:Inmeetwijze)"
-            properties="scope rule-number object-type object-id">
+            properties="scope rule-number severity object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['Inmeetwijze'])"/>
         </assert>
 
         <assert id="elec-object-has-nauwkeurigheid"
             test="keronic:element-exists-and-not-empty(nlcs:Nauwkeurigheid)"
-            properties="scope rule-number object-type object-id">
+            properties="scope rule-number severity object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['Nauwkeurigheid'])"/>
         </assert>
     </rule>

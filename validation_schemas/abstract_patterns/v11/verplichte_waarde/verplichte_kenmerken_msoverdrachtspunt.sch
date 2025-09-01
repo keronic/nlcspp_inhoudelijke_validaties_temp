@@ -3,7 +3,7 @@
     <rule context="//nlcs:MSoverdrachtspunt">
         <assert id="v11-msoverdrachtspunt-has-identification"
             test="keronic:element-exists-and-not-empty(nlcs:Identificatie)"
-            properties="scope rule-number object-type object-id">
+            properties="scope rule-number severity object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['Identificatie'])"/>
         </assert>
     </rule>

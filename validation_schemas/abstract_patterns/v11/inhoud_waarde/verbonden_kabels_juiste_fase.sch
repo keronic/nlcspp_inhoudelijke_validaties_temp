@@ -32,7 +32,7 @@
             value="count($unique_allowed_connected_phases) = 4"/>
 
         <assert id="msmof-2-3-4-connected-only-allowed-phases"
-            properties="scope rule-number object-type object-id"
+            properties="scope rule-number severity object-type object-id"
             test="if($connections = 2 or $connections = 3 or $connections = 4) then empty($unique_unallowed_connected_phases) else true()">
             <value-of select="keronic:get-translation-and-replace-placeholders(
                 'connected-fases-not-allowed',
@@ -40,7 +40,7 @@
         </assert>
 
         <assert id="msmof-2-3-connected-cables-have-same-fase"
-            properties="scope rule-number object-type object-id"
+            properties="scope rule-number severity object-type object-id"
             test="if($connections = 2 or $connections = 3) then $all_connected_cables_match_fases else true()">
             <value-of select="keronic:get-translation-and-replace-placeholders(
                 'connected-fases-do-not-match',
@@ -48,7 +48,7 @@
         </assert>
 
         <assert id="msmof-4-connected-cables-have-combined-and-split-fasen"
-            properties="scope rule-number object-type object-id"
+            properties="scope rule-number severity object-type object-id"
             test="if($connections = 4) then $all_connected_cables_have_combined_and_split_fases else true()">
             <value-of select="keronic:get-translation-and-replace-placeholders(
                 'connected-fases-do-not-split',

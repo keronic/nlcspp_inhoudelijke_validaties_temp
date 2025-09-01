@@ -12,13 +12,13 @@
 
         <assert id="inhoud_exists_when_in_bedrijf"
             test="if ($bedrijfsToestand = 'IN BEDRIJF') then $inhoud else true()"
-            properties="scope rule-number object-type object-id">
+            properties="scope rule-number severity object-type object-id">
             <value-of select="keronic:get-translation('inhoud-not-found')"/>
         </assert>
 
         <assert id="inhoud_does_not_exist_when_reserve"
             test="if ($bedrijfsToestand = 'RESERVE') then not($inhoud) else true()"
-            properties="scope rule-number object-type object-id">
+            properties="scope rule-number severity object-type object-id">
             <value-of select="keronic:get-translation('inhoud-found')"/>
         </assert>
     </rule>

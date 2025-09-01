@@ -15,13 +15,13 @@
 
         <assert id="gisid-assetid-not-unset-if-revision-existing"
             test="not($status-requires-ids) or ($object-has-gis-id and $object-has-asset-id)"
-            properties="scope rule-number object-type object-id">
+            properties="scope rule-number severity object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders('gisid-assetid-not-unset-if-new-revision-existing', [string-join($statuses-requiring-ids, ', ')])"/>
         </assert>
 
         <assert id="gisid-assetid-are-unset-if-new"
             test="$status-requires-ids or not($object-has-gis-id or $object-has-asset-id)"
-            properties="scope rule-number object-type object-id">
+            properties="scope rule-number severity object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders('gisid-assetid-are-unset-if-new', [string-join($statuses-requiring-ids, ', ')])"/>
         </assert>
     </rule>

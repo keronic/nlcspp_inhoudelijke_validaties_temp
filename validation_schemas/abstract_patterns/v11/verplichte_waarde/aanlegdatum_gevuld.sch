@@ -7,13 +7,13 @@
 
         <assert id="date-exists"
             test="$datum-aanleg-present"
-            properties="scope rule-number object-type object-id">
+            properties="scope rule-number severity object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['DatumAanleg'])"/>
         </assert>
 
         <assert id="date-not-in-future"
             test="not($datum-aanleg-present) or (xs:date(nlcs:DatumAanleg) le current-date())"
-            properties="scope rule-number object-type object-id">
+            properties="scope rule-number severity object-type object-id">
             <value-of select="keronic:get-translation('date-in-the-future')"/>
         </assert>
     </rule>

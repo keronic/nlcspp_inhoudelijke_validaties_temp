@@ -48,7 +48,7 @@
         <let name="geometry_3d" value="$geometry"/>
 
         <assert test="$first-connected and $last-connected"
-                properties="scope rule-number object-type object-id geometry-3d">
+                properties="scope rule-number severity object-type object-id geometry-3d">
             <value-of select="keronic:get-translation-and-replace-placeholders('cable-not-connected-to-valid-object', [nlcs:Handle])"/>
         </assert>
     </rule>
