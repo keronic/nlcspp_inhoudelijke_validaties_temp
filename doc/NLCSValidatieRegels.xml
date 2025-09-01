@@ -485,16 +485,12 @@
 				<scopeValidatieRegel><nummer>R.28</nummer><niveau>Fout</niveau></scopeValidatieRegel>
 			</scopeValidatieRegels>
 		</scope>
-		<scope naam="Deelrevisie alle bedrijfstoestanden">
+		<scope naam="Deelrevisie verwijderde objecten">
 			<tekeningSoort>Deelrevisie</tekeningSoort>
 			<statussen>
-				<status>NIEUW</status>
-				<status>REVISIE</status>
 				<status>VERWIJDERD</status>
 			</statussen>
 			<bedrijfsToestanden>
-				<bedrijfstoestand>IN BEDRIJF</bedrijfstoestand>
-				<bedrijfstoestand>RESERVE</bedrijfstoestand>
 				<bedrijfstoestand>VERLATEN</bedrijfstoestand>
 			</bedrijfsToestanden>
 			<scopeValidatieRegels>
@@ -508,16 +504,12 @@
 
 			</scopeValidatieRegels>
 		</scope>
-		<scope naam="Eindrevisie alle bedrijfstoestanden">
+		<scope naam="Eindrevisie verwijderde objecten">
 			<tekeningSoort>Eindrevisie</tekeningSoort>
 			<statussen>
-				<status>NIEUW</status>
-				<status>REVISIE</status>
 				<status>VERWIJDERD</status>
 			</statussen>
 			<bedrijfsToestanden>
-				<bedrijfstoestand>IN BEDRIJF</bedrijfstoestand>
-				<bedrijfstoestand>RESERVE</bedrijfstoestand>
 				<bedrijfstoestand>VERLATEN</bedrijfstoestand>
 			</bedrijfsToestanden>
 			<scopeValidatieRegels>
