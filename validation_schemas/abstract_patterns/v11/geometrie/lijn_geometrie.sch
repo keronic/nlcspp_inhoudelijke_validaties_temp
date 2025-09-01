@@ -20,7 +20,7 @@
                               $coords[(3 * $i) - 2], $coords[(3 * $i) - 1], $coords[(3 * $i)],
                               $coords[(3 * ($i + 1)) - 2], $coords[(3 * ($i + 1)) - 1], $coords[(3 * ($i + 1))])"/>
 
-          <assert id="line-geometry-line-segments-meets-length-demand"
+          <assert id="line-geometry-line-segments-meet-length-demand"
                test="not(some $d in $distances satisfies $d le 100 or $d ge 500)"
                properties="rule-number object-type object-id">
                <value-of select="keronic:get-translation('line-segment-measurement-incorrect')"/>
