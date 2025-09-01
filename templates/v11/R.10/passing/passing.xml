@@ -23,11 +23,11 @@
         <CrossBondingAanwezig>Ja</CrossBondingAanwezig>
     </MSmof>
 
-    <MSmof>
-        <Handle>5911</Handle>
+    <HSmof>
+        <Handle>5912</Handle>
         <Functie>AFTAK</Functie>
         <Verbindingnummer>123456</Verbindingnummer>
         <NaamMonteur>John Doe</NaamMonteur>
         <CrossBondingAanwezig>Ja</CrossBondingAanwezig>
-    </MSmof>
+    </HSmof>
 </NLCSnetbeheerType>
