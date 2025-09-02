@@ -36,18 +36,3 @@ jobs:
 
       - name: Validate whether failing tests fail and passing test pass
         run: scripts/validate_output.sh
-
-      - name: Transpile Schematron to XSL per scope
-        run: scripts/transpile_scopes.sh
-
-      - name: Upload scope XSLs
-        uses: actions/upload-artifact@v4
-        with:
-          name: scopes-transpiled
-          path: validation_schemas/scopes_transpiled
-
-      # - name: Release scope XSLs
-      #   uses: softprops/action-gh-release@v2
-      #   if: github.ref_type == 'tag'
-      #   with:
-      #     files: validation_schemas/scopes_transpiled

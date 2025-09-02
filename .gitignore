@@ -11,6 +11,7 @@ validation_schemas/phases_transpiled/
 validation_schemas/abstract_patterns_scope_checks/
 validation_schemas/base_scope_checks/
 validation_test_results/
+nlcspp_inhoudelijke_validaties
 
 # Dependencies from other repos
 saxon-he.jar
