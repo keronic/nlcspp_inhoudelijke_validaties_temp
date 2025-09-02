@@ -5,8 +5,11 @@ on:
     tags:
       - "v*"
 
+permissions:
+  contents: write
+
 jobs:
-  validate-rules:
+  upload-deliverables:
     runs-on: ubuntu-latest
 
     steps:
