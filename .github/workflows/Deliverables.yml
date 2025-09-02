@@ -37,8 +37,10 @@ jobs:
           name: dist
           path: dist
 
-      - name: Release
+      - name: Upload release
         uses: softprops/action-gh-release@v2
         if: github.ref_type == 'tag'
         with:
-          files: dist/*
+          files: dist/**
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
