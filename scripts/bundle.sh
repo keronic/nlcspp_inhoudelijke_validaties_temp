@@ -19,3 +19,6 @@ cp doc/NLCSValidatieRegels.xml $out_dir/doc/
 
 # Copy localization messages
 cp -a localization/* $out_dir/localization/
+
+# Zip release
+zip -r nlcspp_inhoudelijke_validaties.zip dist
