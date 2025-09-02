@@ -1,9 +1,9 @@
 name: Deliverables CI
 
 on:
-  pull_request:
   push:
-    branches: [ "main" ]
+    tags:
+      - "v*"
 
 jobs:
   validate-rules:
