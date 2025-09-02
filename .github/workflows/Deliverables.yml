@@ -44,6 +44,6 @@ jobs:
         uses: softprops/action-gh-release@v2
         if: github.ref_type == 'tag'
         with:
-          files: dist/**
+          files: nlcspp_inhoudelijke_validaties.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
