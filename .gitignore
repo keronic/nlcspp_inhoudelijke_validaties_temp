@@ -2,6 +2,7 @@
 .project
 
 # Generated data
+dist/
 validation_data/
 validation_output/
 validation_schemas/base_included/
