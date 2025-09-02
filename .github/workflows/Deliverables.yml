@@ -35,7 +35,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: nlcspp-inhoudelijke-validaties
-          path: nlcspp_inhoudelijk_validaties
+          path: nlcspp_inhoudelijke_validaties
 
       # - name: Release deliverables
       #   uses: softprops/action-gh-release@v2
