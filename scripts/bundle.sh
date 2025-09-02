@@ -1,7 +1,7 @@
 #!/bin/bash
 
 version=v11
-out_dir=nlcspp_inhoudelijke_validaties
+out_dir=dist
 
 mkdir -p $out_dir/src/base
 mkdir -p $out_dir/doc
