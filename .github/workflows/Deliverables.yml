@@ -1,4 +1,4 @@
-name: Deliverables CI
+name: Deliverables
 
 on:
   push:
@@ -25,7 +25,7 @@ jobs:
       - name: Install dependencies
         run: scripts/install_dependencies.sh
 
-      - name: Add scope checks to patterns
+      - name: Add scope checks
         run: scripts/add_scope_checks.sh
 
       - name: Transpile Schematron to XSL

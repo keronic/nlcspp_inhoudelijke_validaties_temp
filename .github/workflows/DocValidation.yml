@@ -24,5 +24,5 @@ jobs:
     - name: Install dependencies
       run: scripts/install_dependencies.sh
 
-    - name: Generate validatieregels HTML and check if its content matches the current HTML
+    - name: Generate and compare HTMLs
       run: scripts/generate_and_compare_htmls.sh

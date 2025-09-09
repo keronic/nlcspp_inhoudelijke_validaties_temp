@@ -27,28 +27,36 @@
         <param name="point_2" as="xs:double*"/>
         <param name="threshold" as="xs:double?"/>
 
-        <variable name="connect_threshold" as="xs:double"
-                  select= "if (empty($threshold)) then
-                           xs:double(keronic:get-connected-threshold())
-                           else
-                           $threshold"/>
         <choose>
-            <when test="keronic-geom:point-3d-to-point-3d-distance
-                        (
-                        $point_1[1],
-                        $point_1[2],
-                        $point_1[3],
-                        $point_2[1],
-                        $point_2[2],
-                        $point_2[3]
-                        )
-                        le $connect_threshold">
-                <value-of select="true()"/>
+            <when test="empty($point_1) or empty($point_2)">
+                <value-of select="false()"/>
             </when>
             <otherwise>
-                <value-of select="false()"/>
+                <variable name="connect_threshold" as="xs:double"
+                        select= "if (empty($threshold)) then
+                                xs:double(keronic:get-connected-threshold())
+                                else
+                                $threshold"/>
+                <choose>
+                    <when test="keronic-geom:point-3d-to-point-3d-distance
+                                (
+                                $point_1[1],
+                                $point_1[2],
+                                $point_1[3],
+                                $point_2[1],
+                                $point_2[2],
+                                $point_2[3]
+                                )
+                                le $connect_threshold">
+                        <value-of select="true()"/>
+                    </when>
+                    <otherwise>
+                        <value-of select="false()"/>
+                    </otherwise>
+                </choose>
             </otherwise>
         </choose>
+
     </function>
 
     <function name="keronic:point-3d-connected-to-one-of-several-point-3d" as="xs:boolean">
