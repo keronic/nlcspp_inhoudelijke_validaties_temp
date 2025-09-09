@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NLCSnetbeheerType xmlns:keuzelijst="NS_NLCSnetbeheerEnexisKL" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="NLCSnetbeheer">
+    <VersieNummer>11</VersieNummer>
+    <AprojectReferentie>
+        <Handle>6000</Handle>
+        <TekeningType>{{TEKENING TYPE}}</TekeningType>
+    </AprojectReferentie>
+
+    <!-- LS -->
+    <LSkabel>
+        <Handle>6001</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </LSkabel>
+    <LSmof>
+        <Handle>6002</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+        <Functie>AFTAK</Functie>
+    </LSmof>
+    <LSoverdrachtspunt>
+        <Handle>6003</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </LSoverdrachtspunt>
+    <LSkast>
+        <Handle>6004</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </LSkast>
+
+    <!-- MS -->
+    <MSkabel>
+        <Handle>6005</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </MSkabel>
+    <MSmof>
+        <Handle>6006</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+        <Functie>AFTAK</Functie>
+    </MSmof>
+    <MSoverdrachtspunt>
+        <Handle>6007</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </MSoverdrachtspunt>
+    <MSstation>
+        <Handle>6008</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </MSstation>
+
+    <!-- HS -->
+    <HSkabel>
+        <Handle>6009</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </HSkabel>
+    <HSmof>
+        <Handle>600A</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+        <Functie>AFTAK</Functie>
+    </HSmof>
+    <HSstation>
+        <Handle>600B</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </HSstation>
+
+    <!-- Other -->
+    <OVLoverdrachtspunt>
+        <Handle>600C</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </OVLoverdrachtspunt>
+    <Amantelbuis>
+        <Handle>600D</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </Amantelbuis>
+    <Eaardpen>
+        <Handle>600E</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </Eaardpen>
+</NLCSnetbeheerType>
