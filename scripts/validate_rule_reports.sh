@@ -42,10 +42,14 @@ while IFS= read -r -d '' file; do
             message="Expected failed asserts, found none"
         fi
 
-        echo "| $message | $rule_validation_data_path |[View file](https://github.com/${GITHUB_REPOSITORY}/blob/main/$rule_validation_data_path) |" >> $GITHUB_STEP_SUMMARY
+        echo "| $message | $rule_validation_data_path | [View file](https://github.com/${GITHUB_REPOSITORY}/blob/${GITHUB_SHA}/$rule_validation_data_path) |" >> $GITHUB_STEP_SUMMARY
     fi
 done < <(find "$validation_test_results_dir" -type f -print0)
 
 if [[ "$all_rules_passing" != true ]]; then
+    {
+        echo
+        echo "**For more detailed information, see the artifact below for the complete rule validation reports**"
+    } >> $GITHUB_STEP_SUMMARY
     exit 1
 fi
