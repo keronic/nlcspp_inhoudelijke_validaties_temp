@@ -2,88 +2,303 @@
 <NLCSnetbeheerType xmlns:keuzelijst="NS_NLCSnetbeheerEnexisKL" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="NLCSnetbeheer">
     <VersieNummer>11</VersieNummer>
     <AprojectReferentie>
-        <Handle>6000</Handle>
+        <Handle>0000</Handle>
         <TekeningType>{{TEKENING TYPE}}</TekeningType>
     </AprojectReferentie>
 
-    <!-- LS -->
-    <LSkabel>
-        <Handle>6001</Handle>
+    <!-- A -->
+    <Aaanlegtechniek>
+        <Handle>0000</Handle>
         <Status>{{STATUS}}</Status>
         <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
-    </LSkabel>
-    <LSmof>
-        <Handle>6002</Handle>
+    </Aaanlegtechniek>
+    <AbeschermingVlak>
+        <Handle>0000</Handle>
         <Status>{{STATUS}}</Status>
         <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
-        <Functie>AFTAK</Functie>
-    </LSmof>
-    <LSoverdrachtspunt>
-        <Handle>6003</Handle>
+    </AbeschermingVlak>
+    <AbestandBijlage>
+        <Handle>0000</Handle>
         <Status>{{STATUS}}</Status>
         <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
-    </LSoverdrachtspunt>
-    <LSkast>
-        <Handle>6004</Handle>
+    </AbestandBijlage>
+    <AinUittredepunt>
+        <Handle>0000</Handle>
         <Status>{{STATUS}}</Status>
         <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
-    </LSkast>
+    </AinUittredepunt>
+    <Akunstwerk>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </Akunstwerk>
+    <Amaaiveldhoogte>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </Amaaiveldhoogte>
+    <Amantelbuis>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </Amantelbuis>
+    <AmantelbuisInhoud>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </AmantelbuisInhoud>
+    <Amerkeringsobject>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </Amerkeringsobject>
+    <Aopmerking>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </Aopmerking>
 
-    <!-- MS -->
-    <MSkabel>
-        <Handle>6005</Handle>
+    <!-- E -->
+    <Eaarddraad>
+        <Handle>0000</Handle>
         <Status>{{STATUS}}</Status>
         <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
-    </MSkabel>
-    <MSmof>
-        <Handle>6006</Handle>
+    </Eaarddraad>
+    <Eaardmof>
+        <Handle>0000</Handle>
         <Status>{{STATUS}}</Status>
         <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
-        <Functie>AFTAK</Functie>
-    </MSmof>
-    <MSoverdrachtspunt>
-        <Handle>6007</Handle>
+    </Eaardmof>
+    <Eaardpen>
+        <Handle>0000</Handle>
         <Status>{{STATUS}}</Status>
         <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
-    </MSoverdrachtspunt>
-    <MSstation>
-        <Handle>6008</Handle>
+    </Eaardpen>
+    <Eoliedrukinstallatie>
+        <Handle>0000</Handle>
         <Status>{{STATUS}}</Status>
         <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
-    </MSstation>
+    </Eoliedrukinstallatie>
+    <Eoliedrukleiding>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </Eoliedrukleiding>
+
+    <!-- G -->
+    <Gafsluiter>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </Gafsluiter>
+    <GappendageOverige>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </GappendageOverige>
+    <Gaftakzadel>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </Gaftakzadel>
+    <Gblaasgatzadel>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </Gblaasgatzadel>
+    <Geindstuk>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </Geindstuk>
+    <Gisolatiestuk>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </Gisolatiestuk>
+    <Gleiding>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </Gleiding>
+    <Gleidingafblaas>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </Gleidingafblaas>
+    <Gmeetpunt>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </Gmeetpunt>
+    <Gontspanningselement>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </Gontspanningselement>
+    <Goverdrachtspunt>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </Goverdrachtspunt>
+    <Govergangsstuk>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </Govergangsstuk>
+    <Gsifon>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </Gsifon>
+    <Gstation>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </Gstation>
+    <GtStuk>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </GtStuk>
+    <GverticaleBocht>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </GverticaleBocht>
 
     <!-- HS -->
     <HSkabel>
-        <Handle>6009</Handle>
+        <Handle>0000</Handle>
         <Status>{{STATUS}}</Status>
         <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
     </HSkabel>
     <HSmof>
-        <Handle>600A</Handle>
+        <Handle>0000</Handle>
         <Status>{{STATUS}}</Status>
         <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
         <Functie>AFTAK</Functie>
     </HSmof>
     <HSstation>
-        <Handle>600B</Handle>
+        <Handle>0000</Handle>
         <Status>{{STATUS}}</Status>
         <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
     </HSstation>
 
-    <!-- Other -->
+    <!-- KB -->
+    <KBanode>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </KBanode>
+    <KBdrainage>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </KBdrainage>
+    <KBgelijkrichter>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </KBgelijkrichter>
+    <KBmeetdraad>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </KBmeetdraad>
+    <KBmeetpaal>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </KBmeetpaal>
+    <KBobject>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </KBobject>
+
+    <!-- LS -->
+    <LSkabel>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </LSkabel>
+    <LSkast>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </LSkast>
+    <LSmof>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+        <Functie>AFTAK</Functie>
+    </LSmof>
+    <LSoverdrachtspunt>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </LSoverdrachtspunt>
+
+    <!-- MS -->
+    <MSkabel>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </MSkabel>
+    <MSmof>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+        <Functie>AFTAK</Functie>
+    </MSmof>
+    <MSoverdrachtspunt>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </MSoverdrachtspunt>
+    <MSstation>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </MSstation>
+
+    <!-- OVL -->
     <OVLoverdrachtspunt>
-        <Handle>600C</Handle>
+        <Handle>0000</Handle>
         <Status>{{STATUS}}</Status>
         <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
     </OVLoverdrachtspunt>
-    <Amantelbuis>
-        <Handle>600D</Handle>
+
+    <!-- T -->
+    <Tbuis>
+        <Handle>0000</Handle>
         <Status>{{STATUS}}</Status>
         <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
-    </Amantelbuis>
-    <Eaardpen>
-        <Handle>600E</Handle>
+    </Tbuis>
+    <TbuisAppendage>
+        <Handle>0000</Handle>
         <Status>{{STATUS}}</Status>
         <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
-    </Eaardpen>
+    </TbuisAppendage>
+    <Tkabel>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </Tkabel>
+    <Tmof>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </Tmof>
+    <Toverdrachtspunt>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </Toverdrachtspunt>
+    <Tstation>
+        <Handle>0000</Handle>
+        <Status>{{STATUS}}</Status>
+        <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
+    </Tstation>
 </NLCSnetbeheerType>
