@@ -3,15 +3,13 @@
 
 # Generated data
 dist/
-validation_data/
-validation_output/
-validation_schemas/base_included/
-validation_schemas/scopes/
-validation_schemas/scopes_transpiled/
 validation_schemas/phases_transpiled/
 validation_schemas/abstract_patterns_scope_checks/
 validation_schemas/base_scope_checks/
 validation_test_results/
+rule_validation_reports/
+scoped_objects/
+scoped_objects_reports/
 
 # Dependencies from other repos
 saxon-he.jar

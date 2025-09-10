@@ -25,14 +25,14 @@ jobs:
       - name: Transpile phases to XSL
         run: scripts/transpile_phases.sh
 
-      - name: Validate templates
-        run: scripts/validate_templates.sh
+      - name: Validate rules
+        run: scripts/validate_rules.sh
 
       - name: Upload validation reports
         uses: actions/upload-artifact@v4
         with:
           name: rule-validation-reports
-          path: validation_output
+          path: rule_validation_reports
 
       - name: Validate test reports
-        run: scripts/validate_output.sh
+        run: scripts/validate_rule_reports.sh

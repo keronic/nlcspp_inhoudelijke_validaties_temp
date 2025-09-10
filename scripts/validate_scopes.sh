@@ -2,7 +2,7 @@
 
 version=v11
 
-java -jar saxon-he.jar -xsl:transformations/generate_scoped_objects.xsl -s:scope_template.xml
+java -jar saxon-he.jar -xsl:transformations/generate_scoped_objects.xsl -s:test/scope_validation_data/$version/scope_template.xml
 
 in_dir=scoped_objects
 out_dir=scoped_objects_reports
@@ -11,7 +11,7 @@ out_dir=scoped_objects_reports
     echo "## Onvolledige of onjuiste scopedekking"
     echo
     echo "| Scope | Tekening type | Status | Bedrijfstoestand | Verwacht | Gevonden | Missend | Niet verwacht |"
-    echo "| --- | --- | --- | --- | --- | --- | --- | --- |"
+    echo "| ----- | ------------- | ------ | ---------------- | -------- | -------- | ------- | ------------- |"
 } >> $GITHUB_STEP_SUMMARY
 
 scopes_fully_covered=true
