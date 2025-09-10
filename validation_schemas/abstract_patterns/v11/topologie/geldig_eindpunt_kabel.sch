@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="geldig-eindpunt-kabel" abstract="true">
-    <rule context="//nlcs:MSkabel[nlcs:Bedrijfstoestand ne 'VERLATEN']">
+    <rule context="//nlcs:MSkabel">
         <let name="geometry"
             value="tokenize(normalize-space(nlcs:Geometry/gml:LineString/gml:posList))"/>
 
@@ -47,7 +47,7 @@
 
         <let name="geometry_3d" value="$geometry"/>
 
-        <assert test="$first-connected and $last-connected"
+        <assert test="if(nlcs:Bedrijfstoestand ne 'VERLATEN') then ($first-connected and $last-connected) else true()"
                 properties="scope rule-number severity object-type object-id geometry-3d">
             <value-of select="keronic:get-translation-and-replace-placeholders('cable-not-connected-to-valid-object', [nlcs:Handle])"/>
         </assert>

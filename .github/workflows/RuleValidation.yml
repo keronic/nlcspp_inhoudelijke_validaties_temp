@@ -22,17 +22,17 @@ jobs:
       - name: Install dependencies
         run: scripts/install_dependencies.sh
 
-      - name: Transpile Schematron to XSL per phase (rule)
+      - name: Transpile phases to XSL
         run: scripts/transpile_phases.sh
 
-      - name: Perform validation of template XMLs against phase XSL
-        run: scripts/validate_templates.sh
+      - name: Validate rules
+        run: scripts/validate_rules.sh
 
-      - name: Upload validation results
+      - name: Upload validation reports
         uses: actions/upload-artifact@v4
         with:
-          name: rule-validation-results
-          path: validation_output
+          name: rule-validation-reports
+          path: rule_validation_reports
 
-      - name: Validate whether failing tests fail and passing test pass
-        run: scripts/validate_output.sh
+      - name: Validate test reports
+        run: scripts/validate_rule_reports.sh

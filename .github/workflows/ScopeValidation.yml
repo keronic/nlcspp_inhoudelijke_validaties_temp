@@ -1,15 +1,12 @@
-name: Deliverables
+name: Scope Validation CI
 
 on:
+  pull_request:
   push:
-    tags:
-      - "v*"
-
-permissions:
-  contents: write
+    branches: [ "main" ]
 
 jobs:
-  upload-deliverables:
+  validate-scopes:
     runs-on: ubuntu-latest
 
     steps:
@@ -31,18 +28,5 @@ jobs:
       - name: Transpile Schematron to XSL
         run: java -jar saxon-he.jar -xsl:transpile.xsl -s:validation_schemas/base_scope_checks/v11.sch -o:validation_schemas/base_scope_checks/v11.xsl
 
-      - name: Bundle deliverables
-        run: scripts/bundle.sh
-
-      - name: Upload deliverables
-        uses: actions/upload-artifact@v4
-        with:
-          name: dist
-          path: dist
-
-      - name: Upload release
-        uses: softprops/action-gh-release@v2
-        with:
-          files: nlcspp_inhoudelijke_validaties.zip
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Validate scopes
+        run: scripts/validate_scopes.sh

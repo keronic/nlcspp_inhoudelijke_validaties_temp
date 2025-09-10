@@ -171,22 +171,39 @@
   <function name="keronic:rule-within-scope-for-object" as="xs:boolean">
     <param name="rule_number" as="xs:integer"/>
     <param name="nlcs_object"/>
-    <variable name="rule_string" select="keronic:rule-string($rule_number)"/>
+    <variable name="object_type" select="name($nlcs_object)"/>
 
-    <variable name="matching_scope" select="keronic:matching-scope($nlcs_object)"/>
+    <choose>
+      <when test="$object_type = 'NLCSnetbeheerType'">
+        <value-of select="true()"/>
+      </when>
+      <otherwise>
+        <variable name="rule_string" select="keronic:rule-string($rule_number)"/>
+        <variable name="matching_scope" select="keronic:matching-scope($nlcs_object)"/>
+        <variable name="scope_validation_rules" select="$matching_scope/nvr:scopeValidatieRegels/nvr:scopeValidatieRegel"/>
 
-    <value-of select="some $rule in $matching_scope/nvr:scopeValidatieRegels/nvr:scopeValidatieRegel satisfies $rule/nvr:nummer = $rule_string"/>
+        <value-of select="some $rule in $scope_validation_rules satisfies $rule/nvr:nummer = $rule_string"/>
+      </otherwise>
+    </choose>
   </function>
 
   <function name="keronic:rule-severity-within-scope" as="xs:string">
     <param name="rule_number" as="xs:integer"/>
     <param name="nlcs_object"/>
-    <variable name="rule_string" select="keronic:rule-string($rule_number)"/>
+    <variable name="object_type" select="name($nlcs_object)"/>
 
-    <variable name="matching_scope" select="keronic:matching-scope($nlcs_object)"/>
-    <variable name="validatie_regels" select="$matching_scope/nvr:scopeValidatieRegels/nvr:scopeValidatieRegel"/>
+    <choose>
+      <when test="$object_type = 'NLCSnetbeheerType'">
+        <value-of select="'Fout'"/>
+      </when>
+      <otherwise>
+        <variable name="rule_string" select="keronic:rule-string($rule_number)"/>
+        <variable name="matching_scope" select="keronic:matching-scope($nlcs_object)"/>
+        <variable name="scope_validation_rules" select="$matching_scope/nvr:scopeValidatieRegels/nvr:scopeValidatieRegel"/>
 
-    <value-of select="$validatie_regels[nvr:nummer = $rule_string]/nvr:niveau"/>
+        <value-of select="$scope_validation_rules[nvr:nummer = $rule_string]/nvr:niveau"/>
+      </otherwise>
+    </choose>
   </function>
 
   <function name="keronic:scope-name" as="xs:string">
