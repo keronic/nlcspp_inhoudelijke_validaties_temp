@@ -2,7 +2,7 @@
 <pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="gisid-en-assetid" abstract="true">
     <rule context="//nlcs:MSstation | //nlcs:MSkabel | //nlcs:MSmof | //nlcs:Amantelbuis">
         <let name="statuses-requiring-ids"
-            value="keronic:get-statuses-where-gisid-required()"/>
+            value="('BESTAAND', 'REVISIE', 'VERWIJDERD')"/>
 
         <let name="status-requires-ids"
             value="some $status in ($statuses-requiring-ids) satisfies($status = nlcs:Status)"/>
