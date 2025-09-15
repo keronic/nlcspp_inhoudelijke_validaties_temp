@@ -90,7 +90,7 @@
   </function>
 
   <function name= "keronic:e-aarddraad-connected-buildings-count" as="xs:string">
-    <value-of select="$config_file/config/V10/EAarddraad/ConnectedBuildingsCount"/>
+    <value-of select="$config_file/config/V10/Eaarddraad/ConnectedBuildingsCount"/>
   </function>
 
   <function name= "keronic:ls-cable-get-max-depth" as="xs:string">

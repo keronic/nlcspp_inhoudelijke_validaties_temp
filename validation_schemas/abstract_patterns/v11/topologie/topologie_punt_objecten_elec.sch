@@ -10,11 +10,9 @@
         <let name="point_connected"
             value="some $pos_list in $mskabel_pos_lists satisfies keronic:point-3d-touches-line-3d($point, tokenize(normalize-space($pos_list)), 0)"/>
 
-        <let name="geometry_3d" value="$point"/>
-
         <assert id="point-connected-to-kabel"
             test="$point_connected"
-            properties="scope rule-number severity object-type object-id geometry-3d">
+            properties="scope rule-number severity object-type object-id">
             <value-of select="keronic:get-translation('point-not-connected-to-any-line')"/>
         </assert>
     </rule>
