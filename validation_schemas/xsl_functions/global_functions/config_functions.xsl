@@ -35,7 +35,7 @@
   
   <function name="keronic:map-mof-functie" as="xs:string">
     <param name="functie" as="xs:string"/>
-    <sequence select="name(($sys_config_file/config/MofFuncties/*[Functie = $functie])[1])"/>
+    <sequence select="name(($sys_config_file/config/V11/MofFuncties/*[Functie = $functie]))"/>
   </function>
 
   <function name="keronic:get-translation-and-replace-placeholders">
