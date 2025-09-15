@@ -1,0 +1,26 @@
+<config>
+    <V11>
+        <Language>nl</Language>
+        <GisIdRequiredStatuses>
+            <Status>BESTAAND</Status>
+            <Status>REVISIE</Status>
+            <Status>VERWIJDERD</Status>
+        </GisIdRequiredStatuses>
+        <MofFuncties>
+            <Aftak>
+                <Functie>AFTAK</Functie>
+            </Aftak>
+            <Eind>
+                <Functie>EINDMOF</Functie>
+                <Functie>EINDDOP</Functie>
+                <Functie>LOODKOP</Functie>
+                <Functie>EIND GEAARD</Functie>
+            </Eind>
+            <Verbinding>
+                <Functie>VERBINDING</Functie>
+                <Functie>ZEGELWIJZIGING</Functie>
+                <Functie>MANTELREPARATIE</Functie>
+            </Verbinding>
+        </MofFuncties>
+    </V11>
+</config>
