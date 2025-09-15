@@ -1,8 +1,47 @@
 <stylesheet xmlns="http://www.w3.org/1999/XSL/Transform"
+            xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
 	        xmlns:math="http://www.w3.org/2005/xpath-functions/math"
 	        xmlns:keronic="http://example.com/my-functions"
 	        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+            xmlns:gml="http://www.opengis.net/gml/3.2"
 	        version="3.0">
+
+    <function name="keronic:create-gml-point" as="node()*">
+        <param name="coords" as="xs:anyAtomicType*"/>
+        <param name="dimension" as="xs:integer"/>
+        <param name="epsg" as="xs:integer"/>
+        <gml:Point srsDimension="{$dimension}" srsName="EPSG:{$epsg}">
+            <gml:pos>
+                <xsl:value-of select="$coords"/>
+            </gml:pos>
+        </gml:Point>
+    </function>
+
+    <function name="keronic:create-gml-line" as="node()*">
+        <param name="coords" as="xs:anyAtomicType*"/>
+        <param name="dimension" as="xs:integer"/>
+        <param name="epsg" as="xs:integer"/>
+        <gml:LineString srsDimension="{$dimension}" srsName="EPSG:{$epsg}">
+            <gml:posList>
+                <xsl:value-of select="$coords"/>
+            </gml:posList>
+        </gml:LineString>
+    </function>
+
+    <function name="keronic:create-gml-area" as="node()*">
+        <param name="coords" as="xs:anyAtomicType*"/>
+        <param name="dimension" as="xs:integer"/>
+        <param name="epsg" as="xs:integer"/>
+        <gml:Polygon srsDimension="{$dimension}" srsName="{$epsg}">
+            <gml:exterior>
+                <gml:LinearRing>
+                    <gml:posList>
+                        <xsl:value-of select="$coords"/>
+                    </gml:posList>
+                </gml:LinearRing>
+            </gml:exterior>
+        </gml:Polygon>
+    </function>
 
     <function name="keronic:vals-within-threshold" as="xs:boolean">
         <param name="value_1" as="xs:double"/>
@@ -43,8 +82,8 @@
         <sequence select="$double-array"/>
     </function>
 
-    <function name="keronic:split-pos-list-to-posses" as="xs:string*">
-        <param name="pos_list" as="xs:string*"/>
+    <function name="keronic:split-pos-list-to-posses" as="xs:anyAtomicType*">
+        <param name="pos_list" as="xs:anyAtomicType*"/>
 
         <sequence select="for $index in 0 to (count($pos_list) div 3 - 1)
                           return

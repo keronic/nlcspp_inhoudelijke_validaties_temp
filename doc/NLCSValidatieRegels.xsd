@@ -54,7 +54,7 @@
 			<xs:enumeration value="Abestand_bijlage"/>
 			<xs:enumeration value="Akunstwerk"/>
 			<xs:enumeration value="Aaanlegtechniek"/>
-			<xs:enumeration value="Abeschermingvlak"/>
+			<xs:enumeration value="AbeschermingVlak"/>
 			<xs:enumeration value="Amarkeringsobject"/>
 			<xs:enumeration value="AinUittredepunt"/>
 			<xs:enumeration value="AbeschermingVlak"/>

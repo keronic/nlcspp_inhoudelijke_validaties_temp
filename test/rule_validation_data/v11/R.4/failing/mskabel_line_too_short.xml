@@ -14,9 +14,9 @@
                 srsDimension="3"
                 srsName="EPSG:28992">
                 <gml:posList>
-                    21000.0 21000.0 -0.80
-                    21010.0 21000.0 -0.80
-                    21110.0 21100.0 -0.80
+                    21.00 21.0 -0.80
+                    21.01 21.0 -0.80
+                    21.11 21.0 -0.80
                 </gml:posList>
             </gml:LineString>
         </Geometry>

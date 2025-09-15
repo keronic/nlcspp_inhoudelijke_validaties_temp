@@ -13,7 +13,7 @@
   <variable name="translation_file" select= "document('../../../localization/messages.xml')"/>
   <variable name="validatieregels_file" select="document('../../../doc/NLCSValidatieRegels.xml')"/>
   <variable name="scopes" select="$validatieregels_file/nvr:NLCSValidatieregels/nvr:scopes/nvr:scope"/>
-  
+
   <function name="keronic:get-connected-threshold">
     <value-of select="$sys_config_file/config/V10/Topology/ConnectedThreshold"/>
   </function>
@@ -32,7 +32,7 @@
   <function name="keronic:get-statuses-where-gisid-required" as="xs:string*">
     <sequence select="$sys_config_file/config/V11/GisIdRequiredStatuses/Status"/>
   </function>
-  
+
   <function name="keronic:map-mof-functie" as="xs:string">
     <param name="functie" as="xs:string"/>
     <sequence select="name(($sys_config_file/config/V11/MofFuncties/*[Functie = $functie]))"/>
