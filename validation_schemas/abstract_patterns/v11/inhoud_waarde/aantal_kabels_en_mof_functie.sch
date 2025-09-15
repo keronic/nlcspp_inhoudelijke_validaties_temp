@@ -18,7 +18,7 @@
             <value-of select="keronic:get-translation-and-replace-placeholders('cable-amount-incorrect', [string($required_amount), string(count($connected_mskabels))])"/>
         </assert>
     </rule>
-    <rule context="//nlcs:MSmof[nlcs:Functie = (keronic:map-mof-functie(nlcs:Functie) = 'Verbinding')]">
+    <rule context="//nlcs:MSmof[keronic:map-mof-functie(nlcs:Functie) = 'Verbinding']">
         <let name="msmof"
             value="."/>
 

@@ -33,7 +33,7 @@
     <sequence select="$sys_config_file/config/V11/GisIdRequiredStatuses/Status"/>
   </function>
   
-  <function name="keronic:map-mof-functie">
+  <function name="keronic:map-mof-functie" as="xs:string">
     <param name="functie" as="xs:string"/>
     <sequence select="name(($sys_config_file/config/MofFuncties/*[Functie = $functie])[1])"/>
   </function>
