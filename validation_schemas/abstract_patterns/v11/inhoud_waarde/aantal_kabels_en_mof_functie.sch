@@ -7,8 +7,7 @@
         <let name="connected_mskabels"
             value="//nlcs:MSkabel[keronic:line-3d-connected-to-point-3d(
                         tokenize(normalize-space(nlcs:Geometry/gml:LineString/gml:posList)),
-                        tokenize(normalize-space($msmof/nlcs:Geometry/gml:Point/gml:pos)),
-                        0)]"/>
+                        tokenize(normalize-space($msmof/nlcs:Geometry/gml:Point/gml:pos)))]"/>
         <let name="required_amount"
             value="1"/>
 
@@ -25,8 +24,7 @@
         <let name="connected_mskabels"
             value="//nlcs:MSkabel[keronic:line-3d-connected-to-point-3d(
                         tokenize(normalize-space(nlcs:Geometry/gml:LineString/gml:posList)),
-                        tokenize(normalize-space($msmof/nlcs:Geometry/gml:Point/gml:pos)),
-                        0)]"/>
+                        tokenize(normalize-space($msmof/nlcs:Geometry/gml:Point/gml:pos)))]"/>
 
         <let name="unique_connected_phases"
             value="distinct-values($connected_mskabels/nlcs:FaseAanduiding)"/>

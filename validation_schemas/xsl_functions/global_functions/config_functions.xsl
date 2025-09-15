@@ -15,7 +15,7 @@
   <variable name="scopes" select="$validatieregels_file/nvr:NLCSValidatieregels/nvr:scopes/nvr:scope"/>
   
   <function name="keronic:get-connected-threshold">
-    <value-of select="$sys_config_file/config/V10/Topology/ConnectedThreshold"/>
+    <value-of select="number($sys_config_file/config/V11/Threshold)"/>
   </function>
 
   <function name= "keronic:get-translation">
