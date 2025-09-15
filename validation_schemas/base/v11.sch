@@ -175,13 +175,13 @@
     <include href="../abstract_patterns/v11/bestand/bestand_bevat_nlcs_objecten.sch"/>
     <include href="../abstract_patterns/v11/bestand/combinatie_nlcs_status_en_tekeningsoort.sch"/>
     <include href="../abstract_patterns/v11/geometrie/geometrie_binnen_projectvlak.sch"/>
-    <include href="../abstract_patterns/v11/geometrie/lijn_geometrie/afstand_van_inmeetpunten.sch"/>
-    <include href="../abstract_patterns/v11/geometrie/lijn_geometrie/hoek_van_segmenten.sch"/>
+    <include href="../abstract_patterns/v11/geometrie/lijn_geometrie-afstand_van_inmeetpunten.sch"/>
+    <include href="../abstract_patterns/v11/geometrie/lijn_geometrie-hoek_van_segmenten.sch"/>
     <include href="../abstract_patterns/v11/verplichte_waarde/gisid_en_assetid.sch"/>
     <include href="../abstract_patterns/v11/verplichte_waarde/inmeetwijze_en_nauwkeurigheid_assets_elec.sch"/>
     <include href="../abstract_patterns/v11/verplichte_waarde/subnettype_ingevuld_voor_ls_en_ms_kabel.sch"/>
-    <include href="../abstract_patterns/v11/verplichte_waarde/verplichte_kenmerken_kabels/basis.sch"/>
-    <include href="../abstract_patterns/v11/verplichte_waarde/verplichte_kenmerken_kabels/ls-extra.sch"/>
+    <include href="../abstract_patterns/v11/verplichte_waarde/verplichte_kenmerken_kabels.sch"/>
+    <include href="../abstract_patterns/v11/verplichte_waarde/verplichte_kenmerken_kabels-ls_extra.sch"/>
     <include href="../abstract_patterns/v11/verplichte_waarde/aanlegdatum_gevuld.sch"/>
     <include href="../abstract_patterns/v11/verplichte_waarde/verplichte_kenmerken_moffen.sch"/>
     <include href="../abstract_patterns/v11/verplichte_waarde/verplichte_kenmerken_lsoverdrachtspunt.sch"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="verplichte-kenmerken-kabels-basis" abstract="true">
+<pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="verplichte-kenmerken-kabels" abstract="true">
     <rule context="//nlcs:MSkabel | //nlcs:HSkabel | nlcs:LSkabel">
         <let name="uitvoering"
             value="nlcs:Uitvoering"/>
