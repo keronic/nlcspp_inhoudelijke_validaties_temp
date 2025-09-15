@@ -13,6 +13,7 @@
     <ns prefix="xs" uri="http://www.w3.org/2001/XMLSchema"/>
     <ns prefix="nlcs" uri="NLCSnetbeheer"/>
     <ns prefix="nvr" uri="NLCSValidatieRegelsNameSpace"/>
+    <ns prefix="math" uri="http://www.w3.org/2005/xpath-functions/math"/>
 
     <!-- properties for assert report details -->
     <properties>
@@ -21,8 +22,7 @@
         <property id="severity"><value-of select="$severity"/></property>
         <property id="object-type"><value-of select="$object_type"/></property>
         <property id="object-id"><value-of select="$object_id"/></property>
-        <property id="geometry-2d"><value-of select="$geometry_2d"/></property>
-        <property id="geometry-3d"><value-of select="$geometry_3d"/></property>
+        <property id="geometries"><xsl:copy-of select="$geometries"/></property>
     </properties>
 
     <!-- declaring the rules -->
@@ -39,7 +39,8 @@
     </phase>
 
     <phase id="R.4">
-        <active pattern="R.4"/>
+        <active pattern="R.4-A"/>
+        <active pattern="R.4-B"/>
     </phase>
 
     <phase id="R.5">
@@ -55,7 +56,8 @@
     </phase>
 
     <phase id="R.8">
-        <active pattern="R.8"/>
+        <active pattern="R.8-A"/>
+        <active pattern="R.8-B"/>
     </phase>
 
     <phase id="R.9">
@@ -144,11 +146,13 @@
     <include href="../patterns/v11/R.1.sch"/>
     <include href="../patterns/v11/R.2.sch"/>
     <include href="../patterns/v11/R.3.sch"/>
-    <include href="../patterns/v11/R.4.sch"/>
+    <include href="../patterns/v11/R.4_A.sch"/>
+    <include href="../patterns/v11/R.4_B.sch"/>
     <include href="../patterns/v11/R.5.sch"/>
     <include href="../patterns/v11/R.6.sch"/>
     <include href="../patterns/v11/R.7.sch"/>
-    <include href="../patterns/v11/R.8.sch"/>
+    <include href="../patterns/v11/R.8_A.sch"/>
+    <include href="../patterns/v11/R.8_B.sch"/>
     <include href="../patterns/v11/R.9.sch"/>
     <include href="../patterns/v11/R.10.sch"/>
     <include href="../patterns/v11/R.11.sch"/>
@@ -171,11 +175,13 @@
     <include href="../abstract_patterns/v11/bestand/bestand_bevat_nlcs_objecten.sch"/>
     <include href="../abstract_patterns/v11/bestand/combinatie_nlcs_status_en_tekeningsoort.sch"/>
     <include href="../abstract_patterns/v11/geometrie/geometrie_binnen_projectvlak.sch"/>
-    <include href="../abstract_patterns/v11/geometrie/lijn_geometrie.sch"/>
+    <include href="../abstract_patterns/v11/geometrie/lijn_geometrie-afstand_van_inmeetpunten.sch"/>
+    <include href="../abstract_patterns/v11/geometrie/lijn_geometrie-hoek_van_segmenten.sch"/>
     <include href="../abstract_patterns/v11/verplichte_waarde/gisid_en_assetid.sch"/>
     <include href="../abstract_patterns/v11/verplichte_waarde/inmeetwijze_en_nauwkeurigheid_assets_elec.sch"/>
     <include href="../abstract_patterns/v11/verplichte_waarde/subnettype_ingevuld_voor_ls_en_ms_kabel.sch"/>
     <include href="../abstract_patterns/v11/verplichte_waarde/verplichte_kenmerken_kabels.sch"/>
+    <include href="../abstract_patterns/v11/verplichte_waarde/verplichte_kenmerken_kabels-ls_extra.sch"/>
     <include href="../abstract_patterns/v11/verplichte_waarde/aanlegdatum_gevuld.sch"/>
     <include href="../abstract_patterns/v11/verplichte_waarde/verplichte_kenmerken_moffen.sch"/>
     <include href="../abstract_patterns/v11/verplichte_waarde/verplichte_kenmerken_lsoverdrachtspunt.sch"/>
