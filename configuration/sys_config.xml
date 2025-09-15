@@ -16,5 +16,6 @@
                 <Functie>MANTELREPARATIE</Functie>
             </Verbinding>
         </MofFuncties>
+        <Threshold>0</Threshold>
     </V11>
 </config>

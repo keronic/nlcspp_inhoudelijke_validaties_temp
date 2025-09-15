@@ -8,24 +8,21 @@
             value="//nlcs:MSmof[
                 keronic:point-3d-touches-line-3d(
                     tokenize(normalize-space(nlcs:Geometry/gml:Point/gml:pos)),
-                    tokenize(normalize-space($mskabel/nlcs:Geometry/gml:LineString/gml:posList)),
-                    0)]"/>
+                    tokenize(normalize-space($mskabel/nlcs:Geometry/gml:LineString/gml:posList)))]"/>
 
         <let name="connected_lskabels"
             value="//nlcs:LSkabel[
                 some $connected_mof in $connected_msmoffen satisfies
                     keronic:line-3d-touches-point-3d(
                         tokenize(normalize-space(nlcs:Geometry/gml:LineString/gml:posList)),
-                        tokenize(normalize-space($connected_mof/nlcs:Geometry/gml:Point/gml:pos)),
-                        0)]"/>
+                        tokenize(normalize-space($connected_mof/nlcs:Geometry/gml:Point/gml:pos)))]"/>
 
         <let name="connected_hskabels"
             value="//nlcs:HSkabel[
                 some $connected_mof in $connected_msmoffen satisfies
                     keronic:line-3d-touches-point-3d(
                         tokenize(normalize-space(nlcs:Geometry/gml:LineString/gml:posList)),
-                        tokenize(normalize-space($connected_mof/nlcs:Geometry/gml:Point/gml:pos)),
-                        0)]"/>
+                        tokenize(normalize-space($connected_mof/nlcs:Geometry/gml:Point/gml:pos)))]"/>
 
         <assert id="mskabel-connected-to-lskabel"
             test="empty($connected_lskabels)"
