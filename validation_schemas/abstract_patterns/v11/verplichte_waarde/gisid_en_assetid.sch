@@ -1,28 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="gisid-en-assetid" abstract="true">
-    <rule context="//nlcs:MSstation | //nlcs:MSkabel | //nlcs:MSmof | //nlcs:Amantelbuis">
-        <let name="statuses-requiring-ids"
+    <rule context="//nlcs:NLCSnetbeheerType/*[not(self::nlcs:VersieNummer or self::nlcs:AprojectReferentie)]">
+        <let name="statuses_requiring_ids"
             value="('BESTAAND', 'REVISIE', 'VERWIJDERD')"/>
 
-        <let name="status-requires-ids"
-            value="some $status in ($statuses-requiring-ids) satisfies($status = nlcs:Status)"/>
+        <let name="status_requires_ids"
+            value="some $status in ($statuses_requiring_ids) satisfies($status = nlcs:Status)"/>
 
-        <let name="object-has-gis-id"
+        <let name="object_has_gis_id"
             value="keronic:element-exists-and-not-empty(nlcs:GisId)"/>
 
-        <let name="object-has-asset-id"
-            value="keronic:element-exists-and-not-empty(nlcs:AssetId)"/>
+        <let name="object_requires_gis_id"
+            value="keronic:object-requires-gis-id(.)"/>
 
-        <assert id="gisid-assetid-not-unset-if-revision-existing"
-            test="not($status-requires-ids) or ($object-has-gis-id and $object-has-asset-id)"
+        <assert id="gis-id-required"
+            test="if($status_requires_ids and $object_requires_gis_id) then $object_has_gis_id else true()"
             properties="scope rule-number severity object-type object-id">
-            <value-of select="keronic:get-translation-and-replace-placeholders('gisid-assetid-not-unset-if-new-revision-existing', [string-join($statuses-requiring-ids, ', ')])"/>
+            <value-of select="keronic:get-translation-and-replace-placeholders('property-required-for-statuses', ['GisId', string-join($statuses_requiring_ids, ', ')])"/>
         </assert>
 
-        <assert id="gisid-assetid-are-unset-if-new"
-            test="$status-requires-ids or not($object-has-gis-id or $object-has-asset-id)"
+        <assert id="gis-id-not-allowed"
+            test="if(not($status_requires_ids)) then not($object_has_gis_id) else true()"
             properties="scope rule-number severity object-type object-id">
-            <value-of select="keronic:get-translation-and-replace-placeholders('gisid-assetid-are-unset-if-new', [string-join($statuses-requiring-ids, ', ')])"/>
+            <value-of select="keronic:get-translation-and-replace-placeholders('property-not-allowed-for-statuses', ['GisId', string-join($statuses_requiring_ids, ', ')])"/>
+        </assert>
+
+        <let name="object_has_asset_id"
+            value="keronic:element-exists-and-not-empty(nlcs:AssetId)"/>
+
+        <let name="object_requires_asset_id"
+            value="keronic:object-requires-asset-id(.)"/>
+
+        <assert id="asset-id-required"
+            test="if($status_requires_ids and $object_requires_asset_id) then $object_has_asset_id else true()"
+            properties="scope rule-number severity object-type object-id">
+            <value-of select="keronic:get-translation-and-replace-placeholders('property-required-for-statuses', ['AssetId', string-join($statuses_requiring_ids, ', ')])"/>
+        </assert>
+
+        <assert id="asset-id-not-allowed"
+            test="if(not($status_requires_ids)) then not($object_has_asset_id) else true()"
+            properties="scope rule-number severity object-type object-id">
+            <value-of select="keronic:get-translation-and-replace-placeholders('property-not-allowed-for-statuses', ['AssetId', string-join($statuses_requiring_ids, ', ')])"/>
         </assert>
     </rule>
 </pattern>
