@@ -10,8 +10,8 @@
 			<definitie>
 				Een NLCS++ bestand moet een AProjectReferentie hebben waarin tenminste 1 NLCS Object zit.
 			</definitie>
-			<toelichting>Excel Nr 3: Revisiedata aanwezig -> Er mag geen 'leeg' project ingeleverd worden, geen xml met alleen maar een Aprojectreferentie zonder ook maar enige revisiedata of met alleen maar bestaand/plan.</toelichting>
-			<validatieObjecten> <!-- Deze regel geldt voor het Document -->
+			<toelichting>Er mag geen 'leeg' project ingeleverd worden, oftewel met alleen maar één Aprojectreferentie</toelichting>
+			<validatieObjecten>
 				<validatieObject><naam>Document</naam></validatieObject>
 			</validatieObjecten>
 		</validatieRegel>
@@ -24,8 +24,8 @@
 				Deelrevisie: BESTAAND, NIEUW, REVISIE, VERWIJDERD en TIJDELIJK
 				Eindrevisie: BESTAAND, NIEUW, REVISIE en VERWIJDERD
 			</definitie>
-			<toelichting>Excel Nr 4: Zou iets moeten worden als geen T (tijdelijk) in Eindrevisie, waarschuwing over tijdelijk in Deelrevisie. Misschien nog meer sitaties die niet voor mogen komen?</toelichting>
-			<validatieObjecten> <!-- Deze regel geldt voor het Document -->
+			<toelichting></toelichting>
+			<validatieObjecten>
 				<validatieObject><naam>Document</naam></validatieObject>
 			</validatieObjecten>
 		</validatieRegel>
@@ -33,10 +33,10 @@
 			<beschrijving>Iedere geometrie (punt, lijn en vlak) van ieder NLCS Object in het bestand moet interactie hebben met het Projectgebied van AProjectReferentie</beschrijving>
 			<soort>Geometrie</soort>
 			<definitie>
-				Het kenmerk Geometry, een gml:Point, gml:Curve of gml:Surface object moet interactie hebben met de Geometry (gml:Surface) van de AprojectReferentie
+				Het kenmerk Geometry (gml:Point, gml:Curve of gml:Surface) moet interactie hebben met de Geometry (gml:Surface) van de AprojectReferentie
 			</definitie>
-			<toelichting>Excel Nr 5: Alle geometrieën in het bestand moeten binnen Nederland liggen. </toelichting>
-			<validatieObjecten> <!-- Deze regel geldt voor alle NLCS Objecten -->
+			<toelichting></toelichting>
+			<validatieObjecten>
 		    	<validatieObject><naam>AlleObjecten</naam></validatieObject>
 		    </validatieObjecten>
 		</validatieRegel>
@@ -46,19 +46,18 @@
 			<definitie>
 				Een gml:Curve moet voldoen aan de volgende inmeeteisen:
 					- minimale (10cm) en maximale (50m) afstand van (inmeet)punten
-					- mag geen knikken bevatten, hoek tussen segmenten > 45 graden.
+					- mag geen knikken bevatten: hoek tussen segmenten > 45 graden.
 
 				Een gml:Surface moet voldoen aan de volgende definitie:
 					- minimale (10cm) en maximale (50m) afstand van (inmeet)punten
 			</definitie>
-			<toelichting>Excel Nr 6: Alle Lijngeometrieën in het bestand moeten langer zijn dan 10cm (afkeur doen we per object waarvan de geometrie korter is). </toelichting>
+			<toelichting></toelichting>
 			<validatieObjecten>
 			     <!-- Deze regel geldt voor alle NLCS Objecten met een gml:Curve-->
 				<validatieObject><naam>MSkabel</naam></validatieObject>
 				<validatieObject><naam>LSkabel</naam></validatieObject>
 				<validatieObject><naam>HSkabel</naam></validatieObject>
 				<validatieObject><naam>Amantelbuis</naam></validatieObject>
-				<!-- <validatieObject><naam>AmantelbuisInhoud</naam></validatieObject>  waarom heeft dit object een ligging? -->
 				<validatieObject><naam>Gleiding</naam></validatieObject>
 				<validatieObject><naam>KBmeetdraad</naam></validatieObject>
 				<validatieObject><naam>Tkabel</naam></validatieObject>
@@ -77,24 +76,24 @@
 			</validatieObjecten>
 		</validatieRegel>
 		<validatieRegel nummer="R.5" naam="GisId en AssetId">
-			<beschrijving>Ieder NLCS Object met de status B, R en V moet een GisId en AssetId hebben, dit zijn namelijk objecten die als oorsprong de assetregistratie hebben. NLCS objecten met de status N en T mogen juist geen GisId en AssetId hebben omdat deze objecten ontstaan in het ontwerp of de revisie.</beschrijving>
+			<beschrijving>Ieder NLCS Object met de status BESTAAND, REVISIE en VERWIJDERD moet een GisId en AssetId hebben, dit zijn namelijk objecten die als oorsprong de assetregistratie hebben. NLCS objecten met de status NIEUW en TIJDELIJK mogen juist geen GisId en AssetId hebben omdat deze objecten ontstaan in het ontwerp of de revisie.</beschrijving>
 			<soort>Verplichte waarde</soort>
 			<definitie>
-				Als Status = B, R of V, dan moet er een waarde zijn voor zowel GisId als AssetId,
-				Als Status = N of T dan moet GisId en AssetId leeg zijn
+				Als Status = BESTAAND, REVISIE of VERWIJDERD, dan moet er een waarde zijn voor zowel kenmerk GisId als AssetId,
+				Als Status = NIEUW of TIJDELIJK dan moeten de kenmerken GisId en AssetId leeg zijn
 			</definitie>
-			<toelichting>Powerpoint slide 17</toelichting>
+			<toelichting></toelichting>
 		    <validatieObjecten> <!-- Deze regel geldt voor alle NLCS Objecten -->
 		    	<validatieObject><naam>AlleObjecten</naam></validatieObject>
 		    </validatieObjecten>
 		</validatieRegel>
 		<validatieRegel nummer="R.6" naam="Inmeetwijze en Nauwkeurigheid Assets Elec">
-			<beschrijving>Ieder NLCS Object voor Elec moeten waardes hebben voor de attributen Inmeetwijze en Nauwkeurigheid.</beschrijving>
+			<beschrijving>Ieder NLCS Object voor Elec moeten waardes hebben voor de kenmerken Inmeetwijze en Nauwkeurigheid.</beschrijving>
 			<soort>Verplichte waarde</soort>
 			<definitie>
-				Ieder NLCS Object voor Elec moeten waardes hebben voorde attributen Inmeetwijze en Nauwkeurigheid.
+				Ieder NLCS Object voor Elec moeten waardes hebben voor de kenmerken Inmeetwijze en Nauwkeurigheid.
 			</definitie>
-			<toelichting>Powerpoint slide 18</toelichting>
+			<toelichting></toelichting>
 			<validatieObjecten> <!-- Deze regel geldt voor alle NLCS Objecten -->
 				<validatieObject><naam>MSstation</naam></validatieObject>
 				<validatieObject><naam>LSkast</naam></validatieObject>
@@ -112,13 +111,13 @@
 			</validatieObjecten>
 		</validatieRegel>
 		<validatieRegel nummer="R.7" naam="Subnettype gevuld voor LS en MS Kabel">
-			<beschrijving>MS Kabel, LS Kabel en LS Mof moeten een waarde hebben voor Subnettype.</beschrijving>
+			<beschrijving>MSkabel, LSkabel en LSmof moeten een waarde hebben voor Subnettype.</beschrijving>
 			<soort>Verplichte waarde</soort>
 			<definitie>
-				MS Kabel, LS Kabel en LS Mof moeten een waarde hebben voor Subnettype.
+				MSkabel, LSkabel en LSmof moeten een waarde hebben voor kenmerk Subnettype.
 			</definitie>
-			<toelichting>Powerpoint slide 18</toelichting>
-			<validatieObjecten> <!--  -->
+			<toelichting></toelichting>
+			<validatieObjecten>
 				<validatieObject><naam>MSkabel</naam></validatieObject>
 				<validatieObject><naam>LSkabel</naam></validatieObject>
 				<validatieObject><naam>LSmof</naam></validatieObject>
@@ -136,25 +135,25 @@
 					- Spanningsniveau
 					- Aardingsysteem
 					- FaseAanduiding
-				Voor LS kabels zijn er nog 2 extra kenmerken die gevuld moeten zijn:
+				Voor LSkabel objecten zijn er nog 2 extra kenmerken die gevuld moeten zijn:
 					- Bovengronds
 					- Functie.
 				N.B. Als het kenmerk Uitvoering de waarde "KEUZE ONTBREEKT IN LIJST" dan moet het kenmerk OmschrijvingUitvoering gevuld zijn!
 			</definitie>
-			<toelichting>Powerpoint Slide 18</toelichting>
-			<validatieObjecten> <!--  -->
+			<toelichting></toelichting>
+			<validatieObjecten>
 				<validatieObject><naam>LSkabel</naam></validatieObject>
 				<validatieObject><naam>MSkabel</naam></validatieObject>
 				<validatieObject><naam>HSkabel</naam></validatieObject>
 			</validatieObjecten>
 		</validatieRegel>
 		<validatieRegel nummer="R.9" naam="Aanlegdatum gevuld">
-			<beschrijving>De aanlegdatum moet gevuld zijn en moet geldig zijn, mag niet in de toekomst liggen.</beschrijving>
+			<beschrijving>De aanlegdatum moet gevuld zijn en mag niet in de toekomst liggen.</beschrijving>
 			<soort>Verplichte waarde</soort>
 			<definitie>
 				De aanlegdatum moet gevuld zijn en de gevulde datum mag niet in de toekomst liggen.
 			</definitie>
-			<toelichting>Excel Nr. 24: object, nieuwgelegd > Datum aanleg/aftakdatum gevuld, niet in de toekomst (voor objecten met een veld datum aanleg/ aftakdatum in NRG)</toelichting>
+			<toelichting></toelichting>
 			<validatieObjecten> <!-- Deze regel geldt voor alle NLCS Objecten van Elec -->
 				<validatieObject><naam>MSstation</naam></validatieObject>
 				<validatieObject><naam>LSkast</naam></validatieObject>
@@ -177,39 +176,41 @@
 				Iedere mof moet een waarde voor de volgende kenmerken hebben:
 					- Functie
 					- Verbindingnummer
-				Iedere LS mof moet een waarde voor de volgende kenmerken hebben:
+					
+				Aanvullend, iedere LSmof moet een waarde voor de volgende kenmerken hebben:
 					- Bovengronds
-				Iedere MS en HS mof moet een waarde voor de volgende kenmerken hebben:
+					
+				Aanvullend, iedere MSmof en HSmof moet een waarde voor de volgende kenmerken hebben:
 					- NaamMonteur
 					- CrossBondingAanwezig
 			</definitie>
-			<toelichting>Powerpoint Slide 21</toelichting>
-			<validatieObjecten> <!--  -->
+			<toelichting></toelichting>
+			<validatieObjecten>
 				<validatieObject><naam>LSmof</naam></validatieObject>
 				<validatieObject><naam>MSmof</naam></validatieObject>
 				<validatieObject><naam>HSmof</naam></validatieObject>
 			</validatieObjecten>
 		</validatieRegel>
 		<validatieRegel nummer="R.11" naam="Verplichte kenmerken LSoverdrachtspunt">
-			<beschrijving>Ieder overdrachtspunt heeft kenmerken die gevuld moeten zijn.</beschrijving>
+			<beschrijving>Ieder LSoverdrachtspunt heeft kenmerken die gevuld moeten zijn.</beschrijving>
 			<soort>Verplichte waarde</soort>
 			<definitie>
-				Ieder LS Overdrachtspunt moet een waarde voor de volgende kenmerken hebben:
+				Ieder LSoverdrachtspunt moet een waarde voor de volgende kenmerken hebben:
 				- EigenRichting
 				- Functie
 				- FaseAanduiding
 				- Aardingsysteem
 			</definitie>
-			<toelichting>Powerpoint Slide 22</toelichting>
-			<validatieObjecten> <!--  -->
+			<toelichting></toelichting>
+			<validatieObjecten>
 				<validatieObject><naam>LSoverdrachtspunt</naam></validatieObject>
 				</validatieObjecten>
 		</validatieRegel>
 		<validatieRegel nummer="R.12" naam="Verplichte kenmerken OVLoverdrachtspunt">
-			<beschrijving>Ieder overdrachtspunt kenmerken die gevuld moeten zijn.</beschrijving>
+			<beschrijving>Ieder OVLoverdrachtspunt heeft kenmerken die gevuld moeten zijn.</beschrijving>
 			<soort>Verplichte waarde</soort>
 			<definitie>
-				Ieder OVL Overdrachtspunt moet een waarde voor de volgende kenmerken hebben:
+				Ieder OVLoverdrachtspunt moet een waarde voor de volgende kenmerken hebben:
 				- Aansluitset
 				- Mastnummer <!-- Zijn masten al direct genummerd als de aannemer ze aansluit? -->
 				- Functie
@@ -217,33 +218,33 @@
 				- Aansluitwijze
 				- Schakeling
 			</definitie>
-			<toelichting>Powerpoint Slide 23</toelichting>
-			<validatieObjecten> <!--  -->
+			<toelichting></toelichting>
+			<validatieObjecten>
 				<validatieObject><naam>OVLoverdrachtspunt</naam></validatieObject>
 			</validatieObjecten>
 		</validatieRegel>
 		<validatieRegel nummer="R.13" naam="Verplichte kenmerken MSoverdrachtspunt">
-			<beschrijving>Ieder overdrachtspunt heeft kenmerken die gevuld moeten zijn.</beschrijving>
+			<beschrijving>Ieder MSoverdrachtspunt heeft kenmerken die gevuld moeten zijn.</beschrijving>
 			<soort>Verplichte waarde</soort>
 			<definitie>
-				Ieder MS Overdrachtspunt moet een waarde voor de volgende kenmerken hebben:
+				Ieder MSoverdrachtspunt moet een waarde voor de volgende kenmerken hebben:
 				- Identificatie (EAN Code) <!-- is dit bekend bij de Aannemer? -->
 			</definitie>
 			<toelichting></toelichting>
-			<validatieObjecten> <!--  -->
+			<validatieObjecten>
 				<validatieObject><naam>MSoverdrachtspunt</naam></validatieObject>
 			</validatieObjecten>
 		</validatieRegel>
 		<validatieRegel nummer="R.14" naam="Verplichte kenmerken Stations en Kasten">
-			<beschrijving>Ieder Station en kast heeft kenmerken die gevuld moeten zijn.</beschrijving>
+			<beschrijving>Ieder MSstation, HSstation en LSkast heeft kenmerken die gevuld moeten zijn.</beschrijving>
 			<soort>Verplichte waarde</soort>
 			<definitie>
-				Ieder Station en Kast moet een waarde voor de volgende kenmerken hebben:
+				Ieder MSstation en LSkast moet een waarde voor de volgende kenmerken hebben:
 				- Nummer
 				- Functie
 			</definitie>
 			<toelichting></toelichting>
-			<validatieObjecten> <!--  -->
+			<validatieObjecten>
 				<validatieObject><naam>LSkast</naam></validatieObject>
 				<validatieObject><naam>MSstation</naam></validatieObject>
 				<validatieObject><naam>HSstation</naam></validatieObject>
@@ -259,7 +260,7 @@
 				- Thema
 			</definitie>
 			<toelichting></toelichting>
-			<validatieObjecten> <!--  -->
+			<validatieObjecten>
 				<validatieObject><naam>Amantelbuis</naam></validatieObject>
 			</validatieObjecten>
 		</validatieRegel>
@@ -267,12 +268,12 @@
 			<beschrijving>De punt objecten van Elec moeten aan de juiste kabel zijn verbonden en mogen niet zweven.</beschrijving>
 			<soort>Topologie</soort>
 			<definitie>
-				Een Punt object (geometrie van type gml:Point) mag niet zweven, maar moet verbonden zijn met de juiste kabel:
+				Een Punt object (met kenmerk Geometry van het type gml:Point) mag niet zweven, maar moet verbonden zijn met de juiste kabel:
 				- MSmof en MSoverdrachtspunt moeten verbonden zijn met MSkabel
 				- LSmof, LSoverdrachtspunt en OVLoverdrachtspunt moeten verbonden zijn met LSkabel
 				- HSmof moet verbonden zijn met HSkabel
 			</definitie>
-			<toelichting>Powerpoint Slide 16</toelichting>
+			<toelichting></toelichting>
 			<validatieObjecten> <!-- Deze regel geldt voor alle NLCS Objecten met een punt geometrie van Elec -->
 				<validatieObject><naam>MSmof</naam></validatieObject>
 				<validatieObject><naam>MSoverdrachtspunt</naam></validatieObject>
@@ -292,7 +293,7 @@
 				- HSkabel: HSmof, HSstation en MSstation
 				NB: Deze controle geld niet voor kabels met de Bedrijfsstatus "VERLATEN"
 			</definitie>
-			<toelichting>Powerpoint Slide 24</toelichting>
+			<toelichting></toelichting>
 			<validatieObjecten> <!-- Deze regel geldt voor alle Kabel Objecten -->
 				<validatieObject><naam>MSkabel</naam></validatieObject>
 				<validatieObject><naam>LSkabel</naam></validatieObject>
@@ -308,7 +309,7 @@
 					- MSKabel via MSmof met andere MSkabel
 					- HSKabel via HSmof met andere HSkabel
 			</definitie>
-			<toelichting>Excel R.105, R.112, R.115 en R.119: Check of verbonden assets van hetzelfde type (LS of MS) zijn </toelichting>
+			<toelichting></toelichting>
 			<validatieObjecten> <!-- Deze regel geldt voor alle Kabel Objecten -->
 				<validatieObject><naam>MSkabel</naam></validatieObject>
 				<validatieObject><naam>LSkabel</naam></validatieObject>
@@ -325,7 +326,7 @@
 					- Verbindingnummer
 					- Spanningsniveau
 			</definitie>
-			<toelichting>Powerpoint Slide 25</toelichting>
+			<toelichting></toelichting>
 			<validatieObjecten> <!-- Deze regel geldt voor alle Kabel Objecten -->
 				<validatieObject><naam>MSkabel</naam></validatieObject>
 				<validatieObject><naam>LSkabel</naam></validatieObject>
@@ -343,7 +344,7 @@
 				- L3: 1x
 				- N: maakt niet uit.
 			</definitie>
-			<toelichting>Excel R.95: Status nieuw -> waarde Faseaanduiding matcht met aantal hoofdaders v/d kabeluitvoering (Uitvoering|Kabelopbouw). </toelichting>
+			<toelichting></toelichting>
 			<validatieObjecten>
 				<validatieObject><naam>MSkabel</naam></validatieObject>
 			</validatieObjecten>
@@ -359,7 +360,7 @@
 				4 kabels: 1 kabel moet 3 Fase zijn de andere kabels moet L1, L2 en L3 zijn. Het is immers een overgang van 3 Fase naar 3x 1 Fase.
 				> 4 kabels: geen controle.
 			</definitie>
-			<toelichting>toelichting</toelichting>
+			<toelichting></toelichting>
 			<validatieObjecten>
 				<validatieObject><naam>MSmof</naam></validatieObject>
 				<validatieObject><naam>LSmof</naam></validatieObject>
@@ -376,7 +377,7 @@
 				- AFTAK (op bestaande kabel]): 2 kabels: 1 nieuwe en moet op een bestaande liggen evt met marge.
 				- AFTAK (op nieuwe kabel): 3 kabels.
 			</definitie>
-			<toelichting>toelichting</toelichting>
+			<toelichting></toelichting>
 			<validatieObjecten>
 				<validatieObject><naam>MSmof</naam></validatieObject>
 				<validatieObject><naam>LSmof</naam></validatieObject>
@@ -384,13 +385,12 @@
 			</validatieObjecten>
 		</validatieRegel>
 		<validatieRegel nummer="R.27" naam="Mantelbuis past in mantelbuis">
-			<beschrijving>Een mantelbuis die in een andere mantelbuis ligt moet een kleinere diamter hebben dan de mantelbuis waarin het ligt.</beschrijving>
+			<beschrijving>Een mantelbuis die in een andere mantelbuis ligt moet een kleinere diameter hebben dan de mantelbuis waarin het ligt.</beschrijving>
 			<soort>Inhoud waarde</soort>
 			<definitie>
-				Een mantelbuis die volgens de mantelbuis_inhoud in een andere mantelbuis ligt moet een kleinere diameter hebben dan de mantelbuis waarin het ligt. Het kenmerk Diameter moet vergeleken worden. Let op de Diameter is een Text kenmerk.
+				Een mantelbuis die volgens de AmantelbuisInhoud in een andere mantelbuis ligt moet een kleinere diameter hebben dan de mantelbuis waarin het ligt.
 			</definitie>
-			<toelichting>Excel R.37: Elec + gas, status niew -> als Amantelbuisinhoud een andere mantelbuis is, moet de diameter van de binnenste mantelbuis kleiner zijn dan die van de buitenste.
-			</toelichting>
+			<toelichting>Het kenmerk Diameter moet vergeleken worden. Let op de Diameter is een Text kenmerk</toelichting>
 			<validatieObjecten>
 				<validatieObject><naam>Amantelbuis</naam></validatieObject>
 			</validatieObjecten>
@@ -400,10 +400,9 @@
 			<soort>Consistentie</soort>
 			<definitie>
 				Indien de Bedrijfstoestand van een AMantelbuis de waarde "RESERVE" heeft mag het geen AmantelbuisInhoud hebben,
-				als de BedrijfsToestand "IN BEDRIJF" is dan moet het een AmantelbuisInhoud hebben.
-				Je kunt een AmmantelbuisInhoud vinden door te zoeken op de MantelbuisHandle.
+				als de BedrijfsToestand "IN BEDRIJF" is dan moet het een AmantelbuisInhoud hebben, welke gekoppeld is aan een Asset.
 			</definitie>
-			<toelichting>Excel R.30 en R.34: Elec + gas, status nieuw, bedrijfstoestand reserve -> Mag geen Amantelbuisinhoud hebben (niet gekoppeld zijn aan assets).  en Elec + gas, status nieuw, bedrijfstoestand anders dan Reserve -> Moet gekoppeld zijn aan een asset (Amantelbuisinhoud).</toelichting>
+			<toelichting></toelichting>
 			<validatieObjecten>
 				<validatieObject><naam>Amantelbuis</naam></validatieObject>
 			</validatieObjecten>
@@ -413,12 +412,12 @@
 			<soort>Consistentie</soort>
 			<definitie>
 				Een verplaatsing moet zodanig zijn vastgelegd dat het object 2 keer voorkomt in het Document
-				- Het bestaande object dat wordt verplaatst: status=BESTAAND, GisID en AssetID beide gevuld
+				- Het bestaande object dat wordt verplaatst: status=BESTAAND, GisID en AssetID beide gevuld.
 				- Een nieuw object waarin de verplaatsing is vastgelegd in de geometrie:
 				  Status=REVISIE, Bewerking=VERPLAATSTEN, GisID als bestaande en AssetID moet leeg zijn.
 				Controle: Als er een object voorkomt met de Status=REVISIE en de Bewerking=VERPLAATSEN dan moet er een tweede object zijn van het zelfde soort met dezelfde GisID en de status=BESTAAND
 			</definitie>
-			<toelichting>Excel R.87 Status revisie/bestaand/verwijderd? -> Bij verplaatsen moet zowel de oude als nieuwe ligging aanwezig zijn (dus het verplaatste deel en de nieuwe locatie van dat deel). </toelichting>
+			<toelichting></toelichting>
 			<validatieObjecten>
 				<validatieObject><naam>LSkabel</naam></validatieObject>
 				<validatieObject><naam>MSkabel</naam></validatieObject>
