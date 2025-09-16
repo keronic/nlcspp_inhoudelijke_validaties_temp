@@ -197,7 +197,7 @@
   </message>
   <message id="bestaande-cable-not-connected-to-new-cable">
     <message-text xml:lang="nl">
-      Een aftakmof op een bestaande kabel moet ook verbonden zijn aan een nieuwe kabel
+      Een aftakmof op een bestaande kabel moet ook verbonden zijn aan een nieuwe kabel.
     </message-text>
     <message-text xml:lang="en">
       An branch joint on an existing cable also needs to be connected to a new cable
