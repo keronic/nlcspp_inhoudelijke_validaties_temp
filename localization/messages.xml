@@ -119,7 +119,7 @@
   </message>
   <message id="fase-not-the-same-as-uitvoering">
     <message-text xml:lang="en">
-      The Fase of the object is not the same as the Uitvoering!
+      The Fase of the object is not the same as the Uitvoering.
     </message-text>
     <message-text xml:lang="nl">
       De Fase van het object is niet hetzelfde als de Uitvoering.
