@@ -23,7 +23,7 @@
                               keronic:point-3d-to-point-3d-distance(
                                    $coords[(3 * $i) - 2], $coords[(3 * $i) - 1], $coords[(3 * $i)],
                                    $coords[(3 * ($i + 1)) - 2], $coords[(3 * ($i + 1)) - 1], $coords[(3 * ($i + 1))]
-                              ) ge 0.5
+                              ) ge 50
                          )
                          then keronic:create-gml-line(
                               (
@@ -65,7 +65,7 @@
                               keronic:point-3d-to-point-3d-distance(
                                    $coords[(3 * $i) - 2], $coords[(3 * $i) - 1], $coords[(3 * $i)],
                                    $coords[(3 * ($i + 1)) - 2], $coords[(3 * ($i + 1)) - 1], $coords[(3 * ($i + 1))]
-                              ) ge 0.5
+                              ) ge 50
                          )
                          then keronic:create-gml-line(
                               (
