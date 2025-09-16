@@ -174,7 +174,7 @@
 					<xs:documentation>Definitie waarmee de daadwerkelijke Schematron inhoudelijke validatie ontwikkeld kan worden</xs:documentation>
 				</xs:annotation>
 			</xs:element>
-			<xs:element name="toelichting"       type="xs:string" minOccurs="1" maxOccurs="1">
+			<xs:element name="toelichting"       type="xs:string" minOccurs="0" maxOccurs="1">
 				<xs:annotation>
 					<xs:documentation>Ruimte voor aanvullend toelichting wat niet past in beschrijving of definitie</xs:documentation>
 				</xs:annotation>
