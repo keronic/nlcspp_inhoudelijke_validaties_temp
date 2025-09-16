@@ -130,6 +130,8 @@
 
     <!-- import functions -->
     <xsl:include href="../xsl_functions/global_functions/config_functions.xsl"/>
+    <xsl:include href="../xsl_functions/global_functions/localization_functions.xsl"/>
+    <xsl:include href="../xsl_functions/global_functions/rule_scope_functions.xsl"/>
     <xsl:include href="../xsl_functions/helper_functions/helper_functions.xsl"/>
     <xsl:include href="../xsl_functions/geometry_functions/2d_geometry_functions.xsl"/>
     <xsl:include href="../xsl_functions/geometry_functions/3d_geometry_functions.xsl"/>
