@@ -17,10 +17,10 @@
   </message>
   <message id="invalid-status-for-tekening-type">
     <message-text xml:lang="en">
-      Invalid status {1} for TekeningType {2}, must be one of: {3}
+      Invalid Status {1} for TekeningType {2}, must be one of: {3}
     </message-text>
     <message-text xml:lang="nl">
-      Ongeldige status {1} voor TekeningType {2}, moet een van de volgende zijn: {3}
+      Ongeldige Status {1} voor TekeningType {2}, moet een van de volgende zijn: {3}
     </message-text>
   </message>
   <message id="object-outside-project-area">
@@ -33,26 +33,26 @@
   </message>
   <message id="line-segment-measurement-incorrect">
     <message-text xml:lang="en">
-      A line segment is shorter than 10cm or longer than 50cm.
+      A line segment is shorter than 10cm or longer than 50m.
     </message-text>
     <message-text xml:lang="nl">
-      Een lijnsegment is korter dan 10cm of langer dan 50cm.
+      Een lijnsegment is korter dan 10cm of langer dan 50m.
     </message-text>
   </message>
   <message id="line-angle-larger-than-45">
     <message-text xml:lang="en">
-      The object contains a kink. Angles between line segments cannot exceed 45 degrees.
+      The object contains a too sharp angle. Angles between line segments cannot exceed 45 degrees.
     </message-text>
     <message-text xml:lang="nl">
-      Het object bevat een knik. Hoeken tussen lijnsegmenten mogen niet groter dan 45 graden zijn.
+      Het object bevat een te scherpe knik. Hoeken tussen lijnsegmenten mogen niet groter dan 45 graden zijn.
     </message-text>
   </message>
   <message id="gisid-assetid-not-unset-if-new-revision-existing">
     <message-text xml:lang="en">
-      The attributes GisId and AssetId cannot be empty if the status is one of: {1}.
+      The attributes GisId and AssetId cannot be empty if the Status is one of: {1}.
     </message-text>
     <message-text xml:lang="nl">
-      De attributen GisId en AssetId mogen niet leeg zijn indien de status een van de volgende is: {1}.
+      De kenmerken GisId en AssetId mogen niet leeg zijn indien de Status een van de volgende is: {1}.
     </message-text>
   </message>
   <message id="gisid-assetid-are-unset-if-new">
@@ -60,7 +60,7 @@
       The attributes GisId and AssetId must be empty if the status IS NOT one of: {1}.
     </message-text>
     <message-text xml:lang="nl">
-      De attributen GisId en AssetId moeten leeg zijn indien de status een van de volgende is: {1}.
+      De kenmerken GisId en AssetId moeten leeg zijn indien de status een van de volgende is: {1}.
     </message-text>
   </message>
   <message id="attribute-not-present">
@@ -68,7 +68,7 @@
       The attribute {1} is not present on object.
     </message-text>
     <message-text xml:lang="nl">
-      Het attribuut {1} is niet aanwezig op object.
+      Het kenmerk {1} is niet gevuld voor het object.
     </message-text>
   </message>
   <message id="point-not-connected-to-any-line">
@@ -81,15 +81,15 @@
   </message>
   <message id="date-in-the-future">
     <message-text xml:lang="en">
-      The DatumAanleg on object is in the future!
+      The DatumAanleg on object is in the future.
     </message-text>
     <message-text xml:lang="nl">
-      De DatumAanleg op object is in de toekomst!
+      De DatumAanleg op object mag niet in de toekomst liggen.
     </message-text>
   </message>
   <message id="cable-not-connected-to-valid-object">
     <message-text xml:lang="en">
-      The cable is not connected to a mof, overdrachtspunt, or station.
+      The cable is not connected to a joint, service, or station.
     </message-text>
     <message-text xml:lang="nl">
       De kabel is niet verbonden met een mof, overdrachtspunt of station.
@@ -97,7 +97,7 @@
   </message>
   <message id="connected-cable-does-not-match-netvlak">
     <message-text xml:lang="en">
-      Cables connected to each other though a mof must share the same netvlak.
+      Cables connected to each other though a joint must be of the same discipline.
       Expected only {1} elements, but found {2} {3} element(s).
     </message-text>
     <message-text xml:lang="nl">
@@ -119,15 +119,15 @@
   </message>
   <message id="fase-not-the-same-as-uitvoering">
     <message-text xml:lang="en">
-      The Fase of the object is not the same as the Uitvoering!
+      The Fase of the object is not the same as the Uitvoering.
     </message-text>
     <message-text xml:lang="nl">
-      De fase van het object is niet hetzelfde als de Uitvoering!
+      De Fase van het object is niet hetzelfde als de Uitvoering.
     </message-text>
   </message>
   <message id="connected-fases-not-allowed">
     <message-text xml:lang="en">
-      When {1} cables are connected to a mof, the following Fase values are not allowed: {2}
+      When {1} cables are connected to a joint, the following Fase values are not allowed: {2}
     </message-text>
     <message-text xml:lang="nl">
       Wanneer {1} kabels verbonden zijn met een mof mogen zij niet een van de volgende Fasen hebben: {2}
@@ -135,7 +135,7 @@
   </message>
   <message id="connected-fases-do-not-match">
     <message-text xml:lang="en">
-      When {1} cables are connected to a mof, they should share the same Fase.
+      When {1} cables are connected to a joint, they should share the same Fase.
       Found values: {2}
     </message-text>
     <message-text xml:lang="nl">
@@ -145,7 +145,7 @@
   </message>
   <message id="connected-fases-do-not-split">
     <message-text xml:lang="en">
-      When 4 cables are connected to a mof, all Fase values must be unique and one of: {1}
+      When 4 cables are connected to a joint, all Fase values must be unique and one of: {1}
       Found values: {2}
     </message-text>
     <message-text xml:lang="nl">
@@ -154,50 +154,53 @@
     </message-text>
   </message>
   <message id="mantelbuis-inhoud-diameter-larger-than-own">
-    <message-text xml:lang="nl">
-      The Amantelbuis's diameter ({1}) should be larger than that of its AmantelbuisInhoud ({2}).
-    </message-text>
     <message-text xml:lang="en">
+      The protection pipe diameter ({1}) should be larger than that of its contents ({2}).
+    </message-text>
+    <message-text xml:lang="nl">
+      De diameter ({1}) van de mantelbuis zou groter moeten dan de diameter ({2}) van de mantelbuis die erin ligt. 
     </message-text>
   </message>
   <message id="inhoud-found">
     <message-text xml:lang="nl">
-      Als de Mantelbuis RESERVE is mag deze geen inhoud hebben.
+      Als de mantelbuis bedrijfstoestand RESERVE heeft, dan mag deze geen inhoud hebben.
     </message-text>
     <message-text xml:lang="en">
-      If the Mantelbuis is RESERVE, it is not allowed to have an Inhoud.
+      If the protection pipe is RESERVE, it is not allowed to have contents.
     </message-text>
   </message>
   <message id="inhoud-not-found">
     <message-text xml:lang="nl">
-      Als de Mantelbuis IN BEDRIJF is MOET deze een inhoud hebben.
+      Als de mantelbuis de bedrijfstoestand IN BEDRIJF heeft, dan moet deze een inhoud hebben.
     </message-text>
     <message-text xml:lang="en">
-      If the Mantelbuis is IN BEDRIJF an Inhoud is REQUIRED.
+      If the protection pipe is IN BEDRIJF contents are required.
     </message-text>
   </message>
   <message id="cable-amount-incorrect">
     <message-text xml:lang="en">
-      There are not enough cables connected to this mof. {1} are required, but found {2}
+      There are not enough cables connected to this joint. {1} are required, but found {2}.
     </message-text>
     <message-text xml:lang="nl">
-      Er zijn niet genoeg kabels verbonden aan de mof. {1} zijn nodig, maar kon er maar {1} vinden
+      Er zijn niet genoeg kabels verbonden aan de mof. {1} zijn nodig, maar {2} zijn verbonden.
     </message-text>
   </message>
   <message id="phases-are-incorrect">
     <message-text xml:lang="en">
-      The expected phases for the connected cables are incorrect. Expected {1} but got {2}
+      The expected phases for the connected cables are incorrect. Expected {1}, but got {2}.
     </message-text>
     <message-text xml:lang="nl">
-      De verwachte faseaanduidingen voor de verbonden kabels zijn incorrect. Expected {1} maar kreeg {2}
+      De verwachte faseaanduidingen voor de verbonden kabels zijn incorrect. 
+      De volgende faseaanduidingen zijn verwacht: {1}
+      Maar de volgende zijn gevonden: {2}
     </message-text>
   </message>
   <message id="bestaande-cable-not-connected-to-new-cable">
     <message-text xml:lang="nl">
-      Een aftakmof op een bestaande kabel moet ook verbonden zijn aan een nieuwe kabel
+      Een aftakmof op een bestaande kabel moet ook verbonden zijn aan een nieuwe kabel.
     </message-text>
     <message-text xml:lang="en">
-      An aftakmof on an existing cable also needs to be connected to a new cable
+      An branch joint on an existing cable also needs to be connected to a new cable.
     </message-text>
   </message>
 </messages>

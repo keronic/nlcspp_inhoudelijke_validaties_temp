@@ -59,9 +59,7 @@
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Toelichting </b></td>
-            <td class="validatieDocumentatieCell">Excel Nr 3: Revisiedata aanwezig -&gt; Er mag geen 'leeg' project ingeleverd worden,
-               geen xml met alleen maar een Aprojectreferentie zonder ook maar enige revisiedata
-               of met alleen maar bestaand/plan.</td>
+            <td class="validatieDocumentatieCell">Er mag geen 'leeg' project ingeleverd worden, oftewel met alleen maar één Aprojectreferentie</td>
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>ValidatieObjecten</b></td>
@@ -82,11 +80,6 @@
             <td class="validatieDocumentatieCell"><br>				Bestaande Situatie: BESTAAND<br>				Definitief Ontwerp: BESTAAND, NIEUW, REVISIE, VERWIJDERD en TIJDELIJK<br>				Deelrevisie: BESTAAND, NIEUW, REVISIE, VERWIJDERD en TIJDELIJK<br>				Eindrevisie: BESTAAND, NIEUW, REVISIE en VERWIJDERD<br>			</td>
          </tr>
          <tr class="validatieDocumentatieRow">
-            <td class="validatieDocumentatieCell"><b>Toelichting </b></td>
-            <td class="validatieDocumentatieCell">Excel Nr 4: Zou iets moeten worden als geen T (tijdelijk) in Eindrevisie, waarschuwing
-               over tijdelijk in Deelrevisie. Misschien nog meer sitaties die niet voor mogen komen?</td>
-         </tr>
-         <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>ValidatieObjecten</b></td>
             <td class="validatieDocumentatieCell">validatieObject: naam: Document</td>
          </tr>
@@ -102,12 +95,8 @@
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Definitie </b></td>
-            <td class="validatieDocumentatieCell"><br>				Het kenmerk Geometry, een gml:Point, gml:Curve of gml:Surface object moet interactie
-               hebben met de Geometry (gml:Surface) van de AprojectReferentie<br>			</td>
-         </tr>
-         <tr class="validatieDocumentatieRow">
-            <td class="validatieDocumentatieCell"><b>Toelichting </b></td>
-            <td class="validatieDocumentatieCell">Excel Nr 5: Alle geometrieën in het bestand moeten binnen Nederland liggen. </td>
+            <td class="validatieDocumentatieCell"><br>				Het kenmerk Geometry (gml:Point, gml:Curve of gml:Surface) moet interactie hebben
+               met de Geometry (gml:Surface) van de AprojectReferentie<br>			</td>
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>ValidatieObjecten</b></td>
@@ -124,12 +113,7 @@
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Definitie </b></td>
-            <td class="validatieDocumentatieCell"><br>				Een gml:Curve moet voldoen aan de volgende inmeeteisen:<br>					- minimale (10cm) en maximale (50m) afstand van (inmeet)punten<br>					- mag geen knikken bevatten, hoek tussen segmenten &gt; 45 graden.<br><br>				Een gml:Surface moet voldoen aan de volgende definitie:<br>					- minimale (10cm) en maximale (50m) afstand van (inmeet)punten<br>			</td>
-         </tr>
-         <tr class="validatieDocumentatieRow">
-            <td class="validatieDocumentatieCell"><b>Toelichting </b></td>
-            <td class="validatieDocumentatieCell">Excel Nr 6: Alle Lijngeometrieën in het bestand moeten langer zijn dan 10cm (afkeur
-               doen we per object waarvan de geometrie korter is). </td>
+            <td class="validatieDocumentatieCell"><br>				Een gml:Curve moet voldoen aan de volgende inmeeteisen:<br>					- minimale (10cm) en maximale (50m) afstand van (inmeet)punten<br>					- mag geen knikken bevatten: hoek tussen segmenten &gt; 45 graden.<br><br>				Een gml:Surface moet voldoen aan de volgende definitie:<br>					- minimale (10cm) en maximale (50m) afstand van (inmeet)punten<br>			</td>
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>ValidatieObjecten</b></td>
@@ -212,10 +196,10 @@
       </table><br><b id="R.5">R.5 - GisId en AssetId</b><br><br><table class="validatieDocumentatieTable">
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Beschrijving </b></td>
-            <td class="validatieDocumentatieCell">Ieder NLCS Object met de status B, R en V moet een GisId en AssetId hebben, dit zijn
-               namelijk objecten die als oorsprong de assetregistratie hebben. NLCS objecten met
-               de status N en T mogen juist geen GisId en AssetId hebben omdat deze objecten ontstaan
-               in het ontwerp of de revisie.</td>
+            <td class="validatieDocumentatieCell">Ieder NLCS Object met de status BESTAAND, REVISIE en VERWIJDERD moet een GisId en
+               AssetId hebben, dit zijn namelijk objecten die als oorsprong de assetregistratie hebben.
+               NLCS objecten met de status NIEUW en TIJDELIJK mogen juist geen GisId en AssetId hebben
+               omdat deze objecten ontstaan in het ontwerp of de revisie.</td>
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Soort </b></td>
@@ -223,11 +207,9 @@
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Definitie </b></td>
-            <td class="validatieDocumentatieCell"><br>				Als Status = B, R of V, dan moet er een waarde zijn voor zowel GisId als AssetId,<br>				Als Status = N of T dan moet GisId en AssetId leeg zijn<br>			</td>
-         </tr>
-         <tr class="validatieDocumentatieRow">
-            <td class="validatieDocumentatieCell"><b>Toelichting </b></td>
-            <td class="validatieDocumentatieCell">Powerpoint slide 17</td>
+            <td class="validatieDocumentatieCell"><br>				Als Status = BESTAAND, REVISIE of VERWIJDERD, dan moet er een waarde zijn voor
+               zowel kenmerk GisId als AssetId,<br>				Als Status = NIEUW of TIJDELIJK dan moeten de kenmerken GisId en AssetId leeg
+               zijn<br>			</td>
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>ValidatieObjecten</b></td>
@@ -236,7 +218,7 @@
       </table><br><b id="R.6">R.6 - Inmeetwijze en Nauwkeurigheid Assets Elec</b><br><br><table class="validatieDocumentatieTable">
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Beschrijving </b></td>
-            <td class="validatieDocumentatieCell">Ieder NLCS Object voor Elec moeten waardes hebben voor de attributen Inmeetwijze en
+            <td class="validatieDocumentatieCell">Ieder NLCS Object voor Elec moeten waardes hebben voor de kenmerken Inmeetwijze en
                Nauwkeurigheid.</td>
          </tr>
          <tr class="validatieDocumentatieRow">
@@ -245,12 +227,8 @@
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Definitie </b></td>
-            <td class="validatieDocumentatieCell"><br>				Ieder NLCS Object voor Elec moeten waardes hebben voorde attributen Inmeetwijze
+            <td class="validatieDocumentatieCell"><br>				Ieder NLCS Object voor Elec moeten waardes hebben voor de kenmerken Inmeetwijze
                en Nauwkeurigheid.<br>			</td>
-         </tr>
-         <tr class="validatieDocumentatieRow">
-            <td class="validatieDocumentatieCell"><b>Toelichting </b></td>
-            <td class="validatieDocumentatieCell">Powerpoint slide 18</td>
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>ValidatieObjecten</b></td>
@@ -313,7 +291,7 @@
       </table><br><b id="R.7">R.7 - Subnettype gevuld voor LS en MS Kabel</b><br><br><table class="validatieDocumentatieTable">
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Beschrijving </b></td>
-            <td class="validatieDocumentatieCell">MS Kabel, LS Kabel en LS Mof moeten een waarde hebben voor Subnettype.</td>
+            <td class="validatieDocumentatieCell">MSkabel, LSkabel en LSmof moeten een waarde hebben voor Subnettype.</td>
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Soort </b></td>
@@ -321,11 +299,7 @@
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Definitie </b></td>
-            <td class="validatieDocumentatieCell"><br>				MS Kabel, LS Kabel en LS Mof moeten een waarde hebben voor Subnettype.<br>			</td>
-         </tr>
-         <tr class="validatieDocumentatieRow">
-            <td class="validatieDocumentatieCell"><b>Toelichting </b></td>
-            <td class="validatieDocumentatieCell">Powerpoint slide 18</td>
+            <td class="validatieDocumentatieCell"><br>				MSkabel, LSkabel en LSmof moeten een waarde hebben voor kenmerk Subnettype.<br>			</td>
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>ValidatieObjecten</b></td>
@@ -356,12 +330,8 @@
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Definitie </b></td>
-            <td class="validatieDocumentatieCell"><br>				Iedere kabel moet een waarde voor de volgende kenmerken hebben:<br>					- Uitvoering<br>					- Kabelopbouw<br>					- Fabrikant<br>					- Verbindingnummer<br>					- Spanningsniveau<br>					- Aardingsysteem<br>					- FaseAanduiding<br>				Voor LS kabels zijn er nog 2 extra kenmerken die gevuld moeten zijn:<br>					- Bovengronds<br>					- Functie.<br>				N.B. Als het kenmerk Uitvoering de waarde "KEUZE ONTBREEKT IN LIJST" dan moet
+            <td class="validatieDocumentatieCell"><br>				Iedere kabel moet een waarde voor de volgende kenmerken hebben:<br>					- Uitvoering<br>					- Kabelopbouw<br>					- Fabrikant<br>					- Verbindingnummer<br>					- Spanningsniveau<br>					- Aardingsysteem<br>					- FaseAanduiding<br>				Voor LSkabel objecten zijn er nog 2 extra kenmerken die gevuld moeten zijn:<br>					- Bovengronds<br>					- Functie.<br>				N.B. Als het kenmerk Uitvoering de waarde "KEUZE ONTBREEKT IN LIJST" dan moet
                het kenmerk OmschrijvingUitvoering gevuld zijn!<br>			</td>
-         </tr>
-         <tr class="validatieDocumentatieRow">
-            <td class="validatieDocumentatieCell"><b>Toelichting </b></td>
-            <td class="validatieDocumentatieCell">Powerpoint Slide 18</td>
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>ValidatieObjecten</b></td>
@@ -384,7 +354,7 @@
       </table><br><b id="R.9">R.9 - Aanlegdatum gevuld</b><br><br><table class="validatieDocumentatieTable">
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Beschrijving </b></td>
-            <td class="validatieDocumentatieCell">De aanlegdatum moet gevuld zijn en moet geldig zijn, mag niet in de toekomst liggen.</td>
+            <td class="validatieDocumentatieCell">De aanlegdatum moet gevuld zijn en mag niet in de toekomst liggen.</td>
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Soort </b></td>
@@ -393,11 +363,6 @@
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Definitie </b></td>
             <td class="validatieDocumentatieCell"><br>				De aanlegdatum moet gevuld zijn en de gevulde datum mag niet in de toekomst liggen.<br>			</td>
-         </tr>
-         <tr class="validatieDocumentatieRow">
-            <td class="validatieDocumentatieCell"><b>Toelichting </b></td>
-            <td class="validatieDocumentatieCell">Excel Nr. 24: object, nieuwgelegd &gt; Datum aanleg/aftakdatum gevuld, niet in de toekomst
-               (voor objecten met een veld datum aanleg/ aftakdatum in NRG)</td>
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>ValidatieObjecten</b></td>
@@ -464,11 +429,7 @@
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Definitie </b></td>
-            <td class="validatieDocumentatieCell"><br>				Iedere mof moet een waarde voor de volgende kenmerken hebben:<br>					- Functie<br>					- Verbindingnummer<br>				Iedere LS mof moet een waarde voor de volgende kenmerken hebben:<br>					- Bovengronds<br>				Iedere MS en HS mof moet een waarde voor de volgende kenmerken hebben:<br>					- NaamMonteur<br>					- CrossBondingAanwezig<br>			</td>
-         </tr>
-         <tr class="validatieDocumentatieRow">
-            <td class="validatieDocumentatieCell"><b>Toelichting </b></td>
-            <td class="validatieDocumentatieCell">Powerpoint Slide 21</td>
+            <td class="validatieDocumentatieCell"><br>				Iedere mof moet een waarde voor de volgende kenmerken hebben:<br>					- Functie<br>					- Verbindingnummer<br>					<br>				Aanvullend, iedere LSmof moet een waarde voor de volgende kenmerken hebben:<br>					- Bovengronds<br>					<br>				Aanvullend, iedere MSmof en HSmof moet een waarde voor de volgende kenmerken hebben:<br>					- NaamMonteur<br>					- CrossBondingAanwezig<br>			</td>
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>ValidatieObjecten</b></td>
@@ -491,7 +452,7 @@
       </table><br><b id="R.11">R.11 - Verplichte kenmerken LSoverdrachtspunt</b><br><br><table class="validatieDocumentatieTable">
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Beschrijving </b></td>
-            <td class="validatieDocumentatieCell">Ieder overdrachtspunt heeft kenmerken die gevuld moeten zijn.</td>
+            <td class="validatieDocumentatieCell">Ieder LSoverdrachtspunt heeft kenmerken die gevuld moeten zijn.</td>
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Soort </b></td>
@@ -499,11 +460,7 @@
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Definitie </b></td>
-            <td class="validatieDocumentatieCell"><br>				Ieder LS Overdrachtspunt moet een waarde voor de volgende kenmerken hebben:<br>				- EigenRichting<br>				- Functie<br>				- FaseAanduiding<br>				- Aardingsysteem<br>			</td>
-         </tr>
-         <tr class="validatieDocumentatieRow">
-            <td class="validatieDocumentatieCell"><b>Toelichting </b></td>
-            <td class="validatieDocumentatieCell">Powerpoint Slide 22</td>
+            <td class="validatieDocumentatieCell"><br>				Ieder LSoverdrachtspunt moet een waarde voor de volgende kenmerken hebben:<br>				- EigenRichting<br>				- Functie<br>				- FaseAanduiding<br>				- Aardingsysteem<br>			</td>
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>ValidatieObjecten</b></td>
@@ -512,7 +469,7 @@
       </table><br><b id="R.12">R.12 - Verplichte kenmerken OVLoverdrachtspunt</b><br><br><table class="validatieDocumentatieTable">
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Beschrijving </b></td>
-            <td class="validatieDocumentatieCell">Ieder overdrachtspunt kenmerken die gevuld moeten zijn.</td>
+            <td class="validatieDocumentatieCell">Ieder OVLoverdrachtspunt heeft kenmerken die gevuld moeten zijn.</td>
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Soort </b></td>
@@ -520,11 +477,7 @@
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Definitie </b></td>
-            <td class="validatieDocumentatieCell"><br>				Ieder OVL Overdrachtspunt moet een waarde voor de volgende kenmerken hebben:<br>				- Aansluitset<br>				- Mastnummer </td>
-         </tr>
-         <tr class="validatieDocumentatieRow">
-            <td class="validatieDocumentatieCell"><b>Toelichting </b></td>
-            <td class="validatieDocumentatieCell">Powerpoint Slide 23</td>
+            <td class="validatieDocumentatieCell"><br>				Ieder OVLoverdrachtspunt moet een waarde voor de volgende kenmerken hebben:<br>				- Aansluitset<br>				- Mastnummer </td>
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>ValidatieObjecten</b></td>
@@ -533,7 +486,7 @@
       </table><br><b id="R.13">R.13 - Verplichte kenmerken MSoverdrachtspunt</b><br><br><table class="validatieDocumentatieTable">
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Beschrijving </b></td>
-            <td class="validatieDocumentatieCell">Ieder overdrachtspunt heeft kenmerken die gevuld moeten zijn.</td>
+            <td class="validatieDocumentatieCell">Ieder MSoverdrachtspunt heeft kenmerken die gevuld moeten zijn.</td>
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Soort </b></td>
@@ -541,11 +494,7 @@
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Definitie </b></td>
-            <td class="validatieDocumentatieCell"><br>				Ieder MS Overdrachtspunt moet een waarde voor de volgende kenmerken hebben:<br>				- Identificatie (EAN Code) </td>
-         </tr>
-         <tr class="validatieDocumentatieRow">
-            <td class="validatieDocumentatieCell"><b>Toelichting </b></td>
-            <td class="validatieDocumentatieCell"></td>
+            <td class="validatieDocumentatieCell"><br>				Ieder MSoverdrachtspunt moet een waarde voor de volgende kenmerken hebben:<br>				- Identificatie (EAN Code) </td>
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>ValidatieObjecten</b></td>
@@ -554,7 +503,7 @@
       </table><br><b id="R.14">R.14 - Verplichte kenmerken Stations en Kasten</b><br><br><table class="validatieDocumentatieTable">
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Beschrijving </b></td>
-            <td class="validatieDocumentatieCell">Ieder Station en kast heeft kenmerken die gevuld moeten zijn.</td>
+            <td class="validatieDocumentatieCell">Ieder MSstation, HSstation en LSkast heeft kenmerken die gevuld moeten zijn.</td>
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Soort </b></td>
@@ -562,11 +511,7 @@
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Definitie </b></td>
-            <td class="validatieDocumentatieCell"><br>				Ieder Station en Kast moet een waarde voor de volgende kenmerken hebben:<br>				- Nummer<br>				- Functie<br>			</td>
-         </tr>
-         <tr class="validatieDocumentatieRow">
-            <td class="validatieDocumentatieCell"><b>Toelichting </b></td>
-            <td class="validatieDocumentatieCell"></td>
+            <td class="validatieDocumentatieCell"><br>				Ieder MSstation en LSkast moet een waarde voor de volgende kenmerken hebben:<br>				- Nummer<br>				- Functie<br>			</td>
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>ValidatieObjecten</b></td>
@@ -600,10 +545,6 @@
             <td class="validatieDocumentatieCell"><br>				Iedere Mantelbuis moet een waarde voor de volgende kenmerken hebben:<br>				- Materiaal<br>				- Diameter<br>				- Thema<br>			</td>
          </tr>
          <tr class="validatieDocumentatieRow">
-            <td class="validatieDocumentatieCell"><b>Toelichting </b></td>
-            <td class="validatieDocumentatieCell"></td>
-         </tr>
-         <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>ValidatieObjecten</b></td>
             <td class="validatieDocumentatieCell">validatieObject: naam: Amantelbuis</td>
          </tr>
@@ -619,12 +560,8 @@
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Definitie </b></td>
-            <td class="validatieDocumentatieCell"><br>				Een Punt object (geometrie van type gml:Point) mag niet zweven, maar moet verbonden
-               zijn met de juiste kabel:<br>				- MSmof en MSoverdrachtspunt moeten verbonden zijn met MSkabel<br>				- LSmof, LSoverdrachtspunt en OVLoverdrachtspunt moeten verbonden zijn met LSkabel<br>				- HSmof moet verbonden zijn met HSkabel<br>			</td>
-         </tr>
-         <tr class="validatieDocumentatieRow">
-            <td class="validatieDocumentatieCell"><b>Toelichting </b></td>
-            <td class="validatieDocumentatieCell">Powerpoint Slide 16</td>
+            <td class="validatieDocumentatieCell"><br>				Een Punt object (met kenmerk Geometry van het type gml:Point) mag niet zweven,
+               maar moet verbonden zijn met de juiste kabel:<br>				- MSmof en MSoverdrachtspunt moeten verbonden zijn met MSkabel<br>				- LSmof, LSoverdrachtspunt en OVLoverdrachtspunt moeten verbonden zijn met LSkabel<br>				- HSmof moet verbonden zijn met HSkabel<br>			</td>
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>ValidatieObjecten</b></td>
@@ -671,10 +608,6 @@
                per kabel zijn de volgende objecten geldig:<br>				- LSkabel: LSmof, LSoverdrachtspunt, OVLoverdrachtspunt, MSstation, LSkast<br>				- MSkabel: MSmof, MSoverdrachtspunt en MSstation<br>				- HSkabel: HSmof, HSstation en MSstation<br>				NB: Deze controle geld niet voor kabels met de Bedrijfsstatus "VERLATEN"<br>			</td>
          </tr>
          <tr class="validatieDocumentatieRow">
-            <td class="validatieDocumentatieCell"><b>Toelichting </b></td>
-            <td class="validatieDocumentatieCell">Powerpoint Slide 24</td>
-         </tr>
-         <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>ValidatieObjecten</b></td>
             <td class="validatieDocumentatieCell">
                <table class="validatieDocumentatieTable">
@@ -705,11 +638,6 @@
             <td class="validatieDocumentatieCell"><b>Definitie </b></td>
             <td class="validatieDocumentatieCell"><br>				Kabels die d.m.v. moffen met elkaar zijn verbonden moeten van het zelfde netvlak
                zijn:<br>					- LSKabel via LSmof met andere LSkabel<br>					- MSKabel via MSmof met andere MSkabel<br>					- HSKabel via HSmof met andere HSkabel<br>			</td>
-         </tr>
-         <tr class="validatieDocumentatieRow">
-            <td class="validatieDocumentatieCell"><b>Toelichting </b></td>
-            <td class="validatieDocumentatieCell">Excel R.105, R.112, R.115 en R.119: Check of verbonden assets van hetzelfde type (LS
-               of MS) zijn </td>
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>ValidatieObjecten</b></td>
@@ -745,10 +673,6 @@
                hebben:<br>					- Bedrijfstoestand<br>					- Subnettype<br>					- Verbindingnummer<br>					- Spanningsniveau<br>			</td>
          </tr>
          <tr class="validatieDocumentatieRow">
-            <td class="validatieDocumentatieCell"><b>Toelichting </b></td>
-            <td class="validatieDocumentatieCell">Powerpoint Slide 25</td>
-         </tr>
-         <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>ValidatieObjecten</b></td>
             <td class="validatieDocumentatieCell">
                <table class="validatieDocumentatieTable">
@@ -780,11 +704,6 @@
             <td class="validatieDocumentatieCell"><br>				Vergelijk de Faseaanduiding met het eerste twee karakters van de uitvoering:<br>				- 3 Fasen: 3x<br>				- L1: 1x<br>				- L2: 1x<br>				- L3: 1x<br>				- N: maakt niet uit.<br>			</td>
          </tr>
          <tr class="validatieDocumentatieRow">
-            <td class="validatieDocumentatieCell"><b>Toelichting </b></td>
-            <td class="validatieDocumentatieCell">Excel R.95: Status nieuw -&gt; waarde Faseaanduiding matcht met aantal hoofdaders v/d
-               kabeluitvoering (Uitvoering|Kabelopbouw). </td>
-         </tr>
-         <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>ValidatieObjecten</b></td>
             <td class="validatieDocumentatieCell">validatieObject: naam: MSkabel</td>
          </tr>
@@ -802,10 +721,6 @@
             <td class="validatieDocumentatieCell"><br>				Als een mof meer dan 1 kabel verbind dan moet de fase van de verbonden kabels
                juist zijn:<br>				1 kabel: geen controle<br>				2 kabels: de Fase van beide kabels moet hetzelfde zijn (L1, L2, L3 of 3 Fase)<br>				3 kabels: de Fase van de 3 kabels moet hetzelfde zijn (L1, L2, L3 of 3 Fase)<br>				4 kabels: 1 kabel moet 3 Fase zijn de andere kabels moet L1, L2 en L3 zijn. Het
                is immers een overgang van 3 Fase naar 3x 1 Fase.<br>				&gt; 4 kabels: geen controle.<br>			</td>
-         </tr>
-         <tr class="validatieDocumentatieRow">
-            <td class="validatieDocumentatieCell"><b>Toelichting </b></td>
-            <td class="validatieDocumentatieCell">toelichting</td>
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>ValidatieObjecten</b></td>
@@ -842,10 +757,6 @@
                evt met marge.<br>				- AFTAK (op nieuwe kabel): 3 kabels.<br>			</td>
          </tr>
          <tr class="validatieDocumentatieRow">
-            <td class="validatieDocumentatieCell"><b>Toelichting </b></td>
-            <td class="validatieDocumentatieCell">toelichting</td>
-         </tr>
-         <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>ValidatieObjecten</b></td>
             <td class="validatieDocumentatieCell">
                <table class="validatieDocumentatieTable">
@@ -866,7 +777,7 @@
       </table><br><b id="R.27">R.27 - Mantelbuis past in mantelbuis</b><br><br><table class="validatieDocumentatieTable">
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Beschrijving </b></td>
-            <td class="validatieDocumentatieCell">Een mantelbuis die in een andere mantelbuis ligt moet een kleinere diamter hebben
+            <td class="validatieDocumentatieCell">Een mantelbuis die in een andere mantelbuis ligt moet een kleinere diameter hebben
                dan de mantelbuis waarin het ligt.</td>
          </tr>
          <tr class="validatieDocumentatieRow">
@@ -875,14 +786,12 @@
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Definitie </b></td>
-            <td class="validatieDocumentatieCell"><br>				Een mantelbuis die volgens de mantelbuis_inhoud in een andere mantelbuis ligt
-               moet een kleinere diameter hebben dan de mantelbuis waarin het ligt. Het kenmerk Diameter
-               moet vergeleken worden. Let op de Diameter is een Text kenmerk.<br>			</td>
+            <td class="validatieDocumentatieCell"><br>				Een mantelbuis die volgens de AmantelbuisInhoud in een andere mantelbuis ligt
+               moet een kleinere diameter hebben dan de mantelbuis waarin het ligt.<br>			</td>
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Toelichting </b></td>
-            <td class="validatieDocumentatieCell">Excel R.37: Elec + gas, status niew -&gt; als Amantelbuisinhoud een andere mantelbuis
-               is, moet de diameter van de binnenste mantelbuis kleiner zijn dan die van de buitenste.<br>			</td>
+            <td class="validatieDocumentatieCell">Het kenmerk Diameter moet vergeleken worden. Let op de Diameter is een Text kenmerk</td>
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>ValidatieObjecten</b></td>
@@ -900,13 +809,8 @@
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Definitie </b></td>
             <td class="validatieDocumentatieCell"><br>				Indien de Bedrijfstoestand van een AMantelbuis de waarde "RESERVE" heeft mag het
-               geen AmantelbuisInhoud hebben,<br>				als de BedrijfsToestand "IN BEDRIJF" is dan moet het een AmantelbuisInhoud hebben.<br>				Je kunt een AmmantelbuisInhoud vinden door te zoeken op de MantelbuisHandle.<br>			</td>
-         </tr>
-         <tr class="validatieDocumentatieRow">
-            <td class="validatieDocumentatieCell"><b>Toelichting </b></td>
-            <td class="validatieDocumentatieCell">Excel R.30 en R.34: Elec + gas, status nieuw, bedrijfstoestand reserve -&gt; Mag geen
-               Amantelbuisinhoud hebben (niet gekoppeld zijn aan assets).  en Elec + gas, status
-               nieuw, bedrijfstoestand anders dan Reserve -&gt; Moet gekoppeld zijn aan een asset (Amantelbuisinhoud).</td>
+               geen AmantelbuisInhoud hebben,<br>				als de BedrijfsToestand "IN BEDRIJF" is dan moet het een AmantelbuisInhoud hebben,
+               welke gekoppeld is aan een Asset.<br>			</td>
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>ValidatieObjecten</b></td>
@@ -925,15 +829,9 @@
             <td class="validatieDocumentatieCell"><b>Definitie </b></td>
             <td class="validatieDocumentatieCell"><br>				Een verplaatsing moet zodanig zijn vastgelegd dat het object 2 keer voorkomt in
                het Document<br>				- Het bestaande object dat wordt verplaatst: status=BESTAAND, GisID en AssetID
-               beide gevuld<br>				- Een nieuw object waarin de verplaatsing is vastgelegd in de geometrie:<br>				  Status=REVISIE, Bewerking=VERPLAATSTEN, GisID als bestaande en AssetID moet
+               beide gevuld.<br>				- Een nieuw object waarin de verplaatsing is vastgelegd in de geometrie:<br>				  Status=REVISIE, Bewerking=VERPLAATSTEN, GisID als bestaande en AssetID moet
                leeg zijn.<br>				Controle: Als er een object voorkomt met de Status=REVISIE en de Bewerking=VERPLAATSEN
                dan moet er een tweede object zijn van het zelfde soort met dezelfde GisID en de status=BESTAAND<br>			</td>
-         </tr>
-         <tr class="validatieDocumentatieRow">
-            <td class="validatieDocumentatieCell"><b>Toelichting </b></td>
-            <td class="validatieDocumentatieCell">Excel R.87 Status revisie/bestaand/verwijderd? -&gt; Bij verplaatsen moet zowel de oude
-               als nieuwe ligging aanwezig zijn (dus het verplaatste deel en de nieuwe locatie van
-               dat deel). </td>
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>ValidatieObjecten</b></td>

@@ -16,3 +16,5 @@ saxon-he.jar
 lib/
 transpile.xsl
 *.zip
+/bin/
+.classpath
