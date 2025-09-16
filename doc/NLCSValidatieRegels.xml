@@ -24,7 +24,6 @@
 				Deelrevisie: BESTAAND, NIEUW, REVISIE, VERWIJDERD en TIJDELIJK
 				Eindrevisie: BESTAAND, NIEUW, REVISIE en VERWIJDERD
 			</definitie>
-			<toelichting></toelichting>
 			<validatieObjecten>
 				<validatieObject><naam>Document</naam></validatieObject>
 			</validatieObjecten>
@@ -35,7 +34,6 @@
 			<definitie>
 				Het kenmerk Geometry (gml:Point, gml:Curve of gml:Surface) moet interactie hebben met de Geometry (gml:Surface) van de AprojectReferentie
 			</definitie>
-			<toelichting></toelichting>
 			<validatieObjecten>
 		    	<validatieObject><naam>AlleObjecten</naam></validatieObject>
 		    </validatieObjecten>
@@ -51,7 +49,6 @@
 				Een gml:Surface moet voldoen aan de volgende definitie:
 					- minimale (10cm) en maximale (50m) afstand van (inmeet)punten
 			</definitie>
-			<toelichting></toelichting>
 			<validatieObjecten>
 			     <!-- Deze regel geldt voor alle NLCS Objecten met een gml:Curve-->
 				<validatieObject><naam>MSkabel</naam></validatieObject>
@@ -82,7 +79,6 @@
 				Als Status = BESTAAND, REVISIE of VERWIJDERD, dan moet er een waarde zijn voor zowel kenmerk GisId als AssetId,
 				Als Status = NIEUW of TIJDELIJK dan moeten de kenmerken GisId en AssetId leeg zijn
 			</definitie>
-			<toelichting></toelichting>
 		    <validatieObjecten> <!-- Deze regel geldt voor alle NLCS Objecten -->
 		    	<validatieObject><naam>AlleObjecten</naam></validatieObject>
 		    </validatieObjecten>
@@ -93,7 +89,6 @@
 			<definitie>
 				Ieder NLCS Object voor Elec moeten waardes hebben voor de kenmerken Inmeetwijze en Nauwkeurigheid.
 			</definitie>
-			<toelichting></toelichting>
 			<validatieObjecten> <!-- Deze regel geldt voor alle NLCS Objecten -->
 				<validatieObject><naam>MSstation</naam></validatieObject>
 				<validatieObject><naam>LSkast</naam></validatieObject>
@@ -116,7 +111,6 @@
 			<definitie>
 				MSkabel, LSkabel en LSmof moeten een waarde hebben voor kenmerk Subnettype.
 			</definitie>
-			<toelichting></toelichting>
 			<validatieObjecten>
 				<validatieObject><naam>MSkabel</naam></validatieObject>
 				<validatieObject><naam>LSkabel</naam></validatieObject>
@@ -140,7 +134,6 @@
 					- Functie.
 				N.B. Als het kenmerk Uitvoering de waarde "KEUZE ONTBREEKT IN LIJST" dan moet het kenmerk OmschrijvingUitvoering gevuld zijn!
 			</definitie>
-			<toelichting></toelichting>
 			<validatieObjecten>
 				<validatieObject><naam>LSkabel</naam></validatieObject>
 				<validatieObject><naam>MSkabel</naam></validatieObject>
@@ -153,7 +146,6 @@
 			<definitie>
 				De aanlegdatum moet gevuld zijn en de gevulde datum mag niet in de toekomst liggen.
 			</definitie>
-			<toelichting></toelichting>
 			<validatieObjecten> <!-- Deze regel geldt voor alle NLCS Objecten van Elec -->
 				<validatieObject><naam>MSstation</naam></validatieObject>
 				<validatieObject><naam>LSkast</naam></validatieObject>
@@ -184,7 +176,6 @@
 					- NaamMonteur
 					- CrossBondingAanwezig
 			</definitie>
-			<toelichting></toelichting>
 			<validatieObjecten>
 				<validatieObject><naam>LSmof</naam></validatieObject>
 				<validatieObject><naam>MSmof</naam></validatieObject>
@@ -201,7 +192,6 @@
 				- FaseAanduiding
 				- Aardingsysteem
 			</definitie>
-			<toelichting></toelichting>
 			<validatieObjecten>
 				<validatieObject><naam>LSoverdrachtspunt</naam></validatieObject>
 				</validatieObjecten>
@@ -218,7 +208,6 @@
 				- Aansluitwijze
 				- Schakeling
 			</definitie>
-			<toelichting></toelichting>
 			<validatieObjecten>
 				<validatieObject><naam>OVLoverdrachtspunt</naam></validatieObject>
 			</validatieObjecten>
@@ -230,7 +219,6 @@
 				Ieder MSoverdrachtspunt moet een waarde voor de volgende kenmerken hebben:
 				- Identificatie (EAN Code) <!-- is dit bekend bij de Aannemer? -->
 			</definitie>
-			<toelichting></toelichting>
 			<validatieObjecten>
 				<validatieObject><naam>MSoverdrachtspunt</naam></validatieObject>
 			</validatieObjecten>
@@ -243,7 +231,6 @@
 				- Nummer
 				- Functie
 			</definitie>
-			<toelichting></toelichting>
 			<validatieObjecten>
 				<validatieObject><naam>LSkast</naam></validatieObject>
 				<validatieObject><naam>MSstation</naam></validatieObject>
@@ -259,7 +246,6 @@
 				- Diameter
 				- Thema
 			</definitie>
-			<toelichting></toelichting>
 			<validatieObjecten>
 				<validatieObject><naam>Amantelbuis</naam></validatieObject>
 			</validatieObjecten>
@@ -273,7 +259,6 @@
 				- LSmof, LSoverdrachtspunt en OVLoverdrachtspunt moeten verbonden zijn met LSkabel
 				- HSmof moet verbonden zijn met HSkabel
 			</definitie>
-			<toelichting></toelichting>
 			<validatieObjecten> <!-- Deze regel geldt voor alle NLCS Objecten met een punt geometrie van Elec -->
 				<validatieObject><naam>MSmof</naam></validatieObject>
 				<validatieObject><naam>MSoverdrachtspunt</naam></validatieObject>
@@ -293,7 +278,6 @@
 				- HSkabel: HSmof, HSstation en MSstation
 				NB: Deze controle geld niet voor kabels met de Bedrijfsstatus "VERLATEN"
 			</definitie>
-			<toelichting></toelichting>
 			<validatieObjecten> <!-- Deze regel geldt voor alle Kabel Objecten -->
 				<validatieObject><naam>MSkabel</naam></validatieObject>
 				<validatieObject><naam>LSkabel</naam></validatieObject>
@@ -309,7 +293,6 @@
 					- MSKabel via MSmof met andere MSkabel
 					- HSKabel via HSmof met andere HSkabel
 			</definitie>
-			<toelichting></toelichting>
 			<validatieObjecten> <!-- Deze regel geldt voor alle Kabel Objecten -->
 				<validatieObject><naam>MSkabel</naam></validatieObject>
 				<validatieObject><naam>LSkabel</naam></validatieObject>
@@ -326,7 +309,6 @@
 					- Verbindingnummer
 					- Spanningsniveau
 			</definitie>
-			<toelichting></toelichting>
 			<validatieObjecten> <!-- Deze regel geldt voor alle Kabel Objecten -->
 				<validatieObject><naam>MSkabel</naam></validatieObject>
 				<validatieObject><naam>LSkabel</naam></validatieObject>
@@ -344,7 +326,6 @@
 				- L3: 1x
 				- N: maakt niet uit.
 			</definitie>
-			<toelichting></toelichting>
 			<validatieObjecten>
 				<validatieObject><naam>MSkabel</naam></validatieObject>
 			</validatieObjecten>
@@ -360,7 +341,6 @@
 				4 kabels: 1 kabel moet 3 Fase zijn de andere kabels moet L1, L2 en L3 zijn. Het is immers een overgang van 3 Fase naar 3x 1 Fase.
 				> 4 kabels: geen controle.
 			</definitie>
-			<toelichting></toelichting>
 			<validatieObjecten>
 				<validatieObject><naam>MSmof</naam></validatieObject>
 				<validatieObject><naam>LSmof</naam></validatieObject>
@@ -377,7 +357,6 @@
 				- AFTAK (op bestaande kabel]): 2 kabels: 1 nieuwe en moet op een bestaande liggen evt met marge.
 				- AFTAK (op nieuwe kabel): 3 kabels.
 			</definitie>
-			<toelichting></toelichting>
 			<validatieObjecten>
 				<validatieObject><naam>MSmof</naam></validatieObject>
 				<validatieObject><naam>LSmof</naam></validatieObject>
@@ -402,7 +381,6 @@
 				Indien de Bedrijfstoestand van een AMantelbuis de waarde "RESERVE" heeft mag het geen AmantelbuisInhoud hebben,
 				als de BedrijfsToestand "IN BEDRIJF" is dan moet het een AmantelbuisInhoud hebben, welke gekoppeld is aan een Asset.
 			</definitie>
-			<toelichting></toelichting>
 			<validatieObjecten>
 				<validatieObject><naam>Amantelbuis</naam></validatieObject>
 			</validatieObjecten>
@@ -417,7 +395,6 @@
 				  Status=REVISIE, Bewerking=VERPLAATSTEN, GisID als bestaande en AssetID moet leeg zijn.
 				Controle: Als er een object voorkomt met de Status=REVISIE en de Bewerking=VERPLAATSEN dan moet er een tweede object zijn van het zelfde soort met dezelfde GisID en de status=BESTAAND
 			</definitie>
-			<toelichting></toelichting>
 			<validatieObjecten>
 				<validatieObject><naam>LSkabel</naam></validatieObject>
 				<validatieObject><naam>MSkabel</naam></validatieObject>
