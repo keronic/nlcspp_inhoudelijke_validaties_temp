@@ -47,20 +47,20 @@
       Het object bevat een te scherpe knik. Hoeken tussen lijnsegmenten mogen niet groter dan 45 graden zijn.
     </message-text>
   </message>
-  <message id="gisid-assetid-not-unset-if-new-revision-existing">
+  <message id="property-required-for-statuses">
     <message-text xml:lang="en">
-      The attributes GisId and AssetId cannot be empty if the Status is one of: {1}.
+      The attribute {1} cannot be empty if the Status is one of: {2}.
     </message-text>
     <message-text xml:lang="nl">
-      De kenmerken GisId en AssetId mogen niet leeg zijn indien de Status een van de volgende is: {1}.
+      Het kenmerk {1} mag niet leeg zijn indien de Status een van de volgende is: {2}.
     </message-text>
   </message>
-  <message id="gisid-assetid-are-unset-if-new">
+  <message id="property-not-allowed-for-statuses">
     <message-text xml:lang="en">
-      The attributes GisId and AssetId must be empty if the status IS NOT one of: {1}.
+      The attribute {1} must be empty if the Status IS NOT one of: {2}.
     </message-text>
     <message-text xml:lang="nl">
-      De kenmerken GisId en AssetId moeten leeg zijn indien de status een van de volgende is: {1}.
+      Het kenmerk {1} moet leeg zijn indien de Status NIET een van de volgende is: {2}.
     </message-text>
   </message>
   <message id="attribute-not-present">
@@ -158,7 +158,7 @@
       The protection pipe diameter ({1}) should be larger than that of its contents ({2}).
     </message-text>
     <message-text xml:lang="nl">
-      De diameter ({1}) van de mantelbuis zou groter moeten dan de diameter ({2}) van de mantelbuis die erin ligt. 
+      De diameter ({1}) van de mantelbuis zou groter moeten dan de diameter ({2}) van de mantelbuis die erin ligt.
     </message-text>
   </message>
   <message id="inhoud-found">
@@ -190,7 +190,7 @@
       The expected phases for the connected cables are incorrect. Expected {1}, but got {2}.
     </message-text>
     <message-text xml:lang="nl">
-      De verwachte faseaanduidingen voor de verbonden kabels zijn incorrect. 
+      De verwachte faseaanduidingen voor de verbonden kabels zijn incorrect.
       De volgende faseaanduidingen zijn verwacht: {1}
       Maar de volgende zijn gevonden: {2}
     </message-text>

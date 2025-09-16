@@ -16,5 +16,9 @@
                 <Functie>MANTELREPARATIE</Functie>
             </Verbinding>
         </MofFuncties>
+        <GisIdAssetsIdExceptions>
+            <NoGisIdRequired>AmantelbuisInhoud</NoGisIdRequired>
+            <!-- <NoAssetIdRequired>SomeObjectName</NoAssetIdRequired> -->
+        </GisIdAssetsIdExceptions>
     </V11>
 </config>
