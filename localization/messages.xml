@@ -190,7 +190,9 @@
       The expected phases for the connected cables are incorrect. Expected {1} but got {2}
     </message-text>
     <message-text xml:lang="nl">
-      De verwachte faseaanduidingen voor de verbonden kabels zijn incorrect. De volgende faseaanduidingen zijn verwacht {1}, maar de volgende zijn gevonden {2}
+      De verwachte faseaanduidingen voor de verbonden kabels zijn incorrect. 
+      De volgende faseaanduidingen zijn verwacht: {1}
+      Maar de volgende zijn gevonden: {2}
     </message-text>
   </message>
   <message id="bestaande-cable-not-connected-to-new-cable">
