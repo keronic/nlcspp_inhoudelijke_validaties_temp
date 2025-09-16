@@ -15,13 +15,13 @@
     <sequence select="name(($sys_config_file/config/V11/MofFuncties/*[Functie = $functie]))"/>
   </function>
 
-  <function name="keronic:object-requires-gis-id">
+  <function name="keronic:object-requires-gis-id" as="xs:boolean">
     <param name="nlcs_object"/>
     <variable name="objects_not_requiring_gis_id" select="$sys_config_file/config/V11/GisIdAssetsIdExceptions/NoGisIdRequired"/>
     <value-of select="not(some $object in $objects_not_requiring_gis_id satisfies $object = name($nlcs_object))"/>
   </function>
 
-  <function name="keronic:object-requires-asset-id">
+  <function name="keronic:object-requires-asset-id" as="xs:boolean">
     <param name="nlcs_object"/>
     <variable name="objects_not_requiring_asset_id" select="$sys_config_file/config/V11/GisIdAssetsIdExceptions/NoAssetIdRequired"/>
     <value-of select="not(some $object in $objects_not_requiring_asset_id satisfies $object = name($nlcs_object))"/>

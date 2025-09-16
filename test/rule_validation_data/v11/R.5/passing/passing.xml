@@ -38,4 +38,10 @@
         <Handle>5911</Handle>
         <Status>TIJDELIJK</Status>
     </MSmof>
+
+    <AmantelbuisInhoud>
+        <Handle>563A</Handle>
+        <Status>BESTAAND</Status>
+        <AssetId>{38518CAF-0F42-448D-8CD6-1E655152A0AF}</AssetId>
+    </AmantelbuisInhoud>
 </NLCSnetbeheerType>
