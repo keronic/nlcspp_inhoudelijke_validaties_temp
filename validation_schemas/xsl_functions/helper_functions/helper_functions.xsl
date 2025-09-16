@@ -43,6 +43,11 @@
         </gml:Polygon>
     </function>
 
+    <function name="keronic:element-exists-and-not-empty" as="xs:boolean">
+        <param name="element"/>
+        <sequence select="$element and normalize-space($element)"/>
+    </function>
+
     <function name="keronic:vals-within-threshold" as="xs:boolean">
         <param name="value_1" as="xs:double"/>
         <param name="value_2" as="xs:double"/>
