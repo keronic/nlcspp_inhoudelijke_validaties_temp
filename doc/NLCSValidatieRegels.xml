@@ -79,6 +79,7 @@
 				Als Status = BESTAAND, REVISIE of VERWIJDERD, dan moet er een waarde zijn voor zowel kenmerk GisId als AssetId,
 				Als Status = NIEUW of TIJDELIJK dan moeten de kenmerken GisId en AssetId leeg zijn
 			</definitie>
+			<toelichting>Een AmantelbuisInhoud heeft nooit een GisId.</toelichting>
 		    <validatieObjecten> <!-- Deze regel geldt voor alle NLCS Objecten -->
 		    	<validatieObject><naam>AlleObjecten</naam></validatieObject>
 		    </validatieObjecten>
@@ -168,10 +169,10 @@
 				Iedere mof moet een waarde voor de volgende kenmerken hebben:
 					- Functie
 					- Verbindingnummer
-					
+
 				Aanvullend, iedere LSmof moet een waarde voor de volgende kenmerken hebben:
 					- Bovengronds
-					
+
 				Aanvullend, iedere MSmof en HSmof moet een waarde voor de volgende kenmerken hebben:
 					- NaamMonteur
 					- CrossBondingAanwezig
