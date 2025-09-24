@@ -12,9 +12,12 @@
                 else if ($fase = 'L1' or $fase = 'L2' or $fase = 'L3') then '1x'
                 else ''"/>
 
+        <let name="uitvoering_omschrijving"
+            value="nlcs:OmschrijvingUitvoering"/>
+
         <assert id="fase-and-uitvoering-same"
                 properties="scope rule-number severity object-type object-id"
-            test="starts-with($uitvoering, $expected_uitvoering_prefix)">
+            test="starts-with(if($uitvoering != 'KEUZE ONTBREEKT IN LIJST') then $uitvoering else $uitvoering_omschrijving, $expected_uitvoering_prefix)">
             <value-of select="keronic:get-translation('fase-not-the-same-as-uitvoering')"/>
         </assert>
     </rule>
