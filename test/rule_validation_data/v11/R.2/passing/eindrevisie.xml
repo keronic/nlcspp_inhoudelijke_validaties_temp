@@ -6,7 +6,7 @@
     <VersieNummer>11</VersieNummer>
     <AprojectReferentie>
         <Handle>Keronic</Handle>
-        <TekeningType>EINDREVISIE</TekeningType>
+        <Tekeningtype>EINDREVISIE</Tekeningtype>
     </AprojectReferentie>
     <MSkabel>
         <Handle>6301</Handle>
