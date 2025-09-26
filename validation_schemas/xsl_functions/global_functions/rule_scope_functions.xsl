@@ -62,7 +62,7 @@
   <function name="keronic:matching-scope">
     <param name="nlcs_object"/>
 
-    <variable name="tekening_type" select="$nlcs_object//preceding-sibling::nlcs:AprojectReferentie/nlcs:TekeningType"/>
+    <variable name="tekening_type" select="$nlcs_object//preceding-sibling::nlcs:AprojectReferentie/nlcs:Tekeningtype"/>
     <variable name="status" select="$nlcs_object/nlcs:Status"/>
     <variable name="bedrijfstoestand" select="$nlcs_object/nlcs:Bedrijfstoestand"/>
 
