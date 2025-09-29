@@ -3,7 +3,7 @@
     <VersieNummer>11</VersieNummer>
     <AprojectReferentie>
         <Handle>0000</Handle>
-        <TekeningType>{{TEKENING TYPE}}</TekeningType>
+        <Tekeningtype>{{TEKENING TYPE}}</Tekeningtype>
     </AprojectReferentie>
 
     <!-- A -->

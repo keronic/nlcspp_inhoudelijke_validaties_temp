@@ -2,7 +2,7 @@
 <pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="combinatie-nlcs-status-en-tekeningsoort" abstract="true">
     <rule context="//nlcs:NLCSnetbeheerType/*[not(self::nlcs:VersieNummer or self::nlcs:AprojectReferentie)]">
         <let name="tekening_type"
-            value="string(//nlcs:AprojectReferentie/nlcs:TekeningType)"/>
+            value="string(//nlcs:AprojectReferentie/nlcs:Tekeningtype)"/>
 
         <let name="status"
             value="nlcs:Status"/>
