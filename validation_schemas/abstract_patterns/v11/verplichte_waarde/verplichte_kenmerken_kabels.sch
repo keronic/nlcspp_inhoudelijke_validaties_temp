@@ -41,7 +41,7 @@
         </assert>
 
         <assert id="kabel-has-aardingsysteem"
-            test="keronic:element-exists-and-not-empty(nlcs:Aardingsysteem)"
+            test="not(keronic:object-requires-aardingsysteem(.)) or keronic:element-exists-and-not-empty(nlcs:Aardingsysteem)"
             properties="scope rule-number severity object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders('attribute-not-present', ['Aardingsysteem'])"/>
         </assert>

@@ -20,5 +20,8 @@
             <NoGisIdRequired>AmantelbuisInhoud</NoGisIdRequired>
             <!-- <NoAssetIdRequired>SomeObjectName</NoAssetIdRequired> -->
         </GisIdAssetsIdExceptions>
+        <AardingsysteemExceptions>
+            <NoAardingsysteemRequired>MSkabel</NoAardingsysteemRequired>
+        </AardingsysteemExceptions>
     </V11>
 </config>
