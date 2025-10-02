@@ -1,5 +1,5 @@
 <config>
-    <V11>
+    <v12>
         <MofFuncties>
             <Aftak>
                 <Functie>AFTAK</Functie>
@@ -23,5 +23,5 @@
         <AardingsysteemExceptions>
             <NoAardingsysteemRequired>MSkabel</NoAardingsysteemRequired>
         </AardingsysteemExceptions>
-    </V11>
+    </v12>
 </config>

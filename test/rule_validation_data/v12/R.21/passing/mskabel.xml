@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NLCSnetbeheer xmlns:keuzelijst="NLCSnetbeheer"
+                   xmlns:gml="http://www.opengis.net/gml/3.2"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="NLCSnetbeheer">
+    <VersieNummer>11</VersieNummer>
+    <AprojectReferentie>
+        <ID>Keronic</ID>
+    </AprojectReferentie>
+
+    <MSkabel>
+        <ID>6301</ID>
+        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <Geometry>
+            <gml:LineString
+                srsDimension="3"
+                srsName="EPSG:28992">
+                <gml:posList>
+                     40.0  40.0 0
+                    100.0 100.0 0
+                    160.0 120.0 0
+                </gml:posList>
+            </gml:LineString>
+        </Geometry>
+    </MSkabel>
+
+    <MSkabel>
+        <ID>6302</ID>
+        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <Geometry>
+            <gml:LineString
+                srsDimension="3"
+                srsName="EPSG:28992">
+                <gml:posList>
+                    160.0 120.0 0
+                    280.0 160.0 0
+                    360.0 160.0 0
+                </gml:posList>
+            </gml:LineString>
+        </Geometry>
+    </MSkabel>
+
+    <MSoverdrachtspunt>
+        <ID>5911</ID>
+        <Geometry>
+            <gml:Point
+                srsDimension="3"
+                srsName="EPSG:7415">
+                <gml:pos>
+                    40.0 40.0 0
+                </gml:pos>
+            </gml:Point>
+        </Geometry>
+    </MSoverdrachtspunt>
+
+    <MSmof>
+        <ID>5912</ID>
+        <Geometry>
+            <gml:Point
+                srsDimension="3"
+                srsName="EPSG:7415">
+                <gml:pos>
+                    160.0 120.0 0
+                </gml:pos>
+            </gml:Point>
+        </Geometry>
+    </MSmof>
+
+    <MSstation>
+        <ID>5911</ID>
+        <Geometry>
+            <gml:Polygon
+                srsDimension="3"
+                srsName="EPSG:7415">
+                <gml:exterior>
+                    <gml:LinearRing>
+                        <gml:posList>
+                            360.0 120.0 0
+                            360.0 200.0 0
+                            440.0 200.0 0
+                            440.0 120.0 0
+                            360.0 120.0 0
+                        </gml:posList>
+                    </gml:LinearRing>
+                </gml:exterior>
+            </gml:Polygon>
+        </Geometry>
+    </MSstation>
+
+</NLCSnetbeheer>

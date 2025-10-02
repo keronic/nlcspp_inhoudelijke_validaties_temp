@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NLCSnetbeheer xmlns:keuzelijst="NLCSnetbeheer"
+                   xmlns:gml="http://www.opengis.net/gml/3.2"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="NLCSnetbeheer">
+    <VersieNummer>11</VersieNummer>
+    <AprojectReferentie>
+        <ID>Keronic</ID>
+    </AprojectReferentie>
+
+    <HSkabel>
+        <ID>6303</ID>
+        <Uitvoering>3x240Alrm as35</Uitvoering>
+        <Fabrikant>NKF</Fabrikant>
+        <Verbindingnummer>1</Verbindingnummer>
+        <Spanningsniveau>10 kV</Spanningsniveau>
+        <Aardingsysteem>TN</Aardingsysteem>
+        <FaseAanduiding>3 Fasen</FaseAanduiding>
+    </HSkabel>
+
+</NLCSnetbeheer>

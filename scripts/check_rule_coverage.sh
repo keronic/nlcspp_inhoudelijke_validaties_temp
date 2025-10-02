@@ -1,7 +1,7 @@
 #!/bin/bash
 
 RULES="doc/NLCSValidatieRegels.xml"
-PHASES="validation_schemas/base/v11.sch"
+PHASES="validation_schemas/base/v12.sch"
 
 grep -o 'nummer="R\.[0-9]\+"' "$RULES" | grep -o 'R\.[0-9]\+' | sort -u > rules.txt
 grep -o 'id="R\.[0-9]\+"' "$PHASES" | grep -o 'R\.[0-9]\+' | sort -u > phases.txt

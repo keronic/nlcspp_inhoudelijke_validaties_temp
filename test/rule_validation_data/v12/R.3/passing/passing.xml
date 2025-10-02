@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NLCSnetbeheer xmlns:keuzelijst="NLCSnetbeheer"
+                   xmlns:gml="http://www.opengis.net/gml/3.2"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xmlns="NLCSnetbeheer">
+    <VersieNummer>11</VersieNummer>
+    <AprojectReferentie>
+        <ID>Keronic</ID>
+        <Geometry>
+            <gml:Polygon
+                srsDimension="2"
+                srsName="EPSG:28992">
+                <gml:exterior>
+                    <gml:LinearRing>
+                        <gml:posList>
+                            160.0 200.0
+                            320.0 200.0
+                            240.0 140.0
+                            360.0  40.0
+                            230.0  70.0
+                            180.0 120.0
+                            160.0 200.0
+                        </gml:posList>
+                    </gml:LinearRing>
+                </gml:exterior>
+            </gml:Polygon>
+        </Geometry>
+    </AprojectReferentie>
+
+    <!-- Point inside -->
+    <MSmof>
+        <ID>5911</ID>
+        <Geometry>
+            <gml:Point
+                srsDimension="3"
+                srsName="EPSG:7415">
+                <gml:pos>
+                    200.0 160.0 0
+                </gml:pos>
+            </gml:Point>
+        </Geometry>
+    </MSmof>
+
+    <!-- Point exactly on edge -->
+    <MSmof>
+        <ID>5912</ID>
+        <Geometry>
+            <gml:Point
+                srsDimension="3"
+                srsName="EPSG:7415">
+                <gml:pos>
+                    170.0 160.0 0
+                </gml:pos>
+            </gml:Point>
+        </Geometry>
+    </MSmof>
+
+    <!-- Line fully inside -->
+    <MSkabel>
+        <ID>6301</ID>
+        <Geometry>
+            <gml:LineString
+                srsDimension="3"
+                srsName="EPSG:28992">
+                <gml:posList>
+                    190.0 140.0 0
+                    210.0 110.0 0
+                </gml:posList>
+            </gml:LineString>
+        </Geometry>
+    </MSkabel>
+
+    <!-- Line one point inside one point outside -->
+    <Akunstwerk>
+        <ID>145A</ID>
+        <Geometry>
+            <gml:LineString
+                srsDimension="3"
+                srsName="EPSG:28992">
+                <gml:posList>
+                    320.0 60.0 0
+                    420.0 110.0 0
+                </gml:posList>
+            </gml:LineString>
+        </Geometry>
+    </Akunstwerk>
+
+    <!-- Line all points outside but an edge inside -->
+    <Eaarddraad>
+        <ID>2232</ID>
+        <Geometry>
+            <gml:LineString
+                srsDimension="3"
+                srsName="EPSG:28992">
+                <gml:posList>
+                    270.0  20.0 0
+                    350.0 120.0 0
+                </gml:posList>
+            </gml:LineString>
+        </Geometry>
+    </Eaarddraad>
+
+    <!-- Line one point exactly on edge -->
+    <Aaanlegtechniek>
+        <ID>1234</ID>
+        <Geometry>
+            <gml:LineString
+                srsDimension="3"
+                srsName="EPSG:28992">
+                <gml:posList>
+                    170.0 300.0 0
+                    190.0 200.0 0
+                </gml:posList>
+            </gml:LineString>
+        </Geometry>
+    </Aaanlegtechniek>
+
+    <!-- Line two points exactly on edge -->
+    <MSkabel>
+        <ID>6302</ID>
+        <Geometry>
+            <gml:LineString
+                srsDimension="3"
+                srsName="EPSG:28992">
+                <gml:posList>
+                    190.0 250.0 0
+                    200.0 200.0 0
+                    220.0 200.0 0
+                    230.0 250.0 0
+                </gml:posList>
+            </gml:LineString>
+        </Geometry>
+    </MSkabel>
+
+    <!-- Area fully inside -->
+    <AbeschermingVlak>
+        <ID>44AE</ID>
+        <Geometry>
+            <gml:Polygon
+                srsDimension="2"
+                srsName="EPSG:28992">
+                <gml:exterior>
+                    <gml:LinearRing>
+                        <gml:posList>
+                            220.0 100.0 260.0
+                            110.0 290.0  90.0
+                            280.0  70.0 240.0
+                            80.0  220.0 100.0
+                        </gml:posList>
+                    </gml:LinearRing>
+                </gml:exterior>
+            </gml:Polygon>
+        </Geometry>
+    </AbeschermingVlak>
+
+    <!-- Area points fully inside but an edge outside -->
+    <MSstation>
+        <ID>5639</ID>
+        <Geometry>
+            <gml:Polygon
+                srsDimension="2"
+                srsName="EPSG:28992">
+                <gml:exterior>
+                    <gml:LinearRing>
+                        <gml:posList>
+                            200.0 140.0
+                            250.0 160.0
+                            250.0 120.0
+                            200.0 140.0
+                        </gml:posList>
+                    </gml:LinearRing>
+                </gml:exterior>
+            </gml:Polygon>
+        </Geometry>
+    </MSstation>
+
+    <!-- Area points fully outside but an edge inside -->
+    <AbeschermingVlak>
+        <ID>44AF</ID>
+        <Geometry>
+            <gml:Polygon
+                srsDimension="2"
+                srsName="EPSG:28992">
+                <gml:exterior>
+                    <gml:LinearRing>
+                        <gml:posList>
+                            240.0 240.0
+                            310.0 300.0
+                            390.0 220.0
+                            320.0 160.0
+                            240.0 240.0
+                        </gml:posList>
+                    </gml:LinearRing>
+                </gml:exterior>
+            </gml:Polygon>
+        </Geometry>
+    </AbeschermingVlak>
+
+    <!-- Area points fully outside, no edges crossing, but covers entire polygon-->
+    <MSstation>
+        <ID>5640</ID>
+        <Geometry>
+            <gml:Polygon
+                srsDimension="2"
+                srsName="EPSG:28992">
+                <gml:exterior>
+                    <gml:LinearRing>
+                        <gml:posList>
+                            120.0 240.0
+                            400.0 240.0
+                            400.0   0.0
+                            120.0   0.0
+                        </gml:posList>
+                    </gml:LinearRing>
+                </gml:exterior>
+            </gml:Polygon>
+        </Geometry>
+    </MSstation>
+</NLCSnetbeheer>
