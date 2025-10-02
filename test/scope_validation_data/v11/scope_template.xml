@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<NLCSnetbeheerType xmlns:keuzelijst="NS_NLCSnetbeheerEnexisKL" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="NLCSnetbeheer">
+<NLCSnetbeheer xmlns:keuzelijst="NS_NLCSnetbeheerEnexisKL" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="NLCSnetbeheer">
     <VersieNummer>11</VersieNummer>
     <AprojectReferentie>
         <Handle>0000</Handle>
@@ -301,4 +301,4 @@
         <Status>{{STATUS}}</Status>
         <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
     </Tstation>
-</NLCSnetbeheerType>
+</NLCSnetbeheer>

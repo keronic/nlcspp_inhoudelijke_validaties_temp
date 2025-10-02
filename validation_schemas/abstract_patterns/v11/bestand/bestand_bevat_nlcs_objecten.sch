@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="bestand-bevat-nlcs-objecten" abstract="true">
-    <rule context="//nlcs:NLCSnetbeheerType">
+    <rule context="//nlcs:NLCSnetbeheer">
         <let name="nlcs_objects"
             value="*[not(self::nlcs:VersieNummer or self::nlcs:AprojectReferentie)]"/>
 
