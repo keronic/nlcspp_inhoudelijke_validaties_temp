@@ -10,13 +10,12 @@
 
     <Amantelbuis>
         <ID>630C</ID>
-        <AssetId>{3ED3669F-86E9-4A87-A06D-B5742A468E84}</AssetId>
         <Diameter>110</Diameter>
     </Amantelbuis>
 
     <AmantelbuisInhoud>
         <ID>9164</ID>
-        <MantelbuisAssetId>{3ED3669F-86E9-4A87-A06D-B5742A468E84}</MantelbuisAssetId>
+        <MantelbuisID>630C</MantelbuisID>
         <Diameter>120</Diameter>
     </AmantelbuisInhoud>
 </NLCSnetbeheer>

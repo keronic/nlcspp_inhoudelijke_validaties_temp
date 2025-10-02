@@ -8,7 +8,7 @@
             value="nlcs:AssetId"/>
 
         <let name="inhoud"
-            value="//nlcs:AmantelbuisInhoud[nlcs:MantelbuisAssetId = $assetId]"/>
+            value="//nlcs:AmantelbuisInhoud[nlcs:MantelbuisID = $assetId]"/>
 
         <assert id="inhoud_exists_when_in_bedrijf"
             test="if ($bedrijfsToestand = 'IN BEDRIJF') then $inhoud else true()"

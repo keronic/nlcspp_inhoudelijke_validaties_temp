@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="mantelbuis-past-in-mantelbuis" abstract="true">
     <rule context="//nlcs:Amantelbuis">
-        <let name="assetId"
-             value="nlcs:AssetId"/>
+        <let name="Id"
+             value="nlcs:ID"/>
 
         <let name="inhoud"
-            value="//nlcs:AmantelbuisInhoud[nlcs:MantelbuisAssetId = $assetId]"/>
+            value="//nlcs:AmantelbuisInhoud[nlcs:MantelbuisID = $Id]"/>
 
         <let name="inhoud_diameter"
              value="$inhoud/nlcs:Diameter"/>
