@@ -173,6 +173,14 @@
     <message-text xml:lang="nl">
       Als de mantelbuis de bedrijfstoestand IN BEDRIJF heeft, dan moet deze een inhoud hebben.
     </message-text>
+    <message id="inhoud-object-not-found">
+      <message-text xml:lang="nl">
+        Er was geen object gevonden wat bij de AmantelbuisInhoud #1 hoort
+      </message-text>
+      <message-text xml:lang="en">
+        Could not find an object that corresponds to the AmantelbuisInhoud #1
+      </message-text>
+    </message>
     <message-text xml:lang="en">
       If the protection pipe is IN BEDRIJF contents are required.
     </message-text>

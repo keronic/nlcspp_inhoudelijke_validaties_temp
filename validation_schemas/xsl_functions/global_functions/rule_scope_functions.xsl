@@ -19,7 +19,7 @@
     <variable name="object_type" select="name($nlcs_object)"/>
 
     <choose>
-      <when test="$object_type = 'NLCSnetbeheerType'">
+      <when test="$object_type = 'NLCSnetbeheer'">
         <value-of select="true()"/>
       </when>
       <otherwise>
@@ -38,7 +38,7 @@
     <variable name="object_type" select="name($nlcs_object)"/>
 
     <choose>
-      <when test="$object_type = 'NLCSnetbeheerType'">
+      <when test="$object_type = 'NLCSnetbeheer'">
         <value-of select="'Fout'"/>
       </when>
       <otherwise>

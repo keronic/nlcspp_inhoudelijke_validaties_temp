@@ -1,6 +1,6 @@
 #!/bin/bash
 
-version=v11
+version=v12
 
 
 mkdir -p validation_schemas/abstract_patterns_scope_checks/$version
