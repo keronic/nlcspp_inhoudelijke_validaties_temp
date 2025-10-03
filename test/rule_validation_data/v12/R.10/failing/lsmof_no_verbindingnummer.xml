@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <NLCSnetbeheer xmlns:keuzelijst="NLCSnetbeheer"
-                   xmlns:gml="http://www.opengis.net/gml/3.2"
-                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                   xmlns="NLCSnetbeheer">
-    <VersieNummer>12</VersieNummer>
+               xmlns:gml="http://www.opengis.net/gml/3.2"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xmlns="NLCSnetbeheer"
+               VersieNummer="12">
     <AprojectReferentie>
         <ID>Keronic</ID>
     </AprojectReferentie>
-
+    
     <LSmof>
         <ID>5911</ID>
         <Functie>AFTAK</Functie>
         <Bovengronds>Ja</Bovengronds>
     </LSmof>
-
+    
 </NLCSnetbeheer>

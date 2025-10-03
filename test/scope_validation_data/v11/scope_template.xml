@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<NLCSnetbeheer xmlns:keuzelijst="NS_NLCSnetbeheerEnexisKL" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="NLCSnetbeheer">
-    <VersieNummer>12</VersieNummer>
+<NLCSnetbeheer xmlns:keuzelijst="NS_NLCSnetbeheerEnexisKL" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="NLCSnetbeheer"
+               VersieNummer="12">
     <AprojectReferentie>
         <ID>0000</ID>
         <Tekeningtype>{{TEKENING TYPE}}</Tekeningtype>
     </AprojectReferentie>
-
+    
     <!-- A -->
     <Aaanlegtechniek>
         <ID>0000</ID>
@@ -57,7 +57,7 @@
         <Status>{{STATUS}}</Status>
         <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
     </Aopmerking>
-
+    
     <!-- E -->
     <Eaarddraad>
         <ID>0000</ID>
@@ -84,7 +84,7 @@
         <Status>{{STATUS}}</Status>
         <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
     </Eoliedrukleiding>
-
+    
     <!-- G -->
     <Gafsluiter>
         <ID>0000</ID>
@@ -166,7 +166,7 @@
         <Status>{{STATUS}}</Status>
         <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
     </GverticaleBocht>
-
+    
     <!-- HS -->
     <HSkabel>
         <ID>0000</ID>
@@ -184,7 +184,7 @@
         <Status>{{STATUS}}</Status>
         <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
     </HSstation>
-
+    
     <!-- KB -->
     <KBanode>
         <ID>0000</ID>
@@ -216,7 +216,7 @@
         <Status>{{STATUS}}</Status>
         <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
     </KBobject>
-
+    
     <!-- LS -->
     <LSkabel>
         <ID>0000</ID>
@@ -239,7 +239,7 @@
         <Status>{{STATUS}}</Status>
         <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
     </LSoverdrachtspunt>
-
+    
     <!-- MS -->
     <MSkabel>
         <ID>0000</ID>
@@ -262,14 +262,14 @@
         <Status>{{STATUS}}</Status>
         <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
     </MSstation>
-
+    
     <!-- OVL -->
     <OVLoverdrachtspunt>
         <ID>0000</ID>
         <Status>{{STATUS}}</Status>
         <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
     </OVLoverdrachtspunt>
-
+    
     <!-- T -->
     <Tbuis>
         <ID>0000</ID>

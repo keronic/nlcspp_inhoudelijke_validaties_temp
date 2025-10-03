@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <NLCSnetbeheer xmlns:keuzelijst="NLCSnetbeheer"
-                   xmlns:gml="http://www.opengis.net/gml/3.2"
-                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                   xmlns="NLCSnetbeheer">
-    <VersieNummer>12</VersieNummer>
+               xmlns:gml="http://www.opengis.net/gml/3.2"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xmlns="NLCSnetbeheer"
+               VersieNummer="12">
     <AprojectReferentie>
         <ID>Keronic</ID>
     </AprojectReferentie>
-
+    
     <!-- Green -->
     <MSkabel>
         <ID>6301</ID>
@@ -17,13 +17,13 @@
                 srsDimension="3"
                 srsName="EPSG:28992">
                 <gml:posList>
-                     40.0 160.0 -1.0
+                    40.0 160.0 -1.0
                     240.0 160.0 -1.0
                 </gml:posList>
             </gml:LineString>
         </Geometry>
     </MSkabel>
-
+    
     <!-- Red -->
     <MSkabel>
         <ID>6302</ID>
@@ -39,7 +39,7 @@
             </gml:LineString>
         </Geometry>
     </MSkabel>
-
+    
     <!-- Blue -->
     <MSkabel>
         <ID>6303</ID>
@@ -55,7 +55,7 @@
             </gml:LineString>
         </Geometry>
     </MSkabel>
-
+    
     <!-- Yellow -->
     <MSkabel>
         <ID>6304</ID>
@@ -65,13 +65,13 @@
                 srsDimension="3"
                 srsName="EPSG:28992">
                 <gml:posList>
-                     40.0 160.0 -1.0
+                    40.0 160.0 -1.0
                     240.0 160.0 -1.0
                 </gml:posList>
             </gml:LineString>
         </Geometry>
     </MSkabel>
-
+    
     <!-- Grey -->
     <MSkabel>
         <ID>6305</ID>
@@ -81,13 +81,13 @@
                 srsDimension="3"
                 srsName="EPSG:28992">
                 <gml:posList>
-                     40.0 160.0 -1.0
+                    40.0 160.0 -1.0
                     240.0 160.0 -1.0
                 </gml:posList>
             </gml:LineString>
         </Geometry>
     </MSkabel>
-
+    
     <MSmof>
         <ID>5911</ID>
         <Geometry>

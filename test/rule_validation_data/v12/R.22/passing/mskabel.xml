@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <NLCSnetbeheer xmlns:keuzelijst="NLCSnetbeheer"
-                   xmlns:gml="http://www.opengis.net/gml/3.2"
-                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                   xmlns="NLCSnetbeheer">
-    <VersieNummer>12</VersieNummer>
+               xmlns:gml="http://www.opengis.net/gml/3.2"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xmlns="NLCSnetbeheer"
+               VersieNummer="12">
     <AprojectReferentie>
         <ID>Keronic</ID>
     </AprojectReferentie>
-
+    
     <MSkabel>
         <ID>6301</ID>
         <Geometry>
@@ -15,15 +15,15 @@
                 srsDimension="3"
                 srsName="EPSG:28992">
                 <gml:posList>
-                     40.0  40.0 -1.0
-                     80.0 120.0 -1.0
+                    40.0  40.0 -1.0
+                    80.0 120.0 -1.0
                     320.0 200.0 -1.0
                     400.0 280.0 -1.0
                 </gml:posList>
             </gml:LineString>
         </Geometry>
     </MSkabel>
-
+    
     <MSkabel>
         <ID>630A</ID>
         <Geometry>
@@ -38,7 +38,7 @@
             </gml:LineString>
         </Geometry>
     </MSkabel>
-
+    
     <MSmof>
         <ID>5911</ID>
         <Geometry>
