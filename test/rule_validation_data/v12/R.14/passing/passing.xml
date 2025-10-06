@@ -2,28 +2,28 @@
 <NLCSnetbeheer xmlns:keuzelijst="NLCSnetbeheer"
                xmlns:gml="http://www.opengis.net/gml/3.2"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns="NLCSnetbeheer"
+               xmlns="NS_NLCSNetbeheer"
                VersieNummer="12">
     <AprojectReferentie>
         <ID>Keronic</ID>
     </AprojectReferentie>
-    
+
     <LSkast>
         <ID>6131</ID>
         <Nummer>098.606</Nummer>
         <Functie>NETSTATION</Functie>
     </LSkast>
-    
+
     <MSstation>
         <ID>6132</ID>
         <Nummer>098.607</Nummer>
         <Functie>NETSTATION</Functie>
     </MSstation>
-    
+
     <HSstation>
         <ID>6133</ID>
         <Nummer>098.608</Nummer>
         <Functie>NETSTATION</Functie>
     </HSstation>
-    
+
 </NLCSnetbeheer>

@@ -2,12 +2,12 @@
 <NLCSnetbeheer xmlns:keuzelijst="NLCSnetbeheer"
                xmlns:gml="http://www.opengis.net/gml/3.2"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns="NLCSnetbeheer"
+               xmlns="NS_NLCSNetbeheer"
                VersieNummer="12">
     <AprojectReferentie>
         <ID>Keronic</ID>
     </AprojectReferentie>
-    
+
     <LSkabel>
         <ID>6303</ID>
         <Kabelopbouw>YMeKrvaslqwd</Kabelopbouw>
@@ -19,5 +19,5 @@
         <Bovengronds>Ja</Bovengronds>
         <Functie>LSOV</Functie>
     </LSkabel>
-    
+
 </NLCSnetbeheer>

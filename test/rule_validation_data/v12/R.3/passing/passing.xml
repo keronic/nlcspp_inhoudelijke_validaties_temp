@@ -2,7 +2,7 @@
 <NLCSnetbeheer xmlns:keuzelijst="NLCSnetbeheer"
                xmlns:gml="http://www.opengis.net/gml/3.2"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns="NLCSnetbeheer"
+               xmlns="NS_NLCSNetbeheer"
                VersieNummer="12">
     <AprojectReferentie>
         <ID>Keronic</ID>
@@ -26,7 +26,7 @@
             </gml:Polygon>
         </Geometry>
     </AprojectReferentie>
-    
+
     <!-- Point inside -->
     <MSmof>
         <ID>5911</ID>
@@ -40,7 +40,7 @@
             </gml:Point>
         </Geometry>
     </MSmof>
-    
+
     <!-- Point exactly on edge -->
     <MSmof>
         <ID>5912</ID>
@@ -54,7 +54,7 @@
             </gml:Point>
         </Geometry>
     </MSmof>
-    
+
     <!-- Line fully inside -->
     <MSkabel>
         <ID>6301</ID>
@@ -69,7 +69,7 @@
             </gml:LineString>
         </Geometry>
     </MSkabel>
-    
+
     <!-- Line one point inside one point outside -->
     <Akunstwerk>
         <ID>145A</ID>
@@ -84,7 +84,7 @@
             </gml:LineString>
         </Geometry>
     </Akunstwerk>
-    
+
     <!-- Line all points outside but an edge inside -->
     <Eaarddraad>
         <ID>2232</ID>
@@ -99,7 +99,7 @@
             </gml:LineString>
         </Geometry>
     </Eaarddraad>
-    
+
     <!-- Line one point exactly on edge -->
     <Aaanlegtechniek>
         <ID>1234</ID>
@@ -114,7 +114,7 @@
             </gml:LineString>
         </Geometry>
     </Aaanlegtechniek>
-    
+
     <!-- Line two points exactly on edge -->
     <MSkabel>
         <ID>6302</ID>
@@ -131,7 +131,7 @@
             </gml:LineString>
         </Geometry>
     </MSkabel>
-    
+
     <!-- Area fully inside -->
     <AbeschermingVlak>
         <ID>44AE</ID>
@@ -152,7 +152,7 @@
             </gml:Polygon>
         </Geometry>
     </AbeschermingVlak>
-    
+
     <!-- Area points fully inside but an edge outside -->
     <MSstation>
         <ID>5639</ID>
@@ -173,7 +173,7 @@
             </gml:Polygon>
         </Geometry>
     </MSstation>
-    
+
     <!-- Area points fully outside but an edge inside -->
     <AbeschermingVlak>
         <ID>44AF</ID>
@@ -195,7 +195,7 @@
             </gml:Polygon>
         </Geometry>
     </AbeschermingVlak>
-    
+
     <!-- Area points fully outside, no edges crossing, but covers entire polygon-->
     <MSstation>
         <ID>5640</ID>

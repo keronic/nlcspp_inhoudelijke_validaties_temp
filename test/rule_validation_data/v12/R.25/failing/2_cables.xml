@@ -2,12 +2,12 @@
 <NLCSnetbeheer xmlns:keuzelijst="NLCSnetbeheer"
                xmlns:gml="http://www.opengis.net/gml/3.2"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns="NLCSnetbeheer"
+               xmlns="NS_NLCSNetbeheer"
                VersieNummer="12">
     <AprojectReferentie>
         <ID>Keronic</ID>
     </AprojectReferentie>
-    
+
     <!-- Green -->
     <MSkabel>
         <ID>6301</ID>
@@ -23,7 +23,7 @@
             </gml:LineString>
         </Geometry>
     </MSkabel>
-    
+
     <!-- Blue -->
     <MSkabel>
         <ID>6303</ID>
@@ -39,7 +39,7 @@
             </gml:LineString>
         </Geometry>
     </MSkabel>
-    
+
     <MSmof>
         <ID>5911</ID>
         <Geometry>

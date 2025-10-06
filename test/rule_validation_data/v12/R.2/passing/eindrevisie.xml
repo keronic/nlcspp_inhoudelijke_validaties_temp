@@ -2,7 +2,7 @@
 <NLCSnetbeheer xmlns:keuzelijst="NLCSnetbeheer"
                xmlns:gml="http://www.opengis.net/gml/3.2"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns="NLCSnetbeheer"
+               xmlns="NS_NLCSNetbeheer"
                VersieNummer="12">
     <AprojectReferentie>
         <ID>Keronic</ID>
@@ -12,17 +12,17 @@
         <ID>6301</ID>
         <Status>BESTAAND</Status>
     </MSkabel>
-    
+
     <MSstation>
         <ID>5638</ID>
         <Status>REVISIE</Status>
     </MSstation>
-    
+
     <Amantelbuis>
         <ID>5639</ID>
         <Status>NIEUW</Status>
     </Amantelbuis>
-    
+
     <MSmof>
         <ID>5911</ID>
         <Status>VERWIJDERD</Status>

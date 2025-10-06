@@ -2,12 +2,12 @@
 <NLCSnetbeheer xmlns:keuzelijst="NLCSnetbeheer"
                xmlns:gml="http://www.opengis.net/gml/3.2"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-               xmlns="NLCSnetbeheer"
+               xmlns="NS_NLCSNetbeheer"
                VersieNummer="12">
     <AprojectReferentie>
         <ID>Keronic</ID>
     </AprojectReferentie>
-    
+
     <MSkabel>
         <ID>6301</ID>
         <Geometry>
@@ -22,7 +22,7 @@
             </gml:LineString>
         </Geometry>
     </MSkabel>
-    
+
     <!-- Point at end of line -->
     <MSmof>
         <ID>5911</ID>
@@ -36,7 +36,7 @@
             </gml:Point>
         </Geometry>
     </MSmof>
-    
+
     <!-- Point at some point along line -->
     <MSmof>
         <ID>5912</ID>
@@ -50,7 +50,7 @@
             </gml:Point>
         </Geometry>
     </MSmof>
-    
+
     <!-- Point on line segment -->
     <MSmof>
         <ID>5913</ID>
@@ -64,5 +64,5 @@
             </gml:Point>
         </Geometry>
     </MSmof>
-    
+
 </NLCSnetbeheer>
