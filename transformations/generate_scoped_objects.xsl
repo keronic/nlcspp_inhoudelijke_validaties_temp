@@ -1,7 +1,7 @@
 <xsl:stylesheet version="3.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:nvr="NLCSValidatieRegelsNameSpace"
-                xmlns:nlcs="NLCSnetbeheer"
+                xmlns:nlcs="ns="NS_NLCSnetbeheer""
                 exclude-result-prefixes="nvr">
 
   <xsl:output method="xml" indent="true"/>

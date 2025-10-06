@@ -1,6 +1,6 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:svrl="http://purl.oclc.org/dsdl/svrl"
-                xmlns:nlcs="NLCSnetbeheer"
+                xmlns:nlcs="ns="NS_NLCSnetbeheer""
                 xmlns:nvr="NLCSValidatieRegelsNameSpace"
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
                 version="2.0">

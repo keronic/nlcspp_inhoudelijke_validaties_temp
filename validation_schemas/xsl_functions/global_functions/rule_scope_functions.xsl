@@ -1,7 +1,7 @@
 <stylesheet xmlns="http://www.w3.org/1999/XSL/Transform"
             xmlns:keronic="http://example.com/my-functions"
             xmlns:xs="http://www.w3.org/2001/XMLSchema"
-            xmlns:nlcs="NLCSnetbeheer"
+            xmlns:nlcs="NS_NLCSnetbeheer"
             xmlns:nvr="NLCSValidatieRegelsNameSpace"
             version="3.0">
 
@@ -38,7 +38,7 @@
     <variable name="object_type" select="name($nlcs_object)"/>
 
     <choose>
-      <when test="$object_type = 'NLCSnetbeheer'">
+      <when test="$object_type = 'NS_NLCSnetbeheer'">
         <value-of select="'Fout'"/>
       </when>
       <otherwise>

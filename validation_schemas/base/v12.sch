@@ -11,7 +11,7 @@
     <ns prefix="keronic" uri="http://example.com/my-functions"/>
     <ns prefix="gml" uri="http://www.opengis.net/gml/3.2"/>
     <ns prefix="xs" uri="http://www.w3.org/2001/XMLSchema"/>
-    <ns prefix="nlcs" uri="NLCSnetbeheer"/>
+    <ns prefix="nlcs" uri="NS_NLCSnetbeheer"/>
     <ns prefix="nvr" uri="NLCSValidatieRegelsNameSpace"/>
     <ns prefix="math" uri="http://www.w3.org/2005/xpath-functions/math"/>
 
