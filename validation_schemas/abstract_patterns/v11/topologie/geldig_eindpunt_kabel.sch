@@ -49,12 +49,12 @@
         <let name="last-connected"
             value="$last-connected-to-moffen or $last-connected-to-overdrachtspunt or $last-connected-to-station"/>
 
-        <assert id="first_point_connected" test="nlcs:Bedrijfstoestand = 'VERLATEN' or not(keronic:point-3d-interacts-with-area-2d($first-point, $project_area_pos_list)) or $first-connected"
+                <assert id="first_point_connected" test="if(nlcs:Bedrijfstoestand ne 'VERLATEN' and keronic:point-3d-interacts-with-area-2d($first-point, $project_area_pos_list)) then $first-connected else true()"
                 properties="scope rule-number severity object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders('cable-not-connected-to-valid-object', [nlcs:Handle])"/>
         </assert>
 
-        <assert id="last_point_connected" test="nlcs:Bedrijfstoestand = 'VERLATEN' or not(keronic:point-3d-interacts-with-area-2d($last-point, $project_area_pos_list)) or $last-connected"
+        <assert id="last_point_connected" test="if(nlcs:Bedrijfstoestand ne 'VERLATEN' and keronic:point-3d-interacts-with-area-2d($last-point, $project_area_pos_list)) then $last-connected else true()"
                 properties="scope rule-number severity object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders('cable-not-connected-to-valid-object', [nlcs:Handle])"/>
         </assert>
