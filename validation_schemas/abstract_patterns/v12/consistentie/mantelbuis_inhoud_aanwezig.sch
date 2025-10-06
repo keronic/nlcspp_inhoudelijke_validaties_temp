@@ -4,11 +4,11 @@
         <let name="bedrijfsToestand"
             value="nlcs:BedrijfsToestand"/>
 
-        <let name="assetId"
-            value="nlcs:AssetId"/>
+        <let name="id"
+            value="nlcs:ID"/>
 
         <let name="inhoud"
-            value="//nlcs:AmantelbuisInhoud[nlcs:MantelbuisID = $assetId]"/>
+            value="//nlcs:AmantelbuisInhoud[nlcs:MantelbuisID = $id]"/>
 
         <let name="inhoudID"
             value="$inhoud/nlcs:InhoudID"/>

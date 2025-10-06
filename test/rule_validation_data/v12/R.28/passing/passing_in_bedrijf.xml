@@ -11,12 +11,11 @@
     <Amantelbuis>
         <ID>630C</ID>
         <BedrijfsToestand>IN BEDRIJF</BedrijfsToestand>
-        <AssetId>{3ED3669F-86E9-4A87-A06D-B5742A468E84}</AssetId>
     </Amantelbuis>
 
     <AmantelbuisInhoud>
         <ID>9164</ID>
-        <MantelbuisID>{3ED3669F-86E9-4A87-A06D-B5742A468E84}</MantelbuisID>
+        <MantelbuisID>630C</MantelbuisID>
         <InhoudID>1234</InhoudID>
     </AmantelbuisInhoud>
 
