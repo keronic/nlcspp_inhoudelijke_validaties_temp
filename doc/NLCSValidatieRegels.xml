@@ -380,7 +380,7 @@
 			<soort>Consistentie</soort>
 			<definitie>
 				Indien de Bedrijfstoestand van een AMantelbuis de waarde "RESERVE" heeft mag het geen AmantelbuisInhoud hebben,
-				als de BedrijfsToestand "IN BEDRIJF" is dan moet het een AmantelbuisInhoud hebben, welke gekoppeld is aan een Asset.
+				als de BedrijfsToestand "IN BEDRIJF" is dan moet het een AmantelbuisInhoud hebben, welke gekoppeld is aan een ander NLCS object via het InhoudID veld, welke gelijk staat aan de ID van een ander NLCS object.
 			</definitie>
 			<validatieObjecten>
 				<validatieObject><naam>Amantelbuis</naam></validatieObject>
