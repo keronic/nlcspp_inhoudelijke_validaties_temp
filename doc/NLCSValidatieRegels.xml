@@ -277,7 +277,7 @@
 				- LSkabel: LSmof, LSoverdrachtspunt, OVLoverdrachtspunt, MSstation, LSkast
 				- MSkabel: MSmof, MSoverdrachtspunt en MSstation
 				- HSkabel: HSmof, HSstation en MSstation
-				NB: Deze controle geld niet voor kabels met de Bedrijfsstatus "VERLATEN"
+				NB: Deze controle geld niet voor kabels met de Bedrijfsstatus "VERLATEN" en wordt alleen gerund op begin- en eindpunten binnen het projectgebied
 			</definitie>
 			<validatieObjecten> <!-- Deze regel geldt voor alle Kabel Objecten -->
 				<validatieObject><naam>MSkabel</naam></validatieObject>
