@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="geldig-eindpunt-kabel" abstract="true">
     <rule context="//nlcs:MSkabel">
+
+        <let name="project_area_pos_list"
+            value="tokenize(normalize-space(//nlcs:AprojectReferentie/nlcs:Geometry/gml:Polygon/gml:exterior/gml:LinearRing/gml:posList))"/>
+
         <let name="geometry"
             value="tokenize(normalize-space(nlcs:Geometry/gml:LineString/gml:posList))"/>
 
@@ -45,7 +49,12 @@
         <let name="last-connected"
             value="$last-connected-to-moffen or $last-connected-to-overdrachtspunt or $last-connected-to-station"/>
 
-        <assert test="if(nlcs:Bedrijfstoestand ne 'VERLATEN') then ($first-connected and $last-connected) else true()"
+                <assert id="first_point_connected" test="if(nlcs:Bedrijfstoestand ne 'VERLATEN' and keronic:point-3d-interacts-with-area-2d($first-point, $project_area_pos_list)) then $first-connected else true()"
+                properties="scope rule-number severity object-type object-id">
+            <value-of select="keronic:get-translation-and-replace-placeholders('cable-not-connected-to-valid-object', [nlcs:Handle])"/>
+        </assert>
+
+        <assert id="last_point_connected" test="if(nlcs:Bedrijfstoestand ne 'VERLATEN' and keronic:point-3d-interacts-with-area-2d($last-point, $project_area_pos_list)) then $last-connected else true()"
                 properties="scope rule-number severity object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders('cable-not-connected-to-valid-object', [nlcs:ID])"/>
         </assert>

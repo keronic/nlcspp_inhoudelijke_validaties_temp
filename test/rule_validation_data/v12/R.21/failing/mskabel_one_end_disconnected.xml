@@ -6,6 +6,24 @@
                VersieNummer="12">
     <AprojectReferentie>
         <ID>Keronic</ID>
+        <Handle>Keronic</Handle>
+        <Geometry>
+            <gml:Polygon
+                srsDimension="2"
+                srsName="EPSG:28992">
+                <gml:exterior>
+                    <gml:LinearRing>
+                        <gml:posList>
+                            30.0 50.0
+                            200.0 50.0
+                            200.0 150.0
+                            30.0 150.0
+                            30.0 50.0
+                        </gml:posList>
+                    </gml:LinearRing>
+                </gml:exterior>
+            </gml:Polygon>
+        </Geometry>
     </AprojectReferentie>
 
     <MSkabel>
