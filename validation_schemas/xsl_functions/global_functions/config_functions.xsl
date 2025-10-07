@@ -12,24 +12,24 @@
 
   <function name="keronic:map-mof-functie" as="xs:string">
     <param name="functie" as="xs:string"/>
-    <sequence select="name(($sys_config_file/config/V11/MofFuncties/*[Functie = $functie]))"/>
+    <sequence select="name(($sys_config_file/config/v12/MofFuncties/*[Functie = $functie]))"/>
   </function>
 
   <function name="keronic:object-requires-gis-id" as="xs:boolean">
     <param name="nlcs_object"/>
-    <variable name="objects_not_requiring_gis_id" select="$sys_config_file/config/V11/GisIdAssetsIdExceptions/NoGisIdRequired"/>
+    <variable name="objects_not_requiring_gis_id" select="$sys_config_file/config/v12/GisIdAssetsIdExceptions/NoGisIdRequired"/>
     <value-of select="not(some $object in $objects_not_requiring_gis_id satisfies $object = name($nlcs_object))"/>
   </function>
 
   <function name="keronic:object-requires-asset-id" as="xs:boolean">
     <param name="nlcs_object"/>
-    <variable name="objects_not_requiring_asset_id" select="$sys_config_file/config/V11/GisIdAssetsIdExceptions/NoAssetIdRequired"/>
+    <variable name="objects_not_requiring_asset_id" select="$sys_config_file/config/v12/GisIdAssetsIdExceptions/NoAssetIdRequired"/>
     <value-of select="not(some $object in $objects_not_requiring_asset_id satisfies $object = name($nlcs_object))"/>
   </function>
 
   <function name="keronic:object-requires-aardingsysteem" as="xs:boolean">
     <param name="nlcs_object"/>
-    <variable name="objects_not_requiring_aardingsysteem" select="$sys_config_file/config/V11/AardingsysteemExceptions/NoAardingsysteemRequired"/>
+    <variable name="objects_not_requiring_aardingsysteem" select="$sys_config_file/config/v12/AardingsysteemExceptions/NoAardingsysteemRequired"/>
     <value-of select="not(some $object in $objects_not_requiring_aardingsysteem satisfies $object = name($nlcs_object))"/>
   </function>
 </stylesheet>

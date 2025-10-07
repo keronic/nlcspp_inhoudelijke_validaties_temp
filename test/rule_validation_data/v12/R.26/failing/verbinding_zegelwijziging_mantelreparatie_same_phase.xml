@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NLCSnetbeheer xmlns:keuzelijst="NLCSnetbeheer"
+               xmlns:gml="http://www.opengis.net/gml/3.2"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xmlns="NS_NLCSnetbeheer"
+               VersieNummer="12">
+    <AprojectReferentie>
+        <ID>Keronic</ID>
+    </AprojectReferentie>
+    <MSmof>
+        <ID>5911</ID>
+        <Functie>VERBINDING</Functie>
+        <Geometry>
+            <gml:Point
+                srsDimension="3"
+                srsName="EPSG:7415">
+                <gml:pos>240.0 40.0 -1.0</gml:pos>
+            </gml:Point>
+        </Geometry>
+    </MSmof>
+    <MSkabel>
+        <ID>6301</ID>
+        <FaseAanduiding>3 Fasen</FaseAanduiding>
+        <Geometry>
+            <gml:LineString
+                srsDimension="3"
+                srsName="EPSG:28992">
+                <gml:posList>40.0 40.0 -1.0 240.0 40.0 -1.0</gml:posList>
+            </gml:LineString>
+        </Geometry>
+    </MSkabel>
+
+    <MSmof>
+        <ID>5912</ID>
+        <Functie>ZEGELWIJZIGING</Functie>
+        <Geometry>
+            <gml:Point
+                srsDimension="3"
+                srsName="EPSG:7415">
+                <gml:pos>340.0 140.0 -1.0</gml:pos>
+            </gml:Point>
+        </Geometry>
+    </MSmof>
+    <MSkabel>
+        <ID>6302</ID>
+        <FaseAanduiding>3 Fasen</FaseAanduiding>
+        <Geometry>
+            <gml:LineString
+                srsDimension="3"
+                srsName="EPSG:28992">
+                <gml:posList>140.0 140.0 -1.0 340.0 140.0 -1.0</gml:posList>
+            </gml:LineString>
+        </Geometry>
+    </MSkabel>
+    <MSkabel>
+        <ID>5302</ID>
+        <FaseAanduiding>L1</FaseAanduiding>
+        <Geometry>
+            <gml:LineString
+                srsDimension="3"
+                srsName="EPSG:28992">
+                <gml:posList>160.0 130.0 -1.0 340.0 140.0 -1.0</gml:posList>
+            </gml:LineString>
+        </Geometry>
+    </MSkabel>
+
+    <MSmof>
+        <ID>5913</ID>
+        <Functie>ZEGELWIJZIGING</Functie>
+        <Geometry>
+            <gml:Point
+                srsDimension="3"
+                srsName="EPSG:7415">
+                <gml:pos>440.0 240.0 -1.0</gml:pos>
+            </gml:Point>
+        </Geometry>
+    </MSmof>
+    <MSkabel>
+        <ID>6303</ID>
+        <FaseAanduiding>3 Fasen</FaseAanduiding>
+        <Geometry>
+            <gml:LineString
+                srsDimension="3"
+                srsName="EPSG:28992">
+                <gml:posList>240.0 240.0 -1.0 440.0 240.0 -1.0</gml:posList>
+            </gml:LineString>
+        </Geometry>
+    </MSkabel>
+</NLCSnetbeheer>

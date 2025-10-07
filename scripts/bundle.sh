@@ -1,6 +1,6 @@
 #!/bin/bash
 
-version=v11
+version=v12
 out_dir=dist
 
 mkdir -p $out_dir/src/base

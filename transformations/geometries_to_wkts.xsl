@@ -3,7 +3,7 @@
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
                 xmlns:gml="http://www.opengis.net/gml/3.2"
                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                xmlns:nlcs="NLCSnetbeheer"
+                xmlns:nlcs="NS_NLCSnetbeheer"
                 xmlns:keronic="http://example.com/my-functions"
                 exclude-result-prefixes="gml keronic">
 

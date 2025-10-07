@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NLCSnetbeheer xmlns:keuzelijst="NLCSnetbeheer"
+               xmlns:gml="http://www.opengis.net/gml/3.2"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xmlns="NS_NLCSnetbeheer"
+               VersieNummer="12">
+    <AprojectReferentie>
+        <ID>Keronic</ID>
+    </AprojectReferentie>
+    <MSkabel>
+        <ID>6307</ID>
+        <Uitvoering>1x800Alrm as35</Uitvoering>
+        <FaseAanduiding>N</FaseAanduiding>
+    </MSkabel>
+    <MSkabel>
+        <ID>6308</ID>
+        <Uitvoering>3x240Alrm as35</Uitvoering>
+        <FaseAanduiding>N</FaseAanduiding>
+    </MSkabel>
+    <MSkabel>
+        <ID>6309</ID>
+        <Uitvoering>3x240Alrm as35</Uitvoering>
+        <FaseAanduiding>N</FaseAanduiding>
+    </MSkabel>
+    <MSkabel>
+        <ID>6310</ID>
+        <Uitvoering>1x630Alrm as50</Uitvoering>
+        <FaseAanduiding>N</FaseAanduiding>
+    </MSkabel>
+</NLCSnetbeheer>

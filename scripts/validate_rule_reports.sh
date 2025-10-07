@@ -1,6 +1,6 @@
 #!/bin/bash
 
-version="v11"
+version="v12"
 
 rule_validation_reports_dir=rule_validation_reports/$version
 validation_test_results_dir=validation_test_results/$version

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<NLCSnetbeheer xmlns:keuzelijst="NLCSnetbeheer"
+               xmlns:gml="http://www.opengis.net/gml/3.2"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xmlns="NS_NLCSnetbeheer"
+               VersieNummer="12">
+    <AprojectReferentie>
+        <ID>Keronic</ID>
+    </AprojectReferentie>
+    <MSmof>
+        <ID>5911</ID>
+        <Functie>EINDMOF</Functie>
+        <Geometry>
+            <gml:Point
+                srsDimension="3"
+                srsName="EPSG:7415">
+                <gml:pos>240.0 40.0 -1.0</gml:pos>
+            </gml:Point>
+        </Geometry>
+    </MSmof>
+    <MSkabel>
+        <ID>6301</ID>
+        <FaseAanduiding>3 Fasen</FaseAanduiding>
+        <Geometry>
+            <gml:LineString
+                srsDimension="3"
+                srsName="EPSG:28992">
+                <gml:posList>40.0 40.0 -1.0 240.0 40.0 -1.0</gml:posList>
+            </gml:LineString>
+        </Geometry>
+    </MSkabel>
+
+    <MSmof>
+        <ID>5912</ID>
+        <Functie>LOODKOP</Functie>
+        <Geometry>
+            <gml:Point
+                srsDimension="3"
+                srsName="EPSG:7415">
+                <gml:pos>340.0 140.0 -1.0</gml:pos>
+            </gml:Point>
+        </Geometry>
+    </MSmof>
+    <MSkabel>
+        <ID>6302</ID>
+        <FaseAanduiding>3 Fasen</FaseAanduiding>
+        <Geometry>
+            <gml:LineString
+                srsDimension="3"
+                srsName="EPSG:28992">
+                <gml:posList>140.0 140.0 -1.0 340.0 140.0 -1.0</gml:posList>
+            </gml:LineString>
+        </Geometry>
+    </MSkabel>
+
+    <MSmof>
+        <ID>5913</ID>
+        <Functie>LOODKOP</Functie>
+        <Geometry>
+            <gml:Point
+                srsDimension="3"
+                srsName="EPSG:7415">
+                <gml:pos>440.0 240.0 -1.0</gml:pos>
+            </gml:Point>
+        </Geometry>
+    </MSmof>
+    <MSkabel>
+        <ID>6303</ID>
+        <FaseAanduiding>3 Fasen</FaseAanduiding>
+        <Geometry>
+            <gml:LineString
+                srsDimension="3"
+                srsName="EPSG:28992">
+                <gml:posList>240.0 240.0 -1.0 440.0 240.0 -1.0</gml:posList>
+            </gml:LineString>
+        </Geometry>
+    </MSkabel>
+
+    <MSmof>
+        <ID>5914</ID>
+        <Functie>EIND GEAARD</Functie>
+        <Geometry>
+            <gml:Point
+                srsDimension="3"
+                srsName="EPSG:7415">
+                <gml:pos>540.0 340.0 -1.0</gml:pos>
+            </gml:Point>
+        </Geometry>
+    </MSmof>
+    <MSkabel>
+        <ID>6304</ID>
+        <FaseAanduiding>3 Fasen</FaseAanduiding>
+        <Geometry>
+            <gml:LineString
+                srsDimension="3"
+                srsName="EPSG:28992">
+                <gml:posList>340.0 340.0 -1.0 540.0 340.0 -1.0</gml:posList>
+            </gml:LineString>
+        </Geometry>
+    </MSkabel>
+</NLCSnetbeheer>
