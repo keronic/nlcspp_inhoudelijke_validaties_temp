@@ -43,6 +43,7 @@
 
     <MSmof>
         <ID>5912</ID>
+        <Functie>MANTELREPARATIE</Functie>
         <Geometry>
             <gml:Point
                 srsDimension="3"
