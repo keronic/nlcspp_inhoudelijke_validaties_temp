@@ -320,13 +320,14 @@
 			<beschrijving>De Fase van de kabel moet overeenkomen met de Uitvoering van de kabel.</beschrijving>
 			<soort>Inhoud waarde</soort>
 			<definitie>
-				Vergelijk de Faseaanduiding met het eerste twee karakters van de uitvoering:
+				Vergelijk de FaseAanduiding met het eerste twee karakters van de Uitvoering:
 				- 3 Fasen: 3x
 				- L1: 1x
 				- L2: 1x
 				- L3: 1x
 				- N: maakt niet uit.
 			</definitie>
+			<toelichting>Indien de Uitvoering "KEUZE ONTBREEKT IN LIJST" is, moet de FaseAanduiding vergeleken worden met de eerste twee karakters van de OmschrijvingUitvoering.</toelichting>
 			<validatieObjecten>
 				<validatieObject><naam>MSkabel</naam></validatieObject>
 			</validatieObjecten>
