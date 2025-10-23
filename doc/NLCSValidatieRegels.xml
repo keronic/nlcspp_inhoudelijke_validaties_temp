@@ -228,7 +228,7 @@
 			<beschrijving>Ieder MSstation, HSstation en LSkast heeft kenmerken die gevuld moeten zijn.</beschrijving>
 			<soort>Verplichte waarde</soort>
 			<definitie>
-				Ieder MSstation en LSkast moet een waarde voor de volgende kenmerken hebben:
+				Ieder MSstation, HSstation en LSkast moet een waarde voor de volgende kenmerken hebben:
 				- Nummer
 				- Functie
 			</definitie>
