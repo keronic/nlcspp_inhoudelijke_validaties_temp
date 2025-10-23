@@ -34,7 +34,7 @@
     <!-- Point inside -->
     <MSmof>
         <Status>BESTAAND</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <ID>B</ID>
         <Geometry>
             <gml:Point
@@ -50,7 +50,7 @@
     <!-- Point exactly on edge -->
     <MSmof>
         <Status>BESTAAND</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <ID>C</ID>
         <Geometry>
             <gml:Point
@@ -66,7 +66,7 @@
     <!-- Line fully inside -->
     <MSkabel>
         <Status>BESTAAND</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <ID>D</ID>
         <Geometry>
             <gml:LineString
@@ -83,7 +83,7 @@
     <!-- Line one point inside one point outside -->
     <Akunstwerk>
         <Status>BESTAAND</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <ID>E</ID>
         <Geometry>
             <gml:LineString
@@ -100,7 +100,7 @@
     <!-- Line all points outside but an edge inside -->
     <Eaarddraad>
         <Status>BESTAAND</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <ID>F</ID>
         <Geometry>
             <gml:LineString
@@ -117,7 +117,7 @@
     <!-- Line one point exactly on edge -->
     <Aaanlegtechniek>
         <Status>BESTAAND</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <ID>G</ID>
         <Geometry>
             <gml:LineString
@@ -134,7 +134,7 @@
     <!-- Line two points exactly on edge -->
     <MSkabel>
         <Status>BESTAAND</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <ID>H</ID>
         <Geometry>
             <gml:LineString
@@ -153,7 +153,7 @@
     <!-- Area fully inside -->
     <AbeschermingVlak>
         <Status>BESTAAND</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <ID>I</ID>
         <Geometry>
             <gml:Polygon
@@ -176,7 +176,7 @@
     <!-- Area points fully inside but an edge outside -->
     <MSstation>
         <Status>BESTAAND</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <ID>J</ID>
         <Geometry>
             <gml:Polygon
@@ -199,7 +199,7 @@
     <!-- Area points fully outside but an edge inside -->
     <AbeschermingVlak>
         <Status>BESTAAND</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <ID>K</ID>
         <Geometry>
             <gml:Polygon
@@ -223,7 +223,7 @@
     <!-- Area points fully outside, no edges crossing, but covers entire polygon-->
     <MSstation>
         <Status>BESTAAND</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <ID>L</ID>
         <Geometry>
             <gml:Polygon

@@ -33,7 +33,7 @@
 
     <MSoverdrachtspunt>
         <Status>BESTAAND</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <ID>B</ID>
         <Geometry>
             <gml:Point

@@ -7,7 +7,7 @@
                VersieNummer="12">
     <MSkabel>
         <Status>BESTAAND</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <ID>B</ID>
     </MSkabel>
 </NLCSnetbeheer>
