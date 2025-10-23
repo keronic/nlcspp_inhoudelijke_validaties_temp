@@ -2,15 +2,18 @@
 <NLCSnetbeheer xmlns:keuzelijst="NLCSnetbeheer"
                xmlns:gml="http://www.opengis.net/gml/3.2"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="NS_NLCSnetbeheer ../../../../../doc/NLCS_NetbeheerEnexisV12Import_Keuzelijst.xsd"
                xmlns="NS_NLCSnetbeheer"
                VersieNummer="12">
     <AprojectReferentie>
-        <ID>Keronic</ID>
+        <Projectnummer>1</Projectnummer>
+        <Netbeheerder>Enexis</Netbeheerder>
+        <ID>A</ID>
         <Tekeningtype>DEELREVISIE</Tekeningtype>
     </AprojectReferentie>
-
-    <Akunstwerk>
-        <ID>145A</ID>
+    <MSkabel>
         <Status>ONBEKEND</Status>
-    </Akunstwerk>
+        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <ID>B</ID>
+    </MSkabel>
 </NLCSnetbeheer>
