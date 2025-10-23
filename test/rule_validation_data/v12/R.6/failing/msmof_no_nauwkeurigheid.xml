@@ -12,11 +12,11 @@
         <Tekeningtype>BESTAANDE SITUATIE</Tekeningtype>
     </AprojectReferentie>
 
-    <MSoverdrachtspunt>
+    <MSmof>
         <Status>BESTAAND</Status>
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
-        <Nauwkeurigheid>tot 3cm</Nauwkeurigheid>
+        <Inmeetwijze>GPS</Inmeetwijze>
         <ID>B</ID>
-    </MSoverdrachtspunt>
+    </MSmof>
 
 </NLCSnetbeheer>
