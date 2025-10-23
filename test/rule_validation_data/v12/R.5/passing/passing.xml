@@ -2,46 +2,55 @@
 <NLCSnetbeheer xmlns:keuzelijst="NLCSnetbeheer"
                xmlns:gml="http://www.opengis.net/gml/3.2"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="NS_NLCSnetbeheer ../../../../../doc/NLCS_NetbeheerEnexisV12Import_Keuzelijst.xsd"
                xmlns="NS_NLCSnetbeheer"
                VersieNummer="12">
     <AprojectReferentie>
-        <ID>Keronic</ID>
+        <Projectnummer>1</Projectnummer>
+        <Netbeheerder>Enexis</Netbeheerder>
+        <ID>A</ID>
+        <Tekeningtype>BESTAANDE SITUATIE</Tekeningtype>
     </AprojectReferentie>
 
     <MSkabel>
-        <ID>6301</ID>
         <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <GisId>83412</GisId>
         <AssetId>{38518CAF-0F42-448D-8CD6-1E655152A0AD}</AssetId>
+        <ID>B</ID>
     </MSkabel>
 
     <MSkabel>
-        <ID>6301</ID>
         <Status>REVISIE</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <GisId>83413</GisId>
         <AssetId>{38518CAF-0F42-448D-8CD6-1E655152A0AE}</AssetId>
+        <ID>C</ID>
     </MSkabel>
 
     <MSstation>
-        <ID>5638</ID>
         <Status>VERWIJDERD</Status>
-        <GisId>83414</GisId>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <AssetId>{6D43A69E-C176-401A-8517-E2605079A344}</AssetId>
+        <ID>D</ID>
+        <GisId>83414</GisId>
     </MSstation>
 
     <Amantelbuis>
-        <ID>5639</ID>
         <Status>NIEUW</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
+        <ID>E</ID>
     </Amantelbuis>
 
     <MSmof>
-        <ID>5911</ID>
         <Status>TIJDELIJK</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
+        <ID>F</ID>
     </MSmof>
 
     <AmantelbuisInhoud>
-        <ID>563A</ID>
-        <Status>BESTAAND</Status>
         <AssetId>{38518CAF-0F42-448D-8CD6-1E655152A0AF}</AssetId>
+        <Status>BESTAAND</Status>
+        <ID>G</ID>
     </AmantelbuisInhoud>
 </NLCSnetbeheer>
