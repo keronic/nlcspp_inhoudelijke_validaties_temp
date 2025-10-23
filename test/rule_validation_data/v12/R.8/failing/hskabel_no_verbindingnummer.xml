@@ -12,18 +12,17 @@
         <Tekeningtype>BESTAANDE SITUATIE</Tekeningtype>
     </AprojectReferentie>
 
-    <LSkabel>
+    <HSkabel>
         <Uitvoering>KEUZE ONTBREEKT IN LIJST</Uitvoering>
-        <Kabelopbouw>V-VMvKh-sas</Kabelopbouw>
-        <Fabrikant>NKF</Fabrikant>
+        <Kabelopbouw>EYLKrvasdlwd</Kabelopbouw>
         <OmschrijvingUitvoering>Onbekend</OmschrijvingUitvoering>
+        <Fabrikant>NKF</Fabrikant>
         <Status>BESTAAND</Status>
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
-        <Functie>LSOV</Functie>
-        <Verbindingnummer>1</Verbindingnummer>
+        <Spanningsniveau>30 kV</Spanningsniveau>
         <Aardingsysteem>TN</Aardingsysteem>
         <FaseAanduiding>3 Fasen</FaseAanduiding>
-        <Bovengronds>Ja</Bovengronds>
         <ID>B</ID>
-    </LSkabel>
+    </HSkabel>
+
 </NLCSnetbeheer>

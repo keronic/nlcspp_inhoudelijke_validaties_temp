@@ -20,10 +20,11 @@
         <Status>BESTAAND</Status>
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <Functie>LSOV</Functie>
-        <Verbindingnummer>1</Verbindingnummer>
+        <Spanningsniveau>230 V</Spanningsniveau>
         <Aardingsysteem>TN</Aardingsysteem>
         <FaseAanduiding>3 Fasen</FaseAanduiding>
         <Bovengronds>Ja</Bovengronds>
         <ID>B</ID>
     </LSkabel>
+
 </NLCSnetbeheer>
