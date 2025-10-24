@@ -15,7 +15,7 @@
     <MSmof>
         <Status>BESTAAND</Status>
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
-        <Functie>ZEGELWIJZIGING</Functie>
+        <Functie>AFTAK SPLITSEND</Functie>
         <ID>B</ID>
         <Geometry>
             <gml:Point
@@ -28,7 +28,6 @@
     <MSkabel>
         <Status>BESTAAND</Status>
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
-        <FaseAanduiding>3 Fasen</FaseAanduiding>
         <ID>C</ID>
         <Geometry>
             <gml:LineString
@@ -44,14 +43,13 @@
     <MSkabel>
         <Status>BESTAAND</Status>
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
-        <FaseAanduiding>L1</FaseAanduiding>
         <ID>D</ID>
         <Geometry>
             <gml:LineString
                 srsDimension="3"
                 srsName="EPSG:28992">
                 <gml:posList>
-                    60.0 30.0 -1.0
+                    50.0 50.0 -1.0
                     240.0 40.0 -1.0
                 </gml:posList>
             </gml:LineString>

@@ -195,10 +195,10 @@
   </message>
   <message id="cable-amount-incorrect">
     <message-text xml:lang="en">
-      There are not enough cables connected to this joint. {1} are required, but found {2}.
+      An incorrect amount of cables is connected to this joint. {1} are required, but found {2}.
     </message-text>
     <message-text xml:lang="nl">
-      Er zijn niet genoeg kabels verbonden aan de mof. {1} zijn nodig, maar {2} zijn verbonden.
+      Er is een incorrect aantal kabels verbonden met deze mof. {1} zijn nodig, maar {2} zijn verbonden.
     </message-text>
   </message>
   <message id="phases-are-incorrect">
