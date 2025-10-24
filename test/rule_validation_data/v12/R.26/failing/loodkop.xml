@@ -2,59 +2,52 @@
 <NLCSnetbeheer xmlns:keuzelijst="NLCSnetbeheer"
                xmlns:gml="http://www.opengis.net/gml/3.2"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="NS_NLCSnetbeheer ../../../../../doc/NLCS_NetbeheerEnexisV12Import_Keuzelijst.xsd"
                xmlns="NS_NLCSnetbeheer"
                VersieNummer="12">
     <AprojectReferentie>
-        <ID>Keronic</ID>
         <Projectnummer>1</Projectnummer>
-        <DeelrevisieVolgnummer>1</DeelrevisieVolgnummer>
-        <Geometry>
-            <gml:Polygon
-                srsDimension="2"
-                srsName="EPSG:28992">
-                <gml:exterior>
-                    <gml:LinearRing>
-                        <gml:posList>100.0 100.0 200.0 100.0 200.0 200.0 100.0 200.0 100.0 100.0</gml:posList>
-                    </gml:LinearRing>
-                </gml:exterior>
-            </gml:Polygon>
-        </Geometry>
+        <Netbeheerder>Enexis</Netbeheerder>
+        <ID>A</ID>
+        <Tekeningtype>BESTAANDE SITUATIE</Tekeningtype>
     </AprojectReferentie>
+
     <MSmof>
-        <ID>5911</ID>
-        <Status>NIEUW</Status>
-        <Functie>AFTAK</Functie>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
+        <Functie>LOODKOP</Functie>
+        <ID>B</ID>
         <Geometry>
             <gml:Point
                 srsDimension="3"
                 srsName="EPSG:7415">
-                <gml:pos>240.0 40.0 -1.0</gml:pos>
+                <gml:pos>440.0 240.0 -1.0</gml:pos>
             </gml:Point>
         </Geometry>
     </MSmof>
     <MSkabel>
-        <ID>6301</ID>
-        <Status>NIEUW</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <FaseAanduiding>3 Fasen</FaseAanduiding>
+        <ID>C</ID>
         <Geometry>
             <gml:LineString
                 srsDimension="3"
                 srsName="EPSG:28992">
-                <gml:posList>40.0 40.0 -1.0 240.0 40.0 -1.0</gml:posList>
+                <gml:posList>240.0 240.0 -1.0 440.0 240.0 -1.0</gml:posList>
             </gml:LineString>
         </Geometry>
     </MSkabel>
     <MSkabel>
-        <ID>6302</ID>
-        <Status>NIEUW</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <FaseAanduiding>3 Fasen</FaseAanduiding>
+        <ID>D</ID>
         <Geometry>
             <gml:LineString
                 srsDimension="3"
                 srsName="EPSG:28992">
-                <gml:posList>50.0 50.0 -1.0 240.0 40.0 -1.0</gml:posList>
+                <gml:posList>250.0 250.0 -1.0 440.0 240.0 -1.0</gml:posList>
             </gml:LineString>
         </Geometry>
     </MSkabel>

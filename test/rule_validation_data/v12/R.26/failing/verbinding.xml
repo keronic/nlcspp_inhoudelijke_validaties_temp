@@ -2,15 +2,21 @@
 <NLCSnetbeheer xmlns:keuzelijst="NLCSnetbeheer"
                xmlns:gml="http://www.opengis.net/gml/3.2"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="NS_NLCSnetbeheer ../../../../../doc/NLCS_NetbeheerEnexisV12Import_Keuzelijst.xsd"
                xmlns="NS_NLCSnetbeheer"
                VersieNummer="12">
     <AprojectReferentie>
-        <ID>Keronic</ID>
+        <Projectnummer>1</Projectnummer>
+        <Netbeheerder>Enexis</Netbeheerder>
+        <ID>A</ID>
+        <Tekeningtype>BESTAANDE SITUATIE</Tekeningtype>
     </AprojectReferentie>
+
     <MSmof>
-        <ID>5911</ID>
         <Status>BESTAAND</Status>
-        <Functie>AFTAK</Functie>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
+        <Functie>VERBINDING</Functie>
+        <ID>B</ID>
         <Geometry>
             <gml:Point
                 srsDimension="3"
@@ -20,28 +26,18 @@
         </Geometry>
     </MSmof>
     <MSkabel>
-        <ID>6301</ID>
         <Status>BESTAAND</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <FaseAanduiding>3 Fasen</FaseAanduiding>
+        <ID>C</ID>
         <Geometry>
             <gml:LineString
                 srsDimension="3"
                 srsName="EPSG:28992">
-                <gml:posList>40.0 40.0 -1.0 240.0 40.0 -1.0</gml:posList>
-            </gml:LineString>
-        </Geometry>
-    </MSkabel>
-    <MSkabel>
-        <ID>6302</ID>
-        <Status>NIEUW</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
-        <FaseAanduiding>3 Fasen</FaseAanduiding>
-        <Geometry>
-            <gml:LineString
-                srsDimension="3"
-                srsName="EPSG:28992">
-                <gml:posList>50.0 50.0 -1.0 240.0 40.0 -1.0</gml:posList>
+                <gml:posList>
+                    40.0 40.0 -1.0
+                    240.0 40.0 -1.0
+                </gml:posList>
             </gml:LineString>
         </Geometry>
     </MSkabel>

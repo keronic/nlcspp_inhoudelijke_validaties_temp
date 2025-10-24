@@ -2,22 +2,28 @@
 <NLCSnetbeheer xmlns:keuzelijst="NLCSnetbeheer"
                xmlns:gml="http://www.opengis.net/gml/3.2"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="NS_NLCSnetbeheer ../../../../../doc/NLCS_NetbeheerEnexisV12Import_Keuzelijst.xsd"
                xmlns="NS_NLCSnetbeheer"
                VersieNummer="12">
     <AprojectReferentie>
-        <ID>Keronic</ID>
+        <Projectnummer>1</Projectnummer>
+        <Netbeheerder>Enexis</Netbeheerder>
+        <ID>A</ID>
+        <Tekeningtype>BESTAANDE SITUATIE</Tekeningtype>
     </AprojectReferentie>
 
     <LSkabel>
-        <ID>6303</ID>
-        <Uitvoering>3x240Alrm as35</Uitvoering>
-        <Kabelopbouw>YMeKrvaslqwd</Kabelopbouw>
+        <Uitvoering>KEUZE ONTBREEKT IN LIJST</Uitvoering>
+        <Kabelopbouw>V-VMvKh-sas</Kabelopbouw>
         <Fabrikant>NKF</Fabrikant>
+        <OmschrijvingUitvoering>Onbekend</OmschrijvingUitvoering>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
+        <Functie>LSOV</Functie>
+        <Spanningsniveau>230 V</Spanningsniveau>
         <Verbindingnummer>1</Verbindingnummer>
-        <Spanningsniveau>10 kV</Spanningsniveau>
         <Aardingsysteem>TN</Aardingsysteem>
         <FaseAanduiding>3 Fasen</FaseAanduiding>
-        <Functie>LSOV</Functie>
+        <ID>B</ID>
     </LSkabel>
-
 </NLCSnetbeheer>

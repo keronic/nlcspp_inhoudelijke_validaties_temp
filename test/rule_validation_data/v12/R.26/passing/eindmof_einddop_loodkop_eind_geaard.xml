@@ -2,14 +2,21 @@
 <NLCSnetbeheer xmlns:keuzelijst="NLCSnetbeheer"
                xmlns:gml="http://www.opengis.net/gml/3.2"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="NS_NLCSnetbeheer ../../../../../doc/NLCS_NetbeheerEnexisV12Import_Keuzelijst.xsd"
                xmlns="NS_NLCSnetbeheer"
                VersieNummer="12">
     <AprojectReferentie>
-        <ID>Keronic</ID>
+        <Projectnummer>1</Projectnummer>
+        <Netbeheerder>Enexis</Netbeheerder>
+        <ID>A</ID>
+        <Tekeningtype>BESTAANDE SITUATIE</Tekeningtype>
     </AprojectReferentie>
+
     <MSmof>
-        <ID>5911</ID>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <Functie>EINDMOF</Functie>
+        <ID>B</ID>
         <Geometry>
             <gml:Point
                 srsDimension="3"
@@ -19,20 +26,27 @@
         </Geometry>
     </MSmof>
     <MSkabel>
-        <ID>6301</ID>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <FaseAanduiding>3 Fasen</FaseAanduiding>
+        <ID>C</ID>
         <Geometry>
             <gml:LineString
                 srsDimension="3"
                 srsName="EPSG:28992">
-                <gml:posList>40.0 40.0 -1.0 240.0 40.0 -1.0</gml:posList>
+                <gml:posList>
+                     40.0 40.0 -1.0
+                    240.0 40.0 -1.0
+                </gml:posList>
             </gml:LineString>
         </Geometry>
     </MSkabel>
 
     <MSmof>
-        <ID>5912</ID>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <Functie>LOODKOP</Functie>
+        <ID>D</ID>
         <Geometry>
             <gml:Point
                 srsDimension="3"
@@ -42,20 +56,27 @@
         </Geometry>
     </MSmof>
     <MSkabel>
-        <ID>6302</ID>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <FaseAanduiding>3 Fasen</FaseAanduiding>
+        <ID>E</ID>
         <Geometry>
             <gml:LineString
                 srsDimension="3"
                 srsName="EPSG:28992">
-                <gml:posList>140.0 140.0 -1.0 340.0 140.0 -1.0</gml:posList>
+                <gml:posList>
+                    140.0 140.0 -1.0
+                    340.0 140.0 -1.0
+                </gml:posList>
             </gml:LineString>
         </Geometry>
     </MSkabel>
 
     <MSmof>
-        <ID>5913</ID>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <Functie>LOODKOP</Functie>
+        <ID>F</ID>
         <Geometry>
             <gml:Point
                 srsDimension="3"
@@ -65,20 +86,27 @@
         </Geometry>
     </MSmof>
     <MSkabel>
-        <ID>6303</ID>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <FaseAanduiding>3 Fasen</FaseAanduiding>
+        <ID>G</ID>
         <Geometry>
             <gml:LineString
                 srsDimension="3"
                 srsName="EPSG:28992">
-                <gml:posList>240.0 240.0 -1.0 440.0 240.0 -1.0</gml:posList>
+                <gml:posList>
+                    240.0 240.0 -1.0
+                    440.0 240.0 -1.0
+                </gml:posList>
             </gml:LineString>
         </Geometry>
     </MSkabel>
 
     <MSmof>
-        <ID>5914</ID>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <Functie>EIND GEAARD</Functie>
+        <ID>H</ID>
         <Geometry>
             <gml:Point
                 srsDimension="3"
@@ -88,8 +116,10 @@
         </Geometry>
     </MSmof>
     <MSkabel>
-        <ID>6304</ID>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <FaseAanduiding>3 Fasen</FaseAanduiding>
+        <ID>I</ID>
         <Geometry>
             <gml:LineString
                 srsDimension="3"

@@ -2,81 +2,99 @@
 <NLCSnetbeheer xmlns:keuzelijst="NLCSnetbeheer"
                xmlns:gml="http://www.opengis.net/gml/3.2"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="NS_NLCSnetbeheer ../../../../../doc/NLCS_NetbeheerEnexisV12Import_Keuzelijst.xsd"
                xmlns="NS_NLCSnetbeheer"
                VersieNummer="12">
     <AprojectReferentie>
-        <ID>Keronic</ID>
+        <Projectnummer>1</Projectnummer>
+        <Netbeheerder>Enexis</Netbeheerder>
+        <ID>A</ID>
+        <Tekeningtype>BESTAANDE SITUATIE</Tekeningtype>
     </AprojectReferentie>
 
     <LSkabel>
-        <ID>6301</ID>
-        <Uitvoering>3x240Alrm as35</Uitvoering>
-        <Kabelopbouw>YMeKrvaslqwd</Kabelopbouw>
+        <Uitvoering>3x10Cu</Uitvoering>
+        <Kabelopbouw>V-VMvKh-sas</Kabelopbouw>
         <Fabrikant>NKF</Fabrikant>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
+        <Functie>LSOV</Functie>
+        <Spanningsniveau>230 V</Spanningsniveau>
         <Verbindingnummer>1</Verbindingnummer>
-        <Spanningsniveau>10 kV</Spanningsniveau>
         <Aardingsysteem>TN</Aardingsysteem>
         <FaseAanduiding>3 Fasen</FaseAanduiding>
         <Bovengronds>Ja</Bovengronds>
-        <Functie>LSOV</Functie>
+        <ID>B</ID>
     </LSkabel>
 
     <LSkabel>
-        <ID>6302</ID>
         <Uitvoering>KEUZE ONTBREEKT IN LIJST</Uitvoering>
-        <OmschrijvingUitvoering>Onbekend</OmschrijvingUitvoering>
-        <Kabelopbouw>YMeKrvaslqwd</Kabelopbouw>
+        <Kabelopbouw>V-VMvKh-sas</Kabelopbouw>
         <Fabrikant>NKF</Fabrikant>
+        <OmschrijvingUitvoering>Onbekend</OmschrijvingUitvoering>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
+        <Functie>LSOV</Functie>
+        <Spanningsniveau>230 V</Spanningsniveau>
         <Verbindingnummer>1</Verbindingnummer>
-        <Spanningsniveau>10 kV</Spanningsniveau>
         <Aardingsysteem>TN</Aardingsysteem>
         <FaseAanduiding>3 Fasen</FaseAanduiding>
         <Bovengronds>Ja</Bovengronds>
-        <Functie>LSOV</Functie>
+        <ID>C</ID>
     </LSkabel>
 
     <MSkabel>
-        <ID>6303</ID>
-        <Uitvoering>3x240Alrm as35</Uitvoering>
+        <Uitvoering>1x16Cu as16</Uitvoering>
         <Kabelopbouw>YMeKrvaslqwd</Kabelopbouw>
         <Fabrikant>NKF</Fabrikant>
-        <Verbindingnummer>1</Verbindingnummer>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <Spanningsniveau>10 kV</Spanningsniveau>
+        <Verbindingnummer>1</Verbindingnummer>
+        <Aardingsysteem>TN</Aardingsysteem>
         <FaseAanduiding>3 Fasen</FaseAanduiding>
+        <ID>D</ID>
     </MSkabel>
 
     <MSkabel>
-        <ID>6304</ID>
         <Uitvoering>KEUZE ONTBREEKT IN LIJST</Uitvoering>
-        <OmschrijvingUitvoering>Onbekend</OmschrijvingUitvoering>
         <Kabelopbouw>YMeKrvaslqwd</Kabelopbouw>
+        <OmschrijvingUitvoering>Onbekend</OmschrijvingUitvoering>
         <Fabrikant>NKF</Fabrikant>
-        <Verbindingnummer>1</Verbindingnummer>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <Spanningsniveau>10 kV</Spanningsniveau>
+        <Verbindingnummer>1</Verbindingnummer>
+        <Aardingsysteem>TN</Aardingsysteem>
         <FaseAanduiding>3 Fasen</FaseAanduiding>
+        <ID>E</ID>
     </MSkabel>
 
     <HSkabel>
-        <ID>6305</ID>
-        <Uitvoering>3x240Alrm as35</Uitvoering>
-        <Kabelopbouw>YMeKrvaslqwd</Kabelopbouw>
+        <Uitvoering>1x1200Alrm</Uitvoering>
+        <Kabelopbouw>EYLKrvasdlwd</Kabelopbouw>
         <Fabrikant>NKF</Fabrikant>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
+        <Spanningsniveau>30 kV</Spanningsniveau>
         <Verbindingnummer>1</Verbindingnummer>
-        <Spanningsniveau>10 kV</Spanningsniveau>
         <Aardingsysteem>TN</Aardingsysteem>
         <FaseAanduiding>3 Fasen</FaseAanduiding>
+        <ID>F</ID>
     </HSkabel>
 
     <HSkabel>
-        <ID>6306</ID>
         <Uitvoering>KEUZE ONTBREEKT IN LIJST</Uitvoering>
+        <Kabelopbouw>EYLKrvasdlwd</Kabelopbouw>
         <OmschrijvingUitvoering>Onbekend</OmschrijvingUitvoering>
-        <Kabelopbouw>YMeKrvaslqwd</Kabelopbouw>
         <Fabrikant>NKF</Fabrikant>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
+        <Spanningsniveau>30 kV</Spanningsniveau>
         <Verbindingnummer>1</Verbindingnummer>
-        <Spanningsniveau>10 kV</Spanningsniveau>
         <Aardingsysteem>TN</Aardingsysteem>
         <FaseAanduiding>3 Fasen</FaseAanduiding>
+        <ID>G</ID>
     </HSkabel>
 
 </NLCSnetbeheer>

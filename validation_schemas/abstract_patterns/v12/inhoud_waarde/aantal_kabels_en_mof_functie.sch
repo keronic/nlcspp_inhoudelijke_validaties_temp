@@ -12,7 +12,7 @@
         <let name="required_amount"
             value="1"/>
 
-        <assert id="mof_connected_to_right_amount_of_cables"
+        <assert id="eindmof_connected_to_right_amount_of_cables"
                 properties="scope rule-number severity object-type object-id"
             test="count($connected_mskabels) = $required_amount">
             <value-of select="keronic:get-translation-and-replace-placeholders('cable-amount-incorrect', [string($required_amount), string(count($connected_mskabels))])"/>
@@ -28,16 +28,13 @@
                         tokenize(normalize-space($msmof/nlcs:Geometry/gml:Point/gml:pos)),
                         0)]"/>
 
-        <let name="unique_connected_phases"
-            value="distinct-values($connected_mskabels/nlcs:FaseAanduiding)"/>
+        <let name="connected_mskabels_count"
+            value="count($connected_mskabels)"/>
 
-        <let name="required_amount"
-            value="if (count($unique_connected_phases) = 1) then 2 else 4"/>
-
-        <assert id="mof_connected_to_right_amount_of_cables"
-                properties="scope rule-number severity object-type object-id"
-            test="count($connected_mskabels) = $required_amount">
-            <value-of select="keronic:get-translation-and-replace-placeholders('cable-amount-incorrect', [string($required_amount), string(count($connected_mskabels))])"/>
+        <assert id="verbindingsmof_connected_to_right_amount_of_cables"
+            properties="scope rule-number severity object-type object-id"
+            test="$connected_mskabels_count = 2 or $connected_mskabels_count = 4">
+            <value-of select="keronic:get-translation-and-replace-placeholders('cable-amount-incorrect', ['2 / 4', string($connected_mskabels_count)])"/>
         </assert>
     </rule>
     <rule context="//nlcs:MSmof[keronic:map-mof-functie(nlcs:Functie) = 'Aftak']">
@@ -49,21 +46,22 @@
                         tokenize(normalize-space(nlcs:Geometry/gml:LineString/gml:posList)),
                         tokenize(normalize-space($msmof/nlcs:Geometry/gml:Point/gml:pos)),
                         0)]"/>
-        <let name="cable_statuses"
-            value="$connected_mskabels/nlcs:Status"/>
 
-        <let name="required_amount"
-            value="if (count($cable_statuses[. = 'BESTAAND']) = 0) then 3 else 2"/>
+        <let name="connected_mskabels_count"
+            value="count($connected_mskabels)"/>
 
-        <assert id="mof_connected_to_right_amount_of_cables"
-                properties="scope rule-number severity object-type object-id"
-            test="count($connected_mskabels) = $required_amount">
-            <value-of select="keronic:get-translation-and-replace-placeholders('cable-amount-incorrect', [string($required_amount), string(count($connected_mskabels))])"/>
+        <assert id="aftakmof_connected_to_right_amount_of_cables"
+            properties="scope rule-number severity object-type object-id"
+            test="$connected_mskabels_count = 2 or $connected_mskabels_count = 3">
+            <value-of select="keronic:get-translation-and-replace-placeholders('cable-amount-incorrect', ['2 / 3', string($connected_mskabels_count)])"/>
         </assert>
 
-        <assert id="bestaande_cable_also_connected_to_one_new_cable"
-                properties="scope rule-number severity object-type object-id"
-            test="not($required_amount = 2) or count($cable_statuses[. = 'NIEUW'] != 0)">
+        <let name="connected_mskabels_one_is_new_one_is_existing"
+            value="count($connected_mskabels[./nlcs:Status = 'NIEUW']) = 1 and count($connected_mskabels[./nlcs:Status = 'BESTAAND']) = 1"/>
+
+        <assert id="aftakmof_existing_cable_connected_to_new_cable"
+            properties="scope rule-number severity object-type object-id"
+            test="if($connected_mskabels_count = 2) then $connected_mskabels_one_is_new_one_is_existing else true() ">
             <value-of select="keronic:get-translation('bestaande-cable-not-connected-to-new-cable')"/>
         </assert>
     </rule>
