@@ -13,9 +13,9 @@
     </AprojectReferentie>
 
     <MSmof>
-        <Status>NIEUW</Status>
+        <Status>BESTAAND</Status>
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
-        <Functie>AFTAK SPLITSEND</Functie>
+        <Functie>MANTELREPARATIE</Functie>
         <ID>B</ID>
         <Geometry>
             <gml:Point
@@ -26,8 +26,9 @@
         </Geometry>
     </MSmof>
     <MSkabel>
-        <Status>NIEUW</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
+        <FaseAanduiding>N</FaseAanduiding>
         <ID>C</ID>
         <Geometry>
             <gml:LineString
@@ -41,15 +42,16 @@
         </Geometry>
     </MSkabel>
     <MSkabel>
-        <Status>NIEUW</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
+        <FaseAanduiding>N</FaseAanduiding>
         <ID>D</ID>
         <Geometry>
             <gml:LineString
                 srsDimension="3"
                 srsName="EPSG:28992">
                 <gml:posList>
-                    50.0 50.0 -1.0
+                    60.0 30.0 -1.0
                     240.0 40.0 -1.0
                 </gml:posList>
             </gml:LineString>

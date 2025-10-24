@@ -15,7 +15,7 @@
     <MSmof>
         <Status>BESTAAND</Status>
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
-        <Functie>AFTAK SPLITSEND</Functie>
+        <Functie>EINDDOP</Functie>
         <ID>B</ID>
         <Geometry>
             <gml:Point
@@ -25,19 +25,4 @@
             </gml:Point>
         </Geometry>
     </MSmof>
-    <MSkabel>
-        <Status>BESTAAND</Status>
-        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
-        <ID>C</ID>
-        <Geometry>
-            <gml:LineString
-                srsDimension="3"
-                srsName="EPSG:28992">
-                <gml:posList>
-                    40.0 40.0 -1.0
-                    240.0 40.0 -1.0
-                </gml:posList>
-            </gml:LineString>
-        </Geometry>
-    </MSkabel>
 </NLCSnetbeheer>

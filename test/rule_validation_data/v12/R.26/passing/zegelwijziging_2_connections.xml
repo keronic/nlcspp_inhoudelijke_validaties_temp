@@ -15,7 +15,7 @@
     <MSmof>
         <Status>BESTAAND</Status>
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
-        <Functie>EINDMOF</Functie>
+        <Functie>ZEGELWIJZIGING</Functie>
         <ID>B</ID>
         <Geometry>
             <gml:Point
@@ -35,7 +35,23 @@
                 srsDimension="3"
                 srsName="EPSG:28992">
                 <gml:posList>
-                     40.0 40.0 -1.0
+                    40.0 40.0 -1.0
+                    240.0 40.0 -1.0
+                </gml:posList>
+            </gml:LineString>
+        </Geometry>
+    </MSkabel>
+    <MSkabel>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
+        <FaseAanduiding>3 Fasen</FaseAanduiding>
+        <ID>D</ID>
+        <Geometry>
+            <gml:LineString
+                srsDimension="3"
+                srsName="EPSG:28992">
+                <gml:posList>
+                    60.0 30.0 -1.0
                     240.0 40.0 -1.0
                 </gml:posList>
             </gml:LineString>
@@ -45,8 +61,8 @@
     <MSmof>
         <Status>BESTAAND</Status>
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
-        <Functie>LOODKOP</Functie>
-        <ID>D</ID>
+        <Functie>ZEGELWIJZIGING</Functie>
+        <ID>E</ID>
         <Geometry>
             <gml:Point
                 srsDimension="3"
@@ -58,8 +74,8 @@
     <MSkabel>
         <Status>BESTAAND</Status>
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
-        <FaseAanduiding>3 Fasen</FaseAanduiding>
-        <ID>E</ID>
+        <FaseAanduiding>L1</FaseAanduiding>
+        <ID>F</ID>
         <Geometry>
             <gml:LineString
                 srsDimension="3"
@@ -71,12 +87,28 @@
             </gml:LineString>
         </Geometry>
     </MSkabel>
+    <MSkabel>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
+        <FaseAanduiding>L1</FaseAanduiding>
+        <ID>G</ID>
+        <Geometry>
+            <gml:LineString
+                srsDimension="3"
+                srsName="EPSG:28992">
+                <gml:posList>
+                    160.0 130.0 -1.0
+                    340.0 140.0 -1.0
+                </gml:posList>
+            </gml:LineString>
+        </Geometry>
+    </MSkabel>
 
     <MSmof>
         <Status>BESTAAND</Status>
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
-        <Functie>LOODKOP</Functie>
-        <ID>F</ID>
+        <Functie>ZEGELWIJZIGING</Functie>
+        <ID>H</ID>
         <Geometry>
             <gml:Point
                 srsDimension="3"
@@ -88,8 +120,8 @@
     <MSkabel>
         <Status>BESTAAND</Status>
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
-        <FaseAanduiding>3 Fasen</FaseAanduiding>
-        <ID>G</ID>
+        <FaseAanduiding>L2</FaseAanduiding>
+        <ID>I</ID>
         <Geometry>
             <gml:LineString
                 srsDimension="3"
@@ -101,12 +133,28 @@
             </gml:LineString>
         </Geometry>
     </MSkabel>
+    <MSkabel>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
+        <FaseAanduiding>L2</FaseAanduiding>
+        <ID>J</ID>
+        <Geometry>
+            <gml:LineString
+                srsDimension="3"
+                srsName="EPSG:28992">
+                <gml:posList>
+                    260.0 230.0 -1.0
+                    440.0 240.0 -1.0
+                </gml:posList>
+            </gml:LineString>
+        </Geometry>
+    </MSkabel>
 
     <MSmof>
         <Status>BESTAAND</Status>
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
-        <Functie>EIND GEAARD</Functie>
-        <ID>H</ID>
+        <Functie>ZEGELWIJZIGING</Functie>
+        <ID>K</ID>
         <Geometry>
             <gml:Point
                 srsDimension="3"
@@ -118,13 +166,32 @@
     <MSkabel>
         <Status>BESTAAND</Status>
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
-        <FaseAanduiding>3 Fasen</FaseAanduiding>
-        <ID>I</ID>
+        <FaseAanduiding>L3</FaseAanduiding>
+        <ID>L</ID>
         <Geometry>
             <gml:LineString
                 srsDimension="3"
                 srsName="EPSG:28992">
-                <gml:posList>340.0 340.0 -1.0 540.0 340.0 -1.0</gml:posList>
+                <gml:posList>
+                    240.0 240.0 -1.0
+                    540.0 340.0 -1.0
+                </gml:posList>
+            </gml:LineString>
+        </Geometry>
+    </MSkabel>
+    <MSkabel>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
+        <FaseAanduiding>L3</FaseAanduiding>
+        <ID>M</ID>
+        <Geometry>
+            <gml:LineString
+                srsDimension="3"
+                srsName="EPSG:28992">
+                <gml:posList>
+                    260.0 230.0 -1.0
+                    540.0 340.0 -1.0
+                </gml:posList>
             </gml:LineString>
         </Geometry>
     </MSkabel>
