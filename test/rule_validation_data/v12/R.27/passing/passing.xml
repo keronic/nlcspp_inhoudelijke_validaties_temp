@@ -2,21 +2,70 @@
 <NLCSnetbeheer xmlns:keuzelijst="NLCSnetbeheer"
                xmlns:gml="http://www.opengis.net/gml/3.2"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="NS_NLCSnetbeheer ../../../../../doc/NLCS_NetbeheerEnexisV12Import_Keuzelijst.xsd"
                xmlns="NS_NLCSnetbeheer"
                VersieNummer="12">
     <AprojectReferentie>
-        <ID>Keronic</ID>
+        <Projectnummer>1</Projectnummer>
+        <Netbeheerder>Enexis</Netbeheerder>
+        <ID>A</ID>
+        <Tekeningtype>BESTAANDE SITUATIE</Tekeningtype>
     </AprojectReferentie>
 
     <Amantelbuis>
-        <ID>630C</ID>
-        <AssetId>{3ED3669F-86E9-4A87-A06D-B5742A468E84}</AssetId>
         <Diameter>110</Diameter>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
+        <ID>B</ID>
     </Amantelbuis>
-
-    <AmantelbuisInhoud>
-        <ID>9164</ID>
-        <MantelbuisID>630C</MantelbuisID>
+    <Amantelbuis>
         <Diameter>100</Diameter>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
+        <ID>C</ID>
+    </Amantelbuis>
+    <AmantelbuisInhoud>
+        <Status>BESTAAND</Status>
+        <MantelbuisID>B</MantelbuisID>
+        <InhoudID>C</InhoudID>
+        <ID>D</ID>
+    </AmantelbuisInhoud>
+
+    <Amantelbuis>
+        <Diameter>KEUZE ONTBREEKT IN LIJST</Diameter>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
+        <ID>E</ID>
+    </Amantelbuis>
+    <Amantelbuis>
+        <Diameter>100</Diameter>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
+        <ID>F</ID>
+    </Amantelbuis>
+    <AmantelbuisInhoud>
+        <Status>BESTAAND</Status>
+        <MantelbuisID>B</MantelbuisID>
+        <InhoudID>C</InhoudID>
+        <ID>G</ID>
+    </AmantelbuisInhoud>
+
+    <Amantelbuis>
+        <Diameter>110</Diameter>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
+        <ID>H</ID>
+    </Amantelbuis>
+    <Amantelbuis>
+        <Diameter>KEUZE ONTBREEKT IN LIJST</Diameter>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
+        <ID>I</ID>
+    </Amantelbuis>
+    <AmantelbuisInhoud>
+        <Status>BESTAAND</Status>
+        <MantelbuisID>B</MantelbuisID>
+        <InhoudID>C</InhoudID>
+        <ID>J</ID>
     </AmantelbuisInhoud>
 </NLCSnetbeheer>
