@@ -515,7 +515,8 @@
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Definitie </b></td>
-            <td class="validatieDocumentatieCell"><br>				Ieder MSstation en LSkast moet een waarde voor de volgende kenmerken hebben:<br>				- Nummer<br>				- Functie<br>			</td>
+            <td class="validatieDocumentatieCell"><br>				Ieder MSstation, HSstation en LSkast moet een waarde voor de volgende kenmerken
+               hebben:<br>				- Nummer<br>				- Functie<br>			</td>
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>ValidatieObjecten</b></td>
@@ -706,7 +707,12 @@
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Definitie </b></td>
-            <td class="validatieDocumentatieCell"><br>				Vergelijk de Faseaanduiding met het eerste twee karakters van de uitvoering:<br>				- 3 Fasen: 3x<br>				- L1: 1x<br>				- L2: 1x<br>				- L3: 1x<br>				- N: maakt niet uit.<br>			</td>
+            <td class="validatieDocumentatieCell"><br>				Vergelijk de FaseAanduiding met het eerste twee karakters van de Uitvoering:<br>				- 3 Fasen: 3x<br>				- L1: 1x<br>				- L2: 1x<br>				- L3: 1x<br>				- N: maakt niet uit.<br>			</td>
+         </tr>
+         <tr class="validatieDocumentatieRow">
+            <td class="validatieDocumentatieCell"><b>Toelichting </b></td>
+            <td class="validatieDocumentatieCell">Indien de Uitvoering "KEUZE ONTBREEKT IN LIJST" is, moet de FaseAanduiding vergeleken
+               worden met de eerste twee karakters van de OmschrijvingUitvoering.</td>
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>ValidatieObjecten</b></td>
@@ -757,8 +763,7 @@
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Definitie </b></td>
             <td class="validatieDocumentatieCell"><br>				Afhankelijk van de Functie van de Mof moet er een aantal kabels verbonden zijn
-               met de mof:<br>				- EINDMOF, EINDDOP, LOODKOP, EIND GEAARD: 1 kabel<br>				- VERBINDING, ZEGELWIJZIGING, MANTELREPARATIE: 2 kabels met dezelfde Fase of 4
-               kabels indien 3 fase met L1, L2 en L3<br>				- AFTAK (op bestaande kabel]): 2 kabels: 1 nieuwe en moet op een bestaande liggen
+               met de mof:<br>				- EINDMOF, EINDDOP, LOODKOP, EIND GEAARD: 1 kabel<br>				- VERBINDING, ZEGELWIJZIGING, MANTELREPARATIE: 2 of 4 kabels<br>				- AFTAK (op bestaande kabel]): 2 kabels: 1 nieuwe en moet op een bestaande liggen
                evt met marge.<br>				- AFTAK (op nieuwe kabel): 3 kabels.<br>			</td>
          </tr>
          <tr class="validatieDocumentatieRow">

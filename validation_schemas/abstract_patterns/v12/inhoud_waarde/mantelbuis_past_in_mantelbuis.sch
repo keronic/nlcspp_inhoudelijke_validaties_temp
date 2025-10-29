@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="mantelbuis-past-in-mantelbuis" abstract="true">
     <rule context="//nlcs:Amantelbuis">
-        <let name="Id"
+        <let name="id"
              value="nlcs:ID"/>
 
-        <let name="inhoud"
-            value="//nlcs:AmantelbuisInhoud[nlcs:MantelbuisID = $Id]"/>
+        <let name="parent_mantelbuis_inhoud"
+            value="//nlcs:AmantelbuisInhoud[nlcs:InhoudID = $id]"/>
 
-        <let name="inhoud_diameter"
-             value="$inhoud/nlcs:Diameter"/>
+        <let name="parent_mantelbuis"
+            value="//nlcs:Amantelbuis[nlcs:ID = $parent_mantelbuis_inhoud/nlcs:MantelbuisID]"/>
 
-        <assert id="mantelbuis_inhoud_fits_in_mantelbuis"
-            test="not(keronic:element-exists-and-not-empty($inhoud_diameter)) or upper-case($inhoud_diameter) = 'KEUZE ONTBREEKT IN LIJST' or (nlcs:Diameter > $inhoud_diameter)"
-            properties="scope rule-number severity object-type object-id">
-            <value-of select="keronic:get-translation-and-replace-placeholders(
-                'mantelbuis-inhoud-diameter-larger-than-own',
-                [nlcs:Diameter, $inhoud_diameter])"/>
+        <let name="diameters_are_missing_in_list"
+            value="nlcs:Diameter = 'KEUZE ONTBREEKT IN LIJST' or $parent_mantelbuis/nlcs:Diameter = 'KEUZE ONTBREEKT IN LIJST'"/>
+
+        <let name="fits_in_parent"
+            value="nlcs:Diameter lt $parent_mantelbuis/nlcs:Diameter"/>
+
+        <assert test="if($parent_mantelbuis and not($diameters_are_missing_in_list)) then $fits_in_parent else true()">
+            Parent mantelbuis inhoud: <value-of select="$parent_mantelbuis_inhoud/nlcs:ID"/>
+            Parent mantelbuis: <value-of select="$parent_mantelbuis/nlcs:ID"/>
+
+            Diameter: <value-of select="nlcs:Diameter"/>
+            Parent diameter: <value-of select="$parent_mantelbuis/nlcs:Diameter"/>
         </assert>
     </rule>
 </pattern>

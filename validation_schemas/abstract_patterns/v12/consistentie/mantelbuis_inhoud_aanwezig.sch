@@ -2,7 +2,7 @@
 <pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="mantelbuis-inhoud-aanwezig" abstract="true">
     <rule context="//nlcs:Amantelbuis">
         <let name="bedrijfstoestand"
-            value="nlcs:BedrijfsToestand"/>
+            value="nlcs:Bedrijfstoestand"/>
 
         <let name="id"
             value="nlcs:ID"/>
@@ -27,6 +27,15 @@
 
         <assert id="inhoud_contains_object"
             test="if ($bedrijfstoestand = 'IN BEDRIJF' and $mantelbuisinhoud) then $inhoud else true()"
+            properties="scope rule-number severity object-type object-id">
+            <value-of select="keronic:get-translation-and-replace-placeholders('inhoud-object-not-found', [$mantelbuisinhoud_id, $inhoud_id])"/>
+        </assert>
+
+        <let name="inhoud_is_self_referential"
+            value="$inhoud = . or $inhoud = $mantelbuisinhoud"/>
+
+        <assert id="inhoud_is_not_self_referential"
+            test="if ($bedrijfstoestand = 'IN BEDRIJF' and $mantelbuisinhoud and $inhoud) then not($inhoud_is_self_referential) else true()"
             properties="scope rule-number severity object-type object-id">
             <value-of select="keronic:get-translation-and-replace-placeholders('inhoud-object-not-found', [$mantelbuisinhoud_id, $inhoud_id])"/>
         </assert>

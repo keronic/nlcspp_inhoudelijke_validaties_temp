@@ -2,30 +2,40 @@
 <NLCSnetbeheer xmlns:keuzelijst="NLCSnetbeheer"
                xmlns:gml="http://www.opengis.net/gml/3.2"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="NS_NLCSnetbeheer ../../../../../doc/NLCS_NetbeheerEnexisV12Import_Keuzelijst.xsd"
                xmlns="NS_NLCSnetbeheer"
-               VersieNummer="12"><AprojectReferentie>
-        <ID>Keronic</ID>
+               VersieNummer="12">
+    <AprojectReferentie>
+        <Projectnummer>1</Projectnummer>
+        <Netbeheerder>Enexis</Netbeheerder>
+        <ID>A</ID>
+        <Tekeningtype>BESTAANDE SITUATIE</Tekeningtype>
     </AprojectReferentie>
+
     <MSkabel>
-        <ID>6301</ID>
         <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <GisId>83412</GisId>
+        <ID>B</ID>
     </MSkabel>
     <MSkabel>
-        <ID>6302</ID>
         <Status>REVISIE</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <Bewerking>VERPLAATSEN</Bewerking>
         <GisId>83412</GisId>
+        <ID>C</ID>
     </MSkabel>
     <LSkabel>
-        <ID>5301</ID>
         <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
+        <ID>D</ID>
         <GisId>83412</GisId>
     </LSkabel>
     <LSkabel>
-        <ID>5302</ID>
         <Status>REVISIE</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <Bewerking>VERPLAATSEN</Bewerking>
+        <ID>E</ID>
         <GisId>83412</GisId>
     </LSkabel>
 </NLCSnetbeheer>

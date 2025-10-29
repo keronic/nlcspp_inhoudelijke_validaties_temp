@@ -228,7 +228,7 @@
 			<beschrijving>Ieder MSstation, HSstation en LSkast heeft kenmerken die gevuld moeten zijn.</beschrijving>
 			<soort>Verplichte waarde</soort>
 			<definitie>
-				Ieder MSstation en LSkast moet een waarde voor de volgende kenmerken hebben:
+				Ieder MSstation, HSstation en LSkast moet een waarde voor de volgende kenmerken hebben:
 				- Nummer
 				- Functie
 			</definitie>
@@ -320,13 +320,14 @@
 			<beschrijving>De Fase van de kabel moet overeenkomen met de Uitvoering van de kabel.</beschrijving>
 			<soort>Inhoud waarde</soort>
 			<definitie>
-				Vergelijk de Faseaanduiding met het eerste twee karakters van de uitvoering:
+				Vergelijk de FaseAanduiding met het eerste twee karakters van de Uitvoering:
 				- 3 Fasen: 3x
 				- L1: 1x
 				- L2: 1x
 				- L3: 1x
 				- N: maakt niet uit.
 			</definitie>
+			<toelichting>Indien de Uitvoering "KEUZE ONTBREEKT IN LIJST" is, moet de FaseAanduiding vergeleken worden met de eerste twee karakters van de OmschrijvingUitvoering.</toelichting>
 			<validatieObjecten>
 				<validatieObject><naam>MSkabel</naam></validatieObject>
 			</validatieObjecten>
@@ -354,7 +355,7 @@
 			<definitie>
 				Afhankelijk van de Functie van de Mof moet er een aantal kabels verbonden zijn met de mof:
 				- EINDMOF, EINDDOP, LOODKOP, EIND GEAARD: 1 kabel
-				- VERBINDING, ZEGELWIJZIGING, MANTELREPARATIE: 2 kabels met dezelfde Fase of 4 kabels indien 3 fase met L1, L2 en L3
+				- VERBINDING, ZEGELWIJZIGING, MANTELREPARATIE: 2 of 4 kabels
 				- AFTAK (op bestaande kabel]): 2 kabels: 1 nieuwe en moet op een bestaande liggen evt met marge.
 				- AFTAK (op nieuwe kabel): 3 kabels.
 			</definitie>

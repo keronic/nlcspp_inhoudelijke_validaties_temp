@@ -2,16 +2,21 @@
 <NLCSnetbeheer xmlns:keuzelijst="NLCSnetbeheer"
                xmlns:gml="http://www.opengis.net/gml/3.2"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="NS_NLCSnetbeheer ../../../../../doc/NLCS_NetbeheerEnexisV12Import_Keuzelijst.xsd"
                xmlns="NS_NLCSnetbeheer"
                VersieNummer="12">
     <AprojectReferentie>
-        <ID>Keronic</ID>
+        <Projectnummer>1</Projectnummer>
+        <Netbeheerder>Enexis</Netbeheerder>
+        <ID>A</ID>
+        <Tekeningtype>BESTAANDE SITUATIE</Tekeningtype>
     </AprojectReferentie>
 
-    <!-- Green -->
     <MSkabel>
-        <ID>6301</ID>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <FaseAanduiding>3 Fasen</FaseAanduiding>
+        <ID>B</ID>
         <Geometry>
             <gml:LineString
                 srsDimension="3"
@@ -24,10 +29,11 @@
         </Geometry>
     </MSkabel>
 
-    <!-- Red -->
     <MSkabel>
-        <ID>6302</ID>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <FaseAanduiding>L1</FaseAanduiding>
+        <ID>C</ID>
         <Geometry>
             <gml:LineString
                 srsDimension="3"
@@ -40,10 +46,11 @@
         </Geometry>
     </MSkabel>
 
-    <!-- Blue -->
     <MSkabel>
-        <ID>6303</ID>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <FaseAanduiding>L2</FaseAanduiding>
+        <ID>D</ID>
         <Geometry>
             <gml:LineString
                 srsDimension="3"
@@ -56,10 +63,11 @@
         </Geometry>
     </MSkabel>
 
-    <!-- Yellow -->
     <MSkabel>
-        <ID>6304</ID>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <FaseAanduiding>L3</FaseAanduiding>
+        <ID>E</ID>
         <Geometry>
             <gml:LineString
                 srsDimension="3"
@@ -73,7 +81,9 @@
     </MSkabel>
 
     <MSmof>
-        <ID>5911</ID>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
+        <ID>F</ID>
         <Geometry>
             <gml:Point
                 srsDimension="3"

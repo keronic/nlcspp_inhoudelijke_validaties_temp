@@ -26,7 +26,7 @@
             value="count($connected_mskabels)"/>
 
         <let name="all_connected_cables_match_fases"
-            value="count($unique_allowed_connected_phases) = 1"/>
+            value="count($unique_connected_phases) = 1"/>
 
         <let name="all_connected_cables_have_combined_and_split_fases"
             value="count($unique_allowed_connected_phases) = 4"/>
@@ -44,7 +44,7 @@
             test="if($connections = 2 or $connections = 3) then $all_connected_cables_match_fases else true()">
             <value-of select="keronic:get-translation-and-replace-placeholders(
                 'connected-fases-do-not-match',
-                [string($connections), string-join($unique_allowed_connected_phases, ', ')])"/>
+                [string($connections), string-join($unique_connected_phases, ', ')])"/>
         </assert>
 
         <assert id="msmof-4-connected-cables-have-combined-and-split-fasen"
@@ -52,7 +52,7 @@
             test="if($connections = 4) then $all_connected_cables_have_combined_and_split_fases else true()">
             <value-of select="keronic:get-translation-and-replace-placeholders(
                 'connected-fases-do-not-split',
-                [string-join($allowed_phases, ', '), string-join($unique_allowed_connected_phases, ', ')])"/>
+                [string-join($allowed_phases, ', '), string-join($connected_mskabels/nlcs:FaseAanduiding, ', ')])"/>
         </assert>
 
     </rule>

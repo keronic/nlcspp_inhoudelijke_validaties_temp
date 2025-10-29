@@ -177,7 +177,7 @@
         <ID>0000</ID>
         <Status>{{STATUS}}</Status>
         <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
-        <Functie>AFTAK</Functie>
+        <Functie>AFTAK SPLITSEND</Functie>
     </HSmof>
     <HSstation>
         <ID>0000</ID>
@@ -232,7 +232,7 @@
         <ID>0000</ID>
         <Status>{{STATUS}}</Status>
         <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
-        <Functie>AFTAK</Functie>
+        <Functie>AFTAK SPLITSEND</Functie>
     </LSmof>
     <LSoverdrachtspunt>
         <ID>0000</ID>
@@ -250,7 +250,7 @@
         <ID>0000</ID>
         <Status>{{STATUS}}</Status>
         <Bedrijfstoestand>{{BEDRIJFSTOESTAND}}</Bedrijfstoestand>
-        <Functie>AFTAK</Functie>
+        <Functie>AFTAK SPLITSEND</Functie>
     </MSmof>
     <MSoverdrachtspunt>
         <ID>0000</ID>

@@ -2,22 +2,27 @@
 <NLCSnetbeheer xmlns:keuzelijst="NLCSnetbeheer"
                xmlns:gml="http://www.opengis.net/gml/3.2"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="NS_NLCSnetbeheer ../../../../../doc/NLCS_NetbeheerEnexisV12Import_Keuzelijst.xsd"
                xmlns="NS_NLCSnetbeheer"
                VersieNummer="12">
     <AprojectReferentie>
-        <ID>Keronic</ID>
+        <Projectnummer>1</Projectnummer>
+        <Netbeheerder>Enexis</Netbeheerder>
+        <ID>A</ID>
+        <Tekeningtype>BESTAANDE SITUATIE</Tekeningtype>
     </AprojectReferentie>
 
     <Amantelbuis>
-        <ID>630C</ID>
-        <BedrijfsToestand>IN BEDRIJF</BedrijfsToestand>
-        <AssetId>{3ED3669F-86E9-4A87-A06D-B5742A468E84}</AssetId>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
+        <ID>B</ID>
     </Amantelbuis>
 
     <AmantelbuisInhoud>
-        <ID>9164</ID>
-        <MantelbuisID>630C</MantelbuisID>
-        <InhoudID>1234</InhoudID>
+        <Status>BESTAAND</Status>
+        <MantelbuisID>B</MantelbuisID>
+        <InhoudID>C</InhoudID>
+        <ID>C</ID>
     </AmantelbuisInhoud>
 
 </NLCSnetbeheer>
