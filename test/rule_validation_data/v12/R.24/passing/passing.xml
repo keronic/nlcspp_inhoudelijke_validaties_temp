@@ -3,13 +3,13 @@
                xmlns:gml="http://www.opengis.net/gml/3.2"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xsi:schemaLocation="NS_NLCSnetbeheer ../../../../../doc/NLCS_NetbeheerEnexisV12Import_Keuzelijst.xsd"
-               xmlns="NS_NLCSnetbeheer"
-               VersieNummer="12">
+               xmlns="NS_NLCSnetbeheer">
     <AprojectReferentie>
         <Projectnummer>1</Projectnummer>
         <Netbeheerder>Enexis</Netbeheerder>
         <ID>A</ID>
         <Tekeningtype>BESTAANDE SITUATIE</Tekeningtype>
+        <Geometry></Geometry>
     </AprojectReferentie>
 
     <MSkabel>
@@ -18,6 +18,7 @@
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <FaseAanduiding>3 Fasen</FaseAanduiding>
         <ID>B</ID>
+        <Geometry></Geometry>
     </MSkabel>
 
     <MSkabel>
@@ -26,6 +27,7 @@
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <FaseAanduiding>L1</FaseAanduiding>
         <ID>C</ID>
+        <Geometry></Geometry>
     </MSkabel>
 
     <MSkabel>
@@ -34,6 +36,7 @@
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <FaseAanduiding>L2</FaseAanduiding>
         <ID>D</ID>
+        <Geometry></Geometry>
     </MSkabel>
 
     <MSkabel>
@@ -42,6 +45,7 @@
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <FaseAanduiding>L3</FaseAanduiding>
         <ID>E</ID>
+        <Geometry></Geometry>
     </MSkabel>
 
     <MSkabel>
@@ -50,6 +54,7 @@
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <FaseAanduiding>N</FaseAanduiding>
         <ID>F</ID>
+        <Geometry></Geometry>
     </MSkabel>
 
     <MSkabel>
@@ -59,6 +64,7 @@
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <FaseAanduiding>3 Fasen</FaseAanduiding>
         <ID>G</ID>
+        <Geometry></Geometry>
     </MSkabel>
 
     <MSkabel>
@@ -68,6 +74,7 @@
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <FaseAanduiding>L1</FaseAanduiding>
         <ID>H</ID>
+        <Geometry></Geometry>
     </MSkabel>
 
     <MSkabel>
@@ -77,6 +84,7 @@
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <FaseAanduiding>L2</FaseAanduiding>
         <ID>I</ID>
+        <Geometry></Geometry>
     </MSkabel>
 
     <MSkabel>
@@ -86,6 +94,7 @@
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <FaseAanduiding>L3</FaseAanduiding>
         <ID>J</ID>
+        <Geometry></Geometry>
     </MSkabel>
 
     <MSkabel>
@@ -95,5 +104,6 @@
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <FaseAanduiding>N</FaseAanduiding>
         <ID>K</ID>
+        <Geometry></Geometry>
     </MSkabel>
 </NLCSnetbeheer>

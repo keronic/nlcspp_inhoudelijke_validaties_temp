@@ -3,42 +3,47 @@
                xmlns:gml="http://www.opengis.net/gml/3.2"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xsi:schemaLocation="NS_NLCSnetbeheer ../../../../../doc/NLCS_NetbeheerEnexisV12Import_Keuzelijst.xsd"
-               xmlns="NS_NLCSnetbeheer"
-               VersieNummer="12">
+               xmlns="NS_NLCSnetbeheer">
     <AprojectReferentie>
         <Projectnummer>1</Projectnummer>
         <Netbeheerder>Enexis</Netbeheerder>
         <ID>A</ID>
         <Tekeningtype>DEELREVISIE</Tekeningtype>
+        <Geometry></Geometry>
     </AprojectReferentie>
 
     <MSkabel>
         <Status>BESTAAND</Status>
         <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
         <ID>B</ID>
+        <Geometry></Geometry>
     </MSkabel>
 
     <MSstation>
         <Status>REVISIE</Status>
         <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
         <ID>C</ID>
+        <Geometry></Geometry>
     </MSstation>
 
     <Amantelbuis>
         <Status>NIEUW</Status>
         <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
         <ID>D</ID>
+        <Geometry></Geometry>
     </Amantelbuis>
 
     <MSmof>
         <Status>VERWIJDERD</Status>
         <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
         <ID>E</ID>
+        <Geometry></Geometry>
     </MSmof>
 
     <MSoverdrachtspunt>
         <Status>TIJDELIJK</Status>
         <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
         <ID>F</ID>
+        <Geometry></Geometry>
     </MSoverdrachtspunt>
 </NLCSnetbeheer>
