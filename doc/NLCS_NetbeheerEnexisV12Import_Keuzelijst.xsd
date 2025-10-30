@@ -72,6 +72,7 @@
 				<xs:maxLength value="255" />
 				<xs:enumeration value="AANSLUIT AFTAK" />
 				<xs:enumeration value="AFTAK EINDMOF" />
+				<xs:enumeration value="AFTAK NIET SPLITSEND" />
 				<xs:enumeration value="AFTAK SPLITSEND" />
 				<xs:enumeration value="COMBI LS OV" />
 				<xs:enumeration value="EINDMOF" />
@@ -575,24 +576,6 @@
 				<xs:enumeration value="MSkabel" />
 				<xs:enumeration value="Tbuis" />
 				<xs:enumeration value="Tkabel" />
-			</xs:restriction>
-		</xs:simpleType>
-		<xs:simpleType name="_Netbeheerder">
-			<xs:restriction base="_Netbeheerder">
-				<xs:maxLength value="255" />
-				<xs:enumeration value="Enexis" />
-				<xs:enumeration value="Liander" />
-				<xs:enumeration value="Stedin" />
-			</xs:restriction>
-		</xs:simpleType>
-		<xs:simpleType name="_Tekeningtype">
-			<xs:restriction base="_Tekeningtype">
-				<xs:maxLength value="255" />
-				<xs:enumeration value="BESTAANDE SITUATIE" />
-				<xs:enumeration value="DEELREVISIE" />
-				<xs:enumeration value="DEFINITIEF ONTWERP" />
-				<xs:enumeration value="EINDREVISIE" />
-				<xs:enumeration value="VOORONTWERP" />
 			</xs:restriction>
 		</xs:simpleType>
 		<xs:simpleType name="_BewerkingGas">

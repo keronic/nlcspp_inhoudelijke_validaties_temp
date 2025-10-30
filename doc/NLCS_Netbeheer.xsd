@@ -31,7 +31,13 @@
 													</xs:restriction>
 												</xs:simpleType>
 											</xs:element>
-											<xs:element minOccurs="1" maxOccurs="1" name="Netbeheerder" type="_Netbeheerder" />
+											<xs:element minOccurs="1" maxOccurs="1" name="Netbeheerder">
+												<xs:simpleType>
+													<xs:restriction base="xs:string">
+														<xs:maxLength value="50" />
+													</xs:restriction>
+												</xs:simpleType>
+											</xs:element>
 											<xs:element minOccurs="0" maxOccurs="1" name="Volgnummer">
 												<xs:simpleType>
 													<xs:restriction base="xs:string">
@@ -40,8 +46,14 @@
 												</xs:simpleType>
 											</xs:element>
 											<xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:ID" />
-											<xs:element minOccurs="1" maxOccurs="1" name="Tekeningtype" type="_Tekeningtype" />
-											<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:SurfacePropertyType" />
+											<xs:element minOccurs="1" maxOccurs="1" name="Tekeningtype">
+												<xs:simpleType>
+													<xs:restriction base="xs:string">
+														<xs:maxLength value="50" />
+													</xs:restriction>
+												</xs:simpleType>
+											</xs:element>
+											<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:SurfacePropertyType" />
 										</xs:sequence>
 									</xs:extension>
 								</xs:complexContent>
@@ -146,7 +158,7 @@
 														</xs:restriction>
 													</xs:simpleType>
 												</xs:element>
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:SurfacePropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:SurfacePropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -211,7 +223,7 @@
 														</xs:restriction>
 													</xs:simpleType>
 												</xs:element>
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -315,7 +327,7 @@
 														</xs:restriction>
 													</xs:simpleType>
 												</xs:element>
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:SurfacePropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:SurfacePropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -370,7 +382,7 @@
 													</xs:simpleType>
 												</xs:element>
 												<xs:element minOccurs="0" maxOccurs="1" name="Hoek" type="xs:double" />
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -451,7 +463,7 @@
 														</xs:restriction>
 													</xs:simpleType>
 												</xs:element>
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:CurvePropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:CurvePropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -529,7 +541,7 @@
 														</xs:restriction>
 													</xs:simpleType>
 												</xs:element>
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:CurvePropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:CurvePropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -592,7 +604,7 @@
 														</xs:restriction>
 													</xs:simpleType>
 												</xs:element>
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -663,7 +675,7 @@
 													</xs:simpleType>
 												</xs:element>
 												<xs:element minOccurs="0" maxOccurs="1" name="Hoek" type="xs:double" />
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -727,7 +739,7 @@
 														</xs:restriction>
 													</xs:simpleType>
 												</xs:element>
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -781,7 +793,7 @@
 														</xs:restriction>
 													</xs:simpleType>
 												</xs:element>
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:CurvePropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:CurvePropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -923,7 +935,7 @@
 														</xs:restriction>
 													</xs:simpleType>
 												</xs:element>
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:SurfacePropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:SurfacePropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -1000,7 +1012,7 @@
 														</xs:restriction>
 													</xs:simpleType>
 												</xs:element>
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:CurvePropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:CurvePropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -1076,7 +1088,7 @@
 													</xs:simpleType>
 												</xs:element>
 												<xs:element minOccurs="0" maxOccurs="1" name="Hoek" type="xs:double" />
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -1111,13 +1123,7 @@
 														</xs:restriction>
 													</xs:simpleType>
 												</xs:element>
-												<xs:element minOccurs="0" maxOccurs="1" name="ID">
-													<xs:simpleType>
-														<xs:restriction base="xs:string">
-															<xs:maxLength value="38" />
-														</xs:restriction>
-													</xs:simpleType>
-												</xs:element>
+												<xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:ID" />
 												<xs:element minOccurs="0" maxOccurs="1" name="GisId">
 													<xs:simpleType>
 														<xs:restriction base="xs:string">
@@ -1133,7 +1139,7 @@
 													</xs:simpleType>
 												</xs:element>
 												<xs:element minOccurs="0" maxOccurs="1" name="Hoek" type="xs:double" />
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -1192,7 +1198,7 @@
 													</xs:simpleType>
 												</xs:element>
 												<xs:element minOccurs="0" maxOccurs="1" name="Hoek" type="xs:double" />
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -1243,7 +1249,7 @@
 													</xs:simpleType>
 												</xs:element>
 												<xs:element minOccurs="0" maxOccurs="1" name="Hoek" type="xs:double" />
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -1294,7 +1300,7 @@
 													</xs:simpleType>
 												</xs:element>
 												<xs:element minOccurs="0" maxOccurs="1" name="Hoek" type="xs:double" />
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -1346,7 +1352,7 @@
 													</xs:simpleType>
 												</xs:element>
 												<xs:element minOccurs="0" maxOccurs="1" name="Hoek" type="xs:double" />
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -1399,7 +1405,7 @@
 													</xs:simpleType>
 												</xs:element>
 												<xs:element minOccurs="0" maxOccurs="1" name="Hoek" type="xs:double" />
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -1458,7 +1464,7 @@
 													</xs:simpleType>
 												</xs:element>
 												<xs:element minOccurs="0" maxOccurs="1" name="Hoek" type="xs:double" />
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -1509,7 +1515,7 @@
 													</xs:simpleType>
 												</xs:element>
 												<xs:element minOccurs="0" maxOccurs="1" name="Hoek" type="xs:double" />
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -1560,7 +1566,7 @@
 													</xs:simpleType>
 												</xs:element>
 												<xs:element minOccurs="0" maxOccurs="1" name="Hoek" type="xs:double" />
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -1610,7 +1616,7 @@
 													</xs:simpleType>
 												</xs:element>
 												<xs:element minOccurs="0" maxOccurs="1" name="Hoek" type="xs:double" />
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -1662,7 +1668,7 @@
 													</xs:simpleType>
 												</xs:element>
 												<xs:element minOccurs="0" maxOccurs="1" name="Hoek" type="xs:double" />
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -1712,7 +1718,7 @@
 													</xs:simpleType>
 												</xs:element>
 												<xs:element minOccurs="0" maxOccurs="1" name="Hoek" type="xs:double" />
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -1766,7 +1772,7 @@
 													</xs:simpleType>
 												</xs:element>
 												<xs:element minOccurs="0" maxOccurs="1" name="Hoek" type="xs:double" />
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -1827,7 +1833,7 @@
 													</xs:simpleType>
 												</xs:element>
 												<xs:element minOccurs="0" maxOccurs="1" name="Hoek" type="xs:double" />
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -1921,7 +1927,7 @@
 													</xs:simpleType>
 												</xs:element>
 												<xs:element minOccurs="0" maxOccurs="1" name="Hoek" type="xs:double" />
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -2009,7 +2015,7 @@
 													</xs:simpleType>
 												</xs:element>
 												<xs:element minOccurs="0" maxOccurs="1" name="Hoek" type="xs:double" />
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -2100,7 +2106,7 @@
 														</xs:restriction>
 													</xs:simpleType>
 												</xs:element>
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:CurvePropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:CurvePropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -2194,7 +2200,7 @@
 													</xs:simpleType>
 												</xs:element>
 												<xs:element minOccurs="0" maxOccurs="1" name="Hoek" type="xs:double" />
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -2278,7 +2284,7 @@
 													</xs:simpleType>
 												</xs:element>
 												<xs:element minOccurs="0" maxOccurs="1" name="Hoek" type="xs:double" />
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -2349,7 +2355,7 @@
 													</xs:simpleType>
 												</xs:element>
 												<xs:element minOccurs="0" maxOccurs="1" name="Hoek" type="xs:double" />
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -2423,7 +2429,7 @@
 														</xs:restriction>
 													</xs:simpleType>
 												</xs:element>
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:CurvePropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:CurvePropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -2480,7 +2486,7 @@
 													</xs:simpleType>
 												</xs:element>
 												<xs:element minOccurs="0" maxOccurs="1" name="Hoek" type="xs:double" />
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -2542,7 +2548,7 @@
 													</xs:simpleType>
 												</xs:element>
 												<xs:element minOccurs="0" maxOccurs="1" name="Hoek" type="xs:double" />
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -2645,7 +2651,7 @@
 														</xs:restriction>
 													</xs:simpleType>
 												</xs:element>
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:SurfacePropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:SurfacePropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -2715,7 +2721,7 @@
 														</xs:restriction>
 													</xs:simpleType>
 												</xs:element>
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:CurvePropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:CurvePropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -2792,7 +2798,7 @@
 														</xs:restriction>
 													</xs:simpleType>
 												</xs:element>
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:CurvePropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:CurvePropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -2865,7 +2871,7 @@
 													</xs:simpleType>
 												</xs:element>
 												<xs:element minOccurs="0" maxOccurs="1" name="Hoek" type="xs:double" />
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -2969,7 +2975,7 @@
 														</xs:restriction>
 													</xs:simpleType>
 												</xs:element>
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:SurfacePropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:SurfacePropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -3026,7 +3032,7 @@
 													</xs:simpleType>
 												</xs:element>
 												<xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:ID" />
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:CurvePropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:CurvePropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -3089,7 +3095,7 @@
 												</xs:element>
 												<xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:ID" />
 												<xs:element minOccurs="0" maxOccurs="1" name="Hoek" type="xs:double" />
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -3146,7 +3152,7 @@
 													</xs:simpleType>
 												</xs:element>
 												<xs:element minOccurs="0" maxOccurs="1" name="Hoek" type="xs:double" />
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -3194,7 +3200,7 @@
 														</xs:restriction>
 													</xs:simpleType>
 												</xs:element>
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -3247,7 +3253,7 @@
 														</xs:restriction>
 													</xs:simpleType>
 												</xs:element>
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:CurvePropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:CurvePropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -3298,7 +3304,7 @@
 													</xs:simpleType>
 												</xs:element>
 												<xs:element minOccurs="0" maxOccurs="1" name="Hoek" type="xs:double" />
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -3347,7 +3353,7 @@
 														</xs:restriction>
 													</xs:simpleType>
 												</xs:element>
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:SurfacePropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:SurfacePropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -3376,7 +3382,7 @@
 													</xs:simpleType>
 												</xs:element>
 												<xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:ID" />
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -3438,7 +3444,7 @@
 													</xs:simpleType>
 												</xs:element>
 												<xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:ID" />
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -3495,7 +3501,7 @@
 														</xs:restriction>
 													</xs:simpleType>
 												</xs:element>
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:CurvePropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:CurvePropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -3544,7 +3550,7 @@
 														</xs:restriction>
 													</xs:simpleType>
 												</xs:element>
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:CurvePropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:CurvePropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -3582,7 +3588,7 @@
 												</xs:element>
 												<xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:ID" />
 												<xs:element minOccurs="0" maxOccurs="1" name="Hoek" type="xs:double" />
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:PointPropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -3598,7 +3604,7 @@
 												<xs:element minOccurs="0" maxOccurs="1" name="ObjectType" type="_ObjectType" />
 												<xs:element minOccurs="0" maxOccurs="1" name="AssetObjectID" type="xs:IDREF" />
 												<xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:ID" />
-												<xs:element minOccurs="0" maxOccurs="1" name="Geometry" type="gml:CurvePropertyType" />
+												<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:CurvePropertyType" />
 											</xs:sequence>
 										</xs:extension>
 									</xs:complexContent>
@@ -3606,7 +3612,6 @@
 							</xs:element>
 						</xs:choice>
 					</xs:sequence>
-					<xs:attribute name="VersieNummer" type="xs:string" />
 				</xs:extension>
 			</xs:complexContent>
 		</xs:complexType>
@@ -3812,16 +3817,6 @@
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="_ObjectType">
-		<xs:restriction base="xs:string">
-			<xs:maxLength value="255" />
-		</xs:restriction>
-	</xs:simpleType>
-	<xs:simpleType name="_Netbeheerder">
-		<xs:restriction base="xs:string">
-			<xs:maxLength value="255" />
-		</xs:restriction>
-	</xs:simpleType>
-	<xs:simpleType name="_Tekeningtype">
 		<xs:restriction base="xs:string">
 			<xs:maxLength value="255" />
 		</xs:restriction>

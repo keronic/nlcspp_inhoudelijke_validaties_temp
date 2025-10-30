@@ -3,13 +3,13 @@
                xmlns:gml="http://www.opengis.net/gml/3.2"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xsi:schemaLocation="NS_NLCSnetbeheer ../../../../../doc/NLCS_NetbeheerEnexisV12Import_Keuzelijst.xsd"
-               xmlns="NS_NLCSnetbeheer"
-               VersieNummer="12">
+               xmlns="NS_NLCSnetbeheer">
     <AprojectReferentie>
         <Projectnummer>1</Projectnummer>
         <Netbeheerder>Enexis</Netbeheerder>
         <ID>A</ID>
         <Tekeningtype>BESTAANDE SITUATIE</Tekeningtype>
+        <Geometry></Geometry>
     </AprojectReferentie>
 
     <LSkabel>
@@ -17,6 +17,7 @@
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <ID>B</ID>
         <GisId>83412</GisId>
+        <Geometry></Geometry>
     </LSkabel>
     <LSkabel>
         <Status>REVISIE</Status>
@@ -24,5 +25,6 @@
         <Bewerking>VERPLAATSEN</Bewerking>
         <ID>C</ID>
         <GisId>83412</GisId>
+        <Geometry></Geometry>
     </LSkabel>
 </NLCSnetbeheer>

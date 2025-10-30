@@ -3,13 +3,13 @@
                xmlns:gml="http://www.opengis.net/gml/3.2"
                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xsi:schemaLocation="NS_NLCSnetbeheer ../../../../../doc/NLCS_NetbeheerEnexisV12Import_Keuzelijst.xsd"
-               xmlns="NS_NLCSnetbeheer"
-               VersieNummer="12">
+               xmlns="NS_NLCSnetbeheer">
     <AprojectReferentie>
         <Projectnummer>1</Projectnummer>
         <Netbeheerder>Enexis</Netbeheerder>
         <ID>A</ID>
         <Tekeningtype>BESTAANDE SITUATIE</Tekeningtype>
+        <Geometry></Geometry>
     </AprojectReferentie>
 
     <LSkabel>
@@ -25,6 +25,7 @@
         <FaseAanduiding>3 Fasen</FaseAanduiding>
         <Bovengronds>Ja</Bovengronds>
         <ID>B</ID>
+        <Geometry></Geometry>
     </LSkabel>
 
     <LSkabel>
@@ -41,6 +42,7 @@
         <FaseAanduiding>3 Fasen</FaseAanduiding>
         <Bovengronds>Ja</Bovengronds>
         <ID>C</ID>
+        <Geometry></Geometry>
     </LSkabel>
 
     <MSkabel>
@@ -54,6 +56,7 @@
         <Aardingsysteem>TN</Aardingsysteem>
         <FaseAanduiding>3 Fasen</FaseAanduiding>
         <ID>D</ID>
+        <Geometry></Geometry>
     </MSkabel>
 
     <MSkabel>
@@ -68,6 +71,7 @@
         <Aardingsysteem>TN</Aardingsysteem>
         <FaseAanduiding>3 Fasen</FaseAanduiding>
         <ID>E</ID>
+        <Geometry></Geometry>
     </MSkabel>
 
     <HSkabel>
@@ -81,6 +85,7 @@
         <Aardingsysteem>TN</Aardingsysteem>
         <FaseAanduiding>3 Fasen</FaseAanduiding>
         <ID>F</ID>
+        <Geometry></Geometry>
     </HSkabel>
 
     <HSkabel>
@@ -95,6 +100,7 @@
         <Aardingsysteem>TN</Aardingsysteem>
         <FaseAanduiding>3 Fasen</FaseAanduiding>
         <ID>G</ID>
+        <Geometry></Geometry>
     </HSkabel>
 
 </NLCSnetbeheer>
