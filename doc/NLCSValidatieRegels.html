@@ -15,7 +15,7 @@
       <li><a href="#R.3">R.3 - Geometrie binnen Projectvlak</a></li>
       <li><a href="#R.4">R.4 - Lijn Geometrie</a></li>
       <li><a href="#R.5">R.5 - GisId en AssetId</a></li>
-      <li><a href="#R.6">R.6 - Inmeetwijze en Nauwkeurigheid Assets Elec</a></li>
+      <li><a href="#R.6">R.6 - Inmeetwijze en Nauwkeurigheid Lineaire Assets Elec</a></li>
       <li><a href="#R.7">R.7 - Subnettype gevuld voor LS en MS Kabel</a></li>
       <li><a href="#R.8">R.8 - Verplichte kenmerken Kabels</a></li>
       <li><a href="#R.9">R.9 - Aanlegdatum gevuld</a></li>
@@ -218,11 +218,11 @@
             <td class="validatieDocumentatieCell"><b>ValidatieObjecten</b></td>
             <td class="validatieDocumentatieCell">validatieObject: naam: AlleObjecten</td>
          </tr>
-      </table><br><b id="R.6">R.6 - Inmeetwijze en Nauwkeurigheid Assets Elec</b><br><br><table class="validatieDocumentatieTable">
+      </table><br><b id="R.6">R.6 - Inmeetwijze en Nauwkeurigheid Lineaire Assets Elec</b><br><br><table class="validatieDocumentatieTable">
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Beschrijving </b></td>
-            <td class="validatieDocumentatieCell">Ieder NLCS Object voor Elec moeten waardes hebben voor de kenmerken Inmeetwijze en
-               Nauwkeurigheid.</td>
+            <td class="validatieDocumentatieCell">Ieder lineair NLCS Object voor Elec moet waardes hebben voor de kenmerken Inmeetwijze
+               en Nauwkeurigheid.</td>
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Soort </b></td>
@@ -230,7 +230,7 @@
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Definitie </b></td>
-            <td class="validatieDocumentatieCell"><br>				Ieder NLCS Object voor Elec moeten waardes hebben voor de kenmerken Inmeetwijze
+            <td class="validatieDocumentatieCell"><br>				Ieder lineair NLCS Object voor Elec moet waardes hebben voor de kenmerken Inmeetwijze
                en Nauwkeurigheid.<br>			</td>
          </tr>
          <tr class="validatieDocumentatieRow">
@@ -239,23 +239,7 @@
                <table class="validatieDocumentatieTable">
                   <tr class="validatieDocumentatieRow">
                      <td class="validatieDocumentatieCell"><b>ValidatieObject </b></td>
-                     <td class="validatieDocumentatieCell">naam: MSstation</td>
-                  </tr>
-                  <tr class="validatieDocumentatieRow">
-                     <td class="validatieDocumentatieCell"><b>ValidatieObject </b></td>
-                     <td class="validatieDocumentatieCell">naam: LSkast</td>
-                  </tr>
-                  <tr class="validatieDocumentatieRow">
-                     <td class="validatieDocumentatieCell"><b>ValidatieObject </b></td>
                      <td class="validatieDocumentatieCell">naam: MSkabel</td>
-                  </tr>
-                  <tr class="validatieDocumentatieRow">
-                     <td class="validatieDocumentatieCell"><b>ValidatieObject </b></td>
-                     <td class="validatieDocumentatieCell">naam: MSmof</td>
-                  </tr>
-                  <tr class="validatieDocumentatieRow">
-                     <td class="validatieDocumentatieCell"><b>ValidatieObject </b></td>
-                     <td class="validatieDocumentatieCell">naam: MSoverdrachtspunt</td>
                   </tr>
                   <tr class="validatieDocumentatieRow">
                      <td class="validatieDocumentatieCell"><b>ValidatieObject </b></td>
@@ -263,27 +247,7 @@
                   </tr>
                   <tr class="validatieDocumentatieRow">
                      <td class="validatieDocumentatieCell"><b>ValidatieObject </b></td>
-                     <td class="validatieDocumentatieCell">naam: LSmof</td>
-                  </tr>
-                  <tr class="validatieDocumentatieRow">
-                     <td class="validatieDocumentatieCell"><b>ValidatieObject </b></td>
-                     <td class="validatieDocumentatieCell">naam: LSoverdrachtspunt</td>
-                  </tr>
-                  <tr class="validatieDocumentatieRow">
-                     <td class="validatieDocumentatieCell"><b>ValidatieObject </b></td>
-                     <td class="validatieDocumentatieCell">naam: OVLoverdrachtspunt</td>
-                  </tr>
-                  <tr class="validatieDocumentatieRow">
-                     <td class="validatieDocumentatieCell"><b>ValidatieObject </b></td>
-                     <td class="validatieDocumentatieCell">naam: HSstation</td>
-                  </tr>
-                  <tr class="validatieDocumentatieRow">
-                     <td class="validatieDocumentatieCell"><b>ValidatieObject </b></td>
                      <td class="validatieDocumentatieCell">naam: HSkabel</td>
-                  </tr>
-                  <tr class="validatieDocumentatieRow">
-                     <td class="validatieDocumentatieCell"><b>ValidatieObject </b></td>
-                     <td class="validatieDocumentatieCell">naam: HSmof</td>
                   </tr>
                   <tr class="validatieDocumentatieRow">
                      <td class="validatieDocumentatieCell"><b>ValidatieObject</b></td>
@@ -333,7 +297,7 @@
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Definitie </b></td>
-            <td class="validatieDocumentatieCell"><br>				Iedere kabel moet een waarde voor de volgende kenmerken hebben:<br>					- Uitvoering<br>					- Kabelopbouw<br>					- Fabrikant<br>					- Verbindingnummer<br>					- Spanningsniveau<br>					- Aardingsysteem<br>					- FaseAanduiding<br>				Voor LSkabel objecten zijn er nog 2 extra kenmerken die gevuld moeten zijn:<br>					- Bovengronds<br>					- Functie.<br>				N.B. Als het kenmerk Uitvoering de waarde "KEUZE ONTBREEKT IN LIJST" dan moet
+            <td class="validatieDocumentatieCell"><br>				Iedere kabel moet een waarde voor de volgende kenmerken hebben:<br>					- Uitvoering<br>					- Kabelopbouw<br>					- Fabrikant<br>					- Verbindingnummer<br>					- Spanningsniveau<br>					- FaseAanduiding<br>					Voor LSkabel objecten zijn er nog 3 extra kenmerken die gevuld moeten zijn:<br>					- Aardingsysteem<br>					- Bovengronds<br>					- Functie<br>				N.B. Als het kenmerk Uitvoering de waarde "KEUZE ONTBREEKT IN LIJST" dan moet
                het kenmerk OmschrijvingUitvoering gevuld zijn!<br>			</td>
          </tr>
          <tr class="validatieDocumentatieRow">

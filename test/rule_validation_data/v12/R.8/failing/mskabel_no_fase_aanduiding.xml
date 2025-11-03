@@ -21,7 +21,6 @@
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <Spanningsniveau>10 kV</Spanningsniveau>
         <Verbindingnummer>1</Verbindingnummer>
-        <Aardingsysteem>TN</Aardingsysteem>
         <ID>E</ID>
         <Geometry></Geometry>
     </MSkabel>
