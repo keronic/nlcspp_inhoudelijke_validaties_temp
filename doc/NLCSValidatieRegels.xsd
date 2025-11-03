@@ -124,7 +124,6 @@
 			<xs:enumeration value="BESTAAND"/>
 			<xs:enumeration value="NIEUW"/>
 			<xs:enumeration value="REVISIE"/>
-			<xs:enumeration value="TIJDELIJK"/>
 			<xs:enumeration value="VERWIJDERD"/>
 		</xs:restriction>
 	</xs:simpleType>
