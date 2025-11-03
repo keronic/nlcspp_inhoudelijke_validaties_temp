@@ -12,48 +12,21 @@
         <Geometry></Geometry>
     </AprojectReferentie>
 
-    <MSstation>
+    <MSkabel>
         <Status>BESTAAND</Status>
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <Inmeetwijze>GPS</Inmeetwijze>
         <Nauwkeurigheid>tot 3cm</Nauwkeurigheid>
         <ID>B</ID>
         <Geometry></Geometry>
-    </MSstation>
-
-    <MSkabel>
-        <Status>BESTAAND</Status>
-        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
-        <Inmeetwijze>GPS</Inmeetwijze>
-        <Nauwkeurigheid>tot 3cm</Nauwkeurigheid>
-        <ID>C</ID>
-        <Geometry></Geometry>
     </MSkabel>
-
-    <MSmof>
-        <Status>BESTAAND</Status>
-        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
-        <Inmeetwijze>GPS</Inmeetwijze>
-        <Nauwkeurigheid>tot 3cm</Nauwkeurigheid>
-        <ID>D</ID>
-        <Geometry></Geometry>
-    </MSmof>
-
-    <MSoverdrachtspunt>
-        <Status>BESTAAND</Status>
-        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
-        <Inmeetwijze>GPS</Inmeetwijze>
-        <Nauwkeurigheid>tot 3cm</Nauwkeurigheid>
-        <ID>E</ID>
-        <Geometry></Geometry>
-    </MSoverdrachtspunt>
 
     <Amantelbuis>
         <Status>BESTAAND</Status>
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <Inmeetwijze>GPS</Inmeetwijze>
         <Nauwkeurigheid>tot 3cm</Nauwkeurigheid>
-        <ID>F</ID>
+        <ID>C</ID>
         <Geometry></Geometry>
     </Amantelbuis>
 </NLCSnetbeheer>

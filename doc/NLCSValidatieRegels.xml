@@ -84,25 +84,16 @@
 		    	<validatieObject><naam>AlleObjecten</naam></validatieObject>
 		    </validatieObjecten>
 		</validatieRegel>
-		<validatieRegel nummer="R.6" naam="Inmeetwijze en Nauwkeurigheid Assets Elec">
-			<beschrijving>Ieder NLCS Object voor Elec moeten waardes hebben voor de kenmerken Inmeetwijze en Nauwkeurigheid.</beschrijving>
+		<validatieRegel nummer="R.6" naam="Inmeetwijze en Nauwkeurigheid Lineaire Assets Elec">
+			<beschrijving>Ieder lineair NLCS Object voor Elec moet waardes hebben voor de kenmerken Inmeetwijze en Nauwkeurigheid.</beschrijving>
 			<soort>Verplichte waarde</soort>
 			<definitie>
-				Ieder NLCS Object voor Elec moeten waardes hebben voor de kenmerken Inmeetwijze en Nauwkeurigheid.
+				Ieder lineair NLCS Object voor Elec moet waardes hebben voor de kenmerken Inmeetwijze en Nauwkeurigheid.
 			</definitie>
-			<validatieObjecten> <!-- Deze regel geldt voor alle NLCS Objecten -->
-				<validatieObject><naam>MSstation</naam></validatieObject>
-				<validatieObject><naam>LSkast</naam></validatieObject>
+			<validatieObjecten>
 				<validatieObject><naam>MSkabel</naam></validatieObject>
-				<validatieObject><naam>MSmof</naam></validatieObject>
-				<validatieObject><naam>MSoverdrachtspunt</naam></validatieObject>
 				<validatieObject><naam>LSkabel</naam></validatieObject>
-				<validatieObject><naam>LSmof</naam></validatieObject>
-				<validatieObject><naam>LSoverdrachtspunt</naam></validatieObject>
-				<validatieObject><naam>OVLoverdrachtspunt</naam></validatieObject>
-				<validatieObject><naam>HSstation</naam></validatieObject>
 				<validatieObject><naam>HSkabel</naam></validatieObject>
-				<validatieObject><naam>HSmof</naam></validatieObject>
 				<validatieObject><naam>Amantelbuis</naam></validatieObject>
 			</validatieObjecten>
 		</validatieRegel>
@@ -128,11 +119,11 @@
 					- Fabrikant
 					- Verbindingnummer
 					- Spanningsniveau
-					- Aardingsysteem
 					- FaseAanduiding
-				Voor LSkabel objecten zijn er nog 2 extra kenmerken die gevuld moeten zijn:
+					Voor LSkabel objecten zijn er nog 3 extra kenmerken die gevuld moeten zijn:
+					- Aardingsysteem
 					- Bovengronds
-					- Functie.
+					- Functie
 				N.B. Als het kenmerk Uitvoering de waarde "KEUZE ONTBREEKT IN LIJST" dan moet het kenmerk OmschrijvingUitvoering gevuld zijn!
 			</definitie>
 			<validatieObjecten>

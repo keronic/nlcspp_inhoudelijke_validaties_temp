@@ -20,7 +20,6 @@
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <Spanningsniveau>30 kV</Spanningsniveau>
         <Verbindingnummer>1</Verbindingnummer>
-        <Aardingsysteem>TN</Aardingsysteem>
         <FaseAanduiding>3 Fasen</FaseAanduiding>
         <ID>B</ID>
         <Geometry></Geometry>

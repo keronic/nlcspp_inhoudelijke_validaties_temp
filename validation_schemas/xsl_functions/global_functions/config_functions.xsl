@@ -26,10 +26,4 @@
     <variable name="objects_not_requiring_asset_id" select="$sys_config_file/config/v12/GisIdAssetsIdExceptions/NoAssetIdRequired"/>
     <value-of select="not(some $object in $objects_not_requiring_asset_id satisfies $object = name($nlcs_object))"/>
   </function>
-
-  <function name="keronic:object-requires-aardingsysteem" as="xs:boolean">
-    <param name="nlcs_object"/>
-    <variable name="objects_not_requiring_aardingsysteem" select="$sys_config_file/config/v12/AardingsysteemExceptions/NoAardingsysteemRequired"/>
-    <value-of select="not(some $object in $objects_not_requiring_aardingsysteem satisfies $object = name($nlcs_object))"/>
-  </function>
 </stylesheet>
