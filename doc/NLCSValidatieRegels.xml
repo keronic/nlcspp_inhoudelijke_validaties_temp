@@ -360,7 +360,7 @@
 			<beschrijving>Een mantelbuis die in een andere mantelbuis ligt moet een kleinere diameter hebben dan de mantelbuis waarin het ligt.</beschrijving>
 			<soort>Inhoud waarde</soort>
 			<definitie>
-				Een mantelbuis die volgens de AmantelbuisInhoud in een andere mantelbuis ligt moet een kleinere diameter hebben dan de mantelbuis waarin het ligt.
+				Een mantelbuis kan volgens de AmantelbuisInhoud in één of meerdere mantelbuizen tegelijkertijd liggen. De binnenste mantelbuis moet een kleinere diameter hebben dan elke buitenste mantelbuis.
 			</definitie>
 			<toelichting>Het kenmerk Diameter moet vergeleken worden. Let op de Diameter is een Text kenmerk</toelichting>
 			<validatieObjecten>
