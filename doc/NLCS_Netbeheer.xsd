@@ -31,13 +31,7 @@
 													</xs:restriction>
 												</xs:simpleType>
 											</xs:element>
-											<xs:element minOccurs="1" maxOccurs="1" name="Netbeheerder">
-												<xs:simpleType>
-													<xs:restriction base="xs:string">
-														<xs:maxLength value="50" />
-													</xs:restriction>
-												</xs:simpleType>
-											</xs:element>
+											<xs:element minOccurs="1" maxOccurs="1" name="Netbeheerder" type="_Netbeheerder" />
 											<xs:element minOccurs="0" maxOccurs="1" name="Volgnummer">
 												<xs:simpleType>
 													<xs:restriction base="xs:string">
@@ -46,13 +40,7 @@
 												</xs:simpleType>
 											</xs:element>
 											<xs:element minOccurs="1" maxOccurs="1" name="ID" type="xs:ID" />
-											<xs:element minOccurs="1" maxOccurs="1" name="Tekeningtype">
-												<xs:simpleType>
-													<xs:restriction base="xs:string">
-														<xs:maxLength value="50" />
-													</xs:restriction>
-												</xs:simpleType>
-											</xs:element>
+											<xs:element minOccurs="1" maxOccurs="1" name="Tekeningtype" type="_Tekeningtype" />
 											<xs:element minOccurs="1" maxOccurs="1" name="Geometry" type="gml:SurfacePropertyType" />
 										</xs:sequence>
 									</xs:extension>
@@ -3817,6 +3805,16 @@
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:simpleType name="_ObjectType">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="255" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="_Netbeheerder">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="255" />
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="_Tekeningtype">
 		<xs:restriction base="xs:string">
 			<xs:maxLength value="255" />
 		</xs:restriction>

@@ -578,6 +578,24 @@
 				<xs:enumeration value="Tkabel" />
 			</xs:restriction>
 		</xs:simpleType>
+		<xs:simpleType name="_Netbeheerder">
+			<xs:restriction base="_Netbeheerder">
+				<xs:maxLength value="255" />
+				<xs:enumeration value="Enexis" />
+				<xs:enumeration value="Liander" />
+				<xs:enumeration value="Stedin" />
+			</xs:restriction>
+		</xs:simpleType>
+		<xs:simpleType name="_Tekeningtype">
+			<xs:restriction base="_Tekeningtype">
+				<xs:maxLength value="255" />
+				<xs:enumeration value="BESTAANDE SITUATIE" />
+				<xs:enumeration value="DEELREVISIE" />
+				<xs:enumeration value="DEFINITIEF ONTWERP" />
+				<xs:enumeration value="EINDREVISIE" />
+				<xs:enumeration value="VOORONTWERP" />
+			</xs:restriction>
+		</xs:simpleType>
 		<xs:simpleType name="_BewerkingGas">
 			<xs:restriction base="_BewerkingGas">
 				<xs:maxLength value="255" />
