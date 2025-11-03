@@ -39,11 +39,4 @@
         <ID>E</ID>
         <Geometry></Geometry>
     </MSmof>
-
-    <MSoverdrachtspunt>
-        <Status>TIJDELIJK</Status>
-        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
-        <ID>F</ID>
-        <Geometry></Geometry>
-    </MSoverdrachtspunt>
 </NLCSnetbeheer>

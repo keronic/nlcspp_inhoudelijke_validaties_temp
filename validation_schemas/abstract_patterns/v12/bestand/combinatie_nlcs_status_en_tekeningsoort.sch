@@ -12,9 +12,9 @@
                 if ($tekening_type = 'BESTAANDE SITUATIE') then
                     ['BESTAAND']
                 else if ($tekening_type = 'DEELREVISIE') then
-                    ['BESTAAND', 'NIEUW', 'REVISIE', 'VERWIJDERD', 'TIJDELIJK']
+                    ['BESTAAND', 'NIEUW', 'REVISIE', 'VERWIJDERD']
                 else if ($tekening_type = 'DEFINITIEF ONTWERP') then
-                    ['BESTAAND', 'NIEUW', 'REVISIE', 'VERWIJDERD', 'TIJDELIJK']
+                    ['BESTAAND', 'NIEUW', 'REVISIE', 'VERWIJDERD']
                 else if ($tekening_type = 'EINDREVISIE') then
                     ['BESTAAND', 'NIEUW', 'REVISIE', 'VERWIJDERD']
                 else if ($tekening_type = 'VOORONTWERP') then

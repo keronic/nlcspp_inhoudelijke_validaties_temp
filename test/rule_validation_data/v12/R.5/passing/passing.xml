@@ -46,16 +46,9 @@
         <Geometry></Geometry>
     </Amantelbuis>
 
-    <MSmof>
-        <Status>TIJDELIJK</Status>
-        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
-        <ID>F</ID>
-        <Geometry></Geometry>
-    </MSmof>
-
     <AmantelbuisInhoud>
         <AssetId>{38518CAF-0F42-448D-8CD6-1E655152A0AF}</AssetId>
         <Status>BESTAAND</Status>
-        <ID>G</ID>
+        <ID>F</ID>
     </AmantelbuisInhoud>
 </NLCSnetbeheer>
