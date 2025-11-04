@@ -155,10 +155,10 @@
   </message>
   <message id="mantelbuis-inhoud-diameter-larger-than-own">
     <message-text xml:lang="en">
-      The protection pipe diameter ({1}) should be larger than that of its contents ({2}).
+      The protection pipe diameter ({1}) should be smaller than the diameters of the proctection pipe(s) in which it is located ({2}).
     </message-text>
     <message-text xml:lang="nl">
-      De diameter ({1}) van de mantelbuis zou groter moeten dan de diameter ({2}) van de mantelbuis die erin ligt.
+      De diameter van de mantelbuis ({1}) moet kleiner zijn dan de diameters van de mantelbuis/mantelbuizen waar deze in ligt ({2}).
     </message-text>
   </message>
   <message id="inhoud-found">
