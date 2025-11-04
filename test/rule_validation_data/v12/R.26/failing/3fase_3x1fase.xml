@@ -15,7 +15,7 @@
     <MSmof>
         <Status>BESTAAND</Status>
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
-        <Functie>MANTELREPARATIE</Functie>
+        <Functie>3FASE 3x1FASE</Functie>
         <ID>B</ID>
         <Geometry>
             <gml:Point
@@ -28,7 +28,6 @@
     <MSkabel>
         <Status>BESTAAND</Status>
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
-        <FaseAanduiding>3 Fasen</FaseAanduiding>
         <ID>C</ID>
         <Geometry>
             <gml:LineString
@@ -44,7 +43,6 @@
     <MSkabel>
         <Status>BESTAAND</Status>
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
-        <FaseAanduiding>L1</FaseAanduiding>
         <ID>D</ID>
         <Geometry>
             <gml:LineString
@@ -60,7 +58,6 @@
     <MSkabel>
         <Status>BESTAAND</Status>
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
-        <FaseAanduiding>L2</FaseAanduiding>
         <ID>E</ID>
         <Geometry>
             <gml:LineString
@@ -68,22 +65,6 @@
                 srsName="EPSG:28992">
                 <gml:posList>
                      40.0 10.0 -1.0
-                    240.0 40.0 -1.0
-                </gml:posList>
-            </gml:LineString>
-        </Geometry>
-    </MSkabel>
-    <MSkabel>
-        <Status>BESTAAND</Status>
-        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
-        <FaseAanduiding>L3</FaseAanduiding>
-        <ID>F</ID>
-        <Geometry>
-            <gml:LineString
-                srsDimension="3"
-                srsName="EPSG:28992">
-                <gml:posList>
-                     10.0  0.0 -1.0
                     240.0 40.0 -1.0
                 </gml:posList>
             </gml:LineString>
