@@ -40,4 +40,19 @@
             </gml:LineString>
         </Geometry>
     </MSkabel>
+    <MSkabel>
+        <Status>NIEUW</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
+        <ID>D</ID>
+        <Geometry>
+            <gml:LineString
+                srsDimension="3"
+                srsName="EPSG:28992">
+                <gml:posList>
+                    50.0 50.0 -1.0
+                    240.0 40.0 -1.0
+                </gml:posList>
+            </gml:LineString>
+        </Geometry>
+    </MSkabel>
 </NLCSnetbeheer>

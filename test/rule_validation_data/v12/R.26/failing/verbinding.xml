@@ -28,7 +28,6 @@
     <MSkabel>
         <Status>BESTAAND</Status>
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
-        <FaseAanduiding>3 Fasen</FaseAanduiding>
         <ID>C</ID>
         <Geometry>
             <gml:LineString
