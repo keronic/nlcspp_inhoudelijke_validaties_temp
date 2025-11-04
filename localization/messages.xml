@@ -193,6 +193,30 @@
       A protection pipe content may not float; MantelbuisID {1} must refer to an existing protection pipe.
     </message-text>
   </message>
+  <message id="mantelbuis-inhoud-is-self">
+    <message-text xml:lang="en">
+      The contents of a protection pipe may not be the protection pipe itself.
+    </message-text>
+    <message-text xml:lang="nl">
+      De inhoud van een mantelbuis mag niet de mantelbuis zelf zijn.
+    </message-text>
+  </message>
+  <message id="mantelbuis-id-does-not-refer-to-mantelbuis">
+    <message-text xml:lang="en">
+      MantelbuisID {1} must refer to a protection pipe.
+    </message-text>
+    <message-text xml:lang="nl">
+      MantelbuisID {1} moet naar een mantelbuis verwijzen.
+    </message-text>
+  </message>
+  <message id="object-type-inhoud-does-not-match-inhoud">
+    <message-text xml:lang="en">
+      The content of the protection pipe should be a {1}, but is a {2}.
+    </message-text>
+    <message-text xml:lang="nl">
+      De inhoud van de mantelbuis zou een {1} moeten zijn, maar is een {2}.
+    </message-text>
+  </message>
   <message id="cable-amount-incorrect">
     <message-text xml:lang="en">
       An incorrect amount of cables is connected to this joint. {1} are required, but found {2}.
