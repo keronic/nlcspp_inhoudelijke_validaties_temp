@@ -1,6 +1,15 @@
-# NLCS++ Inhoudelijke validaties
+# Inhoudelijke validaties
 
-(Tijdelijke) Opzet van NLCS++ [inhoudelijke validaties](https://keronic.github.io/nlcspp_inhoudelijke_validaties_temp/doc/NLCSValidatieRegels.html) incl. wijze van documentatie.
+Onderdeel van de NLCS++ informatie-uitwisseling is een XML-bestand met daarin onder andere de geometrieën en attributen van de bedrijfsmiddelen (LS Kabel, LS Mof, etc.). Het XSD borgt een valide structuur van het XML-bestand. Voor het inhoudelijke controleren van dit bestand zijn er de Inhoudelijke Validaties ontwikkeld. 
+
+De inhoudelijke validaties dragen bij aan de efficiëntie en datakwaliteit in de informatie-uitwisseling via NLCS++ en zijn een onmisbaar onderdeel in het geautomatiseerd uitwisselen. 
+
+Doel van de software is om een mogelijkheid te bieden om op elke plek (device) dezelfde inhoudelijke validaties te kunnen uitvoeren, die ook voor de netbeheerder worden uitgevoerd. 
+
+De inhoudelijke validatie software is gebaseerd op Schematron. Schematron is een op XML gebaseerde technologie voor het decentraal en systeem agnostisch kunnen uitvoeren van inhoudelijke validaties van XML-bestanden.
+
+Verdere (technische) documentatie over de werking van de inhoudelijke validaties is terug te vinden op de [wiki](https://github.com/mijnaansluiting/Inhoudelijke-validaties/wiki).
+
 
 ## License
 
