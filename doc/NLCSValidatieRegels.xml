@@ -301,8 +301,8 @@
 			<soort>Netlogica</soort>
 			<definitie>
 				Kabels die d.m.v. moffen met elkaar zijn verbonden moeten van het zelfde netvlak zijn:
-					<!-- - LSKabel via LSmof met andere LSkabel-->
 					- MSKabel via MSmof met andere MSkabel
+					<!-- - LSKabel via LSmof met andere LSkabel-->					
 					<!-- - HSKabel via HSmof met andere HSkabel-->
 			</definitie>
 			<validatieObjecten> <!-- Deze regel geldt voor alle Kabel Objecten -->
