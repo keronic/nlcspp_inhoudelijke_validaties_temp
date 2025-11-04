@@ -1,75 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="aantal-kabels-en-mof-functie" abstract="true">
-    <rule context="//nlcs:MSmof[keronic:map-mof-functie(nlcs:Functie) = 'Eind']">
+    <rule context="//nlcs:MSmof">
         <let name="msmof"
             value="."/>
 
         <let name="connected_mskabels"
             value="//nlcs:MSkabel[keronic:line-3d-connected-to-point-3d(
-                        tokenize(normalize-space(nlcs:Geometry/gml:LineString/gml:posList)),
-                        tokenize(normalize-space($msmof/nlcs:Geometry/gml:Point/gml:pos)),
-                        0)]"/>
+                tokenize(normalize-space(nlcs:Geometry/gml:LineString/gml:posList)),
+                tokenize(normalize-space($msmof/nlcs:Geometry/gml:Point/gml:pos)),
+                0)]"/>
+
+        <let name="functie_type"
+            value="keronic:map-mof-functie(nlcs:Functie)"/>
+
+        <let name="is_aftak_from_existing_cable"
+            value="$functie_type = 'Aftak' and not(empty($connected_mskabels[nlcs:Status = 'BESTAAND']))"/>
 
         <let name="required_connections"
-            value="1"/>
+            value="if($functie_type = 'Eind') then 1
+                else if($functie_type = 'Verbinding') then 2
+                else if($functie_type = 'Faseovergang') then 4
+                else if($is_aftak_from_existing_cable) then 2
+                else if($functie_type = 'Aftak') then 3
+                else -1
+            "/>
 
-        <assert id="eindmof_connected_to_right_amount_of_cables"
-                properties="scope rule-number severity object-type object-id"
-            test="count($connected_mskabels) = $required_connections">
-            <value-of select="keronic:get-translation-and-replace-placeholders('cable-amount-incorrect', [string($required_connections), string(count($connected_mskabels))])"/>
-        </assert>
-    </rule>
-    <rule context="//nlcs:MSmof[keronic:map-mof-functie(nlcs:Functie) = 'Verbinding']">
-        <let name="msmof"
-            value="."/>
-
-        <let name="connected_mskabels"
-            value="//nlcs:MSkabel[keronic:line-3d-connected-to-point-3d(
-                        tokenize(normalize-space(nlcs:Geometry/gml:LineString/gml:posList)),
-                        tokenize(normalize-space($msmof/nlcs:Geometry/gml:Point/gml:pos)),
-                        0)]"/>
-
-        <let name="connected_mskabels_count"
+        <let name="connections"
             value="count($connected_mskabels)"/>
 
-        <let name="required_connections"
-            value="[2, 4]"/>
-
-        <assert id="verbindingsmof_connected_to_right_amount_of_cables"
+        <assert id="mof_connected_to_right_amount_of_cables"
             properties="scope rule-number severity object-type object-id"
-            test="$connected_mskabels_count = $required_connections">
-            <value-of select="keronic:get-translation-and-replace-placeholders('cable-amount-incorrect', [string-join($required_connections, ' / '), string($connected_mskabels_count)])"/>
-        </assert>
-    </rule>
-    <rule context="//nlcs:MSmof[keronic:map-mof-functie(nlcs:Functie) = 'Aftak']">
-        <let name="msmof"
-            value="."/>
-
-        <let name="connected_mskabels"
-            value="//nlcs:MSkabel[keronic:line-3d-connected-to-point-3d(
-                        tokenize(normalize-space(nlcs:Geometry/gml:LineString/gml:posList)),
-                        tokenize(normalize-space($msmof/nlcs:Geometry/gml:Point/gml:pos)),
-                        0)]"/>
-
-        <let name="connected_mskabels_count"
-            value="count($connected_mskabels)"/>
-
-        <let name="required_connections"
-            value="[2, 3]"/>
-
-        <assert id="aftakmof_connected_to_right_amount_of_cables"
-            properties="scope rule-number severity object-type object-id"
-            test="$connected_mskabels_count = $required_connections">
-            <value-of select="keronic:get-translation-and-replace-placeholders('cable-amount-incorrect', [string-join($required_connections, ' / '), string($connected_mskabels_count)])"/>
+            test="$connections = $required_connections">
+            <value-of select="keronic:get-translation-and-replace-placeholders('cable-amount-incorrect', [string($required_connections), string($connections)])"/>
         </assert>
 
-        <let name="connected_mskabels_one_is_new_one_is_existing"
-            value="count($connected_mskabels[./nlcs:Status = 'NIEUW']) = 1 and count($connected_mskabels[./nlcs:Status = 'BESTAAND']) = 1"/>
+        <let name="connected_to_new_cable"
+            value="not(empty($connected_mskabels[./nlcs:Status = 'NIEUW']))"/>
 
-        <assert id="aftakmof_existing_cable_connected_to_new_cable"
+        <assert id="aftak_from_existing_cable_must_be_new_cable"
             properties="scope rule-number severity object-type object-id"
-            test="if($connected_mskabels_count = 2) then $connected_mskabels_one_is_new_one_is_existing else true() ">
-            <value-of select="keronic:get-translation('bestaande-cable-not-connected-to-new-cable')"/>
+            test="if($is_aftak_from_existing_cable) then $connected_to_new_cable else true()">
+            <value-of select="keronic:get-translation('existing-cable-not-connected-to-new-cable')"/>
         </assert>
     </rule>
 </pattern>

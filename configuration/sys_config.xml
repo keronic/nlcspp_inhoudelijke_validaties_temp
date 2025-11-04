@@ -15,6 +15,9 @@
                 <Functie>ZEGELWIJZIGING</Functie>
                 <Functie>MANTELREPARATIE</Functie>
             </Verbinding>
+            <Faseovergang>
+                <Functie>3FASE 3x1FASE</Functie>
+            </Faseovergang>
         </MofFuncties>
         <GisIdAssetsIdExceptions>
             <NoGisIdRequired>AmantelbuisInhoud</NoGisIdRequired>
