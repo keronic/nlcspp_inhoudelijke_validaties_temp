@@ -402,8 +402,8 @@
 			<beschrijving>Een Mantelbuis die niet Reserve is moet een Mantelbuis inhoud hebben.</beschrijving>
 			<soort>Consistentie</soort>
 			<definitie>
-				Indien de Bedrijfstoestand van een AMantelbuis de waarde "RESERVE" heeft mag het geen AmantelbuisInhoud hebben,
-				als de BedrijfsToestand "IN BEDRIJF" is dan moet het een AmantelbuisInhoud hebben, welke gekoppeld is aan een ander NLCS object via het InhoudID veld, welke gelijk staat aan de ID van een ander NLCS object.
+				Indien de Bedrijfstoestand van een AMantelbuis de waarde "RESERVE" heeft mag het geen AmantelbuisInhoud hebben.
+				Als de BedrijfsToestand "IN BEDRIJF" is dan moet het een AmantelbuisInhoud hebben.
 			</definitie>
 			<validatieObjecten>
 				<validatieObject><naam>Amantelbuis</naam></validatieObject>
@@ -422,6 +422,18 @@
 			<validatieObjecten>
 				<validatieObject><naam>LSkabel</naam></validatieObject>
 				<validatieObject><naam>MSkabel</naam></validatieObject>
+			</validatieObjecten>
+		</validatieRegel>
+		<validatieRegel nummer="R.30" naam="Mantelbuis Inhoud referenties">
+			<beschrijving>Een mantelbuis inhoud moet correct refereren naar de omliggende mantelbuis en haar inhoud</beschrijving>
+			<soort>Consistentie</soort>
+			<definitie>
+				- InhoudID mag niet gelijk zijn aan MantelbuisID
+				- Het NLCS object waarvan het ID overeenkomt met MantelbuisID moet een mantelbuis zijn
+				- Het NLCS object waarvan het ID overeenkomt met InhoudID moet van type ObjectTypeInhoud zijn
+			</definitie>
+			<validatieObjecten>
+				<validatieObject><naam>AmantelbuisInhoud</naam></validatieObject>
 			</validatieObjecten>
 		</validatieRegel>
 	</validatieRegels>
@@ -460,6 +472,7 @@
 				<scopeValidatieRegel><nummer>R.26</nummer><niveau>Informerend</niveau></scopeValidatieRegel>
 				<scopeValidatieRegel><nummer>R.27</nummer><niveau>Informerend</niveau></scopeValidatieRegel>
 				<scopeValidatieRegel><nummer>R.28</nummer><niveau>Informerend</niveau></scopeValidatieRegel>
+				<scopeValidatieRegel><nummer>R.30</nummer><niveau>Informerend</niveau></scopeValidatieRegel>
 			</scopeValidatieRegels>
 		</scope>
 		<scope naam="Definitef Ontwerp alle statussen">
@@ -483,6 +496,7 @@
 				<scopeValidatieRegel><nummer>R.20</nummer><niveau>Fout</niveau></scopeValidatieRegel>
 				<scopeValidatieRegel><nummer>R.27</nummer><niveau>Fout</niveau></scopeValidatieRegel>
 				<scopeValidatieRegel><nummer>R.28</nummer><niveau>Fout</niveau></scopeValidatieRegel>
+				<scopeValidatieRegel><nummer>R.30</nummer><niveau>Fout</niveau></scopeValidatieRegel>
 			</scopeValidatieRegels>
 		</scope>
 		<scope naam="Deelrevisie verwijderde objecten">
@@ -558,6 +572,7 @@
 				<scopeValidatieRegel><nummer>R.27</nummer><niveau>Fout</niveau></scopeValidatieRegel>
 				<scopeValidatieRegel><nummer>R.28</nummer><niveau>Fout</niveau></scopeValidatieRegel>
 				<scopeValidatieRegel><nummer>R.29</nummer><niveau>Fout</niveau></scopeValidatieRegel>
+				<scopeValidatieRegel><nummer>R.30</nummer><niveau>Fout</niveau></scopeValidatieRegel>
 			</scopeValidatieRegels>
 		</scope>
 		<scope naam="Nieuwe en aangepaste objecten Eindrevisie">
@@ -596,6 +611,7 @@
 				<scopeValidatieRegel><nummer>R.27</nummer><niveau>Fout</niveau></scopeValidatieRegel>
 				<scopeValidatieRegel><nummer>R.28</nummer><niveau>Fout</niveau></scopeValidatieRegel>
 				<scopeValidatieRegel><nummer>R.29</nummer><niveau>Fout</niveau></scopeValidatieRegel>
+				<scopeValidatieRegel><nummer>R.30</nummer><niveau>Fout</niveau></scopeValidatieRegel>
 			</scopeValidatieRegels>
 		</scope>
 	</scopes>

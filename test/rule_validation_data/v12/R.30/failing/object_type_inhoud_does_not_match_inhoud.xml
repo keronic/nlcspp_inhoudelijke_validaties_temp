@@ -12,9 +12,25 @@
         <Geometry></Geometry>
     </AprojectReferentie>
 
-    <AmantelbuisInhoud>
+    <Amantelbuis>
         <Status>BESTAAND</Status>
-        <MantelbuisID>A</MantelbuisID>
+        <Bedrijfstoestand>IN BEDRIJF</Bedrijfstoestand>
         <ID>B</ID>
+        <Geometry></Geometry>
+    </Amantelbuis>
+
+    <MSkabel>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
+        <ID>C</ID>
+        <Geometry></Geometry>
+    </MSkabel>
+
+    <AmantelbuisInhoud>
+        <ObjectTypeInhoud>LSkabel</ObjectTypeInhoud>
+        <Status>BESTAAND</Status>
+        <MantelbuisID>B</MantelbuisID>
+        <InhoudID>C</InhoudID>
+        <ID>D</ID>
     </AmantelbuisInhoud>
 </NLCSnetbeheer>
