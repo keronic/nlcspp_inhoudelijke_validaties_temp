@@ -5,7 +5,7 @@
             value="('BESTAAND', 'REVISIE', 'VERWIJDERD')"/>
 
         <let name="statuses_requiring_no_ids"
-            value="('BESTAAND')"/>
+            value="('NIEUW')"/>
 
         <let name="status_requires_ids"
             value="some $status in ($statuses_requiring_ids) satisfies($status = nlcs:Status)"/>
