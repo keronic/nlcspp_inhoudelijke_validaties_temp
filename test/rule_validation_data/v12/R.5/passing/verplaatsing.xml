@@ -13,36 +13,10 @@
     </AprojectReferentie>
 
     <MSkabel>
-        <Status>BESTAAND</Status>
-        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
-        <Bewerking>VERPLAATSEN</Bewerking>
-        <ID>B</ID>
-        <Geometry></Geometry>
-    </MSkabel>
-
-    <MSkabel>
         <Status>REVISIE</Status>
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <Bewerking>VERPLAATSEN</Bewerking>
-        <ID>C</ID>
-        <Geometry></Geometry>
-    </MSkabel>
-
-    <MSkabel>
-        <Status>VERWIJDERD</Status>
-        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
-        <Bewerking>VERPLAATSEN</Bewerking>
-        <ID>D</ID>
-        <Geometry></Geometry>
-    </MSkabel>
-
-    <MSkabel>
-        <Status>NIEUW</Status>
-        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
-        <Bewerking>VERPLAATSEN</Bewerking>
-        <GisId>83414</GisId>
-        <AssetId>{6D43A69E-C176-401A-8517-E2605079A344}</AssetId>
-        <ID>E</ID>
+        <ID>B</ID>
         <Geometry></Geometry>
     </MSkabel>
 </NLCSnetbeheer>
