@@ -390,7 +390,7 @@
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Definitie </b></td>
-            <td class="validatieDocumentatieCell"><br>				Ieder OVLoverdrachtspunt moet een waarde voor de volgende kenmerken hebben:<br>				- Aansluitset<br>				- Mastnummer </td>
+            <td class="validatieDocumentatieCell"><br>				Ieder OVLoverdrachtspunt moet een waarde voor de volgende kenmerken hebben:<br>				- Aansluitset<br>				- Functie<br>				- Spanningsniveau<br>				- Aansluitwijze<br>				- Schakeling<br>				- Mastnummer </td>
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>ValidatieObjecten</b></td>
@@ -503,7 +503,8 @@
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Definitie </b></td>
             <td class="validatieDocumentatieCell"><br>				Een kabel moet aan beide kanten (begin- en eindpunt) een geldig eindpunt hebben,
-               per kabel zijn de volgende objecten geldig:<br>				</td>
+               per kabel zijn de volgende objecten geldig:<br>				- MSkabel: MSmof, MSoverdrachtspunt en MSstation<br>				NB: Deze controle geld niet voor kabels met de Bedrijfsstatus "VERLATEN" en wordt
+               alleen gerund op begin- en eindpunten binnen het projectgebied<br>				</td>
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>ValidatieObjecten</b></td>
