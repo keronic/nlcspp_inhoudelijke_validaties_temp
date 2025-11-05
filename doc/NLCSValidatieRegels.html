@@ -194,9 +194,9 @@
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Definitie </b></td>
-            <td class="validatieDocumentatieCell"><br>				Als Status = BESTAAND, REVISIE of VERWIJDERD, dan moet er een waarde zijn voor
-               zowel kenmerk GisId als AssetId,<br>				Als Status = NIEUW dan moeten de kenmerken GisId en AssetId leeg zijn<br><br>				N.B. Indien Bewerking = VERPLAATSEN hoeft deze controle niet uitgevoerd te worden.
-               Zie R.29 voor meer details.<br>			</td>
+            <td class="validatieDocumentatieCell"><br>				Als Status = BESTAAND, REVISIE* of VERWIJDERD, dan moet er een waarde zijn voor
+               zowel kenmerk GisId als AssetId,<br>				Als Status = NIEUW dan moeten de kenmerken GisId en AssetId leeg zijn<br><br>				*Indien Status = REVISIE en Bewerking = VERPLAATSEN hoeft deze controle niet uitgevoerd
+               te worden. Zie R.29 voor meer details.<br>			</td>
          </tr>
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Toelichting </b></td>
@@ -663,9 +663,7 @@
          <tr class="validatieDocumentatieRow">
             <td class="validatieDocumentatieCell"><b>Definitie </b></td>
             <td class="validatieDocumentatieCell"><br>				Een verplaatsing moet zodanig zijn vastgelegd dat het object 2 keer voorkomt in
-               het Document<br>				- Het bestaande object dat wordt verplaatst: status=BESTAAND, GisID en AssetID
-               beide gevuld.<br>				- Een nieuw object waarin de verplaatsing is vastgelegd in de geometrie:<br>				  Status=REVISIE, Bewerking=VERPLAATSTEN, GisID als bestaande en AssetID moet
-               leeg zijn.<br>				Controle: Als er een object voorkomt met de Status=REVISIE en de Bewerking=VERPLAATSEN
+               het Document<br>				1. Het bestaande object dat wordt verplaatst: Status=BESTAAND<br>				2. Een nieuw object waarin de verplaatsing is vastgelegd in de geometrie:<br>					- Status=REVISIE<br>					- Bewerking=VERPLAATSTEN<br>					- GisID als bestaande<br>					- AssetID moet leeg zijn<br>				<br>				Controle: Als er een object voorkomt met de Status=REVISIE en de Bewerking=VERPLAATSEN
                dan moet er een tweede object zijn van het zelfde soort met dezelfde GisID en de status=BESTAAND<br>			</td>
          </tr>
          <tr class="validatieDocumentatieRow">

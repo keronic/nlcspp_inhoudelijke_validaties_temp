@@ -4,6 +4,9 @@
         <let name="statuses_requiring_ids"
             value="('BESTAAND', 'REVISIE', 'VERWIJDERD')"/>
 
+        <let name="statuses_requiring_no_ids"
+            value="('BESTAAND')"/>
+
         <let name="status_requires_ids"
             value="some $status in ($statuses_requiring_ids) satisfies($status = nlcs:Status)"/>
 
@@ -22,7 +25,7 @@
         <assert id="gis-id-not-allowed"
             test="if(not($status_requires_ids)) then not($object_has_gis_id) else true()"
             properties="scope rule-number severity object-type object-id">
-            <value-of select="keronic:get-translation-and-replace-placeholders('property-not-allowed-for-statuses', ['GisId', string-join($statuses_requiring_ids, ', ')])"/>
+            <value-of select="keronic:get-translation-and-replace-placeholders('property-not-allowed-for-statuses', ['GisId', string-join($statuses_requiring_no_ids, ', ')])"/>
         </assert>
 
         <let name="object_has_asset_id"
@@ -40,7 +43,7 @@
         <assert id="asset-id-not-allowed"
             test="if(not($status_requires_ids)) then not($object_has_asset_id) else true()"
             properties="scope rule-number severity object-type object-id">
-            <value-of select="keronic:get-translation-and-replace-placeholders('property-not-allowed-for-statuses', ['AssetId', string-join($statuses_requiring_ids, ', ')])"/>
+            <value-of select="keronic:get-translation-and-replace-placeholders('property-not-allowed-for-statuses', ['AssetId', string-join($statuses_requiring_no_ids, ', ')])"/>
         </assert>
     </rule>
 </pattern>

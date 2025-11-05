@@ -57,10 +57,10 @@
   </message>
   <message id="property-not-allowed-for-statuses">
     <message-text xml:lang="en">
-      The attribute {1} must be empty if the Status IS NOT one of: {2}.
+      The attribute {1} must be empty if the Status is one of: {2}.
     </message-text>
     <message-text xml:lang="nl">
-      Het kenmerk {1} moet leeg zijn indien de Status NIET een van de volgende is: {2}.
+      Het kenmerk {1} moet leeg zijn indien de Status een van de volgende is: {2}.
     </message-text>
   </message>
   <message id="attribute-not-present">
@@ -225,6 +225,15 @@
     </message-text>
     <message-text xml:lang="en">
       A branch joint on an existing cable needs to be connected to a new cable.
+    </message-text>
+  </message>
+
+  <message id="verplaatsing-incorrectly-applied">
+    <message-text xml:lang="nl">
+      Verplaatsing incorrect vastgelegd. Er moet een andere {1} zijn met Status BESTAAND en beide objecten moeten hetzelfde GisId hebben.
+    </message-text>
+    <message-text xml:lang="en">
+      Movement was registered incorrectly. There should be another {1} with Status BESTAAND and both objects must share the same GisId.
     </message-text>
   </message>
 </messages>
