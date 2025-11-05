@@ -177,22 +177,6 @@
       If the protection pipe is IN BEDRIJF, contents are required.
     </message-text>
   </message>
-  <message id="inhoud-object-not-found">
-    <message-text xml:lang="nl">
-      De mantelbuisinhoud met ID {1} refereert naar een object met ID {2}, maar deze bestaat niet.
-    </message-text>
-    <message-text xml:lang="en">
-      The protection pipe content with ID {1} refers to an object with ID {2}, but no such object exists.
-    </message-text>
-  </message>
-  <message id="inhoud-floating">
-    <message-text xml:lang="nl">
-      Een mantelbuisinhoud mag niet zweven; MantelbuisID {1} moet refereren naar een bestaande mantelbuis.
-    </message-text>
-    <message-text xml:lang="en">
-      A protection pipe content may not float; MantelbuisID {1} must refer to an existing protection pipe.
-    </message-text>
-  </message>
   <message id="mantelbuis-inhoud-is-self">
     <message-text xml:lang="en">
       The contents of a protection pipe may not be the protection pipe itself.
