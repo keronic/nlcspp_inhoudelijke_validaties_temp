@@ -12,19 +12,9 @@
         <Geometry></Geometry>
     </AprojectReferentie>
 
-    <LSkabel>
-        <Status>VERWIJDERD</Status>
-        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
+    <AmantelbuisInhoud>
+        <AssetId>{38518CAF-0F42-448D-8CD6-1E655152A0AF}</AssetId>
+        <Status>BESTAAND</Status>
         <ID>B</ID>
-        <GisId>83412</GisId>
-        <Geometry></Geometry>
-    </LSkabel>
-    <LSkabel>
-        <Status>REVISIE</Status>
-        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
-        <Bewerking>VERPLAATSEN</Bewerking>
-        <ID>C</ID>
-        <GisId>83413</GisId>
-        <Geometry></Geometry>
-    </LSkabel>
+    </AmantelbuisInhoud>
 </NLCSnetbeheer>

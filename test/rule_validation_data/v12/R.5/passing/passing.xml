@@ -30,25 +30,19 @@
         <Geometry></Geometry>
     </MSkabel>
 
-    <MSstation>
+    <MSkabel>
         <Status>VERWIJDERD</Status>
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
+        <GisId>83414</GisId>
         <AssetId>{6D43A69E-C176-401A-8517-E2605079A344}</AssetId>
         <ID>D</ID>
-        <GisId>83414</GisId>
         <Geometry></Geometry>
-    </MSstation>
+    </MSkabel>
 
-    <Amantelbuis>
+    <MSkabel>
         <Status>NIEUW</Status>
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <ID>E</ID>
         <Geometry></Geometry>
-    </Amantelbuis>
-
-    <AmantelbuisInhoud>
-        <AssetId>{38518CAF-0F42-448D-8CD6-1E655152A0AF}</AssetId>
-        <Status>BESTAAND</Status>
-        <ID>F</ID>
-    </AmantelbuisInhoud>
+    </MSkabel>
 </NLCSnetbeheer>

@@ -27,11 +27,12 @@
         <ID>C</ID>
         <Geometry></Geometry>
     </MSkabel>
+
     <LSkabel>
         <Status>BESTAAND</Status>
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <ID>D</ID>
-        <GisId>83412</GisId>
+        <GisId>83413</GisId>
         <Geometry></Geometry>
     </LSkabel>
     <LSkabel>
@@ -39,7 +40,7 @@
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <Bewerking>VERPLAATSEN</Bewerking>
         <ID>E</ID>
-        <GisId>83412</GisId>
+        <GisId>83413</GisId>
         <Geometry></Geometry>
     </LSkabel>
 </NLCSnetbeheer>
