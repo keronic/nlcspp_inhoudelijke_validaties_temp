@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pattern xmlns ="http://purl.oclc.org/dsdl/schematron" id="gisid-en-assetid" abstract="true">
-    <rule context="//nlcs:NLCSnetbeheer/*[not(self::nlcs:AprojectReferentie)]">
+    <rule context="//nlcs:NLCSnetbeheer/*[not(self::nlcs:AprojectReferentie or nlcs:Bewerking = 'VERPLAATSEN')]">
         <let name="statuses_requiring_ids"
             value="('BESTAAND', 'REVISIE', 'VERWIJDERD')"/>
 

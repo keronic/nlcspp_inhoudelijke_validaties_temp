@@ -15,8 +15,7 @@
     <MSkabel>
         <Status>BESTAAND</Status>
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
-        <GisId>83412</GisId>
-        <AssetId>{38518CAF-0F42-448D-8CD6-1E655152A0AD}</AssetId>
+        <Bewerking>VERPLAATSEN</Bewerking>
         <ID>B</ID>
         <Geometry></Geometry>
     </MSkabel>
@@ -24,8 +23,7 @@
     <MSkabel>
         <Status>REVISIE</Status>
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
-        <GisId>83413</GisId>
-        <AssetId>{38518CAF-0F42-448D-8CD6-1E655152A0AE}</AssetId>
+        <Bewerking>VERPLAATSEN</Bewerking>
         <ID>C</ID>
         <Geometry></Geometry>
     </MSkabel>
@@ -33,8 +31,7 @@
     <MSkabel>
         <Status>VERWIJDERD</Status>
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
-        <GisId>83414</GisId>
-        <AssetId>{6D43A69E-C176-401A-8517-E2605079A344}</AssetId>
+        <Bewerking>VERPLAATSEN</Bewerking>
         <ID>D</ID>
         <Geometry></Geometry>
     </MSkabel>
@@ -42,6 +39,9 @@
     <MSkabel>
         <Status>NIEUW</Status>
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
+        <Bewerking>VERPLAATSEN</Bewerking>
+        <GisId>83414</GisId>
+        <AssetId>{6D43A69E-C176-401A-8517-E2605079A344}</AssetId>
         <ID>E</ID>
         <Geometry></Geometry>
     </MSkabel>
