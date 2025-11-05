@@ -12,19 +12,11 @@
         <Geometry></Geometry>
     </AprojectReferentie>
 
-    <LSkabel>
-        <Status>VERWIJDERD</Status>
-        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
-        <ID>B</ID>
-        <GisId>83412</GisId>
-        <Geometry></Geometry>
-    </LSkabel>
-    <LSkabel>
+    <MSkabel>
         <Status>REVISIE</Status>
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
         <Bewerking>VERPLAATSEN</Bewerking>
-        <ID>C</ID>
-        <GisId>83413</GisId>
+        <ID>B</ID>
         <Geometry></Geometry>
-    </LSkabel>
+    </MSkabel>
 </NLCSnetbeheer>
