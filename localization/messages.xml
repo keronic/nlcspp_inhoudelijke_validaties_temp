@@ -177,20 +177,28 @@
       If the protection pipe is IN BEDRIJF, contents are required.
     </message-text>
   </message>
-  <message id="inhoud-object-not-found">
-    <message-text xml:lang="nl">
-      De mantelbuisinhoud met ID {1} refereert naar een object met ID {2}, maar deze bestaat niet.
-    </message-text>
+  <message id="mantelbuis-inhoud-is-self">
     <message-text xml:lang="en">
-      The protection pipe content with ID {1} refers to an object with ID {2}, but no such object exists.
+      The contents of a protection pipe may not be the protection pipe itself.
+    </message-text>
+    <message-text xml:lang="nl">
+      De inhoud van een mantelbuis mag niet de mantelbuis zelf zijn.
     </message-text>
   </message>
-  <message id="inhoud-floating">
-    <message-text xml:lang="nl">
-      Een mantelbuisinhoud mag niet zweven; MantelbuisID {1} moet refereren naar een bestaande mantelbuis.
-    </message-text>
+  <message id="mantelbuis-id-does-not-refer-to-mantelbuis">
     <message-text xml:lang="en">
-      A protection pipe content may not float; MantelbuisID {1} must refer to an existing protection pipe.
+      MantelbuisID {1} must refer to a protection pipe.
+    </message-text>
+    <message-text xml:lang="nl">
+      MantelbuisID {1} moet naar een mantelbuis verwijzen.
+    </message-text>
+  </message>
+  <message id="object-type-inhoud-does-not-match-inhoud">
+    <message-text xml:lang="en">
+      The content of the protection pipe should be a {1}, but is a {2}.
+    </message-text>
+    <message-text xml:lang="nl">
+      De inhoud van de mantelbuis zou een {1} moeten zijn, maar is een {2}.
     </message-text>
   </message>
   <message id="cable-amount-incorrect">
