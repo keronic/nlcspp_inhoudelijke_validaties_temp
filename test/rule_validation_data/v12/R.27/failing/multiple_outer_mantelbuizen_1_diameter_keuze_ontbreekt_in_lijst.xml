@@ -16,62 +16,34 @@
         <Diameter>110</Diameter>
         <Status>BESTAAND</Status>
         <Bedrijfstoestand>GEEN</Bedrijfstoestand>
+        <ID>OUTER-1</ID>
+        <Geometry></Geometry>
+    </Amantelbuis>
+    <Amantelbuis>
+        <Diameter>KEUZE ONTBREEKT IN LIJST</Diameter>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
+        <ID>OUTER-2</ID>
+        <Geometry></Geometry>
+    </Amantelbuis>
+    <Amantelbuis>
+        <Diameter>120</Diameter>
+        <Status>BESTAAND</Status>
+        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
+        <ID>INNER</ID>
+        <Geometry></Geometry>
+    </Amantelbuis>
+
+    <AmantelbuisInhoud>
+        <Status>BESTAAND</Status>
+        <MantelbuisID>OUTER-1</MantelbuisID>
+        <InhoudID>INNER</InhoudID>
         <ID>B</ID>
-        <Geometry></Geometry>
-    </Amantelbuis>
-    <Amantelbuis>
-        <Diameter>100</Diameter>
+    </AmantelbuisInhoud>
+    <AmantelbuisInhoud>
         <Status>BESTAAND</Status>
-        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
+        <MantelbuisID>OUTER-2</MantelbuisID>
+        <InhoudID>INNER</InhoudID>
         <ID>C</ID>
-        <Geometry></Geometry>
-    </Amantelbuis>
-    <AmantelbuisInhoud>
-        <Status>BESTAAND</Status>
-        <MantelbuisID>B</MantelbuisID>
-        <InhoudID>C</InhoudID>
-        <ID>D</ID>
-    </AmantelbuisInhoud>
-
-    <Amantelbuis>
-        <Diameter>KEUZE ONTBREEKT IN LIJST</Diameter>
-        <Status>BESTAAND</Status>
-        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
-        <ID>E</ID>
-        <Geometry></Geometry>
-    </Amantelbuis>
-    <Amantelbuis>
-        <Diameter>100</Diameter>
-        <Status>BESTAAND</Status>
-        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
-        <ID>F</ID>
-        <Geometry></Geometry>
-    </Amantelbuis>
-    <AmantelbuisInhoud>
-        <Status>BESTAAND</Status>
-        <MantelbuisID>B</MantelbuisID>
-        <InhoudID>C</InhoudID>
-        <ID>G</ID>
-    </AmantelbuisInhoud>
-
-    <Amantelbuis>
-        <Diameter>110</Diameter>
-        <Status>BESTAAND</Status>
-        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
-        <ID>H</ID>
-        <Geometry></Geometry>
-    </Amantelbuis>
-    <Amantelbuis>
-        <Diameter>KEUZE ONTBREEKT IN LIJST</Diameter>
-        <Status>BESTAAND</Status>
-        <Bedrijfstoestand>GEEN</Bedrijfstoestand>
-        <ID>I</ID>
-        <Geometry></Geometry>
-    </Amantelbuis>
-    <AmantelbuisInhoud>
-        <Status>BESTAAND</Status>
-        <MantelbuisID>B</MantelbuisID>
-        <InhoudID>C</InhoudID>
-        <ID>J</ID>
     </AmantelbuisInhoud>
 </NLCSnetbeheer>
